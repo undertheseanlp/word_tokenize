@@ -1,0 +1,69 @@
+1 . giới_thiệu
+trong phân_tích đánh_giá tai_biến_thiên_nhiên đòi_hỏi phải xác_định được mức_độ hoạt_động cũng_như dự_báo được cường_độ hoạt_động của chúng trong tương_lai .
+tai_biến trượt lở đất là quá tự_nhiên trên sườn mái dốc dưới tác_động trực_tiếp của trọng_lực , quá_trình này xảy_ra do ảnh_hưởng của rất nhiều nhân_tố tự_nhiên ( địa_chất , địa_mạo , khí_hậu , lớp phủ thực_vật , ... ) và xã_hội ( sản_xuất nông_nghiệp , xây_dựng , ... ) , mỗi nhân_tố ảnh_hưởng đến quá_trình theo cường_độ và tầm quan_trọng khác_nhau .
+vì_thế , nghiên_cứu trượt lở phải dựa trên quan_điểm địa_lí tổng_hợp và gis là công_cụ rất hữu_ích để thực_hiện công_việc này .
+trong khuôn_khổ bài báo , chúng_tôi xin nêu một_vài kết_quả nghiên_cứu đạt được nhờ sử_dụng mô_hình phân_tích không_gian trong môi_trường gis kết_hợp với đánh_giá đa tiêu_chuẩn ( mce ) trong việc nghiên_cứu trượt lở đất ở tỉnh lào cai .
+về khu_vực nghiên_cứu , lào cai nằm ở phía bắc lãnh_thổ việt nam , cách hà nội khoảng 300 km về phía tây_bắc .
+tỉnh hiện đang nằm trên nền địa_chất hết_sức phức_tạp với 3 đới cấu_trúc địa_chất khác_nhau , địa_hình phân_cắt mạnh kết_hợp với lượng_mưa lớn , tập_trung đã thúc_đẩy các quá_trình tai_biến xảy_ra rất mạnh_mẽ , gây thiệt_hại nặng_nề về kinh_tế và gây tâm_lí hoang_mang cho đồng_bào dân_tộc thiểu_số .
+gần_đây nhất , vào tháng 9 năm 2004 trên địa_bàn tỉnh đã xảy_ra 2 vụ trượt lở nghiêm_trọng làm chết 26 người , thiệt_hại về của lên tới hàng chục tỉ đồng .
+thiết_nghĩ , với vị_trí hết_sức quan_trọng về kinh_tế - xã_hội cũng_như an_ninh quốc_phòng , tỉnh lào cai rất cần có_các công_trình nghiên_cứu_cơ_bản nhằm giảm_thiểu thiệt_hại do tai_biến_thiên_nhiên gây ra cũng_như trong khai_thác sử_dụng tài_nguyên và bảo_vệ môi_trường
+2 . quan_điểm nghiên_cứu và quy_trình thực_hiện
+một trong những vấn_đề quan_trọng của việc nghiên_cứu tai_biến trượt lở là xác_định được tính nhạy_cảm của sườn mái dốc với quá_trình trượt lở .
+tính nhạy_cảm này phụ_thuộc vào các_nhân_tố ảnh_hưởng có tác_dụng chống_lại thành_phần gây trượt của trọng_lực .
+cơ_sở của việc đánh_giá mức_độ_nhạy_cảm với trượt lở đất chính là việc đánh_giá đơn_lẻ các_nhân_tố ảnh_hưởng rồi đến đánh_giá tổng_hợp các_nhân_tố ảnh_hưởng tới quá_trình trượt lở .
+mục_đích của bài báo này nhằm làm sáng_tỏ vai_trò của gis và mce trong việc xác_định những vùng có nguy_cơ trượt lở cao .
+trong đó_các_nhân_tố ảnh_hưởng như địa_chất , địa_mạo , khí_hậu , lớp phủ thực_vật , ... được đánh_giá dựa trên tầm quan_trọng của chúng đối_với quá_trình trượt lở .
+để đạt được mục_đích nghiên_cứu cần thực_hiện các bước sau :
+a . xác_định các_nhân_tố ảnh_hưởng như : độ_dốc , lượng_mưa , loại đất đá , mật_độ chia_cắt ( các yếu_tố dạng tuyến ) và độ che_phủ của thực_vật .
+đây là những nhân_tố hết_sức quan_trọng trong việc đánh_giá tính nhạy với trượt lở của sườn mái dốc .
+b . phân_cấp các mức_độ ảnh_hưởng với quá_trình trượt lở đối_với mỗi nhân_tố ảnh_hưởng .
+tuỳ vào mức_độ chi_tiết của tài_liệu mà ta phân thành nhiều cấp ảnh_hưởng khác_nhau .
+c . phân_hạng mức_độ tác_động ( tầm quan_trọng ) của các_nhân_tố ảnh_hưởng tới quá_trình trượt lở dựa trên các kiến_thức chuyên_gia và sử_dụng mce để định_lượng hoá ( xác_định trọng số ) mức_độ ảnh_hưởng của các_nhân_tố .
+d . xây_dựng bản_đồ nhạy_cảm với trượt lở đất tỉnh lào cai bằng cách sử_dụng_công_cụ tính_toán trong môi_trường gis được phân_cấp thành : “ rất nhạy_cảm ” , “ nhạy_cảm ” , “ nhạy_cảm trung_bình ” , “ kém nhạy_cảm và ổn_định ” .
+3 . kết_quả nghiên_cứu
+môi_trường gis cho_phép_tính_toán , phân_tích và tổng_hợp các dữ_liệu không_gian .
+mce ứng_dụng việc phân_hạng ( ranking ) và gán trọng số nhằm mục_đích đánh_giá tổng_hợp tính nhạy_cảm cho từng đơn_vị không_gian cụ_thể .
+dựa trên cơ_sở này , mô_hình “ nhạy_cảm ” ( asusceptibility model ) được thiết_lập để đánh_giá cho các không_gian .
+bản_đồ tổng_hợp xác_định_tính nhạy_cảm với tai_biến trượt lở được xây_dựng trên các_nhân_tố sau :
+- loại đất đá ( bản_đồ thạch_học )
+- mức_độ phong_hoá của đất đá ( bản_đồ vỏ phong_hoá )
+- mật_độ đứt_gãy ( bản_đồ đứt_gãy )
+- mức_độ phân_cắt địa_hình ( bản_đồ mật_độ phân_cắt sâu , bản_đồ mật_độ các yếu_tố dạng tuyến )
+- độ_dốc ( bản_đồ độ_dốc )
+- khả_năng chứa nước_ngầm ( bản_đồ địa_chất thuỷ_văn )
+- lượng_mưa ( bản_đồ cường_độ mưa và lượng_mưa trung_bình năm )
+- mức_độ che_phủ thực_vật ( bản_đồ độ che_phủ thực_vật )
+khi các tiêu_chuẩn trên được thu từ dữ_liệu gốc , các thuộc_tính ảnh_hưởng đến quá_trình tai_biến cần được đưa về dạng chỉ_số để chúng có_thể so_sánh với_nhau .
+các tiêu_chuẩn trên được biểu_diễn dưới dạng các bản_đồ .
+trên cơ_sở các thuộc_tính của mỗi tiêu_chuẩn , bằng công_cụ của gis , các bản_đồ này được phân_loại ( classification ) và phân_cấp ( ranking ) tuỳ_theo mức_độ ảnh_hưởng của mỗi nhân_tố .
+trong_khi phân_cấp , phương_pháp cho_điểm trong mce được áp_dụng .
+các cấp của một bản_đồ được phân_cấp bằng số_từ 10 đến 5 để xác_định cấp định_lượng từ mức_độ tác_động “ ảnh_hưởng rất mạnh ” đến “ không ảnh_hưởng ” được_thể_hiện bằng thang sau :
+giá_trị “ - 10 ” thể_hiện : nếu có bất kỳ một vùng nào_đó được xét là không ảnh_hưởng thì vùng này không được đưa_vào phân_cấp nhạy_cảm với trượt lở ( ví_dụ như với nhân_tố lớp phủ thực_vật thì các diện_tích mặt_nước không được đưa_vào tính_toán ) .
+sau_đây là một ví_dụ của phương_pháp này đối_với “ thành_phần thạch_học ” được dựa trên thành_phần cấp hạt , mức_độ phân_lớp hay dạng khối , mức_độ dập vỡ và khả_năng phong_hoá .
+thông_thường , các đá có sự xen_kẽ các lớp đá cứng với đá mềm ( đá_phiến sét ( pz-pr ) , phiến biotit , sét than hệ tầng ngòi chi , cam_đường ) , dẫn đến hiện_tượng xâm_thực , phong_hoá chọn_lọc .
+đặc_biệt , đất đá bị cà nát mạnh nên trong vỏ phong_hoá có nhiều mảnh_vỡ cả trong đới litoma lẫn trong đới saprolit .
+tính không_đồng_nhất cao_độ_này của lớp vỏ phong_hoá tạo điều_kiện để nước_ngầm vận_động trên mặt phân_cách giữa mảnh đá với đất mịn , tạo thuận_lợi cho quá_trình trượt lở đất .
+vì_vậy , trong khu_vực nghiên_cứu các đá này được phân_cấp_cao hơn so_với các trầm_tích n , q và các đá xâm_nhập có thành_phần bazơ .
+các tiêu_chuẩn khác cũng được đánh_giá tương_tự như_vậy .
+việc cho_điểm_số này dựa trên kinh_nghiệm và kiến_thức của các chuyên_gia nên không tránh khỏi ý_kiến chủ_quan .
+sự phân_bố không_gian của nhân_tố thành_phần vật_chất được_thể_hiện ở hình 2 .
+trong đó : ttb là tổng_giá_trị của các_nhân_tố ảnh_hưởng , ti là các điểm đánh_giá theo nhân_tố ảnh_hưởng được phân_bố trên các bản_đồ thành_phần , wi là trọng số của các bản_đồ thành_phần .
+trọng số cho mỗi nhân_tố ảnh_hưởng được xác_định bằng sử_dụng phép so_sánh cặp trong đánh_giá đa tiêu_chuẩn ( mce ) .
+các bản_đồ thành_phần được đánh_giá dựa trên mức_độ quan_trọng của nó đối_với việc hình_thành bản_đồ tổng_hợp .
+cơ_sở của việc xác_định_mức_độ quan_trọng của các_nhân_tố dựa trên mức_độ phân_dị ảnh_hưởng của chúng_tới quá_trình .
+hay nói_cách_khác , nhân_tố nào có mức_độ phân_dị cao thì được coi là quan_trọng hơn nhân_tố có độ phân_dị thấp .
+trong bài báo này , nhân_tố “ độ_dốc ” được đánh_giá quan_trọng hơn vì nó rất phân_dị về mặt không_gian còn nhân_tố “ mật_độ lineament ” thì được đánh_giá là kém quan_trọng hơn bởi nó ít phân_dị cho_dù giá_trị mật_độ là cao .
+phép so_sánh cặp cho_phép so_sánh từng nhân_tố với_nhau , cuối_cùng_nhân_tố nào được đánh_giá là quan_trọng nhất , tác_động mạnh nhất tới quá_trình trượt lở sẽ được đánh_giá là “ tuyệt_đối quan_trọng ” .
+nhân_tố nào được đánh_giá là ít tác_động đến quá_trình trượt lở thì được đánh_giá là “ ít quan_trọng ” .
+các_nhân_tố này được phân_hạng và chuyển ra dạng số như_sau nhằm thuận_lợi cho việc tính_toán .
+so_với các kết_quả nghiên_cứu thực_tế , bản_đồ nhạy_cảm với trượt lở tỉnh lào cai rất phù_hợp với bình_đồ địa động_lực chung của khu_vực .
+hai điểm chìa_khoá mà chúng_tôi đã tiến_hành nghiên_cứu thực_địa đó là các khối trượt thuộc khu_vực cầu mống sến và khối trượt cạnh ubnd xã phìn ngan , huyện bát xát nằm trong khu_vực rất nhạy_cảm trên bản_đồ kết_quả , các khu_vực này đều có độ_dốc cao và nằm trên ranh_giới tiếp_xúc của các loại đất đá khác_nhau , đó cũng là những tiêu_chí mà chúng_tôi đánh_giá quan_trọng và có mức_độ ảnh_hưởng cao .
+4 . kết_luận
+kết_quả thu được nhờ áp_dụng gis và mce không chỉ thể_hiện ở những bản phân_bố không_gian mà_còn ở dạng các bảng thuộc_tính .
+phương_pháp đánh_giá trọng số bằng mce có_thể áp_dụng trong nhiều chuyên_ngành của khoa_học địa_lí bằng việc thay_đổi các kịch_bản cũng_như các tiêu_chuẩn đánh_giá khác .
+dựa vào gis và mce , kết_quả đánh_giá mức_độ_nhạy_cảm với trượt lở đất khu_vực tỉnh lào cai được_thể_hiện như_sau : khu_vực có quá_trình đổ lở xảy_ra mạnh nhất thuộc dãy_núi hoàng_liên sơn và khối núi pò sen phát_triển trên đá granit .
+khu_vực có trượt lở đất mạnh nhất phát_triển dọc theo thung_lũng sông hồng với địa_hình gò đồi phát_triển trên đá_phiến sét và sét than .
+quá_trình lở đất phát_triển mạnh ở các khu_vực tiếp_xúc giữa đá granit và đá_phiến , giữa đá_vôi và đá sét vôi .
+
+
+

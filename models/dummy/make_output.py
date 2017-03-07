@@ -10,6 +10,7 @@ output = PlainTextCorpus()
 model = DummyModel()
 for document in corpus.documents:
     sentences = document.sentences
+    sentences = [sentence.lower() for sentence in sentences]
     output = [model.predict(s) for s in sentences]
     document.sentences = output
 corpus.save(output_dummy_folder)
