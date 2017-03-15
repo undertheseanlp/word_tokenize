@@ -4,6 +4,7 @@ class DummyModel:
         pass
 
     def predict(self, sentence):
+
         dictionary = open("simple_dict.txt", "r").read().splitlines()
         tokenized_words = [word.replace(" ", "_") for word in dictionary]
         s = sentence

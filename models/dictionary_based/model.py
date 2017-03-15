@@ -1,4 +1,7 @@
 import re
+from os.path import dirname, join
+from os import listdir
+from underthesea.corpus import viet_dict_11K
 
 
 class DictionaryModel:
@@ -6,8 +9,9 @@ class DictionaryModel:
         pass
 
     def predict(self, sentence):
-        dictionary = open("vn_words\\Viet74K.txt", "r").read().splitlines()
-        dictionary = [word for word in dictionary if re.search(" $", word) is None]
+        words = viet_dict_11K.words
+        dictionary = [word for word in words if re.search(" $", word) is None]
+
         tokenized_words = [word.replace(" ", "_") for word in dictionary]
         s = sentence
         for word, tokenized_word in zip(dictionary, tokenized_words):
