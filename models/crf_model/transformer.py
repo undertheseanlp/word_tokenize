@@ -1,3 +1,7 @@
+from os.path import dirname
+from underthesea.corpus import PlainTextCorpus, join
+
+
 def word2features(sent, i):
     word = sent[i][0]
     features = [
@@ -44,6 +48,45 @@ class Transformer:
     @staticmethod
     def extract_features(sentence):
         return sent2features(sentence)
+
+    def format_word(self,sentence):
+        words = []
+        for word in sentence.split(" "):
+            if "_" in word:
+                tokens = []
+                word = word.replace("_", " ")
+                for token in word.split(" "):
+                    tokens.append(token)
+
+                for i in range(tokens.__len__()):
+                    if i != 0:
+                        tokens[i] += "\tI_W"
+                    else:
+                        tokens[i] += "\tB_W"
+                    words.append(tokens[i])
+            elif word == "." or word == ",":
+                words.append(word + "\t O")
+            else:
+                words.append(word + "\t B_W")
+        return words
+
+    def list_to_tuple(self, sentences):
+        word_tuple = []
+        for i in sentences:
+            arr = i.split('\t')
+            word_tuple.append((arr[0], arr[1]))
+        return word_tuple
+
+    def load_train_sents(self):
+        corpus = PlainTextCorpus()
+        file_path = join(dirname(dirname(dirname(__file__))), "data", "corpus", "train", "output")
+        corpus.load(file_path)
+        sentences = []
+        for document in corpus.documents:
+            for sentence in document.sentences:
+                if sentence != "":
+                    sentences.append(sentence)
+        return sentences
 
 
 def sent2labels(sent):

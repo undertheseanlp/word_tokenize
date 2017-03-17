@@ -36,11 +36,14 @@ if __name__ == '__main__':
     for e, a in zip(expected_corpus.documents, actual_corpus.documents):
         for i, j in zip(e.sentences, a.sentences[:-1]):
             if i != j:
-                f.write(i.encode('utf-8') + "\n" + j.encode('utf-8') + "\n \n")
+                f.write(i.encode('utf-8') + "\n" +
+                        j.encode('utf-8') + "\n \n")
                 total_fail = compare_sentence_1(i, j)
                 for k in total_fail:
-                    f.write(k[0].encode('utf-8') + " :" + k[1].encode('utf-8') + "->" +
-                            k[2].encode('utf-8') + "\n")
+                    f.write(
+                        k[0].encode('utf-8') + " :" +
+                        k[1].encode('utf-8') + "->" +
+                        k[2].encode('utf-8') + "\n")
                 f.write("\n")
             predict_column.append(to_column(i))
             actual_column.append(to_column(j))
