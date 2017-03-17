@@ -29,3 +29,5 @@ class CRFModel:
         tokenized_sentence = format_sentcence[:-1]
 
         return tokenized_sentence
+
+

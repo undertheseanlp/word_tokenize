@@ -1,8 +1,15 @@
+# -*- coding: utf-8 -*-
 from underthesea.corpus import PlainTextCorpus
 from os.path import join, dirname
+
+from labs.computeF1.to_column import write_out_of_word
 from model import CRFModel
 from transformer import Transformer
 import time
+from underthesea.corpus import PlainTextCorpus
+from os.path import dirname, join
+from string import ascii_lowercase
+from string import ascii_uppercase
 
 start = time.time()
 input_folder = join(dirname(dirname(dirname(__file__))), "data", "corpus", "train", "input")
@@ -26,8 +33,8 @@ count = 0
 for document in corpus.documents:
     sentences = document.sentences
     count += sentences.__len__()
+path = join(dirname(dirname(dirname(__file__))), 'data', 'raw', 'train', 'output')
+file_name = join(dirname(dirname(dirname(__file__))), "pipelines", "logs", "punctuation.txt")
+
+write_out_of_word(path, file_name)
 corpus.save(output_crf_folder)
-stop = time.time()
-time = stop - start
-time_per_doc = time / count
-print "speed time per doc " + str(time_per_doc)

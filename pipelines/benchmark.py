@@ -2,7 +2,7 @@
 from underthesea.corpus import PlainTextCorpus
 from os.path import dirname, join
 from labs.compare_sentence.script import compare_sentence
-from labs.computeF1.write_log import tagger
+from labs.computeF1.to_column import to_column
 
 model_name = "output_crf"
 output_folder = join(dirname(dirname(__file__)), "data", "corpus", "train", "output")
@@ -47,7 +47,6 @@ log = []
 fail_BW = 0
 fail_IW = 0
 for e, a in zip(expected_corpus.documents, actual_corpus.documents):
-
     for i, j in zip(e.sentences, a.sentences[:-1]):
         if i != j:
             print i + "\n" + j + "\n" + "\n"
@@ -55,34 +54,35 @@ for e, a in zip(expected_corpus.documents, actual_corpus.documents):
             f1.write(i.encode('utf-8') + "\n" + j.encode("utf-8") + "\n" + "\n")
         result = compare_sentence(i, j)
         score_per_sentence += result["score"] * float(get_len(i))
-        total_tokens += get_len(j)
+        # total_tokens += get_len(j)
         if result['fail']:
             store_result_fail.append(result["fail"])
         for fail in result["fail"]:
             print fail[0]
             print fail[1]
             f.write(fail[0].encode("utf-8") + "\n" + fail[1].encode("utf-8") + "\n" + "\n")
-            actual_token = tagger(fail[0])
-            predict_token = tagger(fail[1])
-            predict.append(predict_token)
-            actual.append(actual_token)
-            for i, j in zip(actual_token, predict_token):
-                if i != j:
-                    f1.write(i[0].encode('utf-8') + " " + i[1].encode('utf-8') + "->" + j[1].encode('utf-8') + "\n\n")
-                    log.append((i[0], i[1], j[1]))
+            # actual_token = tagger(fail[0])
+            # predict_token = tagger(fail[1])
+            # predict.append(predict_token)
+            # actual.append(actual_token)
+            # for x, y in zip(actual_token, predict_token):
+            #     if x != y:
+            #         f1.write(x[0].encode('utf-8') + " " + x[1].encode('utf-8') + "->" + y[1].encode('utf-8') + "\n\n")
+            #         log.append((x[0], x[1], y[1]))
             print ""
 
-for x in log:
-    if x[1] == "BW":
-        fail_BW += 1
-    else:
-        fail_IW += 1
+actual_column = []
+predict_column = []
+for e, a in zip(expected_corpus.documents, actual_corpus.documents):
+    for i, j in zip(e.sentences, a.sentences[:-1]):
+        predict_column.append(to_column(i))
+        actual_column.append(to_column(j))
+
 precision = float(score_per_sentence) / float(total_tokens + fail_BW)
 recall = float(score_per_sentence) / float(total_tokens + fail_IW)
 F = 2 * precision * recall / (precision + recall)
-print ("recall :%0.2f" % recall)
-print ("precision :%0.2f" % precision)
 score = score_per_sentence * 100.0 / total_tokens
+print ("recall :%0.2f percent" % (recall * 100))
 print("Accuracy: %.2f percent" % score)
-print("F1 = %0.2f percent " % F)
+print("F1 = %0.2f percent" % (F * 100))
 f.write("accuracy: " + str(score))

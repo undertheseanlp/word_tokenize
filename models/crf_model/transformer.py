@@ -4,10 +4,6 @@ def word2features(sent, i):
         word,
         'bias',
         'word.lower=' + word.lower(),
-        # 'word[-3:]=' + word[-3:],
-
-        # 'word[-2:]=' + word[-2:],
-
         'word.isupper=%s' % word.isupper(),
         'word.istitle=%s' % word.istitle(),
         'word.isdigit=%s' % word.isdigit(),
@@ -44,8 +40,11 @@ class Transformer:
     def transform(sentence):
         sentence = [(token,) for token in sentence.split()]
         return sent2features(sentence)
+
     @staticmethod
     def extract_features(sentence):
         return sent2features(sentence)
+
+
 def sent2labels(sent):
     return [label for token, label in sent]

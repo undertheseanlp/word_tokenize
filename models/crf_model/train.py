@@ -52,9 +52,6 @@ train_sents = load_train_sents()
 matrix = []
 for sentence in train_sents:
     matrix.append(list_to_tuple(format_word(sentence)))
-# new_matrix = []
-# for j in matrix:
-#     new_matrix.append(list_to_tuple(j))
 
 train_sents = matrix
 
