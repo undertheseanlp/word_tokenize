@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
-from os.path import dirname
-from os.path import join
-
 import pycrfsuite
 
-from underthesea.corpus import PlainTextCorpus
 from transformer import sent2labels
 from transformer import Transformer
 

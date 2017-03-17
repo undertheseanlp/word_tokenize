@@ -1,5 +1,7 @@
 from os.path import dirname
-from underthesea.corpus import PlainTextCorpus, join
+from os.path import join
+
+from underthesea.corpus import PlainTextCorpus
 
 
 def word2features(sent, i):
@@ -49,7 +51,7 @@ class Transformer:
     def extract_features(sentence):
         return sent2features(sentence)
 
-    def format_word(self,sentence):
+    def format_word(self, sentence):
         words = []
         for word in sentence.split(" "):
             if "_" in word:
