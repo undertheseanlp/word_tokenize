@@ -61,14 +61,6 @@ for e, a in zip(expected_corpus.documents, actual_corpus.documents):
             print fail[0]
             print fail[1]
             f.write(fail[0].encode("utf-8") + "\n" + fail[1].encode("utf-8") + "\n" + "\n")
-            # actual_token = tagger(fail[0])
-            # predict_token = tagger(fail[1])
-            # predict.append(predict_token)
-            # actual.append(actual_token)
-            # for x, y in zip(actual_token, predict_token):
-            #     if x != y:
-            #         f1.write(x[0].encode('utf-8') + " " + x[1].encode('utf-8') + "->" + y[1].encode('utf-8') + "\n\n")
-            #         log.append((x[0], x[1], y[1]))
             print ""
 
 actual_column = []

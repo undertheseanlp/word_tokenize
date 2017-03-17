@@ -49,9 +49,11 @@ if __name__ == '__main__':
                 predict_label.append(i[1])
                 actual_label.append(j[1])
 
-    print "F1 = %0.2f percent" % (f1_score(actual_label, predict_label, list(set(actual_label)), 1, 'weighted', None) * 100)
+    print "F1 = %0.2f percent" % (
+        f1_score(actual_label, predict_label, list(set(actual_label)), 1, 'weighted', None) * 100)
     print "Precision = %0.2f percent" % (
         precision_score(actual_label, predict_label, list(set(actual_label)), 1, 'weighted', None) * 100)
     print "Recall = %0.2f percent" % (
         recall_score(actual_label, predict_label, list(set(actual_label)), 1, 'weighted', None) * 100)
-    print "Accuracy = %0.2f percent" % (accuracy_score(actual_label, predict_label) * 100)
+    print "Accuracy = %0.2f percent" % (
+        accuracy_score(actual_label, predict_label) * 100)
