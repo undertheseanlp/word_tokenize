@@ -1,0 +1,19 @@
+[Stat] Train Data Set
+Total documents: 40
+Min token in sentence 32
+Max token in sentence 703
+Total sentences: 6710
+Total token: 173254
+New word :4328 
+Word in dictionary: 1817
+Word coverage: 0.38
+
+[Stat] Test Data Set
+Total documents: 9
+Min token in sentence 24
+Max token in sentence 197
+Total sentences: 629
+Total token: 14948
+New word :1006 
+Word in dictionary: 573
+Word coverage: 0.09

@@ -42,6 +42,9 @@ def sent2features(sent):
 
 
 class Transformer:
+    def __init__(self):
+        pass
+
     @staticmethod
     def transform(sentence):
         sentence = [(token,) for token in sentence.split()]
@@ -52,13 +55,18 @@ class Transformer:
         return sent2features(sentence)
 
     def format_word(self, sentence):
+        path = join(dirname(dirname(dirname(__file__))), "pipelines", "logs", "punctuation.txt")
+        punctuations = open(path, "r").read().split("\n")
+        for punctuation in punctuations:
+            punctuation = unicode(punctuations)
         words = []
         for word in sentence.split(" "):
             if "_" in word:
                 tokens = []
                 word = word.replace("_", " ")
                 for token in word.split(" "):
-                    tokens.append(token)
+                    if token != "":
+                        tokens.append(token)
 
                 for i in range(tokens.__len__()):
                     if i != 0:
@@ -66,10 +74,10 @@ class Transformer:
                     else:
                         tokens[i] += "\tB_W"
                     words.append(tokens[i])
-            elif word == "." or word == ",":
-                words.append(word + "\t O")
+            elif word in punctuations:
+                words.append(word + "\tO")
             else:
-                words.append(word + "\t B_W")
+                words.append(word + "\tB_W")
         return words
 
     def list_to_tuple(self, sentences):
