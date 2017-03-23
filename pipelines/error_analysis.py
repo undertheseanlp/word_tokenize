@@ -22,10 +22,12 @@ for i in input_corpus.documents:
     for i_sentences in i.sentences:
         for i_word in i_sentences.split(' '):
             input_words.append(i_word)
-for word in input_words:
-    if word not in actual_words:
-        f.write(word.encode('utf-8') + "\n")
 for word in actual_words:
-    if word not in actual_words:
-        f1.write(word.encode('utf-8') + "\n")
+    if word not in input_words:
+        f1.write(word.encode('utf-8') + '\n')
+    if '_' in word:
+        for x in word.split('_'):
+            f.write(x.encode('utf-8') + '\n')
+    else:
+        f1.write(word.encode('utf-8') + '\n')
 print 0
