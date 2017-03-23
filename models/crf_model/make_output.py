@@ -3,7 +3,6 @@ from os.path import dirname
 from os.path import join
 import time
 
-from labs.computeF1.to_column import write_out_of_word
 from model import CRFModel
 from underthesea.corpus import PlainTextCorpus
 

@@ -2,7 +2,6 @@ from os.path import join, dirname
 
 from underthesea.corpus import PlainTextCorpus
 
-from labs.copare_sentence_1.script import compare_sentence_1
 
 f1 = open(join(dirname(__file__), "logs", "crf", "fail_BW.txt"), "w")
 f2 = open(join(dirname(__file__), "logs", "crf", "fail_IW.txt"), "w")
@@ -17,6 +16,45 @@ actual_corpus.load(model_output_folder)
 f1 = open(join(dirname(__file__), "logs", "crf", "fail_BW.txt"), "w")
 f2 = open(join(dirname(__file__), "logs", "crf", "fail_IW.txt"), "w")
 f3 = open(join(dirname(__file__), "logs", "crf", "fail_O.txt"), "w")
+
+
+def to_column(sentence):
+    words = []
+    result = []
+    path = join(dirname(dirname(dirname(__file__))), "pipelines", "logs", "punctuation.txt")
+    punctuations = open(path, "r").read().split("\n")
+    for punctuation in punctuations:
+        punctuation = unicode(punctuations)
+    for word in sentence.split(" "):
+        words.append(word)
+    if words[0] == "":
+        words.pop(0)
+    for word in words:
+        tokens = []
+        if word in punctuations:
+            result.append((word, "O"))
+        else:
+            for token in word.split("_"):
+                tokens.append(token)
+            for i in range(len(tokens)):
+                if i == 0:
+                    if tokens[i] != "":
+                        result.append((tokens[i], "BW"))
+                else:
+                    result.append((tokens[i], "IW"))
+    return result
+
+def compare_sentence_1(sentence_1, sentence_2):
+    result = []
+    sentence_1 = to_column(sentence_1)
+    sentence_2 = to_column(sentence_2)
+    # fail = [x for x in sentence_2 if x not in sentence_1]
+    for x in range(len(sentence_2)):
+        if sentence_2[x] != sentence_1[x]:
+            result.append((sentence_2[x][0], sentence_2[x][1], sentence_1[x][0], sentence_1[x][1]))
+
+    return result
+
 
 for e, a in zip(expected_corpus.documents, actual_corpus.documents):
     for i, j in zip(e.sentences, a.sentences[:-1]):

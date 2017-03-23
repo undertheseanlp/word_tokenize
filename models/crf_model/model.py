@@ -1,6 +1,5 @@
 import re
 from os.path import dirname, join
-from os import listdir
 
 import pycrfsuite
 
