@@ -11,10 +11,36 @@ from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from underthesea.corpus import PlainTextCorpus
 
-from labs.computeF1.to_column import to_column
 from models.crf_model.confusion_matrix import Confution_Matrix
 from pipelines.compare_dictionary import compare_dictionary
 from underthesea.corpus import viet_dict_11K
+
+
+def to_column(sentence):
+    words = []
+    result = []
+    path = join(dirname(__file__),"logs","punctuation.txt")
+    punctuations = open(path, "r").read().split("\n")
+    for punctuation in punctuations:
+        punctuation = unicode(punctuations)
+    for word in sentence.split(" "):
+        words.append(word)
+    if words[0] == "":
+        words.pop(0)
+    for word in words:
+        tokens = []
+        if word in punctuations:
+            result.append((word, "O"))
+        else:
+            for token in word.split("_"):
+                tokens.append(token)
+            for i in range(len(tokens)):
+                if i == 0:
+                    if tokens[i] != "":
+                        result.append((tokens[i], "BW"))
+                else:
+                    result.append((tokens[i], "IW"))
+    return result
 
 
 def count_token(documents):
