@@ -1,19 +1,18 @@
 # -*- coding: utf-8 -*-
+import time
 from os.path import dirname
 from os.path import join
 
 import matplotlib.pyplot as plt
-import time
-
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import f1_score
 from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from underthesea.corpus import PlainTextCorpus
+from underthesea.corpus import viet_dict_11K
 
 from models.crf_model.confusion_matrix import Confution_Matrix
-from pipelines.compare_dictionary import compare_dictionary
-from underthesea.corpus import viet_dict_11K
+from pipelines.benchmark.compare_dictionary import compare_dictionary
 
 
 def to_column(sentence):

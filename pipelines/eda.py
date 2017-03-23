@@ -1,9 +1,10 @@
-from underthesea.corpus import PlainTextCorpus
 from os.path import dirname, join
-import pandas as pd
 
-from pipelines.compare_dictionary import compare_dictionary
+import pandas as pd
+from underthesea.corpus import PlainTextCorpus
 from underthesea.corpus import viet_dict_11K
+
+from pipelines.benchmark.compare_dictionary import compare_dictionary
 
 
 def count_token(documents):
@@ -30,7 +31,7 @@ f.write("Max token in sentence %d\n" % s.describe()['max'])
 f.write("Total sentences: %d\n" % sum(s))
 f.write("Total token: %d\n" % count_token(train_corpus.documents))
 f.write("New word :%d \n" % len(new_word))
-f.write("Word in dictionary: %d\n" % len(word_in_dictionary))
+f.write("Word in dictionary:git  %d\n" % len(word_in_dictionary))
 coverage = float(len(new_word)) / float(len(viet_dict_11K.words))
 f.write("Word coverage: %0.2f\n" % coverage)
 f.write("\n")
