@@ -7,7 +7,6 @@ import time
 
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import f1_score
-from sklearn.metrics import accuracy_score
 from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from underthesea.corpus import PlainTextCorpus
@@ -28,6 +27,12 @@ def count_token(documents):
 
 
 if __name__ == '__main__':
+    OPTIONS = {
+        "F1_Score": True,
+        "Confusion matrix": True,
+        "Error Analysis": True,
+        "Time Speed": True
+    }
     time_start = time.time()
     model_name = "output_crf"
     output_folder = join(dirname(dirname(__file__)), "data", "corpus", "test", "output")
@@ -40,7 +45,6 @@ if __name__ == '__main__':
     predict_column = []
     actual_label = []
     predict_label = []
-    f = open(join(dirname(__file__), 'logs', 'crf', 'result.txt'), 'r', 'w')
     for e, a in zip(expected_corpus.documents, actual_corpus.documents):
         for i, j in zip(e.sentences, a.sentences[:-1]):
             predict_column.append(to_column(i))
@@ -49,46 +53,55 @@ if __name__ == '__main__':
         for i, j in zip(x, y):
             predict_label.append(i[1])
             actual_label.append(j[1])
-    print "1.   update F1 score"
-    print "2.   update confusion matrix"
-    print "3.   update Word Analysis"
-    print "4.   Update time speed"
-    choose = int(raw_input("what do u want :"))
-    if choose == 1:
-        f.read().split('\n')
-        print "Accuracy = %0.2f percent" % (
-            accuracy_score(actual_label, predict_label) * 100)
-    # print "confusion matrix: \n"
-    if choose == 2:
+    if OPTIONS["F1_Score"]:
+        f = open(join(dirname(__file__), 'logs', 'crf', 'result.txt'), 'r+')
+        f1 = f1_score(actual_label, predict_label, list(set(actual_label)), 1, 'weighted', None) * 100
+        precision = precision_score(actual_label, predict_label, list(set(actual_label)), 1, 'weighted', None) * 100
+        recall = recall_score(actual_label, predict_label, list(set(actual_label)), 1, 'weighted', None) * 100
+        x = f.read().split('\n')
+        x[0] = "F1 = %0.2f percent" % f1
+        x[1] = "Precision = %0.2f percent" % precision
+        x[2] = "Recall = %0.2f percent" % recall
+        x = x[:-1]
+        f.close()
+    if OPTIONS["Confusion matrix"]:
+        f = open(join(dirname(__file__), 'logs', 'crf', 'result.txt'), 'r+')
         confusion_matrix = confusion_matrix(actual_label, predict_label, labels=["BW", "IW", "O"])
-        f.write("Confusion matrix : \n")
-        f.write("\tBW\t\tIW\t\tO\n")
-        f.write(
-            "BW\t" + str(confusion_matrix[0][0]) + "\t" + str(confusion_matrix[0][1]) + "\t\t" + str(
-                confusion_matrix[0][2]) + "\n")
-        f.write(
-            "IW\t" + str(confusion_matrix[1][0]) + "\t" + str(confusion_matrix[1][1]) + "\t" + str(
-                confusion_matrix[1][2]) + "\n")
-        f.write("O\t" + str(confusion_matrix[2][0]) + "\t\t" + str(confusion_matrix[2][1]) + "\t\t" + str(
-            confusion_matrix[2][2]) + "\n")
-
+        x = f.read().split('\n')
+        x[6] = "BW\t" + str(confusion_matrix[0][0]) + "\t" + str(confusion_matrix[0][1]) + "\t\t" + str(
+            confusion_matrix[0][2])
+        x[7] = "IW\t" + str(confusion_matrix[1][0]) + "\t" + str(confusion_matrix[1][1]) + "\t" + str(
+            confusion_matrix[1][2])
+        x[8] = "O\t" + str(confusion_matrix[2][0]) + "\t\t" + str(confusion_matrix[2][1]) + "\t\t" + str(
+            confusion_matrix[2][2])
         plt.figure()
         class_name = ["BW", "IW", "O"]
         Confution_Matrix.plot_confusion_matrix(confusion_matrix, classes=class_name,
                                                title='Confusion matrix')
         plt.savefig('confusion matrix.png')
         plt.show()
-        f.write("\n\n")
-    if choose == 3:
+        x = x[:-1]
+        f.close()
+    if OPTIONS["Error Analysis"]:
+        f = open(join(dirname(__file__), 'logs', 'crf', 'result.txt'), 'r+')
         (new_word, word_in_dictionary) = compare_dictionary(model_output_folder)
-        f.write("Word Analysis: \n")
-        f.write("- Word in dictionary : %d\n" % len(word_in_dictionary))
-        f.write("- New Word : %d\n" % len(new_word))
+        x = f.read().split('\n')
+        x[12] = "- Word in dictionary: %d" % len(word_in_dictionary)
+        x[13] = "- New Word : %d" % len(new_word)
         coverage = float(len(new_word)) / float(len(viet_dict_11K.words))
-        f.write("- Word Coverage : %0.2f\n" % coverage)
-        f.write("\n\n")
-    if choose == 4:
+        x[14] = "- Word Coverage : %0.2f" % coverage
+        x = x[:-1]
+        f.close()
+    if OPTIONS["Time Speed"]:
+        f = open(join(dirname(__file__), 'logs', 'crf', 'result.txt'), 'r+')
+        x = f.read().split("\n")
         time_stop = time.time()
         time_per_token = (time_stop - time_start) / float(count_token(actual_corpus.documents))
-        f.write("Time speed: %0.6f second per token\n" % time_per_token)
-    print 0
+        time_per_token = 1.00 / time_per_token
+        x[17] = "Time speed: %0.6f token per second" % time_per_token
+        x = x[:-1]
+        f.close()
+    f = open(join(dirname(__file__), 'logs', 'crf', 'result.txt'), 'w')
+    for i in x:
+        f.write(i + "\n")
+    f.close()
