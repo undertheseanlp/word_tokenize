@@ -20,7 +20,7 @@ from underthesea.corpus import viet_dict_11K
 def to_column(sentence):
     words = []
     result = []
-    path = join(dirname(dirname(dirname(__file__))), "logs", "punctuation.txt")
+    path = join(dirname(__file__), "logs", "punctuation.txt")
     punctuations = open(path, "r").read().split("\n")
     for punctuation in punctuations:
         punctuation = unicode(punctuations)
