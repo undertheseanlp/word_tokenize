@@ -28,7 +28,12 @@ def count_token(documents):
 
 
 if __name__ == '__main__':
-
+    OPTIONS = {
+        "F1_Score": True,
+        "Confusion matrix": False,
+        "Error Analysis": False,
+        "Time Speed": False
+    }
     time_start = time.time()
     model_name = "output_crf"
     output_folder = join(dirname(dirname(__file__)), "data", "corpus", "test", "output")
