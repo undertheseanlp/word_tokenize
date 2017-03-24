@@ -1,10 +1,6 @@
-import re
 from os.path import dirname, join
-
 import pycrfsuite
-
 from transformer import Transformer
-from underthesea.corpus import viet_dict_22K
 
 
 class CRFModel:
@@ -12,7 +8,6 @@ class CRFModel:
         self.model = pycrfsuite.Tagger()
         filepath = join(dirname(__file__), "crf-model-2")
         self.model.open(filepath)
-        self.words = viet_dict_22K.words
         filepath = join(dirname(__file__), "punctuation.txt")
         self.punctuation = open(filepath, "r").read().split("\n")
 
@@ -27,16 +22,9 @@ class CRFModel:
             else:
                 tokenized_sentence = tokenized_sentence + word
             tokenized_sentence += " "
-        # tokenized_sentence = tokenized_sentence[:-1]
-        format_sentcence = ''
+        format_sentence = ''
         for word in tokenized_sentence.split("_"):
             if word not in self.punctuation:
-                format_sentcence += word[: -1] + "_"
-        tokenized_sentence = format_sentcence[:-1]
-        # use dictionary vietdict 11k
-        dictionary = [word for word in self.words if re.search(" $", word) is None]
-        dictionary_tokenizeds = [word.replace(" ", "_") for word in dictionary]
-        for word, dictionary_tokenized in zip(dictionary, dictionary_tokenizeds):
-            if word in tokenized_sentence:
-                tokenized_sentence = tokenized_sentence.replace(word, dictionary_tokenized)
+                format_sentence += word[: -1] + "_"
+        tokenized_sentence = format_sentence[:-1]
         return tokenized_sentence

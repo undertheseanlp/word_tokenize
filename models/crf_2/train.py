@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 import pycrfsuite
 from os.path import join
-
 from os.path import dirname
-
 from transformer import sent2labels
 from transformer import Transformer
+
 
 def train():
     transformer = Transformer()
@@ -22,11 +21,12 @@ def train():
     trainer.set_params({
         'c1': 1.0,  # coefficient for L1 penalty
         'c2': 1e-3,  # coefficient for L2 penalty
-        'max_iterations': 1000,  #
+        'max_iterations': 2000,  #
         # include transitions that are possible, but not observed
         'feature.possible_transitions': True
     })
     trainer.train(join(dirname(__file__), "crf-model-2"))
+
 
 if __name__ == '__main__':
     train()
