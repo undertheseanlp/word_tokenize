@@ -1,0 +1,3 @@
+F1 = 90.40 percent
+Precision = 90.34 percent
+Recall = 90.55 percent

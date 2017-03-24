@@ -1,0 +1,24 @@
+Trong_ Nông_nghiệp , Trồng_trọt chiếm tới 73,5 % , Chăn_nuôi chiếm 27,7 % , còn Dịch_vụ chỉ chiếm có 1,8 % .
+Trong Nông_nghiệp , Trồng_trọt chiếm tới 73,5 % , Chăn_nuôi chiếm 27,7 % , còn Dịch_vụ chỉ chiếm có 1,8 % .
+ 
+,(IW) -> nghiệp(O)
+%(BW) -> 73,5(O)
+%(BW) -> 27,7(O)
+%(BW) -> 1,8(O)
+
+=====================
+
+Chỉ tính riêng Công_ti_Navico_-_An_Giang có_thể xuất_khẩu được đến 60.000 tấn cá ba_sa , thu về được tới 60 - 70 triệu USD .
+Chỉ tính riêng_Công_ti Navico - An_Giang có_thể xuất_khẩu được đến 60.000 tấn cá ba sa , thu về được tới 60 - 70 triệu USD .
+ 
+-(IW) -> -(O)
+
+=====================
+
+Trong khi đó , theo đề_án “ Phát_triển lúa_gạo bảo_đảm an_ninh lương_thực quốc_gia ” do Bộ_Nông_nghiệp_-_Phát_triển_nông_thôn dự_thảo trình Chính_phủ phê_duyệt , thì cả 2 dự_án nói trên đều nằm trên diện_tích đất sản_xuất lúa tốt nhất và không được chuyển_đổi sang bất_cứ mục_đích sử_dụng nào khác .
+Trong khi đó , theo đề_án “ Phát_triển lúa_gạo bảo_đảm an_ninh lương_thực quốc_gia ” do Bộ_Nông_nghiệp - Phát_triển nông_thôn dự_thảo_trình Chính_phủ phê_duyệt , thì cả 2 dự_án nói trên đều nằm trên diện_tích đất sản_xuất lúa tốt nhất và không được chuyển_đổi sang bất_cứ mục_đích sử_dụng nào khác .
+ 
+-(IW) -> -(O)
+
+=====================
+
