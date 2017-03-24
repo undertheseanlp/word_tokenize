@@ -2,7 +2,7 @@
 import time
 from os.path import dirname
 from os.path import join
-
+from os import mkdir
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import f1_score
@@ -12,34 +12,9 @@ from underthesea.corpus import PlainTextCorpus
 from underthesea.corpus import viet_dict_11K
 
 from models.crf_model.confusion_matrix import Confution_Matrix
-from pipelines.benchmark.compare_dictionary import compare_dictionary
-
-
-def to_column(sentence):
-    words = []
-    result = []
-    path = join(dirname(__file__), "logs", "punctuation.txt")
-    punctuations = open(path, "r").read().split("\n")
-    for punctuation in punctuations:
-        punctuation = unicode(punctuations)
-    for word in sentence.split(" "):
-        words.append(word)
-    if words[0] == "":
-        words.pop(0)
-    for word in words:
-        tokens = []
-        if word in punctuations:
-            result.append((word, "O"))
-        else:
-            for token in word.split("_"):
-                tokens.append(token)
-            for i in range(len(tokens)):
-                if i == 0:
-                    if tokens[i] != "":
-                        result.append((tokens[i], "BW"))
-                else:
-                    result.append((tokens[i], "IW"))
-    return result
+from pipelines import model_name
+from pipelines.model_evaluation.compare_dictionary import compare_dictionary
+from pipelines.model_evaluation.to_colum import to_column
 
 
 def count_token(documents):
@@ -54,14 +29,19 @@ def count_token(documents):
 if __name__ == '__main__':
     OPTIONS = {
         "F1_Score": True,
-        "Confusion matrix": True,
-        "Error Analysis": True,
-        "Time Speed": True
+        "Confusion matrix": False,
+        "Error Analysis": False,
+        "Time Speed": False
     }
     time_start = time.time()
-    model_name = "output_crf"
     output_folder = join(dirname(dirname(__file__)), "data", "corpus", "test", "output")
-    model_output_folder = join(dirname(dirname(__file__)), "data", "corpus", "test", model_name)
+    model_output_folder = join(dirname(dirname(__file__)), "data", "corpus", "test", "output_%s" % model_name)
+    report_folder = join(dirname(__file__), 'reports', model_name)
+    try:
+        mkdir(report_folder)
+    except:
+        pass
+    report_file = open(join(report_folder, 'result.txt'), 'w')
     expected_corpus = PlainTextCorpus()
     expected_corpus.load(output_folder)
     actual_corpus = PlainTextCorpus()
@@ -79,16 +59,12 @@ if __name__ == '__main__':
             predict_label.append(i[1])
             actual_label.append(j[1])
     if OPTIONS["F1_Score"]:
-        f = open(join(dirname(__file__), 'logs', 'crf', 'result.txt'), 'r+')
         f1 = f1_score(actual_label, predict_label, list(set(actual_label)), 1, 'weighted', None) * 100
         precision = precision_score(actual_label, predict_label, list(set(actual_label)), 1, 'weighted', None) * 100
         recall = recall_score(actual_label, predict_label, list(set(actual_label)), 1, 'weighted', None) * 100
-        x = f.read().split('\n')
-        x[0] = "F1 = %0.2f percent" % f1
-        x[1] = "Precision = %0.2f percent" % precision
-        x[2] = "Recall = %0.2f percent" % recall
-        x = x[:-1]
-        f.close()
+        report_file.write("F1 = %.2f percent\n" % f1)
+        report_file.write("Precision = %.2f percent\n" % precision)
+        report_file.write("Recall = %.2f percent\n" % recall)
     if OPTIONS["Confusion matrix"]:
         f = open(join(dirname(__file__), 'logs', 'crf', 'result.txt'), 'r+')
         confusion_matrix = confusion_matrix(actual_label, predict_label, labels=["BW", "IW", "O"])
@@ -101,8 +77,7 @@ if __name__ == '__main__':
             confusion_matrix[2][2])
         plt.figure()
         class_name = ["BW", "IW", "O"]
-        Confution_Matrix.plot_confusion_matrix(confusion_matrix, classes=class_name,
-                                               title='Confusion matrix')
+        Confution_Matrix.plot_confusion_matrix(confusion_matrix, classes=class_name, title='Confusion matrix')
         plt.savefig('confusion matrix.png')
         plt.show()
         x = x[:-1]
@@ -126,7 +101,3 @@ if __name__ == '__main__':
         x[17] = "Time speed: %0.6f token per second" % time_per_token
         x = x[:-1]
         f.close()
-    f = open(join(dirname(__file__), 'logs', 'crf', 'result.txt'), 'w')
-    for i in x:
-        f.write(i + "\n")
-    f.close()

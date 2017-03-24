@@ -6,8 +6,8 @@ from underthesea.corpus import viet_dict_11K
 
 
 def compare_dictionary(model_output_folder):
-    f = open(join(dirname(__file__), "logs", "crf", "new_word.txt"), "w")
-    f1 = open(join(dirname(__file__), "logs", "crf", "word_in_dictionary.txt"), "w")
+    # f = open(join(dirname(__file__), "logs", "crf", "new_word.txt"), "w")
+    # f1 = open(join(dirname(__file__), "logs", "crf", "word_in_dictionary.txt"), "w")
     corpus = PlainTextCorpus()
     corpus.load(model_output_folder)
     new_words = []
@@ -25,9 +25,9 @@ def compare_dictionary(model_output_folder):
     new_word = set(new_word)
     new_word = sorted(new_word)
     new_word_per_dict = float(len(new_word)) / float(len(dictionary)) * 100
-    f.write("Scale word not in dictionary %0.2f: \n" % new_word_per_dict)
-    for word in new_word:
-        f.write(word.encode('utf-8') + "\n")
+    # f.write("Scale word not in dictionary %0.2f: \n" % new_word_per_dict)
+    # for word in new_word:
+    #     f.write(word.encode('utf-8') + "\n")
     word_in_dictionary = [x for x in words if x in dictionary]
 
     word_in_dictionary = set(word_in_dictionary)
@@ -43,5 +43,3 @@ if __name__ == '__main__':
     model_name = "output_crf"
     model_output_folder = join(dirname(dirname(__file__)), "data", "corpus", "test", model_name)
     (new_word, word_in_dictionary) = compare_dictionary(model_output_folder)
-
-    print 0
