@@ -33,13 +33,13 @@ def compare_dictionary(model_output_folder):
     word_in_dictionary = set(word_in_dictionary)
     word_in_dictionary = sorted(word_in_dictionary)
     word_in_dictionary_per_total = float(len(word_in_dictionary)) / float(len(viet_dict_11K.words))
-    f1.write("scale word in dictionary: %0.2f \n" % word_in_dictionary_per_total)
-    for word in word_in_dictionary:
-        f1.write(word.encode('utf-8') + "\n")
+    # f1.write("scale word in dictionary: %0.2f \n" % word_in_dictionary_per_total)
+    # for word in word_in_dictionary:
+    #     f1.write(word.encode('utf-8') + "\n")
     return new_word, word_in_dictionary
 
 
 if __name__ == '__main__':
     model_name = "output_crf"
-    model_output_folder = join(dirname(dirname(__file__)), "data", "corpus", "test", model_name)
+    model_output_folder = join(dirname(dirname(__file__)), "data", "corpus_2", "test", model_name)
     (new_word, word_in_dictionary) = compare_dictionary(model_output_folder)

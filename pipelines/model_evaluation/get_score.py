@@ -10,8 +10,8 @@ from sklearn.metrics import recall_score
 
 
 def get_data():
-    output_folder = join(dirname(dirname(dirname(__file__))), "data", "corpus", "test", "output")
-    model_output_folder = join(dirname(dirname(dirname(__file__))), "data", "corpus", "test", "output_%s" % model_name)
+    output_folder = join(dirname(dirname(dirname(__file__))), "data", "corpus_2", "test", "output")
+    model_output_folder = join(dirname(dirname(dirname(__file__))), "data", "corpus_2", "test", "output_%s" % model_name)
     expected_corpus = PlainTextCorpus()
     expected_corpus.load(output_folder)
     actual_corpus = PlainTextCorpus()
