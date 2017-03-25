@@ -15,7 +15,7 @@ def count_token(documents):
 
 f = open(join(dirname(__file__), "reports", "exploratory_data_analysis.txt"), "w")
 f.write("[Statistics] Train Data Set\n")
-train_folder = join(dirname(dirname(__file__)), "data", "corpus", "train", "output")
+train_folder = join(dirname(dirname(__file__)), "data", "corpus_2", "train", "input")
 train_corpus = PlainTextCorpus()
 train_corpus.load(train_folder)
 # (new_word, word_in_dictionary) = compare_dictionary(train_folder)
@@ -34,7 +34,7 @@ f.write("Total token: %d\n" % count_token(train_corpus.documents))
 f.write("\n")
 
 f.write("[Statistics] Test Data Set\n")
-train_folder = join(dirname(dirname(__file__)), "data", "corpus", "test", "output")
+train_folder = join(dirname(dirname(__file__)), "data", "corpus_2", "test", "output")
 test_corpus = PlainTextCorpus()
 test_corpus.load(train_folder)
 # (new_word, word_in_dictionary) = compare_dictionary(train_folder)

@@ -1,2641 +1,918 @@
-Hươu sẵn_sàng tự_vệ bằng cách bỏ chạy khi nghe có tiếng_động lạ .
-Hươu sẵn_sàng tự_vệ bằng cách bỏ_chạy khi nghe có tiếng động_lạ .
+Ngày 15 tháng 01 năm 1961 , sau khi nhận chức Tổng_thống , E._Kennedy đã nhóm_họp với Hội_đồng_an_ninh_Quốc_gia Mỹ và tuyên_bố : “ ... để ngăn_chặn cộng_sản xâm_lược miền Nam , Việt_Nam , tôi tuyên_bố dùng chất diệt cỏ và các kĩ_thuật mới khác để kiểm_soát các đường_bộ và đường_thuỷ dọc biên_giới Việt_Nam ” .
+Ngày 15 tháng 01 năm 1961 , sau khi nhận chức Tổng_thống , E._Kennedy đã nhóm họp với Hội_đồng an_ninh Quốc_gia Mỹ và tuyên_bố : “ ... để ngăn_chặn cộng_sản xâm_lược miền Nam , Việt_Nam , tôi tuyên_bố dùng chất diệt cỏ và các kĩ_thuật mới khác để kiểm_soát các đường_bộ và đường_thuỷ dọc biên_giới Việt_Nam ” .
  
-động(IW) -> động(BW) 
+họp(IW) -> họp(BW) 
+an(IW) -> an(BW) 
+Quốc(IW) -> Quốc(BW) 
 
 =====================
 
-Con hươu khi nó mang nhung lại càng tránh_né mọi sự va_chạm .
-Con_hươu khi nó mang nhung lại càng tránh né mọi sự va_chạm .
+Và gần 10 năm tiếp_theo với 3 đời Tổng_thống Mỹ , quân_đội Mỹ đã rải xuống miền Nam , Việt_Nam khoảng 80 triệu lít chất_độc hoá_học , bao_gồm hơn 20 loại chất_độc khác nhau , trong đó đa_số là chất_độc_da_cam , một hỗn_hợp của 2 , 4 D và 2 , 4 , 5 T .
+Và gần 10 năm tiếp_theo với 3 đời Tổng_thống Mỹ , quân_đội Mỹ đã rải xuống miền Nam , Việt_Nam khoảng 80 triệu lít chất_độc hoá_học , bao_gồm hơn 20 loại chất_độc khác nhau , trong đó đa_số là chất_độc da_cam , một hỗn_hợp của 2 , 4 D và 2 , 4 , 5 T .
  
-né(IW) -> né(BW) 
+da(IW) -> da(BW) 
 
 =====================
 
-Khi nhung trên đầu đã bắt_đầu phân nhị , nhánh phân đã có hiện_tượng chuẩn_bị phân tam ( từ của những người nuôi hươu gọi_là yên ngựa ) là lúc cần phải thu_hoạch .
-Khi nhung trên đầu đã bắt_đầu phân_nhị , nhánh phân đã có hiện_tượng chuẩn bị phân_tam ( từ của những người nuôi hươu gọi_là yên ngựa ) là lúc cần phải thu_hoạch .
- 
-bị(IW) -> bị(BW) 
-
-=====================
-
-Cặp nhung tốt màu_sắc hồng_nhuận , đỏ_rực máu .
-Cặp_nhung tốt màu_sắc hồng_nhuận , đỏ rực_máu .
- 
-rực(IW) -> rực(BW) 
-
-=====================
-
-Hươu có độ tuổi từ 5 - 8 năm , béo_tốt , ngực nở , bụng thon , lông mịn_màng , mắt sáng là những con hươu không bệnh_tật , sẽ cho nhung tốt nhất .
-Hươu có độ tuổi từ 5 - 8 năm , béo tốt , ngực_nở , bụng_thon , lông mịn_màng , mắt_sáng là những con_hươu không bệnh_tật , sẽ cho nhung tốt nhất .
- 
-tốt(IW) -> tốt(BW) 
-
-=====================
-
-Hươu rơi xuống có_khi gãy chân và cặp nhung cũng nát , như vậy là công chăn_nuôi một năm trời bỗng_dưng bị mất không .
-Hươu rơi xuống có khi gãy_chân và cặp_nhung cũng nát , như_vậy là công chăn_nuôi một năm trời bỗng_dưng bị mất không .
- 
-khi(IW) -> khi(BW) 
-
-=====================
-
-Thông_thường khi bắt hươu để thu_hoạch nhung , nếu hươu khoẻ phải cần đến 7 - 8 người đàn_ông khoẻ_mạnh , có tính tổ_chức cao .
-Thông_thường khi bắt_hươu để thu_hoạch nhung , nếu hươu_khoẻ phải cần đến 7 - 8 người đàn ông khoẻ_mạnh , có tính tổ_chức cao .
- 
-ông(IW) -> ông(BW) 
-
-=====================
-
-Tất_cả 8 người đồng_loạt trèo nhanh lên chuồng , sẽ có một người khoẻ , nhanh có thêm một_chút lì , dũng_cảm nữa , được chủ nhà phân_công trước .
-Tất_cả 8 người đồng_loạt trèo nhanh lên chuồng , sẽ có một người_khoẻ , nhanh có thêm một chút_lì , dũng_cảm_nữa , được chủ_nhà phân_công trước .
- 
-chút(IW) -> chút(BW) 
-
-=====================
-
-Người_ta dùng loại cưa răng nhỏ cắt rơi cặp nhung ra khỏi đầu con hươu .
-Người ta dùng loại cưa_răng nhỏ cắt rơi_cặp nhung ra khỏi đầu con_hươu .
- 
-ta(IW) -> ta(BW) 
-
-=====================
-
-Máu từ vết cắt phun ra từng vòi sẽ được hứng vào chậu_thau có đường trắng chuẩn_bị sẵn , sau đó được hoà vào rượu .
-Máu từ vết cắt phun ra từng vòi sẽ được hứng vào chậu_thau có đường trắng chuẩn bị sẵn , sau đó được hoà vào rượu .
- 
-bị(IW) -> bị(BW) 
-
-=====================
-
-Là một trong 4 loại thuốc quý : sâm - nhung - quế - phụ , nhung hươu có tác_dụng hồi_phục nguyên_khí , dùng khi nguyên_khí suy_kiệt .
-Là một trong 4 loại thuốc quý : sâm - nhung - quế - phụ , nhung_hươu có tác_dụng hồi phục nguyên_khí , dùng khi nguyên_khí suy_kiệt .
- 
-phục(IW) -> phục(BW) 
-
-=====================
-
-Theo đông_y nhung hươu tính bình , vị ngọt , đi vào kinh_thận , kinh_tâm bào_lạc , kinh_tì , được dùng cho đàn_ông muộn con , tinh_trùng yếu , người_lớn suy_nhược cơ_thể , thiếu máu , chóng_mặt , tâm_mạch rối_loạn .
-Theo đông_y nhung_hươu tính_bình , vị_ngọt , đi vào kinh_thận , kinh_tâm bào_lạc , kinh_tì , được dùng cho đàn_ông muộn con , tinh_trùng yếu , người lớn suy_nhược cơ_thể , thiếu_máu , chóng_mặt , tâm_mạch rối_loạn .
- 
-lớn(IW) -> lớn(BW) 
-
-=====================
-
-Trẻ_em “ tiên_thiên_bất_túc ” , hậu_thiên không đầy_đủ .
-Trẻ_em “ tiên_thiên bất_túc ” , hậu_thiên_không đầy_đủ .
- 
-bất(IW) -> bất(BW) 
-
-=====================
-
-Để nói lên tác_dụng mạnh của nhung hươu , người Kẻ Mơ Quỳnh_Lưu - Nghệ_An hay truyền_miệng nhau về chuyện ăn nhung hươu có người bị nứt da , nứt thịt , đến_nỗi nước vàng chảy ra hôi_hám .
-Để nói lên tác_dụng mạnh của nhung_hươu , người Kẻ_Mơ Quỳnh_Lưu - Nghệ_An hay truyền miệng nhau về chuyện_ăn nhung_hươu có người bị nứt_da , nứt_thịt , đến nỗi nước vàng chảy ra hôi_hám .
- 
-miệng(IW) -> miệng(BW) 
-nỗi(IW) -> nỗi(BW) 
-
-=====================
-
-Có ông lão 70 tuổi ăn một cặp nhung hươu , cưới vợ_kế về còn đẻ thêm được 2 đứa con_trai khoẻ_mạnh nữa .
-Có ông lão 70 tuổi ăn một cặp nhung_hươu , cưới vợ_kế về còn đẻ thêm được 2 đứa con_trai khoẻ mạnh_nữa .
- 
-mạnh(IW) -> mạnh(BW) 
-
-=====================
-
-Thực_tế , ăn nhung hươu lở ngứa có_thể xảy ra đối_với người có cơ_địa dị_ứng , nhưng nói ăn nhung hươu mà phì đến_nỗi nứt da , nứt thịt thì đó là cách nói cường_điệu , ca_ngợi nhung hươu tốt như thế đấy .
-Thực_tế , ăn_nhung hươu lở ngứa có_thể xảy ra đối_với người có cơ_địa dị_ứng , nhưng nói_ăn nhung_hươu mà phì đến nỗi nứt_da , nứt_thịt thì đó là cách nói_cường điệu , ca_ngợi nhung hươu tốt như thế_đấy .
- 
-nỗi(IW) -> nỗi(BW) 
-điệu(IW) -> điệu(BW) 
-
-=====================
-
-Trải qua nhiều thế_hệ gắn_bó với con hươu , nhiều gia_đình cũng đã đi lên từ nghề nuôi hươu_sao .
-Trải qua nhiều thế_hệ gắn bó với con_hươu , nhiều gia_đình cũng đã đi lên từ nghề nuôi hươu_sao .
- 
-bó(IW) -> bó(BW) 
-
-=====================
-
-Thường nhung chỉ bán cho những người _ở thành_phố , những người có thu_nhập cao , làm_quà biếu .
-Thường_nhung chỉ bán cho những người ở thành_phố , những người có thu_nhập cao , làm quà_biếu .
- 
-ở(IW) -> ở(BW) 
-quà(IW) -> quà(BW) 
-
-=====================
-
-Một cách dùng để ăn ngay : sau khi thu_hoạch nhung đem đốt cồn cho cháy hết lông_tơ .
-Một_cách dùng để ăn ngay : sau khi thu_hoạch nhung đem đốt cồn cho cháy_hết lông tơ .
- 
-tơ(IW) -> tơ(BW) 
-
-=====================
-
-Dùng dao_lam cạo sạch lông rồi cho vào nồi_áp_suất .
-Dùng dao lam cạo sạch_lông rồi cho vào nồi áp_suất .
- 
-lam(IW) -> lam(BW) 
-áp(IW) -> áp(BW) 
-
-=====================
-
-Dưới đáy nồi lót lá ngải_cứu tươi .
-Dưới đáy nồi lót lá ngải cứu_tươi .
- 
-cứu(IW) -> cứu(BW) 
-
-=====================
-
-Đậy vung đun cách_thuỷ 30 phút , vớt ra dùng dao_cầu thái mỏng , sấy , đập bột cùng_với mấy vị thuốc_bắc như bạch_truật , đương_quy , quế ...
-Đậy_vung đun cách thuỷ 30 phút , vớt ra dùng dao_cầu_thái mỏng , sấy , đập bột cùng với mấy_vị thuốc_bắc như bạch_truật , đương_quy , quế ...
- 
-thuỷ(IW) -> thuỷ(BW) 
-với(IW) -> với(BW) 
-
-=====================
-
-trộn mật_ong viên thành viên nhỏ sấy khô ăn dần .
-trộn mật ong_viên thành_viên nhỏ sấy khô_ăn dần .
- 
-ong(IW) -> ong(BW) 
-
-=====================
-
-Nhung tươi được đốt cồn cho cháy hết lông , dùng dao_lam cạo sạch , chẻ làm 4 phần cho vào ngâm trong rượu 40 độ hoặc mật_ong .
-Nhung_tươi được đốt cồn cho cháy hết_lông , dùng dao lam cạo_sạch , chẻ làm 4 phần cho vào ngâm trong rượu 40_độ hoặc mật_ong .
- 
-lam(IW) -> lam(BW) 
-
-=====================
-
-Anh Nguyễn_Văn_Cát , chủ một trại chăn_nuôi heo rừng ở xã Phước_Hiệp , huyện Tuy_Phước , cho_biết : Heo rừng là loài động_vật hoang_dã rất dễ nuôi , việc chăm_sóc không khó , ít dịch_bệnh , tỉ_lệ hao_hụt thấp ; khi được chăm_sóc tốt heo rất mau lớn .
-Anh Nguyễn_Văn_Cát , chủ một_trại chăn_nuôi heo rừng ở xã_Phước_Hiệp , huyện Tuy_Phước , cho biết : Heo rừng là loài động_vật hoang_dã rất dễ nuôi , việc chăm_sóc không khó , ít dịch_bệnh , tỉ_lệ hao_hụt thấp ; khi được chăm_sóc tốt heo rất mau lớn .
- 
-biết(IW) -> biết(BW) 
-
-=====================
-
-Chuồng nuôi heo rừng được thiết_kế rất đơn_giản bằng cách xây cột xi_măng hay trồng cột gỗ cao khoảng 1 m trên một khoảng sân trống hình_chữ_nhật , bao quanh bằng lưới B40 và có cửa mở ra vào chắc_chắn .
-Chuồng nuôi heo rừng được thiết_kế rất đơn_giản bằng cách xây_cột xi_măng hay trồng cột_gỗ cao khoảng 1 m trên một khoảng sân_trống hình chữ_nhật , bao_quanh bằng lưới B40 và có cửa mở ra vào chắc_chắn .
- 
-chữ(IW) -> chữ(BW) 
-
-=====================
-
-Bên trong chuồng được thiết_kế mặt bằng xi_măng hoặc bằng đất và có hồ nước để heo xuống tắm dễ_dàng .
-Bên trong chuồng được thiết_kế mặt_bằng xi măng hoặc bằng đất và có hồ_nước để heo xuống tắm dễ_dàng .
- 
-măng(IW) -> măng(BW) 
-
-=====================
-
-Đàn heo rừng của anh Cát hiện đã có gần 60 con lớn_nhỏ ; bước_đầu cho lãi trên 30 triệu đồng / năm .
-Đàn_heo rừng của anh Cát_hiện đã có gần 60 con_lớn nhỏ ; bước_đầu cho lãi trên 30 triệu đồng / năm .
- 
-nhỏ(IW) -> nhỏ(BW) 
-
-=====================
-
-Anh Cát cho_biết thêm : Trước đây , tôi chăn_nuôi gà và chim_cút , nhưng làm_ăn không hiệu_quả do giá chim_cút bấp_bênh .
-Anh_Cát cho biết thêm : Trước đây , tôi chăn_nuôi gà và chim_cút , nhưng làm ăn không hiệu_quả do_giá chim cút bấp_bênh .
- 
-biết(IW) -> biết(BW) 
-ăn(IW) -> ăn(BW) 
-cút(IW) -> cút(BW) 
-
-=====================
-
-Đến nay , đàn heo đã phát_triển lên rất nhiều , trại của tôi vừa cung_cấp heo rừng giống và heo rừng thịt cho những người có nhu_cầu ở khắp_nơi trong tỉnh .
-Đến nay , đàn_heo đã phát_triển lên rất nhiều , trại của tôi vừa cung_cấp heo rừng giống và heo rừng thịt cho những người có nhu_cầu ở khắp nơi trong tỉnh .
- 
-nơi(IW) -> nơi(BW) 
-
-=====================
-
-Còn ông Đoàn_Văn_Bạo , quản_lí trang_trại chăn_nuôi heo rừng Phước_Tấn , ở khu chăn_nuôi tập_trung xã Nhơn_Tân , huyện An_Nhơn , cho_biết : Trang_trại của tôi bắt_đầu nuôi heo rừng từ cuối năm 2007 với số_lượng 10 con_giống , mua từ các làng dân_tộc_thiểu_số trong tỉnh và các tỉnh Tây_Nguyên .
-Còn ông Đoàn_Văn_Bạo , quản_lí trang_trại chăn_nuôi heo rừng Phước_Tấn , ở khu chăn_nuôi tập_trung xã_Nhơn_Tân , huyện An_Nhơn , cho biết : Trang_trại của tôi bắt_đầu_nuôi heo rừng từ cuối năm 2007 với số_lượng 10 con_giống , mua từ các làng dân_tộc_thiểu_số trong tỉnh và các tỉnh Tây_Nguyên .
- 
-biết(IW) -> biết(BW) 
-
-=====================
-
-Đặc_điểm của heo rừng là rất dễ nuôi , thức_ăn đơn_giản , ít bị dịch_bệnh nên ai cũng có_thể nuôi được .
-Đặc_điểm của heo rừng là rất dễ nuôi , thức_ăn đơn_giản , ít bị dịch bệnh nên ai cũng có_thể nuôi được .
- 
-bệnh(IW) -> bệnh(BW) 
-
-=====================
-
-Heo rừng có_thể đưa vào chuồng để nuôi nhốt như các dòng heo thuần , nhưng điều_kiện sống tốt nhất để heo sinh_trưởng là môi_trường thiên_nhiên , có hồ nước tắm , nhà trú mưa_nắng , “ sân_chơi ” rộng cho heo chạy nhảy nhằm tiêu mỡ , chất_lượng thịt mới thơm ngon .
-Heo rừng có_thể đưa vào chuồng để nuôi_nhốt như các dòng_heo_thuần , nhưng điều_kiện sống tốt nhất để heo sinh_trưởng là môi_trường thiên_nhiên , có hồ nước_tắm , nhà_trú mưa nắng , “ sân_chơi ” rộng cho heo chạy_nhảy nhằm tiêu_mỡ , chất_lượng thịt mới thơm ngon .
- 
-nắng(IW) -> nắng(BW) 
-
-=====================
-
-Là động_vật ăn_tạp nên thức_ăn của heo rừng ngoài một_ít thức_ăn_tinh là cám , gạo , có_thể cho chúng ăn các loại củ_mì , củ lang , bắp khô , thân cây chuối , cỏ ...
-Là động_vật ăn_tạp nên thức_ăn của heo rừng ngoài một ít thức_ăn tinh_là cám , gạo , có_thể cho chúng_ăn các loại củ_mì , củ_lang , bắp khô , thân cây_chuối , cỏ ...
- 
-ít(IW) -> ít(BW) 
-tinh(IW) -> tinh(BW) 
-
-=====================
-
-Ông Bạo cho_biết thêm : “ Để có được mô_hình nuôi heo rừng như hôm_nay , chúng_tôi đã dày công tham_khảo các mô_hình chăn_nuôi ở các nơi , đặc_biệt là tìm tài_liệu để nghiên_cứu .
-Ông_Bạo cho biết thêm : “ Để có được mô_hình nuôi heo rừng như hôm_nay , chúng_tôi đã dày_công tham_khảo các mô_hình chăn_nuôi ở các nơi , đặc_biệt là tìm tài_liệu để nghiên_cứu .
- 
-biết(IW) -> biết(BW) 
-
-=====================
-
-Trước nhu_cầu ngày_càng có nhiều nông_dân muốn làm_giàu từ nghề nuôi heo rừng , Trung_tâm Khuyến_nông - Khuyến_ngư tỉnh đã đưa nội_dung chăn_nuôi heo rừng vào chương_trình phát_triển khuyến_nông , tập_trung vào việc biên_soạn nội_dung , hướng_dẫn kĩ_thuật về giống .
-Trước nhu_cầu ngày_càng có nhiều nông_dân muốn làm giàu từ nghề nuôi heo rừng , Trung_tâm Khuyến_nông - Khuyến_ngư tỉnh đã đưa nội_dung chăn_nuôi heo rừng vào chương_trình phát_triển khuyến_nông , tập_trung vào việc biên_soạn nội_dung , hướng_dẫn kĩ_thuật về giống .
- 
-giàu(IW) -> giàu(BW) 
-
-=====================
-
-Thời_gian qua , hệ_thống khuyến_nông trong tỉnh đã xây_dựng được 4 điểm trình_diễn nuôi heo rừng ở các huyện với quy_mô 20 con ( 4 đực , 16 cái ) .
-Thời_gian qua , hệ_thống khuyến_nông trong tỉnh đã xây_dựng được 4 điểm trình diễn nuôi_heo rừng ở các huyện với quy_mô 20 con ( 4 đực , 16 cái ) .
- 
-diễn(IW) -> diễn(BW) 
-
-=====================
-
-Mô_hình được triển_khai ở những hộ gia_đình có vườn nhà rộng , vườn cây_lâu_năm , vườn rừng ... Nhờ hiệu_quả kinh_tế của việc nuôi heo rừng khá cao nên mô_hình phát_triển khá mạnh .
-Mô_hình được triển_khai ở những hộ gia_đình có vườn nhà_rộng , vườn cây lâu năm , vườn rừng ... Nhờ hiệu_quả kinh_tế của việc nuôi_heo rừng khá cao nên mô_hình phát_triển khá mạnh .
- 
-lâu(IW) -> lâu(BW) 
-năm(IW) -> năm(BW) 
-
-=====================
-
-Nghề chăn_nuôi heo rừng hiện được xem là nghề mang lại nhiều triển_vọng làm_giàu cho nông_dân .
-Nghề chăn_nuôi heo rừng hiện được xem là nghề mang lại nhiều triển_vọng làm giàu cho nông_dân .
- 
-giàu(IW) -> giàu(BW) 
-
-=====================
-
-Cứ thứ 7 hàng tuần , người_dân ở các thôn , bản thuộc xã Hùng_Lợi , huyện Yên_Sơn , tỉnh Tuyên_Quang lại tấp_nập dắt trâu , bò ra bãi đất trống bên dòng_sông Phó_Đáy hiền_hoà để trao_đổi , buôn_bán .
-Cứ thứ 7 hàng_tuần , người_dân ở các thôn , bản_thuộc xã_Hùng_Lợi , huyện Yên_Sơn , tỉnh Tuyên_Quang lại tấp_nập dắt_trâu , bò ra bãi đất_trống bên dòng sông Phó_Đáy hiền_hoà để trao_đổi , buôn_bán .
- 
-sông(IW) -> sông(BW) 
-
-=====================
-
-Chợ bắt_đầu họp từ lúc trời tờ_mờ sáng cho đến trưa mới tan , có những phiên số_lượng trâu , bò mang ra bán lên đến vài chục con .
-Chợ bắt_đầu họp từ lúc_trời tờ mờ_sáng cho đến trưa mới tan , có những phiên số_lượng trâu , bò mang ra bán lên đến vài chục_con .
- 
-mờ(IW) -> mờ(BW) 
-
-=====================
-
-Không ai biết chính_xác chợ trâu được hình_thành từ khi nào nhưng giờ_đây chợ trâu xã Hùng_Lợi đã trở_thành nét sinh_hoạt văn_hoá đặc_sắc của một xã thuần nông miền núi .
-Không ai_biết chính_xác chợ trâu được hình_thành từ khi nào nhưng giờ đây chợ_trâu xã_Hùng_Lợi đã trở_thành nét sinh_hoạt văn_hoá đặc_sắc của một_xã_thuần nông_miền núi .
- 
-đây(IW) -> đây(BW) 
-
-=====================
-
-Chúng_tôi gặp anh Lí_Văn_Dình , dân_tộc Tày ở Thôn_Quân , xã Hùng_Lợi , mang trâu đến bán , anh cho_biết : “ Con trâu này tôi đã nuôi được 4 năm và có giá 30 triệu đồng , vì cần tiền sửa_sang lại nhà_cửa và mua_sắm vật_dụng cho gia_đình nên mới bán đi .
-Chúng_tôi gặp anh Lí_Văn_Dình , dân_tộc_Tày ở Thôn_Quân , xã_Hùng_Lợi , mang trâu đến bán , anh cho biết : “ Con_trâu này tôi đã nuôi được 4 năm và có_giá 30 triệu đồng , vì cần tiền sửa sang lại nhà_cửa và mua_sắm vật_dụng cho gia_đình nên mới bán đi .
- 
-biết(IW) -> biết(BW) 
-sang(IW) -> sang(BW) 
-
-=====================
-
-Từ sáng_sớm đã có vài người hỏi mua nhưng trả_giá thấp nên tôi chưa muốn bán ” .
-Từ sáng sớm đã có vài người_hỏi mua nhưng trả_giá thấp nên tôi chưa muốn bán ” .
- 
-sớm(IW) -> sớm(BW) 
-
-=====================
-
-Anh Dình cho_biết thêm , gia_đình anh nuôi 3 con trâu sinh_sản , mỗi năm gia_đình anh thu_nhập khoảng 60 triệu đồng từ tiền bán trâu .
-Anh_Dình cho biết thêm , gia_đình anh nuôi 3 con_trâu sinh_sản , mỗi năm gia_đình anh thu_nhập khoảng 60 triệu đồng từ tiền bán_trâu .
- 
-biết(IW) -> biết(BW) 
-
-=====================
-
-Những con trâu , bò từ khắp các thôn , bản được đem đến chợ , có con tỏ ra hiền_lành nhưng cũng có con mang cặp mắt đỏ_ngầu sẵn_sàng húc bất_cứ ai đi ngang qua .
-Những con_trâu , bò từ khắp các thôn , bản được đem đến chợ , có con tỏ ra hiền_lành nhưng cũng có con mang cặp mắt đỏ ngầu sẵn_sàng húc bất_cứ ai đi ngang qua .
- 
-ngầu(IW) -> ngầu(BW) 
-
-=====================
-
-Anh Hoàng_Văn_Đình ở thôn Làng_Chương , cho_biết : “ Tôi hay mua lại trâu của một_số người_dân trong thôn , bản , nuôi vỗ_béo một thời_gian rồi đem đến chợ bán , mỗi con thu lãi khoảng từ 2 - 3 triệu đồng .
-Anh_Hoàng Văn_Đình ở thôn Làng_Chương , cho biết : “ Tôi hay mua lại trâu của một_số người_dân trong thôn , bản , nuôi vỗ_béo một thời_gian rồi đem đến chợ_bán , mỗi con_thu lãi khoảng từ 2 - 3 triệu đồng .
- 
-Văn(IW) -> Văn(BW) 
-biết(IW) -> biết(BW) 
-
-=====================
-
-Chị Lầu_Thị_Dí , dân_tộc Mông , thôn Nà_Tang , xã Hùng_Lợi phấn_khởi cho_biết : Gia_đình tôi được Nhà_nước hỗ_trợ cho vay một con bò sinh_sản , sau một năm nuôi_dưỡng đã sinh được bê con , tôi đã trả nợ bê .
-Chị_Lầu_Thị_Dí , dân_tộc_Mông , thôn Nà_Tang , xã_Hùng_Lợi phấn_khởi cho biết : Gia_đình tôi được Nhà_nước hỗ_trợ cho vay một con_bò sinh_sản , sau một năm nuôi_dưỡng đã sinh được bê con , tôi đã trả nợ_bê .
- 
-biết(IW) -> biết(BW) 
-
-=====================
-
-Hôm_nay , gia_đình tôi mới bán con bê tiếp_theo được 10 triệu đồng để chuẩn_bị làm đám_cưới cho con_trai .
-Hôm_nay , gia_đình tôi mới bán con_bê tiếp theo được 10 triệu đồng để chuẩn_bị làm đám_cưới cho con_trai .
- 
-theo(IW) -> theo(BW) 
-
-=====================
-
-Theo nhiều lái_buôn kể lại , họ đến đây mua trâu , bò về xuôi phục_vụ cày , bừa hoặc làm_thịt nhưng nhiều lần để_ý thấy những con trâu có nhiều khả_năng trở_thành trâu chọi nên đã nuôi_dưỡng , huấn_luyện rồi bán chúng lại cho những tay_chơi trâu chọi chuyên_nghiệp và đã có những con trâu đạt được giải cao trong các Lễ_hội chọi trâu .
-Theo nhiều lái buôn_kể lại , họ đến đây mua_trâu , bò về xuôi phục_vụ cày , bừa hoặc làm_thịt nhưng nhiều lần để ý thấy những con_trâu có nhiều khả_năng trở_thành trâu chọi nên đã nuôi_dưỡng , huấn_luyện rồi bán chúng_lại cho những tay chơi trâu_chọi chuyên_nghiệp và đã có những con_trâu đạt được giải cao trong các Lễ_hội chọi_trâu .
- 
-buôn(IW) -> buôn(BW) 
-ý(IW) -> ý(BW) 
-chơi(IW) -> chơi(BW) 
-
-=====================
-
-Từ đó chợ trâu Hùng_Lợi trở_thành điểm hay lui_tới của những tay buôn trâu , mua trâu chọi .
-Từ đó chợ trâu Hùng_Lợi trở_thành điểm hay lui tới của những tay buôn_trâu , mua trâu_chọi .
- 
-tới(IW) -> tới(BW) 
-
-=====================
-
-Người_ta đến chợ , không_chỉ để mua trâu mà_còn là dịp được gặp_gỡ , trao_đổi kinh_nghiệm cách chọn trâu , cách nuôi trâu cho béo , khoẻ … và còn bao chuyện khác xoay quanh những con vật được coi như_là “ đầu cơ_nghiệp ” .
-Người_ta đến chợ , không_chỉ để mua_trâu mà còn là dịp được gặp_gỡ , trao_đổi kinh_nghiệm cách chọn_trâu , cách nuôi_trâu cho béo , khoẻ … và còn bao_chuyện khác xoay quanh_những con_vật được coi như là “ đầu_cơ_nghiệp ” .
- 
-còn(IW) -> còn(BW) 
-là(IW) -> là(BW) 
-
-=====================
-
-Chợ trâu Hùng_Lợi là một nét sinh_hoạt văn_hoá đặc_sắc của một vùng quê miền núi , chợ không_chỉ thúc_đẩy kinh_tế của địa_phương phát_triển mà_còn góp_phần gìn_giữ nghề nuôi trâu , bò lâu_đời của bà_con nơi đây .
-Chợ_trâu Hùng_Lợi là một nét sinh_hoạt văn_hoá đặc_sắc của một vùng_quê miền núi , chợ không chỉ thúc_đẩy kinh_tế của địa_phương phát_triển mà còn góp_phần gìn giữ nghề nuôi_trâu , bò lâu_đời của bà con_nơi đây .
+Chất này không_chỉ có trong chất_độc_da_cam mà_còn chứa trong các chất_độc khác ( chất tím , chất xanh , ... ) .
+Chất này không chỉ có trong chất_độc da_cam mà_còn chứa trong các chất_độc khác ( chất tím , chất xanh , ... ) .
  
 chỉ(IW) -> chỉ(BW) 
-còn(IW) -> còn(BW) 
-giữ(IW) -> giữ(BW) 
-con(IW) -> con(BW) 
+da(IW) -> da(BW) 
 
 =====================
 
-Ông Ma_Văn_Hùng , Chủ_tịch UBND xã Hùng_Lợi cho_biết : Chợ trâu , bò góp_phần tạo thêm thu_nhập cho người_dân trên địa_bàn xã , nhất_là những lúc nông_nhàn .
-Ông_Ma Văn_Hùng , Chủ_tịch UBND xã_Hùng_Lợi cho biết : Chợ_trâu , bò góp_phần tạo thêm thu_nhập cho người_dân trên địa_bàn_xã , nhất là những lúc nông_nhàn .
+Các nhà_khoa_học của Trung_tâm_nhiệt_đới_Việt-Nga ước_tính ở mức cao hơn nhiều ( khoảng 1000 kg ) .
+Các nhà_khoa_học của Trung_tâm nhiệt_đới Việt-Nga ước_tính ở mức cao hơn nhiều ( khoảng 1000 kg ) .
  
-Văn(IW) -> Văn(BW) 
-biết(IW) -> biết(BW) 
-là(IW) -> là(BW) 
+nhiệt(IW) -> nhiệt(BW) 
+Việt-Nga(IW) -> Việt-Nga(BW) 
 
 =====================
 
-Những chú ngựa đua nhà_nòi gây giống từ những liều tinh chỉ bé bằng cái ruột bút_bi được chở bằng hộp ni_tơ thấm lỏng chuyên_dụng bay vượt đại_châu về đất Việt .
-Những chú_ngựa đua nhà_nòi gây giống từ những liều tinh_chỉ bé bằng cái ruột bút_bi được chở bằng hộp ni tơ_thấm lỏng chuyên_dụng bay vượt đại_châu về đất_Việt .
+Thế_nhưng trước dư_luận và trước Toà_án , người_ta vẫn tránh dùng các cụm_từ chất_độc hoá_học hay chiến_tranh hoá_học .
+Thế_nhưng trước dư_luận và trước Toà_án , người_ta vẫn tránh dùng các cụm từ chất_độc hoá_học hay chiến_tranh hoá_học .
  
-tơ(IW) -> tơ(BW) 
+từ(IW) -> từ(BW) 
 
 =====================
 
-Những chàng “ Bật_Mã_Ôn ” dù có thắt ca_vát , đóng comple , dận giày_tây láng_bóng nhưng hễ vào phòng hội_thảo là cả trăm người cùng nhăn mặt , bịt mũi vì mùi ... mồ_hôi ngựa .
-Những chàng “ Bật_Mã_Ôn ” dù có thắt ca_vát , đóng_comple , dận giày tây láng bóng nhưng hễ vào phòng_hội thảo là cả trăm người cùng nhăn_mặt , bịt_mũi vì mùi ... mồ_hôi ngựa .
+Cụm_từ chất_độc hoá_học và chiến_tranh hoá_học được coi là “ nhạy_cảm ” vì liên_quan đến các công_ty hoá_chất đã sản_xuất ra các chất_độc này .
+Cụm từ chất_độc hoá_học và chiến_tranh hoá_học được coi là “ nhạy_cảm ” vì liên_quan đến các công_ty hoá_chất đã sản_xuất ra các chất_độc này .
  
-tây(IW) -> tây(BW) 
-bóng(IW) -> bóng(BW) 
-thảo(IW) -> thảo(BW) 
+từ(IW) -> từ(BW) 
 
 =====================
 
-Những con ngựa đua vút đi như những mũi_tên bắn ra khỏi cung để lại cho thảo_nguyên đám bụi mờ đỏ huyền_ảo trong sương sớm .
-Những con_ngựa đua vút đi như những mũi tên bắn ra khỏi cung để lại cho thảo_nguyên đám_bụi mờ đỏ huyền_ảo trong sương sớm .
+Một nguyên_lí cơ_bản của độc_học : chất gì cũng độc và chất gì cũng có_thể không độc , vấn_đề là liều_lượng .
+Một nguyên_lí cơ_bản của độc học : chất gì cũng độc và chất gì cũng có_thể không độc , vấn_đề là liều_lượng .
  
-tên(IW) -> tên(BW) 
+học(IW) -> học(BW) 
 
 =====================
 
-Vài chú chim ăn sớm giật_mình bay vụt từ bãi cỏ lên thinh_không .
-Vài_chú chim ăn sớm giật mình bay vụt từ bãi cỏ lên thinh không .
+Thực_tiễn ở chính nước Mỹ đã mâu_thuẫn với những phản_bác của các luật_sư của các công_ty hoá_chất Mỹ và Toà_án_sơ_thẩm Mỹ trong tháng 3 năm 2005 vừa_qua .
+Thực_tiễn ở chính nước Mỹ đã mâu_thuẫn với những phản_bác của các luật_sư của các công_ty hoá_chất Mỹ và Toà_án sơ_thẩm_Mỹ trong tháng 3 năm 2005 vừa_qua .
  
-mình(IW) -> mình(BW) 
+sơ(IW) -> sơ(BW) 
+
+=====================
+
+Việc các công_ty hoá_chất Mỹ với sự dàn_xếp của Toà_án Mỹ đã phải chấp_nhận trợ_cấp cho các cựu_chiến_binh Mỹ bị nhiễm chất_độc hoá_học 180 triệu USD để đổi lấy việc họ rút đơn_kiện đã gián_tiếp thừa_nhận tác_hại của chất_độc hoá_học đối_với các cựu_chiến_binh này .
+Việc các công_ty hoá_chất Mỹ với sự dàn_xếp của Toà_án Mỹ đã phải chấp_nhận trợ_cấp cho các cựu_chiến_binh Mỹ bị nhiễm chất_độc hoá_học 180 triệu USD để đổi_lấy việc họ rút đơn_kiện đã gián_tiếp thừa_nhận tác_hại của chất_độc hoá_học đối_với các cựu chiến_binh này .
+ 
+chiến(IW) -> chiến(BW) 
+
+=====================
+
+Trước đây , tháng 2 năm 1967 , nhận thấy sự nguy_hại của chất_độc hoá_học có chứa dioxin , khoảng 5000 nhà_khoa_học Mỹ , trong đó có 17 người được giải Nobel và 129 Viện_sĩ Viện_hàn_lâm_khoa_học_quốc_gia_Hoa_Kì đã yêu_cầu Tổng_thống Lyndon_Johnson dừng ngay cuộc chiến_tranh hoá_học nguy_hại này .
+Trước đây , tháng 2 năm 1967 , nhận thấy sự nguy_hại của chất_độc hoá_học có chứa dioxin , khoảng 5000 nhà_khoa_học_Mỹ , trong đó có 17 người được giải_Nobel và 129 Viện_sĩ Viện_hàn_lâm khoa_học quốc_gia Hoa_Kì đã yêu_cầu Tổng_thống Lyndon_Johnson dừng ngay cuộc chiến_tranh hoá_học nguy_hại này .
+ 
+khoa(IW) -> khoa(BW) 
+quốc(IW) -> quốc(BW) 
+Hoa(IW) -> Hoa(BW) 
+
+=====================
+
+Theo thống_kê chưa đầy_đủ , có 25.585 thôn_bản ở miền Nam , Việt_Nam đã bị rải chất_độc hoá_học .
+Theo thống_kê chưa đầy_đủ , có 25.585 thôn bản ở miền Nam , Việt_Nam đã bị rải chất_độc hoá_học .
+ 
+bản(IW) -> bản(BW) 
+
+=====================
+
+Các nhà_khoa_học của trường Đại_học_tổng_hợp_Columbia ( Mỹ ) đã ước_tính ít_nhất có 2,1 triệu người và nhiều nhất là 4,8 triệu người Việt_Nam bị ảnh_hưởng của chất_độc hoá_học .
+Các nhà_khoa_học của trường Đại_học tổng_hợp Columbia ( Mỹ ) đã ước_tính ít_nhất có 2,1 triệu người và nhiều nhất_là 4,8 triệu người Việt_Nam bị ảnh_hưởng của chất_độc hoá_học .
+ 
+tổng(IW) -> tổng(BW) 
+Columbia(IW) -> Columbia(BW) 
+
+=====================
+
+Do tính phức_tạp của cơ_chế gây bệnh và với điều_kiện theo_dõi và chẩn_đoán ở Việt_Nam , chúng_ta chưa_thể xác_định đầy_đủ số_lượng nạn_nhân chất_độc hoá_học .
+Do tính phức_tạp của cơ_chế gây bệnh và với điều_kiện theo_dõi và chẩn_đoán ở Việt_Nam , chúng_ta chưa thể xác_định đầy_đủ số_lượng nạn_nhân chất_độc hoá_học .
+ 
+thể(IW) -> thể(BW) 
+
+=====================
+
+Hiện_nay chúng_ta chưa có được một công_trình nghiên_cứu đủ lớn để xác_định một_cách toàn_diện và chính_xác tổn_thất về kinh_tế , xã_hội , môi_trường và con_người do cuộc_chiến có_một_không_hai trong lịch_sử nhân_loại này gây nên .
+Hiện_nay chúng_ta chưa có được một công_trình nghiên_cứu đủ lớn để xác_định một_cách toàn_diện và chính_xác tổn_thất về kinh_tế , xã_hội , môi_trường và con_người do cuộc_chiến có một không hai trong lịch_sử nhân_loại này gây nên .
+ 
+một(IW) -> một(BW) 
 không(IW) -> không(BW) 
+hai(IW) -> hai(BW) 
 
 =====================
 
-Sau ngày giải_phóng miền Nam , môn thể_thao mang nặng tính cá_cược này bị gián_đoạn đến tận năm 1989 , Sở TDTT_TP_HCM mới khôi_phục trở_lại .
-Sau_ngày giải_phóng miền Nam , môn thể_thao mang nặng_tính cá cược này bị gián_đoạn đến tận năm 1989 , Sở_TDTT TP HCM mới khôi_phục trở_lại .
+Tháng 10 năm 1980 , Chính_phủ Việt_Nam đã thành_lập Uỷ_ban quốc_gia điều_tra hậu_quả chất_độc hoá_học dùng trong chiến_tranh ở Việt_Nam ( Uỷ_ban_10_80 ) .
+Tháng 10 năm 1980 , Chính_phủ Việt_Nam đã thành_lập Uỷ_ban_quốc_gia điều_tra hậu_quả chất_độc hoá_học dùng trong chiến_tranh ở Việt_Nam ( Uỷ_ban_10 80 ) .
  
-cược(IW) -> cược(BW) 
-TP(IW) -> TP(BW) 
-HCM(IW) -> HCM(BW) 
+80(IW) -> 80(BW) 
 
 =====================
 
-Ở miền Nam , nguồn ngựa đua được nuôi tại Đức_Hoà - Long_An , Củ_Chi - TP_HCM .
-Ở miền Nam , nguồn ngựa_đua được nuôi tại Đức_Hoà - Long_An , Củ_Chi - TP HCM .
+Uỷ_ban_10_80 đã thu_thập nhiều thông_tin trong và ngoài nước , tiến_hành nhiều công_trình nghiên_cứu , xác_định quy_mô và hậu_quả của cuộc chiến_tranh hoá_học ở Việt_Nam .
+Uỷ_ban_10 80 đã thu_thập nhiều thông_tin trong và ngoài nước , tiến_hành nhiều công_trình nghiên_cứu , xác_định quy_mô và hậu_quả của cuộc chiến_tranh hoá_học ở Việt_Nam .
  
-HCM(IW) -> HCM(BW) 
+80(IW) -> 80(BW) 
 
 =====================
 
-Giống ngựa Việt_Nam tầm_vóc nhỏ hay gọi là ngựa cỏ với chiều_cao vây ( cao tới vai ) bình_quân đạt 110 - 115 cm , khối_lượng bình_quân 165 - 175 kg , cưỡi chạy nhanh 25 - 28 km / h , thành_tích không đáng ở “ vòng gửi xe ” so với làng ngựa đua thế_giới .
-Giống ngựa Việt_Nam tầm_vóc nhỏ hay gọi_là ngựa_cỏ với chiều cao vây ( cao tới vai ) bình_quân đạt 110 - 115 cm , khối_lượng bình_quân 165 - 175 kg , cưỡi_chạy nhanh 25 - 28 km / h , thành_tích không đáng ở “ vòng gửi xe ” so với làng ngựa_đua thế_giới .
+Để chuyển_hướng cơ_bản từ công_tác điều_tra sang công_tác khắc_phục hậu_quả chất_độc hoá_học , ngày 01 tháng 3 năm 1999 , Thủ_tướng Chính_phủ Việt_Nam đã giải_thể Uỷ_ban_10-80 và ra Quyết_định số 33 / 1999 / QĐ - TTg thành_lập Ban_Chỉ_đạo_Quốc_gia khắc_phục hậu_quả chất_độc hoá_học do Mỹ sử_dụng trong chiến_tranh ở Việt_Nam ( Ban_Chỉ_đạo_33 ) .
+Để chuyển_hướng cơ_bản từ công_tác điều_tra sang công_tác khắc_phục hậu_quả chất_độc hoá_học , ngày 01 tháng 3 năm 1999 , Thủ_tướng Chính_phủ Việt_Nam đã giải_thể Uỷ_ban_10-80 và ra Quyết_định số 33 / 1999 / QĐ - TTg thành_lập Ban_Chỉ_đạo Quốc_gia khắc_phục hậu_quả chất_độc hoá_học do Mỹ sử_dụng trong chiến_tranh ở Việt_Nam ( Ban_Chỉ_đạo_33 ) .
  
-cao(IW) -> cao(BW) 
+Quốc(IW) -> Quốc(BW) 
 
 =====================
 
-Một đại_gia Pháp lần trong đống tài_liệu thời thuộc_địa Đông_Dương ghi ở Sài_Gòn có trường_đua ngựa , ở Hà_Nội có trường dạy ngựa liền tìm đến Việt_Nam .
-Một đại_gia Pháp_lần trong đống tài_liệu thời thuộc địa_Đông_Dương ghi ở Sài_Gòn có trường đua ngựa , ở Hà_Nội có trường dạy ngựa liền tìm đến Việt_Nam .
+Trưởng Ban_Chỉ_đạo_33 là Bộ_trưởng Bộ_Khoa_học,_Công_nghệ_và_Môi_trường .
+Trưởng_Ban_Chỉ_đạo_33 là Bộ_trưởng Bộ_Khoa_học, Công_nghệ và_Môi_trường .
  
-địa(IW) -> địa(BW) 
-đua(IW) -> đua(BW) 
+Công(IW) -> Công(BW) 
+và(IW) -> và(BW) 
 
 =====================
 
-Tiến_sĩ Nguyễn_Hữu_Trà - Phó Giám_đốc Trung_tâm - một nhà “ ngựa học ” sừng_sỏ bảo với tôi : “ Có những con ngựa đua cả triệu đô_la cũng đừng hòng sờ được vào một cọng lông của nó .
-Tiến_sĩ Nguyễn_Hữu_Trà - Phó Giám_đốc Trung_tâm - một nhà “ ngựa_học ” sừng sỏ_bảo với tôi : “ Có những con_ngựa đua cả triệu đô la cũng đừng hòng sờ được vào một cọng_lông của nó .
+Tham_gia Ban_Chỉ_đạo_33 có các lãnh_đạo các Bộ_Quốc_phòng , Bộ_Ngoại_giao , Văn_phòng_Chính_phủ , Bộ_Y_tế , Bộ_Tư_pháp , Bộ_Lao_động,_Thương_binh_và_Xã_hội , ...
+Tham_gia Ban_Chỉ_đạo_33 có các lãnh_đạo các Bộ_Quốc_phòng , Bộ_Ngoại_giao , Văn_phòng Chính_phủ , Bộ_Y_tế , Bộ_Tư_pháp , Bộ_Lao_động, Thương_binh và Xã_hội , ...
  
-sỏ(IW) -> sỏ(BW) 
-la(IW) -> la(BW) 
+Chính(IW) -> Chính(BW) 
+Thương(IW) -> Thương(BW) 
+và(IW) -> và(BW) 
+Xã(IW) -> Xã(BW) 
 
 =====================
 
-Việc nhập ngựa đua thuần_chủng , thành_tích cao dạng “ nguyên_đai_nguyên_kiện ” về Việt_Nam là điều rất khó nên trước nhu_cầu ngựa đua đang phát_triển , trung_tâm mới làm đề_tài nhập tinh ngựa đua về ” .
-Việc_nhập ngựa_đua thuần_chủng , thành_tích cao dạng “ nguyên_đai nguyên_kiện ” về Việt_Nam là điều rất khó nên trước nhu_cầu ngựa_đua đang phát_triển , trung_tâm mới làm đề tài_nhập tinh_ngựa đua về ” .
+Sau khi thành_lập Bộ_Tài_nguyên_và_Môi_trường , Thủ_tướng Chính_phủ đã ra Quyết_định số 173 / 2002 / QĐ - TTg ngày 02 tháng 12 năm 2003 , giao cho Bộ_trưởng Bộ_Tài_nguyên_và_Môi_trường làm Trưởng Ban_Chỉ_đạo_33 .
+Sau khi thành_lập Bộ_Tài_nguyên và_Môi_trường , Thủ_tướng Chính_phủ đã ra Quyết_định_số 173 / 2002 / QĐ - TTg ngày 02 tháng 12 năm 2003 , giao cho Bộ_trưởng Bộ_Tài_nguyên và_Môi_trường làm Trưởng_Ban_Chỉ_đạo_33 .
  
-nguyên(IW) -> nguyên(BW) 
-tài(IW) -> tài(BW) 
+và(IW) -> và(BW) 
+và(IW) -> và(BW) 
 
 =====================
 
-Chuyện mua tinh ngựa cũng lắm cái cười_ra_nước_mắt .
-Chuyện mua tinh_ngựa cũng lắm cái cười ra nước_mắt .
+Giúp_việc cho Ban_Chỉ_đạo_33 có Văn_phòng Ban_Chỉ_đạo_33 đặt tại Bộ_Tài_nguyên_và_Môi_trường .
+Giúp_việc cho Ban_Chỉ_đạo_33 có Văn_phòng Ban_Chỉ_đạo_33 đặt tại Bộ_Tài_nguyên và_Môi_trường .
  
-ra(IW) -> ra(BW) 
-nước(IW) -> nước(BW) 
+và(IW) -> và(BW) 
 
 =====================
 
-Nhóm một đạt thành_tích cao được chào_giá 10.000 đô / cọng tinh ( tương_đương trên 200 triệu ) nhưng cũng mấy đơn_vị nhập_khẩu chào_hàng rồi bỏ_của_chạy_lấy_người vì hàng quá hiếm , tính mạo_hiểm cao .
-Nhóm một đạt thành_tích cao được chào_giá 10.000 đô / cọng tinh ( tương_đương trên 200 triệu ) nhưng cũng mấy đơn_vị nhập_khẩu chào hàng rồi bỏ của chạy lấy người vì hàng quá_hiếm , tính mạo_hiểm cao .
+Song_song với các trợ_giúp của Chính_phủ , các tổ_chức chính_trị - xã_hội , các tổ_chức từ_thiện - nhân_đạo , ... đã có nhiều hoạt_động tích_cực giúp_đỡ nạn_nhân , đặc_biệt là các Quỹ bảo_trợ nạn_nhân chất_độc_da_cam , Hội_nạn_nhân_chất_độc_da_cam/dioxin_Việt_Nam .
+Song_song với các trợ_giúp của Chính_phủ , các tổ_chức chính_trị - xã_hội , các tổ_chức từ_thiện - nhân_đạo , ... đã có nhiều hoạt_động tích_cực giúp_đỡ nạn_nhân , đặc_biệt là các Quỹ bảo_trợ nạn_nhân chất_độc da_cam , Hội nạn_nhân chất_độc da cam/dioxin Việt_Nam .
  
-hàng(IW) -> hàng(BW) 
-của(IW) -> của(BW) 
-chạy(IW) -> chạy(BW) 
-lấy(IW) -> lấy(BW) 
-người(IW) -> người(BW) 
+da(IW) -> da(BW) 
+nạn(IW) -> nạn(BW) 
+chất(IW) -> chất(BW) 
+da(IW) -> da(BW) 
+cam/dioxin(IW) -> cam/dioxin(BW) 
+Việt(IW) -> Việt(BW) 
 
 =====================
 
-Nhóm tinh của ngựa đạt thành_tích khiêm_tốn cũng tầm trên chục triệu ( thời_giá năm 2006 ) .
-Nhóm_tinh của ngựa đạt thành_tích khiêm tốn cũng tầm trên chục triệu ( thời_giá năm 2006 ) .
- 
-tốn(IW) -> tốn(BW) 
-
-=====================
-
-72 liều tinh nhập ròng_rã trong 3 năm mới nổi vì tiền ít .
-72 liều tinh_nhập ròng rã trong 3 năm mới nổi vì tiền ít .
- 
-rã(IW) -> rã(BW) 
-
-=====================
-
-Cọng tinh bằng ruột bút_bi có thể_tích 0,5 ml , một lần ngựa đực “ sung_sướng tới đỉnh ” phải cỡ 35 - 40 cọng .
-Cọng tinh_bằng ruột bút_bi có thể_tích 0,5_ml , một lần ngựa đực “ sung sướng tới đỉnh ” phải cỡ 35 - 40 cọng .
- 
-sướng(IW) -> sướng(BW) 
-
-=====================
-
-Đắt ở thành_tích bởi giá sản_xuất vài đô nhưng có những con ngựa đua giá bằng cả cái máy_bay của bầu Đức , hàng năm đóng phí bảo_hiểm ngang một cái ôtô hạng sang không_thể lấy tinh vì khi lấy tinh đã “ về hưu ” trên con đường binh_nghiệp rồi .
-Đắt ở thành_tích bởi_giá sản_xuất vài_đô nhưng có những con_ngựa đua_giá bằng cả cái máy bay của bầu_Đức , hàng năm đóng_phí bảo_hiểm ngang một cái ôtô hạng sang không_thể lấy tinh_vì khi lấy tinh đã “ về hưu ” trên con_đường binh_nghiệp_rồi .
- 
-bay(IW) -> bay(BW) 
-
-=====================
-
-Giá_cả đắt_đỏ như thế nên tinh ngựa khi nhập về phải có ba bên nghiệm_thu gồm doanh_nghiệp nhập , Bộ_môn sinh_sản và thụ_tinh_nhân_tạo của Viện Chăn_nuôi và Trung_tâm .
-Giá_cả đắt_đỏ như thế_nên tinh_ngựa khi nhập về phải có ba bên nghiệm thu_gồm doanh_nghiệp_nhập , Bộ_môn sinh_sản và thụ_tinh_nhân_tạo của Viện_Chăn_nuôi và Trung_tâm .
- 
-thu(IW) -> thu(BW) 
-
-=====================
-
-Lượt đầu về số_lượng 12 liều của 2 con đực khác nhau nên đơn_vị nhập phải giao 14 liều , mỗi loại thừa ra một liều để rút xác_suất , giải_đông , kiểm_tra trên kính_hiển_vi tỉ_lệ sống .
-Lượt_đầu về số_lượng 12 liều của 2 con đực khác nhau nên đơn vị_nhập phải giao 14_liều , mỗi loại thừa ra một liều để rút xác_suất , giải_đông , kiểm_tra trên kính hiển_vi tỉ_lệ sống .
- 
-vị(IW) -> vị(BW) 
-hiển(IW) -> hiển(BW) 
-
-=====================
-
-Kính này có phần_mềm vô_cùng tinh_vi giúp chụp lại kết_quả , sao lưu hình_ảnh động , kiểm_tra bao con_giống , hoạt_lực ra_sao , tỉ_lệ tiến thẳng của tinh_trùng thế_nào hệt như máy bắn_tốc_độ giao_thông .
-Kính này có phần_mềm vô_cùng tinh_vi giúp chụp lại kết_quả , sao_lưu_hình ảnh_động , kiểm_tra bao con_giống , hoạt_lực ra_sao , tỉ_lệ tiến_thẳng của tinh_trùng thế_nào hệt như máy_bắn tốc_độ giao_thông .
- 
-ảnh(IW) -> ảnh(BW) 
-tốc(IW) -> tốc(BW) 
-
-=====================
-
-Cuối_cùng cả ba bên kí_tên trên cọng tinh giá ngót hai tấn thóc rồi ... bỏ .
-Cuối cùng_cả ba bên kí tên trên cọng tinh_giá ngót hai tấn_thóc rồi ... bỏ .
- 
-cùng(IW) -> cùng(BW) 
-tên(IW) -> tên(BW) 
-
-=====================
-
-Khác với nhiều loài gia_súc khác , ngựa có đặc_điểm thời_gian chịu_đực dài cả tuần_lễ , không xác_định được thời_điểm chính_xác rụng trứng là đi_tong vài chục triệu một liều tinh .
-Khác với nhiều loài gia_súc khác , ngựa có đặc_điểm thời_gian chịu đực_dài cả tuần_lễ , không xác_định được thời_điểm chính_xác rụng trứng là đi tong_vài chục triệu một liều_tinh .
- 
-đực(IW) -> đực(BW) 
-tong(IW) -> tong(BW) 
-
-=====================
-
-Phối ngựa phải bốn người như một kíp mổ , một người giữ ngựa cái , một người tay lăm_lăm cầm súng bắn tinh hướng nòng vào tử_cung , một người phụ lấy tinh giải_đông , một người phụ lắp cọng tinh vào súng .
-Phối_ngựa phải bốn người như một kíp_mổ , một người giữ ngựa cái , một người tay lăm lăm cầm súng bắn tinh_hướng nòng vào tử_cung , một người phụ lấy tinh_giải đông , một người phụ_lắp cọng_tinh vào súng .
- 
-lăm(IW) -> lăm(BW) 
-đông(IW) -> đông(BW) 
-
-=====================
-
-Việc trực_chiến ngựa đẻ hơn cả vợ đẻ bởi đẻ bọc nguyên ối không phát_hiện trong vòng mươi phút là ngựa con chết_ngạt .
-Việc trực_chiến_ngựa đẻ hơn cả vợ đẻ bởi đẻ bọc nguyên_ối không phát_hiện trong vòng_mươi phút là ngựa con chết ngạt .
- 
-ngạt(IW) -> ngạt(BW) 
-
-=====================
-
-Tinh của hai giống ngựa Westgale và Oldenbuger được nhập từ CHLB Đức phối giống cho 59 ngựa cái lai 25 % máu Cabadin , có tỉ_lệ thụ_thai 45,76 % quả_là một kì_tích .
-Tinh của hai giống ngựa_Westgale và Oldenbuger được nhập từ CHLB Đức_phối giống cho 59 ngựa cái lai 25 % máu_Cabadin , có tỉ_lệ thụ thai 45,76 % quả là một kì_tích .
- 
-thai(IW) -> thai(BW) 
-là(IW) -> là(BW) 
-
-=====================
-
-Đến 24 tháng tuổi , ngựa đực đạt 266 - 268 kg , ngựa cái đạt 257 - 258 kg , cao to lừng_lững .
-Đến 24 tháng tuổi , ngựa đực đạt 266 - 268 kg , ngựa cái đạt 257 - 258 kg , cao to_lừng lững .
- 
-lững(IW) -> lững(BW) 
-
-=====================
-
-Nhờ gen di_truyền từ những ông bố nòi kị_mã , ngựa lai đều có cổ_chân chắc , dẻo , đi_đứng linh_hoạt , không có trường_hợp bị đi duỗi cổ_chân - điều tối_kị với ngựa đua .
-Nhờ gen di_truyền từ những ông_bố nòi kị_mã , ngựa_lai đều có cổ chân_chắc , dẻo , đi đứng linh_hoạt , không có trường_hợp bị đi duỗi cổ_chân - điều tối_kị với ngựa_đua .
- 
-chân(IW) -> chân(BW) 
-đứng(IW) -> đứng(BW) 
-
-=====================
-
-Chúng có kết_cấu thân_hình rắn_chắc , thanh săn , bụng thon , từ đầu đến móng vó cân_đối phù_hợp với hướng xé gió , lướt nhanh như những cỗ siêu_xe trên trường_đua F1 .
-Chúng có kết_cấu thân_hình rắn_chắc , thanh_săn , bụng_thon , từ đầu đến móng vó cân_đối phù_hợp với hướng xé gió , lướt nhanh như những cỗ siêu_xe trên trường đua F1 .
- 
-đua(IW) -> đua(BW) 
-
-=====================
-
-Nhẹ_nhàng vuốt_ve , dứt_khoát tay cầm cương sát miệng , đi dứt_khoát , thập_thò là bị bắt_nạt ngay .
-Nhẹ_nhàng vuốt_ve , dứt khoát tay cầm cương sát_miệng , đi dứt_khoát , thập_thò là bị bắt_nạt ngay .
- 
-khoát(IW) -> khoát(BW) 
-
-=====================
-
-Lúc trưởng_thành ngựa đua phải được đưa vào giá chịu lực tập cưỡi .
-Lúc_trưởng thành ngựa_đua phải được đưa vào_giá chịu_lực tập_cưỡi .
- 
-thành(IW) -> thành(BW) 
-
-=====================
-
-Ngựa nào bất_kham sau luyện_tập đều là ngựa quý vì nó có sức_khoẻ kinh_hồn ” , Tiến_sĩ Trà tiết_lộ .
-Ngựa nào bất_kham sau luyện_tập đều là ngựa quý vì nó có sức_khoẻ kinh_hồn ” , Tiến_sĩ Trà_tiết lộ .
- 
-lộ(IW) -> lộ(BW) 
-
-=====================
-
-Nghe phong_thanh Trung_tâm đã lai_tạo được ngựa đua , có lắm đại_gia trong Nam ôm cả bọc tiền bay ra đây ngắm ngựa rồi nằng_nặc đòi mua khiến cho Ban lãnh_đạo đơn_vị phải từ_chối suốt vì sợ mất vật_liệu làm đề_tài nghiên_cứu .
-Nghe phong_thanh Trung_tâm đã lai tạo được ngựa_đua , có lắm đại_gia trong Nam_ôm cả bọc tiền bay ra đây ngắm ngựa rồi nằng nặc đòi_mua khiến cho Ban_lãnh_đạo đơn_vị phải từ_chối suốt vì sợ mất vật_liệu làm đề_tài nghiên_cứu .
- 
-tạo(IW) -> tạo(BW) 
-nặc(IW) -> nặc(BW) 
-
-=====================
-
-Ngựa đua chính_là một chứng_chỉ đỏ tuyệt_vời giúp họ bước lên hàng_ngũ đại_gia , quý_tộc .
-Ngựa_đua chính là một chứng_chỉ đỏ tuyệt_vời giúp họ bước lên hàng_ngũ đại_gia , quý_tộc .
- 
-là(IW) -> là(BW) 
-
-=====================
-
-Có con ngựa mang vòng_nguyệt_quế về vẻ_vang cho Tổ_quốc nó sinh_ra .
-Có con_ngựa mang vòng nguyệt_quế về vẻ vang cho Tổ_quốc nó sinh ra .
- 
-nguyệt(IW) -> nguyệt(BW) 
-vang(IW) -> vang(BW) 
-ra(IW) -> ra(BW) 
-
-=====================
-
-Vì_thế tất_cả các khâu từ sinh_sản , ăn_uống , tập_luyện và ứng_thí của ngựa đua được con_người chăm_sóc rất tỉ_mỉ .
-Vì thế tất_cả các khâu từ sinh_sản , ăn_uống , tập_luyện và ứng_thí của ngựa_đua được con_người chăm_sóc rất tỉ mỉ .
- 
-thế(IW) -> thế(BW) 
-mỉ(IW) -> mỉ(BW) 
-
-=====================
-
-Con Châu_Phi , con Sao_Chổi , con Mi_Hót , con Hồng_Nhung , con Nhài_Thơm ... đều có chung đặc_điểm lấy tên mẹ ghép vào vần đầu .
-Con_Châu_Phi , con Sao_Chổi , con_Mi Hót , con_Hồng Nhung , con_Nhài Thơm ... đều có chung đặc_điểm lấy tên mẹ_ghép vào vần_đầu .
- 
-Hót(IW) -> Hót(BW) 
-Nhung(IW) -> Nhung(BW) 
-Thơm(IW) -> Thơm(BW) 
-
-=====================
-
-Nài Dương_Văn_Quốc tháo gióng , dắt con Châu_Phi ra khỏi chuồng .
-Nài_Dương Văn_Quốc_tháo gióng , dắt con_Châu_Phi ra khỏi chuồng .
- 
-Văn(IW) -> Văn(BW) 
-
-=====================
-
-Chạy vài vòng chưa đã , khi bị chủ ghì cương dừng lại , miệng nó vẫn phì_phì , chân chồm lên như một chiếc xe đua đề_pa lên dốc .
-Chạy_vài vòng chưa đã , khi bị chủ_ghì cương dừng lại , miệng nó vẫn phì_phì , chân chồm lên như một chiếc xe đua_đề pa lên dốc .
- 
-pa(IW) -> pa(BW) 
-
-=====================
-
-Nài Quốc phụ_trách 10 con ngựa trong đó có 4 ngựa đua : “ Giống ngựa thồ Cabadin hay giật_mình đến_nỗi gặp vật lạ như cái bao_tải trên đường là giật bắn còn ngựa đua vô_tư .
-Nài_Quốc phụ trách 10 con_ngựa trong đó có 4 ngựa_đua : “ Giống ngựa thồ_Cabadin hay giật mình đến nỗi gặp_vật_lạ như cái bao_tải trên đường là giật_bắn còn ngựa_đua vô_tư .
- 
-trách(IW) -> trách(BW) 
-mình(IW) -> mình(BW) 
-nỗi(IW) -> nỗi(BW) 
-
-=====================
-
-Con Châu_Phi này đã từng theo tôi nửa tháng xuống quay_phim “ Thiên_mệnh_anh_hùng ” ở trường_quay Cổ_Loa .
-Con_Châu_Phi này đã từng theo tôi nửa tháng xuống quay phim “ Thiên_mệnh anh_hùng ” ở trường quay Cổ_Loa .
- 
-phim(IW) -> phim(BW) 
-anh(IW) -> anh(BW) 
-quay(IW) -> quay(BW) 
-
-=====================
-
-Nó khôn đến_nỗi bình_thường thả trên bãi , đến giờ ăn_cám là tự_động về trước cửa phòng , phì_phì mũi , gõ chân xuống như một ám_hiệu làm_nũng đòi ăn ” .
-Nó khôn đến nỗi bình thường thả trên bãi , đến giờ ăn_cám là tự_động về trước cửa_phòng , phì phì_mũi , gõ chân xuống như một ám_hiệu làm nũng đòi_ăn ” .
- 
-nỗi(IW) -> nỗi(BW) 
-thường(IW) -> thường(BW) 
-phì(IW) -> phì(BW) 
-nũng(IW) -> nũng(BW) 
-
-=====================
-
-Đó là trên đường luyện bằng đất lẫn sỏi , ngựa chạy còn ghê chân chứ trên đường đua cát mịn , có nhiều con ganh nhau tốc_độ sẽ được đẩy lên hết cả trăm phần_trăm sức_mạnh trong từng tế_bào , trong mỗi thớ gân .
-Đó là trên đường_luyện bằng đất lẫn sỏi , ngựa_chạy còn ghê_chân chứ trên đường_đua cát mịn , có nhiều con_ganh nhau tốc_độ sẽ được đẩy lên hết cả trăm phần trăm sức_mạnh trong từng tế_bào , trong mỗi thớ_gân .
+Bên_cạnh việc tổ_chức điều_hành tốt các trung_tâm , các cơ_sở điều_dưỡng nạn_nhân chất_độc hoá_học , chú_trọng hướng_dẫn tổ_chức phục_hồi chức_năng cho nạn_nhân tại cộng_đồng và dựa vào cộng_đồng , đặc_biệt đối_với gần hai_trăm_nghìn trẻ_em bị dị_tật bẩm_sinh .
+Bên_cạnh việc tổ_chức điều_hành tốt các trung_tâm , các cơ_sở điều_dưỡng nạn_nhân chất_độc hoá_học , chú_trọng hướng_dẫn tổ_chức phục_hồi chức_năng cho nạn_nhân tại cộng_đồng và dựa vào cộng_đồng , đặc_biệt đối_với gần hai trăm_nghìn trẻ_em bị dị_tật bẩm_sinh .
  
 trăm(IW) -> trăm(BW) 
 
 =====================
 
-Trên lênh_khênh , đung_đưa ở độ cao 1,45 m , chòng_chành tựa như ngồi thuyền_thúng chỉ một chốc phải nài_nỉ để được xuống .
-Trên lênh_khênh , đung đưa ở độ cao 1,45 m , chòng_chành tựa như ngồi thuyền thúng chỉ một chốc phải nài_nỉ để được xuống .
+Nếu tính bằng tiền , công_việc khắc_phục hậu_quả chất_độc hoá_học do Mỹ sử_dụng trong chiến_tranh ở Việt_Nam có_thể lên đến hàng chục_nghìn_tỉ đồng .
+Nếu tính bằng tiền , công_việc khắc_phục hậu_quả chất_độc hoá_học do Mỹ sử_dụng trong chiến_tranh ở Việt_Nam có_thể lên đến hàng chục nghìn tỉ đồng .
  
-đưa(IW) -> đưa(BW) 
-thúng(IW) -> thúng(BW) 
+nghìn(IW) -> nghìn(BW) 
+tỉ(IW) -> tỉ(BW) 
 
 =====================
 
-Thế_mà nài Quốc bảo ngựa càng chạy nhanh ngồi càng êm , càng cưỡi ngựa lâu càng nghiện đến_nỗi chán hết tất_cả những cỗ máy di_chuyển ăn nhiên_liệu ngoài cỏ .
-Thế mà_nài Quốc_bảo ngựa càng chạy nhanh_ngồi càng êm , càng cưỡi ngựa lâu_càng nghiện đến nỗi_chán hết tất_cả những cỗ máy di_chuyển ăn nhiên_liệu ngoài_cỏ .
+Tính đến ngày_7 - 8 , bộ phim Đường_đua đã ra rạp hơn 10 ngày .
+Tính đến ngày 7 - 8 , bộ phim Đường_đua đã ra rạp hơn 10 ngày .
  
-mà(IW) -> mà(BW) 
-nỗi(IW) -> nỗi(BW) 
+7(IW) -> 7(BW) 
 
 =====================
 
-Con Cao_Đổi mà đại_gia Khanh mua của Trung_tâm đã 2 năm , giờ quay lại nhờ anh Quốc huấn_luyện vẫn nhớ mặt nài cũ , vẫn quật đuôi lia_lịa , lỗ mũi xoắn_xuýt hít_hà .
-Con_Cao Đổi_mà đại_gia_Khanh mua của Trung_tâm đã 2 năm , giờ quay lại nhờ anh_Quốc huấn_luyện vẫn nhớ mặt_nài cũ , vẫn quật đuôi lia_lịa , lỗ_mũi xoắn_xuýt hít_hà .
- 
-Đổi(IW) -> Đổi(BW) 
-
-=====================
-
-Một_mình anh Luân bầu_bạn với 140 con ngựa và một chiếc đài con_con .
-Một mình anh Luân bầu_bạn với 140 con_ngựa và một chiếc đài con_con .
- 
-mình(IW) -> mình(BW) 
-
-=====================
-
-Tới giờ nghỉ , anh chỉ việc huýt_sáo cái là toàn_bộ đàn ngựa tự_động răm_rắp về chuồng của mình .
-Tới giờ nghỉ , anh chỉ việc huýt_sáo cái là toàn bộ_đàn ngựa tự_động răm_rắp về chuồng của mình .
- 
-bộ(IW) -> bộ(BW) 
-
-=====================
-
-Ngoài xu_hướng ngựa đua , TS Nguyễn_Văn_Đại - vị Giám_đốc “ Trung_tâm Trâu_ngựa ” như anh vẫn từng đùa_vui bảo xã_hội đang có nhu_cầu về ngựa cảnh , ngựa mini .
-Ngoài xu_hướng ngựa_đua , TS Nguyễn_Văn_Đại - vị Giám_đốc “ Trung_tâm Trâu_ngựa ” như anh vẫn từng đùa vui_bảo xã_hội đang có nhu_cầu về ngựa_cảnh , ngựa_mini .
- 
-vui(IW) -> vui(BW) 
-
-=====================
-
-“ Ngựa mini là giống ngựa chỉ cao 80 cm , nặng khoảng 80 kg như con chó béc_giê cỡ lớn , hiền_lành , gần_gũi , làm bầu_bạn chữa bệnh_tưởng cho những người tự_kỉ , hay làm dẫn đường cho người mù .
-“ Ngựa_mini là giống ngựa_chỉ cao 80 cm , nặng khoảng 80 kg như con_chó béc giê_cỡ lớn , hiền_lành , gần_gũi , làm bầu bạn chữa bệnh tưởng cho những người tự_kỉ , hay làm dẫn đường cho người_mù .
- 
-giê(IW) -> giê(BW) 
-bạn(IW) -> bạn(BW) 
-tưởng(IW) -> tưởng(BW) 
-
-=====================
-
-Nhỏ hơn nữa là dòng ngựa pony chỉ 30 - 40 kg , không cưỡi được kể_cả trẻ_con , chỉ dắt đi dạo .
-Nhỏ hơn nữa là dòng_ngựa pony chỉ 30 - 40 kg , không_cưỡi được kể_cả trẻ con , chỉ dắt đi dạo .
- 
-con(IW) -> con(BW) 
-
-=====================
-
-Từ quê_hương xứ lạnh , lông bết từng cục , to như nắm tay trẻ_con , nhỏ như ngón_tay người_lớn nên công_nhân phải tỉ_mẩn cắt từng cụm lông , tắm_rửa sạch từng_li,_từng_tí .
-Từ quê hương_xứ lạnh , lông_bết từng cục , to_như nắm_tay trẻ con , nhỏ như ngón_tay người lớn nên công_nhân phải tỉ mẩn cắt từng cụm_lông , tắm rửa sạch từng li, từng tí .
- 
-hương(IW) -> hương(BW) 
-con(IW) -> con(BW) 
-lớn(IW) -> lớn(BW) 
-mẩn(IW) -> mẩn(BW) 
-rửa(IW) -> rửa(BW) 
-li,(IW) -> li,(BW) 
-từng(IW) -> từng(BW) 
-tí(IW) -> tí(BW) 
-
-=====================
-
-Khi ngựa mini đẻ , cả Giám_đốc , Phó giám_đốc xuống tận nơi thăm .
-Khi ngựa mini_đẻ , cả Giám_đốc , Phó_giám đốc xuống tận nơi thăm .
- 
-đốc(IW) -> đốc(BW) 
-
-=====================
-
-Có ngọn cỏ nào ngon nhất , xanh nhất cũng để_dành làm_quà tặng .
-Có ngọn cỏ nào ngon nhất , xanh nhất cũng để dành làm quà_tặng .
- 
-dành(IW) -> dành(BW) 
-quà(IW) -> quà(BW) 
-
-=====================
-
-Đồng_lương ba_cọc_ba_đồng , anh_em nói vui có sống như phong_lan rừng , hít khí trời , thở sương đêm không ăn , không tiêu cả đời cũng chưa mua nổi dăm mét đất thủ_đô nên vẫn gắn với kiếp chăn ngựa , với những chìm_nổi của nghề .
-Đồng_lương ba cọc ba đồng , anh_em nói_vui có sống như phong_lan rừng , hít khí_trời , thở sương_đêm không_ăn , không_tiêu cả đời cũng chưa mua nổi_dăm mét đất_thủ đô nên vẫn gắn với kiếp chăn_ngựa , với những chìm_nổi của nghề .
- 
-cọc(IW) -> cọc(BW) 
-ba(IW) -> ba(BW) 
-đồng(IW) -> đồng(BW) 
-đô(IW) -> đô(BW) 
-
-=====================
-
-Đặng_Đình_Hanh , Giám_đốc trước cũng bị ngựa hất ngã cắm_đầu vào bụi rậm trong lúc cưỡi .
-Đặng Đình_Hanh , Giám_đốc trước cũng bị ngựa hất ngã cắm đầu vào bụi rậm trong lúc_cưỡi .
- 
-Đình(IW) -> Đình(BW) 
-đầu(IW) -> đầu(BW) 
-
-=====================
-
-Thời nay điều_kiện còn “ sướng ” chứ thời bố nài Quốc còn làm , ông đã từng cưỡi ngựa từ khu Nước_Hai trên Cao_Bằng về Thái_Nguyên trên quãng đường vài trăm cây_số ròng_rã mất mấy ngày_trời .
-Thời_nay điều_kiện còn “ sướng ” chứ thời_bố nài_Quốc còn làm , ông đã từng cưỡi ngựa từ khu Nước_Hai trên Cao_Bằng về Thái_Nguyên trên quãng đường vài trăm cây_số ròng rã mất mấy ngày_trời .
- 
-rã(IW) -> rã(BW) 
-
-=====================
-
-Kêu lọc_cọc , bay vù_vù , đi như chạy , những con gà nặng cả một_hai chục cân di_chuyển trên cánh đồng như những sinh_vật kì_dị .
-Kêu_lọc cọc , bay vù_vù , đi như chạy , những con_gà nặng cả một hai chục_cân di_chuyển trên cánh đồng_như những sinh_vật kì dị .
- 
-cọc(IW) -> cọc(BW) 
-hai(IW) -> hai(BW) 
-dị(IW) -> dị(BW) 
-
-=====================
-
-Hai người chăn ở hai đầu chân bươn_bả chạy , tay phất cờ phướn , miệng kêu tích_tích chỉ đường …
-Hai người chăn ở hai đầu_chân bươn bả_chạy , tay phất cờ phướn , miệng kêu_tích tích_chỉ đường …
- 
-bả(IW) -> bả(BW) 
-tích(IW) -> tích(BW) 
-
-=====================
-
-Trên cánh đồng trơ gốc rạ , Nguyễn_Văn_Mĩ thôn Trắc_Điền ( Đa_Lộc , Ân_Thi , Hưng_Yên ) cùng vợ mình mải_mốt đuổi theo đàn gia_cầm to_lớn , lộc_ngộc lạ_thường .
-Trên cánh đồng_trơ gốc_rạ , Nguyễn_Văn_Mĩ thôn Trắc_Điền ( Đa_Lộc , Ân_Thi , Hưng_Yên ) cùng_vợ mình mải_mốt đuổi theo đàn gia_cầm to_lớn , lộc_ngộc lạ thường .
- 
-thường(IW) -> thường(BW) 
-
-=====================
-
-Chẳng_mấy_chốc chúng đã di_chuyển sang một cánh đồng khác khiến chủ_nhân cũng mải_miết lao theo .
-Chẳng mấy_chốc chúng đã di_chuyển sang một cánh đồng_khác khiến chủ_nhân cũng mải miết_lao theo .
- 
-mấy(IW) -> mấy(BW) 
-miết(IW) -> miết(BW) 
-
-=====================
-
-Tiếng_là gà ngoại nhưng lại chịu_thương,_chịu_khó lạ_thường .
-Tiếng là gà_ngoại nhưng lại chịu thương, chịu khó lạ thường .
- 
-là(IW) -> là(BW) 
-thương,(IW) -> thương,(BW) 
-chịu(IW) -> chịu(BW) 
-khó(IW) -> khó(BW) 
-thường(IW) -> thường(BW) 
-
-=====================
-
-Chúng bới đủ loại củ quả , sâu_bọ để ăn nên người nuôi chỉ mất_công chăn .
-Chúng_bới đủ loại củ_quả , sâu_bọ để ăn nên người nuôi chỉ mất công_chăn .
- 
-công(IW) -> công(BW) 
-
-=====================
-
-Khi cả nước khó_khăn , người_người phải ăn độn , nhà anh Mĩ luôn có 30 - 40 gà_tây đẻ , ấp sòn_sòn , mỗi năm thu vài tạ thịt .
-Khi cả nước khó_khăn , người người phải ăn_độn , nhà_anh Mĩ_luôn có 30 - 40 gà tây_đẻ , ấp sòn_sòn , mỗi năm thu_vài tạ_thịt .
+Chưa nói đến những phim bom tấn của Hollywood ra rạp cùng thời_điểm , doanh_thu Đường_đua , phim được báo_chí và giới chuyên_môn dành nhiều lời khen , còn thua xa phim Thái_Lan Pee_Mak ( tựa tiếng Việt : Tình_người_duyên_ma ) .
+Chưa nói đến những phim bom tấn của Hollywood ra rạp cùng thời_điểm , doanh_thu Đường_đua , phim được báo_chí và giới chuyên_môn dành nhiều lời_khen , còn thua xa phim Thái_Lan_Pee_Mak ( tựa tiếng Việt : Tình người duyên ma ) .
  
 người(IW) -> người(BW) 
-tây(IW) -> tây(BW) 
+duyên(IW) -> duyên(BW) 
+ma(IW) -> ma(BW) 
 
 =====================
 
-Trong nhà vợ_chồng anh quây hàng chục cót thóc cao ngất_nghểu chạm mái , phải bắc thang vào mà đổ 30 - 40 tấn thóc .
-Trong nhà_vợ chồng anh quây_hàng chục_cót thóc cao ngất nghểu chạm mái , phải bắc_thang vào mà_đổ 30 - 40 tấn_thóc .
+Trên trang cá_nhân , ông Nguyễn_Thanh_Sơn bộc_bạch : “ Ở các rạp nhà như Galaxy , BHD hay Trung_tâm_Chiếu_phim_Quốc_gia Hà_Nội thì doanh_thu còn tốt , còn các rạp khác thì khá thảm , bị phim ngoại đủ loại đè cho bẹp_gí ” .
+Trên trang cá_nhân , ông Nguyễn_Thanh_Sơn bộc_bạch : “ Ở các rạp nhà như Galaxy , BHD hay Trung_tâm Chiếu_phim Quốc_gia Hà_Nội thì doanh_thu còn tốt , còn các rạp khác thì khá thảm , bị phim ngoại đủ loại đè cho bẹp_gí ” .
  
-chồng(IW) -> chồng(BW) 
-nghểu(IW) -> nghểu(BW) 
+Chiếu(IW) -> Chiếu(BW) 
+Quốc(IW) -> Quốc(BW) 
 
 =====================
 
-Chỗ thóc ấy được anh_chị hào_phóng cho cả họ_hàng , làng_xóm vay chống đói qua_ngày_đoạn_tháng .
-Chỗ thóc ấy được anh_chị hào_phóng cho cả họ hàng , làng_xóm vay chống đói_qua ngày_đoạn tháng .
+“ Thực_ra mình cũng đã lường trước việc này khi làm một bộ phim đụng_chạm đến đề_tài xã_hội , mọi người sẽ nghĩ đây là phim bạo_lực hay xã_hội_đen nhưng mình đầu_tư làm phim này vì nó đề_cập đến một vấn_đề khác , vấn_đề tâm_đắc , đặt ra một câu_hỏi ngầm : Ai sẽ bảo_vệ thân_phận nhỏ_bé , không chỗ dựa của những người bé_nhỏ trong xã_hội hiện_nay ? ” - ông Nguyễn_Thanh_Sơn tâm_sự trên trang cá_nhân .
+“ Thực_ra mình cũng đã lường trước việc này khi làm một bộ phim đụng_chạm đến đề_tài xã_hội , mọi người sẽ nghĩ đây là phim bạo_lực hay xã_hội đen nhưng mình đầu_tư làm phim này vì nó đề_cập đến một vấn_đề khác , vấn_đề tâm_đắc , đặt ra một câu_hỏi ngầm : Ai sẽ bảo_vệ thân_phận nhỏ_bé , không chỗ_dựa của những người bé_nhỏ trong xã_hội hiện_nay ? ” - ông Nguyễn_Thanh_Sơn tâm_sự trên trang cá_nhân .
  
-hàng(IW) -> hàng(BW) 
-ngày(IW) -> ngày(BW) 
-tháng(IW) -> tháng(BW) 
+đen(IW) -> đen(BW) 
 
 =====================
 
-Vợ_chồng anh là người đầu_tiên ở xã Đa_Lộc làm được nhà mái_bằng cũng nhờ con gà_tây nâng_đỡ .
-Vợ chồng_anh là người đầu_tiên ở xã_Đa_Lộc_làm được nhà_mái bằng cũng nhờ con_gà tây nâng đỡ .
+Nhưng chúng_tôi cũng không đặt nặng vấn_đề sẽ thu_hồi vốn mà đầu_tư cho cái mình thích và cũng có chút hiếu_thắng , muốn chứng_minh điện_ảnh Việt không thiếu người _làm ra những bộ phim tử_tế ” - ông Nguyễn_Thanh_Sơn bộc_bạch .
+Nhưng chúng_tôi cũng không đặt nặng vấn_đề sẽ thu_hồi vốn mà đầu_tư cho cái mình thích và cũng có chút hiếu_thắng , muốn chứng_minh điện_ảnh Việt không thiếu người làm ra những bộ phim tử_tế ” - ông Nguyễn_Thanh_Sơn bộc_bạch .
  
-chồng(IW) -> chồng(BW) 
-bằng(IW) -> bằng(BW) 
-tây(IW) -> tây(BW) 
-đỡ(IW) -> đỡ(BW) 
+làm(IW) -> làm(BW) 
 
 =====================
 
-Nuôi gà_tây hiệu_quả thế nên thời bao_cấp , vài chục người trải chiếu ăn_chực_nằm_chờ tay phe_phẩy quạt_nan , quạt_giấy ở nhà anh Mĩ chỉ để mua 20 - 30 con gà giống cũng là điều dễ hiểu .
-Nuôi gà tây hiệu_quả thế_nên thời bao_cấp , vài chục_người trải chiếu ăn_chực nằm chờ_tay phe phẩy quạt_nan , quạt_giấy ở nhà_anh Mĩ_chỉ để mua 20 - 30 con_gà giống cũng là điều dễ hiểu .
+Đường_đua không phải là dự_án điện_ảnh hành_động duy_nhất của Blue_Productions .
+Đường đua không phải là dự_án điện_ảnh hành_động duy_nhất của Blue_Productions .
  
-tây(IW) -> tây(BW) 
-nằm(IW) -> nằm(BW) 
-chờ(IW) -> chờ(BW) 
-phẩy(IW) -> phẩy(BW) 
+đua(IW) -> đua(BW) 
 
 =====================
 
-Chúng_tôi cứ đi miết cả tuần , cả tháng mới đáo về nhà một_hai bận khi có việc giỗ_chạp , đình_đám .
-Chúng_tôi cứ đi miết cả tuần , cả tháng mới_đáo về nhà một hai bận khi có việc giỗ_chạp , đình_đám .
+Điển_hình nhất là vào năm 2010 với hàng_loạt phim có doanh_thu cao : Để_Mai_tính , Giao_lộ_định_mệnh , Cánh_đồng_bất_tận …
+Điển_hình nhất là vào năm 2010 với hàng_loạt phim có doanh_thu cao : Để Mai_tính , Giao_lộ định_mệnh , Cánh_đồng bất_tận …
  
-hai(IW) -> hai(BW) 
+Mai(IW) -> Mai(BW) 
+định(IW) -> định(BW) 
+bất(IW) -> bất(BW) 
 
 =====================
 
-Chăn gà nhọc hơn chăn trâu nhất_là khi chúng mót đẻ rất hay rúc vào lùm vào bụi , dễ mất .
-Chăn_gà nhọc hơn chăn_trâu nhất là khi chúng_mót đẻ rất hay rúc vào lùm vào bụi , dễ mất .
+Tuy_nhiên , những năm sau_này , phim trái_mùa trở_lại thất_bại cũ khi lọt_thỏm giữa những bộ phim ngoại có sức hút lớn hơn .
+Tuy_nhiên , những năm sau này , phim trái_mùa trở_lại thất_bại cũ khi lọt_thỏm giữa những bộ phim ngoại có sức_hút lớn hơn .
  
-là(IW) -> là(BW) 
-
-=====================
-
-Hễ thấy gà mái kêu táo_tác , sờ đít thấy cồm_cộm trứng phải dẫn về chuồng cho chúng đẻ .
-Hễ thấy gà mái kêu táo_tác , sờ_đít thấy cồm cộm_trứng phải dẫn về chuồng cho chúng_đẻ .
- 
-cộm(IW) -> cộm(BW) 
-
-=====================
-
-Qua người phiên_dịch anh mới biết họ bảo đại_ý rằng : “ Ở nước tôi gà toàn nuôi công_nghiệp chứ không có thả rông trên đồng thế_này .
-Qua người phiên dịch_anh mới_biết họ bảo_đại_ý rằng : “ Ở nước tôi gà toàn_nuôi công_nghiệp chứ không có thả rông trên đồng_thế này .
- 
-dịch(IW) -> dịch(BW) 
 này(IW) -> này(BW) 
 
 =====================
 
-Ngay cả giáo_sư người Hunggari , quê_hương của giống gà_tây nổi_tiếng thế_giới , cũng có lần bảo anh gà_tây nuôi ở Việt_Nam kích_cỡ nhỏ hơn , trứng nhỏ hơn nhưng thịt ngon chưa từng thấy .
-Ngay cả giáo_sư người_Hunggari , quê_hương của giống gà_tây nổi tiếng thế_giới , cũng có lần bảo_anh gà tây_nuôi ở Việt_Nam kích_cỡ nhỏ hơn , trứng nhỏ hơn nhưng thịt ngon chưa từng thấy .
+Cũng chính vì_vậy mà bộ phim Biết_chết_liền của anh đã chọn thời_điểm lùi lại đến tháng 4 sau Tết nhưng mãi đến tháng 6 , phim mới ra rạp .
+Cũng chính vì_vậy_mà bộ phim_Biết chết liền của anh đã chọn thời_điểm lùi lại đến tháng 4 sau Tết nhưng mãi đến tháng 6 , phim mới ra rạp .
  
-tiếng(IW) -> tiếng(BW) 
-tây(IW) -> tây(BW) 
+chết(IW) -> chết(BW) 
+liền(IW) -> liền(BW) 
 
 =====================
 
-Anh Mĩ chỉ cười mà đáp rằng cũng đúng thôi vì nó ăn cả trăm loại cỏ , loại lá kể_cả những lá đắng như lá xoan , lá bưởi , nhặt đủ thứ củ , hạt , côn_trùng trên cánh đồng , thịt sạch ngon là phải .
-Anh Mĩ chỉ cười mà đáp rằng cũng đúng thôi vì nó ăn cả trăm loại cỏ , loại lá kể cả những lá đắng như lá xoan , lá bưởi , nhặt đủ thứ củ , hạt , côn_trùng trên cánh_đồng , thịt sạch_ngon là phải .
+So với những phim hài trước , Biết_chết_liền ! được khen nhiều hơn ở đề_tài và cách thể_hiện nhưng vẫn còn nhiều hạn_chế khi đạo_diễn cố_tình gieo tiếng cười không đúng chỗ .
+So với những phim hài trước , Biết_chết liền ! được khen nhiều hơn ở đề_tài và cách thể_hiện nhưng vẫn còn nhiều hạn_chế khi đạo_diễn cố_tình gieo tiếng cười không đúng chỗ .
  
-cả(IW) -> cả(BW) 
+liền(IW) -> liền(BW) 
 
 =====================
 
-Năm đầu_tiên không bán được vì trọng_lượng gà quá lớn , anh để lại một con làm_thịt , gói được 10 kg giò .
-Năm đầu_tiên không bán được vì trọng_lượng gà quá lớn , anh để lại một con_làm thịt , gói được 10 kg giò .
+Nói_chung , mỗi lần làm một bộ phim , tôi phải cân_nhắc đủ đường ” - đạo_diễn Lê_Bảo_Trung phân_trần .
+Nói_chung , mỗi lần làm một bộ phim , tôi phải cân_nhắc đủ đường ” - đạo_diễn Lê_Bảo Trung_phân_trần .
  
-thịt(IW) -> thịt(BW) 
+Trung(IW) -> Trung(BW) 
 
 =====================
 
-Giống gà_tây này nặng đến_nỗi mỗi lần qua mương_máng anh_chị phải lầy lật bỏ rơm_rạ xuống bắc_cầu cho chúng đi hoặc phải tự tay bê qua chỗ lầy thụt .
-Giống gà_tây này nặng đến nỗi mỗi lần qua mương máng anh chị phải lầy lật_bỏ rơm rạ xuống bắc_cầu cho chúng_đi hoặc phải tự_tay bê qua chỗ lầy_thụt .
+Chúng_tôi vẫn sẽ tiếp_tục thực_hiện những mục_tiêu đã đề ra , đầu_tư cho các tài_năng trẻ , chỉ có_điều sẽ đi chậm lại một_chút ” .
+Chúng_tôi vẫn sẽ tiếp_tục thực_hiện những mục_tiêu đã đề ra , đầu_tư cho các tài_năng trẻ , chỉ có điều sẽ đi chậm lại một_chút ” .
  
-nỗi(IW) -> nỗi(BW) 
-máng(IW) -> máng(BW) 
-chị(IW) -> chị(BW) 
-rạ(IW) -> rạ(BW) 
+điều(IW) -> điều(BW) 
 
 =====================
 
-Đi chăn_thả , thấy gà_tây trắng đạp gà_tây đen phải nhanh_chóng tách ra nếu không sẽ chỉ còn cách lượm xác gà mái vì trọng_lượng của hai dòng gà này bất_cân_xứng nhiều lần .
-Đi chăn_thả , thấy gà tây trắng đạp gà tây_đen phải nhanh_chóng tách ra nếu không sẽ chỉ còn cách lượm_xác gà mái vì trọng_lượng của hai dòng_gà này bất_cân xứng nhiều lần .
+Đến nay , do có những quan_điểm mới cho rằng đã xuất_hiện một_số dấu_hiệu suy_giảm kinh_tế , nên cần thay_đổi thứ_tự ưu_tiên , cụ_thể là thay “ ưu_tiên kiềm_chế lạm_phát ” bằng “ tiếp_tục kiềm_chế lạm_phát ” đi_đôi với “ chủ_động ngăn_ngừa suy_giảm ” kinh_tế ( Tuổi_trẻ , 06 - 11 - 2008 ) .
+Đến nay , do có những quan_điểm mới cho rằng đã xuất_hiện một_số dấu_hiệu suy_giảm kinh_tế , nên cần thay_đổi thứ tự ưu_tiên , cụ_thể là thay “ ưu_tiên kiềm_chế lạm_phát ” bằng “ tiếp_tục kiềm_chế lạm_phát ” đi đôi với “ chủ_động ngăn_ngừa suy_giảm ” kinh_tế ( Tuổi_trẻ , 06 - 11 - 2008 ) .
  
-tây(IW) -> tây(BW) 
-tây(IW) -> tây(BW) 
-xứng(IW) -> xứng(BW) 
+tự(IW) -> tự(BW) 
+đôi(IW) -> đôi(BW) 
 
 =====================
 
-Gà_tây mái mót trống cứ thấy có tiếng_động lớn như ô_tô , xe_máy đi qua xình_xịch là nằm_bẹp xuống vì ... tưởng nhầm .
-Gà_tây mái mót_trống cứ thấy có tiếng_động lớn như ô_tô , xe_máy đi qua xình_xịch là nằm bẹp xuống vì ... tưởng_nhầm .
+Theo chúng_tôi , nếu làm theo đề_xuất chính_sách trên đây là quá sớm , nếu không muốn nói là vội_vàng , vì_thế chúng_tôi xin viết lại bài này với tiêu_đề mới chỉ bổ_sung thêm một chữ “ vẫn ” , do_vậy tiêu_đề mới của bài viết sẽ là : “ Chống lạm_phát bây_giờ vẫn là ưu_tiên số 1 của Việt_Nam ” .
+Theo chúng_tôi , nếu làm theo đề_xuất chính_sách trên đây là quá sớm , nếu không muốn nói là vội_vàng , vì_thế chúng_tôi xin viết lại bài này với tiêu_đề mới chỉ bổ_sung thêm một chữ “ vẫn ” , do vậy tiêu_đề mới của bài viết sẽ là : “ Chống lạm_phát bây_giờ vẫn là ưu_tiên số 1 của Việt_Nam ” .
  
-bẹp(IW) -> bẹp(BW) 
+vậy(IW) -> vậy(BW) 
 
 =====================
 
-Mỗi con_giống anh_chị Mĩ bán tương_đương 15 kg thóc .
-Mỗi con giống anh chị Mĩ bán tương_đương 15 kg_thóc .
+Từ khi đất_nước được thống_nhất năm 1976 đến nay , Việt_Nam đã và đang trải qua hai giai_đoạn phát_triển chính được đánh_dấu bằng mốc khởi_đầu đổi_mới năm 1986 chuyển nền kinh_tế Việt_Nam từ kế_hoạch_hoá tập_trung sang kinh_tế_thị_trường định_hướng XHCN .
+Từ khi đất_nước được thống_nhất năm 1976 đến nay , Việt_Nam đã và đang trải qua hai giai_đoạn phát_triển chính được đánh_dấu bằng mốc khởi_đầu đổi_mới năm 1986 chuyển nền kinh_tế Việt_Nam từ kế_hoạch_hoá tập_trung sang kinh_tế thị_trường định_hướng XHCN .
  
-giống(IW) -> giống(BW) 
-chị(IW) -> chị(BW) 
+thị(IW) -> thị(BW) 
 
 =====================
 
-Họ cứ mua hai mái , một trống với giá đổ_đồng mỗi con một_triệu , tương_đương hai tạ thóc .
-Họ cứ mua hai mái , một_trống với giá đổ đồng mỗi con một triệu , tương_đương hai tạ_thóc .
+Ngoài_ra , trong bài viết , tác_giả cũng lựa_chọn và nêu ra một_số kinh_nghiệm mang tính phổ_biến trên thế_giới về lạm_phát và chống lạm_phát để làm cơ_sở cho việc tham_khảo , so_sánh và liên_hệ với tình_hình thực_tế đã và đang diễn ra tại Việt_Nam , góp_phần vào việc xây_dựng và thực_thi những chính_sách và biện_pháp chống lạm_phát ở Việt_Nam không_chỉ phản_ánh những đặc_điểm riêng của Việt_Nam , mà_còn có phần tiếp_cận với những giải_pháp mang tính phổ_biến trong nền kinh_tế_thị_trường thế_giới .
+Ngoài_ra , trong bài viết , tác_giả cũng lựa_chọn và nêu ra một_số kinh_nghiệm mang tính phổ_biến trên thế_giới về lạm_phát và chống lạm_phát để làm cơ_sở cho việc tham_khảo , so_sánh và liên_hệ với tình_hình thực_tế đã và đang diễn ra tại Việt_Nam , góp_phần vào việc xây_dựng và thực_thi những chính_sách và biện_pháp chống lạm_phát ở Việt_Nam không chỉ phản_ánh những đặc_điểm riêng của Việt_Nam , mà_còn có phần tiếp_cận với những giải_pháp mang tính phổ_biến trong nền kinh_tế thị_trường thế_giới .
  
-đồng(IW) -> đồng(BW) 
-triệu(IW) -> triệu(BW) 
+chỉ(IW) -> chỉ(BW) 
+thị(IW) -> thị(BW) 
 
 =====================
 
-Mua xong tắm_rửa , kì_cọ gà bằng xà_phòng thơm , sạch_sẽ tinh_tươm mới lên_đường .
-Mua_xong tắm_rửa , kì cọ_gà bằng xà phòng_thơm , sạch sẽ tinh_tươm mới lên đường .
+Trước đổi_mới , do lạm_phát trong khủng_hoảng_kinh_tế - xã_hội , hầu_hết các tác_nhân gây ra lạm_phát đều bắt_nguồn từ những yếu_kém của nền kinh_tế và của hệ_thống quản_lí , vì_thế gần_như 100 % tác_động của lạm_phát là có hại , cách_thức chống lạm_phát đòi_hỏi phải căn_bản , triệt_để và đồng_bộ , kể_cả phải đổi_mới hệ_thống quản_lí từ kế_hoạch_hoá tập_trung , quan_liêu , bao_cấp , sang cơ_chế thị_trường .
+Trước đổi_mới , do lạm_phát trong khủng_hoảng kinh_tế - xã_hội , hầu_hết các tác_nhân gây ra lạm_phát đều bắt_nguồn từ những yếu_kém của nền kinh_tế và của hệ_thống quản_lí , vì_thế gần như 100 % tác_động của lạm_phát là có hại , cách_thức chống lạm_phát đòi_hỏi phải căn_bản , triệt_để và đồng_bộ , kể_cả phải đổi_mới hệ_thống quản_lí từ kế_hoạch_hoá tập_trung , quan_liêu , bao_cấp , sang cơ_chế thị_trường .
  
-cọ(IW) -> cọ(BW) 
-phòng(IW) -> phòng(BW) 
-sẽ(IW) -> sẽ(BW) 
-đường(IW) -> đường(BW) 
+kinh(IW) -> kinh(BW) 
+như(IW) -> như(BW) 
 
 =====================
 
-Dần_dần nhu_cầu gà cảnh bão_hoà , người_ta quay lại giống gà_tây đen , tây lai vì thịt ngon , vì trọng_lượng phù_hợp .
-Dần dần nhu_cầu gà_cảnh bão_hoà , người ta quay lại giống gà tây_đen , tây_lai vì thịt ngon , vì trọng_lượng phù_hợp .
+Lạm_phát diễn ra trong thể_trạng nền kinh_tế_thị_trường đang trên đà phát_triển , nhưng vẫn còn non_trẻ , chưa đủ độ trưởng_thành , mà đã tăng_trưởng nóng , giống như một đứa trẻ mới lớn đã bị sốt nóng , tuy có khả_năng hồi_phục nhanh , nhưng sức chịu_đựng yếu_ớt , dễ bị tổn_thương trước cơn sốc lạm_phát cao , do_đó nếu không có phác_đồ điều_trị thận_trọng , chu_đáo , thì không_những không_thể chữa khỏi bệnh , mà_còn có_thể làm cho bệnh_tình trở_nên trầm_trọng hơn , thậm_chí biến_tướng thành bệnh khác nặng_nề và nguy_hiểm hơn ;
+Lạm_phát diễn ra trong thể_trạng nền kinh_tế thị_trường đang trên đà phát_triển , nhưng vẫn còn non_trẻ , chưa đủ độ trưởng_thành , mà đã tăng_trưởng nóng , giống_như một đứa trẻ mới lớn đã bị sốt nóng , tuy có khả_năng hồi_phục nhanh , nhưng sức chịu_đựng yếu_ớt , dễ bị tổn_thương trước cơn sốc lạm_phát cao , do_đó nếu không có phác_đồ điều_trị thận_trọng , chu_đáo , thì không_những không_thể chữa khỏi bệnh , mà_còn có_thể làm cho bệnh_tình trở_nên trầm_trọng hơn , thậm_chí biến_tướng thành bệnh khác nặng_nề và nguy_hiểm hơn ;
  
-dần(IW) -> dần(BW) 
-ta(IW) -> ta(BW) 
-tây(IW) -> tây(BW) 
+thị(IW) -> thị(BW) 
 
 =====================
 
-Ấy vậy_mà hễ thấy rắn là chúng kêu tích_tích , chạy vòng_quanh bao_vây , có buổi chị Nguyễn_Thị_Thiện vợ anh Mĩ bắt được dăm_ba con rắn là nhờ vậy .
-Ấy_vậy mà hễ thấy rắn là chúng kêu_tích_tích , chạy vòng quanh bao_vây , có buổi chị Nguyễn_Thị_Thiện vợ_anh Mĩ_bắt được dăm ba con_rắn là nhờ vậy .
+Một đặc_điểm nữa rất đáng quan_tâm , nhưng ít được nhắc đến , là mối quan_hệ chặt_chẽ giữa lạm_phát và khủng_hoảng_kinh_tế - xã_hội .
+Một đặc_điểm nữa rất đáng quan_tâm , nhưng ít được nhắc đến , là mối quan_hệ chặt_chẽ giữa lạm_phát và khủng_hoảng kinh_tế - xã_hội .
  
-mà(IW) -> mà(BW) 
-quanh(IW) -> quanh(BW) 
-ba(IW) -> ba(BW) 
+kinh(IW) -> kinh(BW) 
 
 =====================
 
-Hiện Đa_Lộc có khoảng 30 - 40 hộ nuôi cả vạn con gà_tây thịt , cung_cấp vài chục tấn ra thị_trường một năm nhưng gà giống vẫn chỉ có mình anh Mĩ .
-Hiện_Đa_Lộc có khoảng 30 - 40 hộ nuôi cả vạn con gà tây_thịt , cung_cấp vài chục tấn ra thị_trường một năm nhưng gà giống vẫn chỉ có mình anh Mĩ .
+Nhìn lại quá_trình phát_triển 20 năm qua , người_ta thấy đối_với nền kinh_tế thế_giới và châu_Á , lạm_phát và khủng_hoảng đã từng diễn ra trong các năm 1997 - 1998 , nay tái_diễn từ cuối năm 2007 , có xu_hướng ngày_càng trầm_trọng hơn và có nhiều khả_năng kéo_dài đến hết năm 2010 ; đối_với Việt_Nam cũng vậy , lạm_phát siêu cao và cao cùng_với khủng_hoảng_kinh_tế - xã_hội trầm_trọng đã từng diễn ra và kéo_dài suốt hai thập_kỉ từ cuối những năm 1970 đến giữa những năm 1990 , sau đó giảm xuống một chữ_số trong một thập_kỉ , nay lại bùng_phát , năm 2008 có_thể tăng lên mức 24 % .
+Nhìn lại quá_trình phát_triển 20 năm qua , người_ta thấy đối_với nền kinh_tế thế_giới và châu_Á , lạm_phát và khủng_hoảng đã từng diễn ra trong các năm 1997 - 1998 , nay tái_diễn từ cuối năm 2007 , có xu_hướng ngày_càng trầm_trọng hơn và có nhiều khả_năng kéo_dài đến hết năm 2010 ; đối_với Việt_Nam cũng_vậy , lạm_phát siêu cao và cao cùng_với khủng_hoảng kinh_tế - xã_hội trầm_trọng đã từng diễn ra và kéo_dài suốt hai thập_kỉ từ cuối những năm 1970 đến giữa những năm 1990 , sau_đó giảm xuống một chữ_số trong một thập_kỉ , nay lại bùng_phát , năm 2008 có_thể tăng lên mức 24 % .
  
-tây(IW) -> tây(BW) 
+kinh(IW) -> kinh(BW) 
 
 =====================
 
-Gà_tây nuôi cỡ 6 tháng là bán được .
-Gà tây nuôi cỡ 6 tháng là bán được .
+mặt_khác , khi thấy nền kinh_tế - xã_hội có dấu_hiệu hoặc xu_hướng tiến_triển tốt_đẹp thì không nên quá lạc_quan , say_sưa với những thành_tích đã đạt được , phê_duyệt quá nhiều dự_án đầu_tư lớn đầy tham_vọng và dàn_trải , kém khả_năng thực_thi , quên mất những hạn_chế lớn và cơ_bản của một nền kinh_tế vào loại kém phát_triển nhất thế_giới , từ đó thiếu cảnh_giác , đề_phòng , thiếu dự_báo và thiếu việc chuẩn_bị phương_án khắc_phục lạm_phát , vì tuy vào một thời_điểm nhất_định tình_hình kinh_tế - xã_hội và lạm_phát đã được cải_thiện , nhưng lạm_phát và khủng_hoảng luôn như những căn_bệnh âm_ỉ , những hiểm_hoạ tiềm_ẩn , chỉ một hai chục năm sau , khi có môi_trường thuận_lợi là ngay_lập_tức bung ra , nổi lên gây_hấn , từ lạm_phát có_thể dẫn đến khủng_hoảng , và ngược_lại , khủng_hoảng làm cho lạm_phát trở_nên trầm_trọng hơn , khó chữa hơn .
+mặt_khác , khi thấy nền kinh_tế - xã_hội có dấu_hiệu hoặc xu_hướng tiến_triển tốt_đẹp thì không nên quá lạc_quan , say_sưa với những thành_tích đã đạt được , phê_duyệt quá nhiều dự_án đầu_tư lớn đầy tham_vọng và dàn_trải , kém khả_năng thực_thi , quên mất những hạn_chế lớn và cơ_bản của một nền kinh_tế vào loại kém phát_triển nhất thế_giới , từ đó thiếu cảnh_giác , đề_phòng , thiếu dự_báo và thiếu việc chuẩn_bị phương_án khắc_phục lạm_phát , vì tuy vào một thời_điểm nhất_định tình_hình kinh_tế - xã_hội và lạm_phát đã được cải_thiện , nhưng lạm_phát và khủng_hoảng_luôn như những căn_bệnh âm_ỉ , những hiểm_hoạ tiềm_ẩn , chỉ một_hai chục năm sau , khi có môi_trường thuận_lợi là ngay lập_tức bung ra , nổi lên gây hấn , từ lạm_phát có_thể dẫn đến khủng_hoảng , và ngược_lại , khủng_hoảng làm cho lạm_phát trở_nên trầm_trọng hơn , khó chữa hơn .
  
-tây(IW) -> tây(BW) 
+lập(IW) -> lập(BW) 
+hấn(IW) -> hấn(BW) 
 
 =====================
 
-Lúc đó con trống nặng trên một yến còn con mái cũng cỡ dăm_bảy cân .
-Lúc đó con_trống nặng trên một yến còn con_mái cũng cỡ dăm bảy_cân .
+Xét mức_độ , từ năm 1976 đến nay lạm_phát ở Việt_Nam dâng lên cao nhất vào những năm cuối thập_niên 1970 - đầu thập_niên 1980 với mức đỉnh_điểm khoảng 800 % / năm .
+Xét mức_độ , từ năm 1976 đến nay lạm_phát ở Việt_Nam dâng lên cao nhất vào những năm cuối thập_niên 1970 - đầu thập_niên 1980 với mức đỉnh điểm khoảng 800 % / năm .
  
-bảy(IW) -> bảy(BW) 
+điểm(IW) -> điểm(BW) 
 
 =====================
 
-Xuất đi các nhà_hàng với giá 90.000 đ / kg , chạy nhất_là dịp gần Noel hay Tết_tây .
-Xuất_đi các nhà_hàng với giá 90.000 đ / kg , chạy nhất là dịp gần_Noel hay Tết_tây .
+Mức này tuy chưa cao so với 4000 - 5000 % ở một_số nước Mĩ_Latinh thập_niên 1970 - 80 , hay hơn 10 triệu % như ở Dimbabuê , châu_Phi , trong những tháng giữa năm 2008 , nhưng đã thuộc loại rất cao trên thế_giới .
+Mức này tuy chưa cao so với 4000 - 5000 % ở một_số nước Mĩ Latinh thập_niên 1970 - 80 , hay hơn 10 triệu % như ở Dimbabuê , châu_Phi , trong những tháng giữa năm 2008 , nhưng đã thuộc loại rất cao trên thế_giới .
  
-là(IW) -> là(BW) 
+Latinh(IW) -> Latinh(BW) 
 
 =====================
 
-Ăn_uống no_nê , họ còn gói đồ thừa kèm theo rau_thơm , nước_chấm về ăn tiếp .
-Ăn_uống no_nê , họ còn gói đồ thừa kèm theo rau_thơm , nước chấm về ăn_tiếp .
+Không_những thế , lạm_phát còn nằm trong bối_cảnh đất_nước rơi vào tình_trạng khủng_hoảng_kinh_tế - xã_hội trầm_trọng , tệ kế_hoạch , quan_liêu , bao_cấp nặng_nề , mức_độ hội_nhập kinh_tế quốc_tế và khu_vực vừa kém lại vừa bị hạn_chế do chính_sách kém mở_cửa của ta và do bị Mĩ bao_vây , cấm_vận , làm cho lạm_phát càng thêm trầm_trọng .
+Không_những thế , lạm_phát còn nằm trong bối_cảnh đất_nước rơi vào tình_trạng khủng_hoảng kinh_tế - xã_hội trầm_trọng , tệ kế_hoạch , quan_liêu , bao_cấp nặng_nề , mức_độ hội_nhập kinh_tế quốc_tế và khu_vực vừa kém lại vừa bị hạn_chế do chính_sách kém mở_cửa của ta và do bị Mĩ bao_vây , cấm_vận , làm cho lạm_phát càng thêm trầm_trọng .
  
-chấm(IW) -> chấm(BW) 
+kinh(IW) -> kinh(BW) 
 
 =====================
 
-Ở thôn_quê giờ một_số nơi chớm mốt đám_cưới toàn cỗ gà_tây với bảy_tám món .
-Ở thôn quê giờ một_số nơi chớm_mốt đám_cưới toàn_cỗ gà_tây với bảy tám_món .
+Mặc_dù vậy , lạm_phát lần này đã gây ra nhiều tác_động tiêu_cực cho nền kinh_tế , gây lo_ngại lớn cho cả các cấp hoạch_định chính_sách , các doanh_nghiệp và cho dân_thường , nhất_là những người có việc_làm bấp_bênh và thu_nhập thấp , đòi_hỏi phải có sự nghiên_cứu kĩ để hiểu rõ nguyên_nhân và tìm ra các giải_pháp hữu_hiệu nhằm vượt qua thách_thức , không_chỉ tiếp_tục duy_trì tốc_độ tăng_trưởng kinh_tế cao , mà cần đảm_bảo một sự tăng_trưởng lâu_dài , bền_vững .
+Mặc_dù vậy , lạm_phát lần này đã gây ra nhiều tác_động tiêu_cực cho nền kinh_tế , gây lo_ngại lớn cho cả các cấp hoạch_định chính_sách , các doanh_nghiệp và cho dân_thường , nhất_là những người có việc_làm bấp_bênh và thu_nhập thấp , đòi_hỏi phải có sự nghiên_cứu kĩ để hiểu rõ nguyên_nhân và tìm ra các giải_pháp hữu_hiệu nhằm vượt qua thách_thức , không chỉ tiếp_tục duy_trì tốc_độ tăng_trưởng kinh_tế cao , mà cần đảm_bảo một sự tăng_trưởng lâu_dài , bền_vững .
  
-quê(IW) -> quê(BW) 
-tám(IW) -> tám(BW) 
+chỉ(IW) -> chỉ(BW) 
 
 =====================
 
-Để lại vài con gà trắng làm giống , đổ một đống cát làm đệm cho con gà_tây mái đen , hai vợ_chồng anh làm công_việc ... hỗ_trợ gà_tây trắng phối giống .
-Để lại vài con_gà trắng làm giống , đổ một đống cát làm đệm cho con_gà tây_mái đen , hai vợ chồng_anh làm công_việc ... hỗ_trợ gà_tây trắng phối giống .
+( 2 ) Nền kinh_tế “ thiếu ” nghiêm_trọng , nhất_là sự thiếu_thốn về các hàng_hoá tiêu_dùng thiết_yếu như lương_thực , thực_phẩm và các hàng_hoá tiêu_dùng thuộc loại nhu_yếu_phẩm khác , hậu_quả của sự kiệt_quệ sau chiến_tranh , của tình_trạng kinh_tế tăng_trưởng kém và việc chấm_dứt các nguồn viện_trợ từ bên ngoài ;
+( 2 ) Nền kinh_tế “ thiếu ” nghiêm_trọng , nhất_là sự thiếu_thốn về các hàng_hoá tiêu_dùng thiết_yếu như lương_thực , thực_phẩm và các hàng_hoá tiêu_dùng thuộc loại nhu_yếu phẩm khác , hậu_quả của sự kiệt_quệ sau chiến_tranh , của tình_trạng kinh_tế tăng_trưởng kém và việc chấm_dứt các nguồn viện_trợ từ bên ngoài ;
  
-tây(IW) -> tây(BW) 
-chồng(IW) -> chồng(BW) 
+phẩm(IW) -> phẩm(BW) 
 
 =====================
 
-Một người đỡ bên dưới hai cánh con gà mái cho nó chịu_đực mà không bị đè_bẹp chết .
-Một người_đỡ bên dưới hai cánh con gà mái cho nó chịu đực mà không bị đè_bẹp chết .
- 
-đực(IW) -> đực(BW) 
-
-=====================
-
-Gà_tây giao_phối rất lâu , không theo kiểu quẹt quẹt cho_qua_chuyện như gà_ta mà kéo_dài đến mươi phút .
-Gà_tây giao_phối rất lâu , không theo kiểu quẹt_quẹt cho qua chuyện như gà ta mà kéo_dài đến mươi phút .
- 
-qua(IW) -> qua(BW) 
-chuyện(IW) -> chuyện(BW) 
-ta(IW) -> ta(BW) 
-
-=====================
-
-Rành_rẽ về con gà_tây đến_nỗi , khi chúng bị chướng diều vì ngộ_độc thực_phẩm , anh Mĩ dùng dao mổ hàng trăm diều gà một lúc , khâu vào chúng lại kêu tọp_tọp đi ăn bình_thường .
-Rành_rẽ về con_gà tây đến nỗi , khi chúng bị chướng_diều vì ngộ_độc thực_phẩm , anh Mĩ dùng dao mổ hàng trăm_diều gà một lúc , khâu vào chúng lại kêu_tọp tọp đi_ăn bình_thường .
- 
-tây(IW) -> tây(BW) 
-nỗi(IW) -> nỗi(BW) 
-tọp(IW) -> tọp(BW) 
-
-=====================
-
-Hoa_mặt_khỉ ( Dracula_simia )
-Hoa mặt_khỉ ( Dracula_simia )
- 
-mặt(IW) -> mặt(BW) 
-
-=====================
-
-Giống hoa_lan mặt khỉ này chỉ mọc trên các sườn núi nằm trên độ cao từ 1000 - 2000 m của những khu rừng tối_tăm rậm_rạp ở phía đông_nam Ecuador và Peru .
-Giống hoa_lan mặt_khỉ này chỉ mọc trên các sườn núi nằm trên độ cao từ 1000 - 2000 m của những khu rừng tối_tăm rậm rạp ở phía đông nam_Ecuador và Peru .
- 
-rạp(IW) -> rạp(BW) 
-nam(IW) -> nam(BW) 
-
-=====================
-
-Hoa_mặt_khỉ có tên khoa_học là Dracula_simia , trong đó , simia có nghĩa_là mặt khỉ , và Dracula dùng để chỉ 2 cựa cánh hoa trông khá giống với răng_nanh của ma_cà_rồng .
-Hoa mặt_khỉ có tên khoa_học là Dracula_simia , trong đó , simia có nghĩa_là mặt_khỉ , và Dracula_dùng để chỉ 2 cựa cánh hoa trông khá giống với răng_nanh của ma_cà rồng .
- 
-mặt(IW) -> mặt(BW) 
-rồng(IW) -> rồng(BW) 
-
-=====================
-
-Mỗi bông hoa_ong trông qua rất giống một con ong cái đang nằm trên cánh hoa màu hồng , nhằm thu_hút sự chú_ý của ong đực .
-Mỗi bông hoa ong trông qua rất giống một con_ong cái đang nằm trên cánh hoa màu_hồng , nhằm thu_hút sự chú_ý của ong đực .
- 
-ong(IW) -> ong(BW) 
-
-=====================
-
-Hoa_đầu_chim ( Phalaenopsis_sp. )
-Hoa đầu_chim ( Phalaenopsis_sp. )
- 
-đầu(IW) -> đầu(BW) 
-
-=====================
-
-Được biết đến với một cái tên khác là hoa_bướm_hồng , giống hoa này trông như_thể nó có một đầu con chim đang bảo_vệ mật hoa .
-Được biết đến với một cái tên khác là hoa bướm_hồng , giống hoa này trông như_thể nó có một đầu con_chim đang bảo_vệ mật hoa .
- 
-bướm(IW) -> bướm(BW) 
-
-=====================
-
-Hình_dạng bông hoa cũng trông y_hệt một con chim non bị rơi vào hoa và mắc_kẹt tại đó .
-Hình_dạng bông hoa cũng trông_y hệt một con_chim non bị rơi vào hoa và mắc kẹt tại đó .
- 
-hệt(IW) -> hệt(BW) 
-kẹt(IW) -> kẹt(BW) 
-
-=====================
-
-Hoa_cò_trắng ( Habenaria_radiata )
-Hoa cò trắng ( Habenaria_radiata )
- 
-cò(IW) -> cò(BW) 
-trắng(IW) -> trắng(BW) 
-
-=====================
-
-Tuy trông rất giống một con cò trắng đang sải cánh , hoa_cò_trắng rất hay bị nhầm_lẫn với một loài hoa khác có tên “ hoa_tua_trắng ” ( Platanthera_praeclara ) – một giống phong_lan quý_hiếm ở vùng Bắc_Mĩ .
-Tuy_trông rất giống một con cò trắng đang sải_cánh , hoa cò trắng rất hay bị nhầm lẫn với một loài hoa khác có tên “ hoa tua_trắng ” ( Platanthera_praeclara ) – một giống phong_lan quý_hiếm ở vùng Bắc_Mĩ .
- 
-cò(IW) -> cò(BW) 
-trắng(IW) -> trắng(BW) 
-lẫn(IW) -> lẫn(BW) 
-tua(IW) -> tua(BW) 
-
-=====================
-
-Hoa_bồ_câu ( Peristeria_elata )
-Hoa bồ câu ( Peristeria_elata )
- 
-bồ(IW) -> bồ(BW) 
-câu(IW) -> câu(BW) 
-
-=====================
-
-Hoa_bồ_câu là quốc_hoa của Cộng_hoà_Panama .
-Hoa bồ câu là quốc hoa của Cộng_hoà_Panama .
- 
-bồ(IW) -> bồ(BW) 
-câu(IW) -> câu(BW) 
-hoa(IW) -> hoa(BW) 
-
-=====================
-
-Tương_tự như hoa_đầu_chim nói trên , loài hoa này cất_giấu bên trong nó hình_dáng của một con chim bồ_câu .
-Tương_tự như hoa đầu_chim nói trên , loài hoa này cất_giấu bên trong nó hình_dáng của một con_chim bồ câu .
- 
-đầu(IW) -> đầu(BW) 
-câu(IW) -> câu(BW) 
-
-=====================
-
-Hoa_bồ_câu phổ_biến từ khắp vùng Trung_Mĩ đến Ecuador và Venezuela , và đang nằm trên bờ_vực tuyệt_chủng .
-Hoa bồ câu phổ_biến từ khắp vùng Trung_Mĩ đến Ecuador và Venezuela , và đang nằm trên bờ vực tuyệt_chủng .
- 
-bồ(IW) -> bồ(BW) 
-câu(IW) -> câu(BW) 
-vực(IW) -> vực(BW) 
-
-=====================
-
-Mẹ thiên_nhiên đã sinh tạo ra nó trông y_hệt một con vịt đực đang bay .
-Mẹ thiên_nhiên đã sinh tạo ra nó trông_y hệt một con_vịt đực đang bay .
- 
-hệt(IW) -> hệt(BW) 
-
-=====================
-
-Nước ta là một nước Nông_nghiệp lấy sản_xuất lúa_nước làm chính .
-Nước ta là một nước Nông_nghiệp lấy sản_xuất lúa nước làm_chính .
- 
-nước(IW) -> nước(BW) 
-
-=====================
-
-Trong_ Nông_nghiệp , Trồng_trọt chiếm tới 73,5 % , Chăn_nuôi chiếm 27,7 % , còn Dịch_vụ chỉ chiếm có 1,8 % .
-Trong Nông_nghiệp , Trồng_trọt chiếm tới 73,5 % , Chăn_nuôi chiếm 27,7 % , còn Dịch_vụ chỉ chiếm có 1,8 % .
- 
-Nông(IW) -> (BW) 
-Trồng(O) -> ,(BW) 
-chiếm(IW) -> trọt(BW) 
-Chăn(O) -> ,(BW) 
-chiếm(IW) -> nuôi(BW) 
-còn(O) -> ,(BW) 
-chỉ(IW) -> vụ(BW) 
-
-=====================
-
-Trong thu_nhập_quốc_nội ( GDP ) thì nông_lâm thuỷ_sản còn tới 20,36 % , công_nghiệp , xây_dựng là 41,56 % , còn dịch_vụ là 38,08 % .
-Trong thu_nhập quốc_nội ( GDP ) thì nông_lâm thuỷ_sản còn tới 20,36 % , công_nghiệp , xây_dựng là 41,56 % , còn dịch_vụ là 38,08 % .
- 
-quốc(IW) -> quốc(BW) 
-
-=====================
-
-Theo báo_cáo mới nhất của Ngân_hàng_Thế_giới thì Việt_Nam vẫn là nước có nền kinh_tế nông_nghiệp với 73,3 % dân_số nông_thôn , trong số này tỉ_lệ hộ nghèo chiếm 23 % .
-Theo báo_cáo mới nhất của Ngân_hàng Thế_giới thì Việt_Nam vẫn là nước có nền kinh_tế nông_nghiệp với 73,3 % dân_số nông_thôn , trong số này tỉ_lệ hộ nghèo chiếm 23 % .
- 
-Thế(IW) -> Thế(BW) 
-
-=====================
-
-Từ chỗ không đủ ăn đến chỗ là nước đứng thứ nhì về xuất_khẩu gạo ; vào loại xuất_khẩu hàng_đầu về nhiều nông_phẩm nhiệt_đới như cao_su , cà_phê , tiêu , điều và gần đây thuỷ_sản cũng chiếm vị_trí rất cao trong xuất_khẩu ... thì rõ_ràng là nông_nghiệp , nông_thôn Việt_Nam đã có một bước chuyển_mình rất lớn .
-Từ chỗ không đủ ăn đến chỗ là nước đứng thứ nhì về xuất_khẩu gạo ; vào loại xuất_khẩu hàng_đầu về nhiều nông_phẩm nhiệt_đới như cao su , cà_phê , tiêu , điều và gần đây thuỷ_sản cũng chiếm vị_trí rất cao trong xuất_khẩu ... thì rõ_ràng là nông_nghiệp , nông_thôn Việt_Nam đã có một bước chuyển mình rất lớn .
- 
-su(IW) -> su(BW) 
-mình(IW) -> mình(BW) 
-
-=====================
-
-Tuy_nhiên , không_thể không thấy rằng nông_dân vẫn với cung_cách làm_việc như cũ , ruộng_đất ngày_càng bị thu_hẹp và hiện họ vẫn là tầng_lớp bị thiệt_thòi nhất , nghèo_khó nhất trong cả nước .
-Tuy_nhiên , không_thể không thấy rằng nông_dân vẫn với cung_cách làm_việc như cũ , ruộng đất ngày_càng bị thu_hẹp và hiện họ vẫn là tầng_lớp bị thiệt_thòi nhất , nghèo khó nhất trong cả nước .
- 
-đất(IW) -> đất(BW) 
-khó(IW) -> khó(BW) 
-
-=====================
-
-Do hầu_hết chi_phí_sản_xuất đều phải vay nợ nên nông_dân không_thể trữ lúa chờ giá tăng , tâm_trạng chúng_tôi hiện_giờ như đứa trẻ đứng trước mâm cỗ mà không được ăn …
-Do hầu_hết chi_phí sản_xuất đều phải vay_nợ nên nông_dân không_thể trữ lúa chờ_giá tăng , tâm_trạng chúng_tôi hiện_giờ như đứa trẻ đứng trước mâm_cỗ mà không được ăn …
- 
-sản(IW) -> sản(BW) 
-
-=====================
-
-Hằng ngày chúng_tôi luôn phải tiếp_xúc với các loại hoá_chất độc_hại , dãi_nắng_dầm_mưa để chăm_sóc cho cây lúa , nhưng chúng_tôi không mong gì hơn , chỉ hi_vọng nhận được phần mà mình xứng_đáng được nhận . Đúng như vậy , nhiều nơi nông_dân nói hiện đang là con_nợ của các ngân_hàng và của cả những người cho vay nặng_lãi .
-Hằng ngày chúng_tôi luôn phải tiếp_xúc với các loại_hoá chất độc_hại , dãi nắng dầm mưa để chăm_sóc cho cây lúa , nhưng chúng_tôi không mong gì hơn , chỉ hi_vọng nhận được phần mà mình xứng_đáng được nhận . Đúng như vậy , nhiều nơi nông_dân nói_hiện đang là con_nợ của các ngân_hàng và của cả những người cho vay nặng lãi .
- 
-chất(IW) -> chất(BW) 
-nắng(IW) -> nắng(BW) 
-dầm(IW) -> dầm(BW) 
-mưa(IW) -> mưa(BW) 
-lãi(IW) -> lãi(BW) 
-
-=====================
-
-Nhiều gia_đình sau khi thu_hoạch lúa có tới 2 - 3 số tiền thu được đã phải dùng để trả nợ , chỉ còn 1 - 3 dùng để xoay_xở chờ cho đến tận vụ sau .
-Nhiều gia_đình sau khi thu_hoạch lúa có tới 2 - 3 số tiền_thu được đã phải dùng để trả_nợ , chỉ còn 1 - 3 dùng để xoay xở_chờ cho đến tận_vụ sau .
- 
-xở(IW) -> xở(BW) 
-
-=====================
-
-Nhiều nông_dân đã phải trả lại đất vì làm_ruộng không đủ sống .
-Nhiều nông_dân đã phải trả lại đất_vì làm ruộng không đủ sống .
- 
-ruộng(IW) -> ruộng(BW) 
-
-=====================
-
-Nông_dân ở xã Vũ_An ( Kiến_Xương , Thái_Bình ) cho_biết mỗi ngày_công của nông_dân thu được không quá 6000 đồng .
-Nông_dân ở xã_Vũ_An ( Kiến_Xương , Thái_Bình ) cho biết mỗi ngày_công của nông_dân thu được không quá 6000_đồng .
- 
-biết(IW) -> biết(BW) 
-
-=====================
-
-Với các hộ không có trâu_bò , máy tuốt lúa ... thì chỉ thu được 3000 đồng mà_thôi ( số tiền này chỉ đủ mua ... 1 bơ gạo ! ) .
-Với các hộ không có trâu_bò , máy tuốt lúa ... thì chỉ thu được 3000_đồng mà thôi ( số tiền này chỉ đủ mua ... 1 bơ gạo ! ) .
- 
-thôi(IW) -> thôi(BW) 
-
-=====================
-
-Trong đó , diện_tích đất nông_nghiệp đã thu_hồi để xây_dựng các khu_công_nghiệp ( KCN ) và cụm công_nghiệp là 39,56 nghìn ha , xây_dựng đô_thị là 70,32 nghìn ha và xây_dựng kết_cấu_hạ_tầng là 136,17 nghìn ha .
-Trong đó , diện_tích đất nông_nghiệp đã thu_hồi để xây_dựng các khu công_nghiệp ( KCN ) và cụm công_nghiệp là 39,56 nghìn ha , xây_dựng đô_thị là 70,32 nghìn ha và xây_dựng kết_cấu hạ_tầng là 136,17 nghìn ha .
- 
-công(IW) -> công(BW) 
-hạ(IW) -> hạ(BW) 
-
-=====================
-
-Theo số_liệu điều_tra của Bộ_Nông_nghiệp_và_Phát_triển_nông_thôn , tại 16 tỉnh trọng_điểm về thu_hồi đất , diện_tích đất nông_nghiệp bị thu_hồi chiếm khoảng 89 % và diện_tích đất thổ_cư chiếm 11 % .
-Theo số_liệu điều_tra của Bộ_Nông_nghiệp và Phát_triển nông_thôn , tại 16 tỉnh trọng_điểm về thu_hồi đất , diện_tích đất nông_nghiệp bị thu_hồi chiếm khoảng 89 % và diện_tích đất thổ_cư chiếm 11 % .
- 
-và(IW) -> và(BW) 
-Phát(IW) -> Phát(BW) 
-nông(IW) -> nông(BW) 
-
-=====================
-
-Riêng diện_tích đất canh_tác chiếm 37 % diện_tích cả nước , trong đó đất phù_sa màu_mỡ là khoảng 1200000 ha , đất nhiễm phèn – 1600000 ha , đất nhiễm mặn – 750000 ha .
-Riêng diện_tích đất canh_tác chiếm 37 % diện_tích cả nước , trong đó đất phù_sa màu mỡ là khoảng 1200000 ha , đất_nhiễm phèn – 1600000 ha , đất nhiễm_mặn – 750000 ha .
- 
-mỡ(IW) -> mỡ(BW) 
-
-=====================
-
-Thế_nhưng thu_nhập của nông_dân từ nghề trồng lúa lại là thấp nhất so với các nghề khác .
-Thế nhưng thu_nhập của nông_dân từ nghề trồng lúa lại là thấp nhất so với các nghề khác .
- 
-nhưng(IW) -> nhưng(BW) 
-
-=====================
-
-Chỉ tính riêng Công_ti_Navico_-_An_Giang có_thể xuất_khẩu được đến 60.000 tấn cá ba_sa , thu về được tới 60 - 70 triệu USD .
-Chỉ tính riêng_Công_ti Navico - An_Giang có_thể xuất_khẩu được đến 60.000 tấn cá ba sa , thu về được tới 60 - 70 triệu USD .
- 
-Navico(IW) -> Navico(BW) 
-An(IW) -> An(BW) 
-sa(IW) -> sa(BW) 
-
-=====================
-
-Không nên xây_dựng công_nghiệp ở đồng_bằng sông_Cửu_Long vì làm lãng_phí nguồn đất có cấu_tượng mà biết_bao đời mới có được , hơn_nữa lại là vùng thường_xuyên có chu_kì ngập nước ( đầu_tư san_lấp rất tốn_kém ) , lại có quá nhiều sông_ngòi , kênh_rạch , chuyển_đổi sang cây_công_nghiệp cũng là không thích_hợp .
-Không nên xây_dựng công_nghiệp ở đồng_bằng sông_Cửu_Long vì làm lãng_phí nguồn đất có cấu_tượng mà biết bao_đời mới có được , hơn nữa lại là vùng thường_xuyên có chu_kì ngập nước ( đầu_tư san_lấp rất tốn_kém ) , lại có quá nhiều sông_ngòi , kênh_rạch , chuyển_đổi sang cây công_nghiệp cũng là không thích_hợp .
- 
-bao(IW) -> bao(BW) 
-nữa(IW) -> nữa(BW) 
-công(IW) -> công(BW) 
-
-=====================
-
-Con đường công_nghiệp_hoá ở đây là ứng_dụng Công_nghệ_sinh_học trong trồng_trọt , chăn_nuôi , bảo_vệ động_thực_vật và xây_dựng Công_nghệ chế_biến , bảo_quản - ưu_tiên các mặt_hàng xuất_khẩu .
-Con đường công_nghiệp_hoá ở đây là ứng_dụng Công_nghệ_sinh_học trong trồng_trọt , chăn_nuôi , bảo_vệ động thực_vật và xây_dựng Công_nghệ_chế_biến , bảo_quản - ưu_tiên các mặt_hàng xuất_khẩu .
- 
-thực(IW) -> thực(BW) 
-
-=====================
-
-Theo trả_lời chất_vấn của Bộ_Kế_hoạch_và_đầu_tư vào đầu tháng 6 năm 2008 thì cả nước đã có 141 sân golf ở 39 tỉnh , sử_dụng tới 49268 ha đất_đai - trong đó có 2625 ha đất trồng lúa .
-Theo trả_lời chất_vấn của Bộ Kế_hoạch và đầu_tư vào đầu_tháng 6 năm 2008 thì cả nước đã có 141 sân golf ở 39 tỉnh , sử_dụng tới 49268 ha đất_đai - trong đó có 2625 ha đất trồng lúa .
- 
-Kế(IW) -> Kế(BW) 
-và(IW) -> và(BW) 
-đầu(IW) -> đầu(BW) 
-
-=====================
-
-Nếu_như trong suốt 16 năm Thủ_tướng chỉ cấp phép cho 34 dự_án sân golf thì chỉ chưa đầy 2 năm ( 7 - 2006 – 5 - 2008 ) các địa_phương sau khi được phân_cấp đã cấp phép cho 104 dự_án - nghĩa_là cứ bình_quân sau mỗi tuần lại xuất_hiện thêm 1 sân golf .
-Nếu như trong suốt 16 năm Thủ_tướng chỉ cấp_phép cho 34 dự_án sân_golf thì chỉ chưa đầy_2 năm ( 7 - 2006 – 5 - 2008 ) các địa_phương sau khi được phân_cấp đã cấp_phép cho 104 dự_án - nghĩa_là cứ bình_quân sau mỗi tuần lại xuất_hiện thêm 1 sân golf .
+Cái khác hai hai là nếu_như trước đây nguồn cung tiền_mặt nhiều trong khi hàng_hoá khan_hiếm và đầu_tư phát_triển ít_ỏi , thì hiện_nay lượng tiền đổ vào lưu_thông ngày_càng tăng lên cùng_với sự tăng lên của các nguồn hàng , và đặc_biệt quan_trọng là các nguồn đầu_tư phát_triển .
+Cái khác hai hai là nếu như trước đây nguồn cung tiền_mặt nhiều trong khi hàng_hoá khan_hiếm và đầu_tư phát_triển ít_ỏi , thì hiện_nay lượng tiền đổ vào lưu_thông ngày_càng tăng lên cùng_với sự tăng lên của các nguồn_hàng , và đặc_biệt quan_trọng là các nguồn đầu_tư phát_triển .
  
 như(IW) -> như(BW) 
 
 =====================
 
-Xin lấy một ví_dụ được báo_chí vừa nhắc đến : Đầu tháng 6 - 2007 , Công_ti_TNHH_Hyoil_Investment ( Hàn_Quốc ) được Chủ_tịch UBND tỉnh Long_An trao giấy chứng_nhận đầu_tư dự_án sân golf 36 lỗ tại ấp 4 , xã Mĩ_Phú , huyện Thủ_Thừa ( Long_An ) .
-Xin lấy một ví_dụ được báo_chí vừa nhắc đến : Đầu_tháng 6 - 2007 , Công_ti TNHH Hyoil_Investment ( Hàn_Quốc ) được Chủ_tịch UBND tỉnh Long_An_trao giấy chứng_nhận đầu_tư dự_án sân golf 36_lỗ tại ấp 4 , xã_Mĩ Phú , huyện Thủ_Thừa ( Long_An ) .
+Thứ tư , biên_độ dao_động của tỉ_giá_hối_đoái giữa đồng_tiền Việt_Nam so với đồng đôla Mĩ quy_định ở mức 2 % là thấp hơn so với mức 5 % của thời_kỳ chống lạm_phát trước đây , nhưng so với mức lạm_phát hiện_nay cũng thấp hơn trước và trong bối_cảnh có một lượng ngoại_tệ lớn lưu_thông trên thị_trường , mà phần_lớn là đồng đôla Mĩ đang mất_giá , thì mức quy_định mới này là tương_đối hợp_lí .
+Thứ_tư , biên_độ dao_động của tỉ_giá hối_đoái giữa đồng_tiền Việt_Nam so với đồng đôla Mĩ quy_định ở mức 2 % là thấp hơn so với mức 5 % của thời_kỳ chống lạm_phát trước đây , nhưng so với mức lạm_phát hiện_nay cũng thấp hơn trước và trong bối_cảnh có một lượng ngoại_tệ lớn lưu_thông trên thị_trường , mà phần_lớn là đồng đôla Mĩ đang mất_giá , thì mức quy_định mới này là tương_đối_hợp_lí .
  
-TNHH(IW) -> TNHH(BW) 
-Hyoil(IW) -> Hyoil(BW) 
-Phú(IW) -> Phú(BW) 
+hối(IW) -> hối(BW) 
 
 =====================
 
-Kể từ đó , hơn 600 hộ nông_dân bị ảnh_hưởng bởi dự_án bắt_đầu sống trong nỗi lo_âu , thấp_thỏm vì chưa biết khi nào sẽ bị giải_toả .
-Kể từ đó , hơn 600 hộ nông_dân bị ảnh_hưởng bởi dự_án bắt_đầu_sống trong nỗi lo_âu , thấp thỏm vì chưa biết khi nào sẽ bị giải_toả .
- 
-thỏm(IW) -> thỏm(BW) 
-
-=====================
-
-Nằm ngay cạnh đường_cao_tốc Sài_Gòn - Trung_Lương và cách thị_xã Tân_An chừng 7 km , dự_án sân golf nói trên chiếm 280 ha trên tổng diện_tích 777 ha đất trồng lúa của xã Mĩ_Phú , đồng_thời làm đảo_lộn cuộc_sống khoảng 1 - 3 số hộ dân của xã này .
-Nằm ngay_cạnh đường cao_tốc Sài_Gòn - Trung_Lương và cách_thị_xã_Tân An_chừng 7 km , dự_án sân_golf nói trên chiếm 280 ha trên tổng diện_tích 777 ha đất trồng lúa của xã_Mĩ Phú , đồng_thời làm đảo lộn cuộc_sống khoảng 1 - 3_số hộ_dân của xã này .
- 
-cao(IW) -> cao(BW) 
-An(IW) -> An(BW) 
-Phú(IW) -> Phú(BW) 
-lộn(IW) -> lộn(BW) 
-
-=====================
-
-Thế_nhưng , sau hơn một năm được trao chứng_nhận đầu_tư , đến nay dự_án chỉ mới triển_khai xong việc kê_biên .
-Thế nhưng , sau hơn một năm được trao_chứng nhận đầu_tư , đến nay dự_án chỉ mới triển_khai_xong việc kê_biên .
- 
-nhưng(IW) -> nhưng(BW) 
-nhận(IW) -> nhận(BW) 
-
-=====================
-
-Trả_lời câu_hỏi liệu đến bao_giờ mới áp_giá đền_bù , Chủ_tịch UBND xã , ông Châu_Hải_Ngạt nói : “ Chưa biết ! ” .
-Trả_lời câu hỏi_liệu đến bao_giờ mới áp_giá đền_bù , Chủ_tịch UBND_xã , ông Châu_Hải_Ngạt nói : “ Chưa_biết ! ” .
- 
-hỏi(IW) -> hỏi(BW) 
-
-=====================
-
-Rồi_đây nông_dân sẽ sống bằng gì khi mà cả đời họ chỉ biết làm_ruộng ?
-Rồi đây nông_dân sẽ sống bằng gì khi mà cả đời họ chỉ_biết làm_ruộng ?
- 
-đây(IW) -> đây(BW) 
-
-=====================
-
-Ông Lê_Văn_T. , 63 tuổi , nhà có 2 vợ_chồng và 7 người con nhưng chỉ có 2,2 công ruộng , bức_xúc : “ Từ xưa đến giờ gia_đình tôi chỉ bám vào mấy công ruộng , đâu có đi làm thuê_mướn gì được .
-Ông_Lê Văn_T. , 63_tuổi , nhà có 2 vợ chồng và 7 người con nhưng chỉ có 2,2 công_ruộng , bức_xúc : “ Từ xưa đến giờ gia_đình tôi chỉ bám vào mấy công_ruộng , đâu có đi làm thuê mướn gì được .
- 
-Văn(IW) -> Văn(BW) 
-chồng(IW) -> chồng(BW) 
-mướn(IW) -> mướn(BW) 
-
-=====================
-
-Nếu nhận tiền đền_bù thì gia_đình tôi được hơn 100 triệu đồng , không biết có đủ để xây nhà khác hay không , nói_gì đi mua đất .
-Nếu nhận tiền đền_bù thì gia_đình tôi được hơn 100 triệu đồng , không biết có đủ để xây_nhà khác hay không , nói gì đi mua đất .
- 
-gì(IW) -> gì(BW) 
-
-=====================
-
-Đừng nói là đất mặt_tiền , chỉ là đất ruộng ở trong sâu thôi giờ cũng đã 70 - 80 triệu đồng một công rồi .
-Đừng nói là đất_mặt tiền , chỉ là đất_ruộng ở trong sâu thôi_giờ cũng đã 70 - 80 triệu đồng một_công rồi .
+Tất_nhiên , sự tác_động của biện_pháp này đến đâu còn phải chờ vào kết_quả thực_tế , nhưng dù_sao biện_pháp này không_thể chỉ định ra một lần rồi thôi , mà cần được điều_chỉnh một_cách linh_hoạt tuỳ theo diễn_biến thực_tế của thị_trường_tiền_tệ .
+Tất_nhiên , sự tác_động của biện_pháp này đến đâu còn phải chờ vào kết_quả thực_tế , nhưng dù_sao biện_pháp này không_thể chỉ_định ra một lần rồi thôi , mà cần được điều_chỉnh một_cách linh_hoạt tuỳ theo diễn_biến thực_tế của thị_trường tiền_tệ .
  
 tiền(IW) -> tiền(BW) 
 
 =====================
 
-Hẹp cho chúng_tôi lắm ! Từ năm_ngoái đến giờ chúng_tôi luôn sống trong lo_âu , chờ_đợi .
-Hẹp cho chúng_tôi lắm ! Từ năm ngoái đến giờ chúng_tôi luôn_sống trong lo_âu , chờ_đợi .
+Thứ năm , bối_cảnh kinh_tế - xã_hội lần này tuy có một_số dấu_hiệu của “ kinh_tế bong_bóng ” trong lĩnh_vực kinh_doanh địa_ốc , thị_trường_chứng_khoán , giá vàng , giá dầu , giá thực_phẩm tăng mạnh , mức_độ thâm_hụt cao trong cán_cân ngoại_thương ... , nhưng chưa đến mức khủng_hoảng như lần trước .
+Thứ năm , bối_cảnh kinh_tế - xã_hội lần này tuy có một_số dấu_hiệu của “ kinh_tế bong_bóng ” trong lĩnh_vực kinh_doanh địa_ốc , thị_trường chứng_khoán , giá vàng , giá dầu , giá thực_phẩm tăng mạnh , mức_độ thâm_hụt cao trong cán_cân ngoại_thương ... , nhưng chưa đến mức khủng_hoảng như lần trước .
  
-ngoái(IW) -> ngoái(BW) 
+chứng(IW) -> chứng(BW) 
 
 =====================
 
-Trong khi đó , một_số gia_đình khá_giả đã chủ_động đi vay tiền ngân_hàng để mua nền chuẩn_bị di_dời , thì bây_giờ cũng ... kêu_trời vì phải chịu lãi ngân_hàng cả năm nay nhưng đến giờ vẫn chưa biết sẽ được đền_bù bao_nhiêu tiền .
-Trong khi đó , một_số gia_đình khá giả đã chủ_động đi vay tiền ngân_hàng để mua nền chuẩn_bị di_dời , thì bây_giờ cũng ... kêu_trời vì phải chịu lãi ngân_hàng cả năm nay nhưng đến giờ vẫn chưa biết sẽ được đền bù bao_nhiêu tiền .
+( 2 ) Tăng nhanh nguồn cung_ứng các loại hàng_hoá tiêu_dùng thiết_yếu , nhất_là lương_thực , thực_phẩm và nhu_yếu_phẩm , thông_qua 3 chương_trình trọng_điểm lúc bấy_giờ là Chương_trình sản_xuất và chế_biến lương_thực , thực_phẩm ; Chương_trình sản_xuất hàng_hoá tiêu_dùng ; và Chương_trình sản_xuất hàng_hoá xuất_khẩu .
+( 2 ) Tăng nhanh nguồn cung_ứng các loại hàng_hoá tiêu_dùng thiết_yếu , nhất_là lương_thực , thực_phẩm và nhu_yếu phẩm , thông_qua 3 chương_trình trọng_điểm lúc bấy_giờ là Chương_trình sản_xuất và chế_biến lương_thực , thực_phẩm ; Chương_trình sản_xuất hàng_hoá tiêu_dùng ; và Chương_trình sản_xuất hàng_hoá xuất_khẩu .
  
-giả(IW) -> giả(BW) 
-bù(IW) -> bù(BW) 
+phẩm(IW) -> phẩm(BW) 
 
 =====================
 
-Và ngay sau đó , theo đề_xuất của Trung_tâm xúc_tiến và tư_vấn đầu_tư Long_An , ngày 20 – 2 - 2008 UBND tỉnh Long_An đã có văn_bản chấp_thuận giao 25 ha đất nói trên cho 2 cá_nhân ( một người Hàn_Quốc và một người Việt_Nam ) để liên_doanh đầu_tư xây_dựng “ công_viên nghĩa_trang Vĩnh_Hằng ” .
-Và ngay sau đó , theo đề_xuất của Trung_tâm xúc_tiến và tư_vấn đầu_tư Long_An , ngày 20 – 2 - 2008 UBND tỉnh Long_An đã có văn_bản chấp thuận_giao 25 ha đất nói trên cho 2 cá_nhân ( một người Hàn_Quốc và một người Việt_Nam ) để liên_doanh đầu_tư xây_dựng “ công_viên nghĩa_trang Vĩnh_Hằng ” .
+Thắt chặt tiền_tệ đi_đôi với sử_dụng linh_hoạt các công_cụ tiền_tệ ;
+Thắt chặt tiền_tệ đi đôi với sử_dụng linh_hoạt các công_cụ tiền_tệ ;
  
-thuận(IW) -> thuận(BW) 
+đôi(IW) -> đôi(BW) 
 
 =====================
 
-Trong khi đó , theo đề_án “ Phát_triển lúa_gạo bảo_đảm an_ninh lương_thực quốc_gia ” do Bộ_Nông_nghiệp_-_Phát_triển_nông_thôn dự_thảo trình Chính_phủ phê_duyệt , thì cả 2 dự_án nói trên đều nằm trên diện_tích đất sản_xuất lúa tốt nhất và không được chuyển_đổi sang bất_cứ mục_đích sử_dụng nào khác .
-Trong khi đó , theo đề_án “ Phát_triển lúa_gạo bảo_đảm an_ninh lương_thực quốc_gia ” do Bộ_Nông_nghiệp - Phát_triển nông_thôn dự_thảo_trình Chính_phủ phê_duyệt , thì cả 2 dự_án nói trên đều nằm trên diện_tích đất sản_xuất lúa tốt nhất và không được chuyển_đổi sang bất_cứ mục_đích sử_dụng nào khác .
+1 - Thắt chặt tiền_tệ và bảo_đảm thanh_khoản ;
+1 - Thắt chặt tiền_tệ và bảo_đảm thanh khoản ;
  
-Phát(IW) -> Phát(BW) 
-nông(IW) -> nông(BW) 
+khoản(IW) -> khoản(BW) 
 
 =====================
 
-Người_dân các xã trên sau khi nhận tiền đền_bù đã than_thở : Nếu bị mất đất vĩnh_viễn chúng_tôi không biết làm gì để mà sống ?
-Người_dân các xã trên sau khi nhận tiền đền bù đã than_thở : Nếu bị mất đất vĩnh_viễn chúng_tôi không biết làm gì để mà_sống ?
+Chưa kể Bộ_Tài_chính và một_số bộ ngành khác cũng có những quyết_định không thống_nhất với chính_phủ và Ngân_hàng_Nhà_nước .
+Chưa kể Bộ_Tài_chính và một_số bộ ngành khác cũng có những quyết_định không thống_nhất với chính_phủ và Ngân_hàng Nhà_nước .
  
-bù(IW) -> bù(BW) 
+Nhà(IW) -> Nhà(BW) 
 
 =====================
 
-Rất đáng buồn là toàn những ruộng nhất_đẳng_điền , toàn những bờ_xôi_ruộng_mật bị lấy đi để xây_dựng các khu_công_nghiệp , khu_chế_xuất , sân gôn hoặc xây các khu nhà để kinh_doanh .
-Rất đáng_buồn là toàn những ruộng nhất_đẳng điền , toàn những bờ xôi ruộng_mật bị lấy đi để xây_dựng các khu công_nghiệp , khu chế_xuất , sân_gôn hoặc xây các khu_nhà để kinh_doanh .
+Các quyết_định trái_ngược nhau trên đây không_những gây hoang_mang cho các ngân_hàng thương_mại , dẫn đến cạnh_tranh gay_gắt bằng lãi_suất , mà_còn gây ra một tâm_lí trong dân không tin_tưởng vào tiền VNĐ , khiến nhiều người_dân đổ_xô đi mua vàng , bất_chấp giá vàng trong nước tăng cao hơn giá vàng thế_giới , gây thiệt_hại cho người mua .
+Các quyết_định trái_ngược nhau trên đây không_những gây hoang_mang cho các ngân_hàng thương_mại , dẫn đến cạnh_tranh gay_gắt bằng lãi_suất , mà_còn gây ra một tâm_lí trong dân không tin_tưởng vào tiền VNĐ , khiến nhiều người dân đổ_xô đi mua vàng , bất_chấp giá vàng trong nước tăng cao hơn giá vàng thế_giới , gây thiệt_hại cho người mua .
  
-điền(IW) -> điền(BW) 
-xôi(IW) -> xôi(BW) 
-ruộng(IW) -> ruộng(BW) 
-công(IW) -> công(BW) 
-chế(IW) -> chế(BW) 
+dân(IW) -> dân(BW) 
 
 =====================
 
-Vậy_mà ngay các Khu_công_nghiệp được cấp giấy_phép từ lâu nhưng ruộng_đất vẫn bị bỏ không một_cách vô_cùng lãng_phí .
-Vậy mà ngay các Khu_công_nghiệp được cấp giấy_phép từ lâu nhưng ruộng đất vẫn bị bỏ không một_cách vô_cùng lãng_phí .
+Nếu so với mức lạm_phát bình_quân năm 2007 là 12,6 % , mức lạm_phát trong tháng 1 và 2 năm 2008 ước_tính tương_đương khoảng 14 - 15 % / năm , thì rõ_ràng lãi_suất này chưa đạt được mức “ không ” , nói_gì đến dương ! Mặc_dù vậy , mức lãi_suất 12 % đã thu_hút được một lượng khá đông số người đến các ngân_hàng thương_mại để xếp_hàng gửi tiền tiết_kiệm trong tháng 2 - 2008 .
+Nếu so với mức lạm_phát bình_quân năm 2007 là 12,6 % , mức lạm_phát trong tháng 1 và 2 năm 2008 ước_tính tương_đương khoảng 14 - 15 % / năm , thì rõ_ràng lãi_suất này chưa đạt được mức “ không ” , nói gì đến dương ! Mặc_dù vậy , mức lãi_suất 12 % đã thu_hút được một lượng khá đông số người đến các ngân_hàng thương_mại để xếp_hàng gửi tiền tiết_kiệm trong tháng 2 - 2008 .
  
-mà(IW) -> mà(BW) 
-đất(IW) -> đất(BW) 
+gì(IW) -> gì(BW) 
 
 =====================
 
-Theo báo Nông_nghiệp_VN thì Hà_Nam , một tỉnh công_nghiệp chưa thực_sự vào nhiều nhưng cả chục ngàn mét_vuông đất “ bờ_xôi_ruộng_mật ” thuộc các huyện trọng_điểm nông_nghiệp như Đồng_Văn , TX Phủ_Lí , Bình_Lục , Thanh_Liêm cũng “ đội_nón_ra_đi ” về với “ ngôi nhà chung ” của công_nghiệp và đường_cao_tốc 1A .
-Theo báo Nông_nghiệp VN thì Hà_Nam , một tỉnh công_nghiệp chưa thực_sự vào nhiều nhưng cả chục_ngàn mét_vuông đất “ bờ xôi ruộng_mật ” thuộc các huyện trọng_điểm nông_nghiệp như Đồng_Văn , TX Phủ_Lí , Bình_Lục , Thanh_Liêm cũng “ đội nón ra đi ” về với “ ngôi nhà_chung ” của công_nghiệp và đường cao tốc_1A .
+Điều này chứng_tỏ giải_pháp lãi_suất dương không_chỉ mang lại kết_quả cao trong thời_kỳ chống lạm_phát “ phi_mã ” những năm cuối thập_kỉ 1970 - đầu thập_kỉ 1980 , mà_còn có tác_động rất tích_cực cả đối_với thời_kỳ chống lạm_phát cao hiện_nay , vì_thế giải_pháp này cần được thực_hiện một_cách tích_cực .
+Điều này chứng_tỏ giải_pháp lãi_suất dương không chỉ mang lại kết_quả cao trong thời_kỳ chống lạm_phát “ phi_mã ” những năm cuối thập_kỉ 1970 - đầu thập_kỉ 1980 , mà_còn có tác_động rất tích_cực cả đối_với thời_kỳ chống lạm_phát cao hiện_nay , vì_thế giải_pháp này cần được thực_hiện một_cách tích_cực .
  
-VN(IW) -> VN(BW) 
-xôi(IW) -> xôi(BW) 
-ruộng(IW) -> ruộng(BW) 
-nón(IW) -> nón(BW) 
-ra(IW) -> ra(BW) 
-đi(IW) -> đi(BW) 
-cao(IW) -> cao(BW) 
-tốc(IW) -> tốc(BW) 
+chỉ(IW) -> chỉ(BW) 
 
 =====================
 
-Phải thú_thực một điều là nhận_thức của người_dân ở đây chưa cao , người_ta cứ bảo năm 2013 chia lại ruộng_đất là nông_dân bán liền , 7 triệu đồng - sào cũng bán .
-Phải thú_thực một điều là nhận_thức của người_dân ở đây chưa cao , người ta cứ_bảo năm 2013 chia lại ruộng đất là nông_dân bán liền , 7 triệu đồng - sào cũng bán .
+dường_như chưa được coi_trọng , làm cho những yếu_điểm của nền kinh_tế bong_bóng ngày_càng bộc_lộ rõ như đầu_cơ bất_động_sản sa_sút , chỉ_số chứng_khoán tụt_dốc liên_tục , trên_dưới 20 % số doanh_nghiệp vừa và nhỏ đổ_vỡ , ngày_càng có nhiều xí_nghiệp quốc_doanh làm_ăn thua_lỗ , lãng_phí , kém hiệu_quả , hàng_loạt công_trình dự_án lớn trì_trệ , chậm tiến_độ , tăng mức chi_phí , thâm_hụt cán_cân ngoại_thương càng chặn càng tăng , thêm vào đó là giá_cả thế_giới dâng lên cùng_với sự mất_giá của đồng đôla Mĩ ngày_càng tác_động xấu đến nền kinh_tế trong nước thông_qua các kênh hội_nhập đã được rộng_mở .
+dường_như chưa được coi_trọng , làm cho những yếu_điểm của nền kinh_tế bong_bóng ngày_càng bộc_lộ rõ như đầu_cơ bất_động_sản sa_sút , chỉ_số chứng_khoán tụt dốc liên_tục , trên_dưới 20 % số doanh_nghiệp vừa và nhỏ đổ_vỡ , ngày_càng có nhiều xí_nghiệp quốc_doanh làm ăn thua_lỗ , lãng_phí , kém hiệu_quả , hàng_loạt công_trình dự_án lớn trì_trệ , chậm tiến_độ , tăng mức chi_phí , thâm_hụt cán_cân ngoại_thương càng chặn càng tăng , thêm vào đó là giá_cả thế_giới dâng lên cùng_với sự mất_giá của đồng đôla Mĩ ngày_càng tác_động xấu đến nền kinh_tế trong nước thông_qua các kênh hội_nhập đã được rộng_mở .
  
-ta(IW) -> ta(BW) 
-đất(IW) -> đất(BW) 
+dốc(IW) -> dốc(BW) 
+ăn(IW) -> ăn(BW) 
 
 =====================
 
-Vậy nhưng khi nhìn những mảnh ruộng của mình trước đây tốt_tươi , nay là khu_công_nghiệp mà chẳng thấy bóng_dáng công_nghiệp đâu , cỏ mọc um_tùm như KCN Đồng_Văn , chúng_tôi xót lắm .
-Vậy nhưng khi nhìn những mảnh ruộng của mình trước đây tốt_tươi , nay là khu công_nghiệp mà chẳng thấy bóng_dáng công_nghiệp đâu , cỏ mọc um_tùm như KCN Đồng_Văn , chúng_tôi xót_lắm .
+Những biện_pháp đã áp_dụng chủ_yếu mới mang nặng tính tình_thế , chưa cơ_bản , chưa có liệu_pháp mạnh , chưa hoặc ít đả_động tới các khoản đầu_tư lãng_phí , kém sinh_lợi , thậm_chí còn đi ngược_lại với những đòi_hỏi của thực_tế , do_đó chưa bình_ổn được giá_cả , nhất_là giá các mặt_hàng tiêu_dùng thiết_yếu như lương_thực , thực_phẩm và giá xăng_dầu là những loại mặt_hàng chiếm tới 40 % tổng giá_trị của rổ hàng_hoá được tính , vì_thế không_những không sớm đạt được mục_tiêu bình_ổn vĩ_mô , cắt_cơn lạm_phát , mà trái_lại còn có chiều_hướng để lạm_phát dây_dưa , kéo_dài .
+Những biện_pháp đã áp_dụng chủ_yếu mới mang nặng tính tình_thế , chưa cơ_bản , chưa có liệu_pháp mạnh , chưa hoặc ít đả_động tới các khoản đầu_tư lãng_phí , kém sinh_lợi , thậm_chí còn đi ngược_lại với những đòi_hỏi của thực_tế , do_đó chưa bình_ổn được giá_cả , nhất_là giá các mặt_hàng tiêu_dùng thiết_yếu như lương_thực , thực_phẩm và giá xăng_dầu là những loại mặt_hàng chiếm tới 40 % tổng_giá_trị của rổ hàng_hoá được tính , vì_thế không_những không sớm đạt được mục_tiêu bình_ổn vĩ_mô , cắt cơn lạm_phát , mà trái_lại còn có chiều hướng để lạm_phát dây_dưa , kéo_dài .
  
-công(IW) -> công(BW) 
+cơn(IW) -> cơn(BW) 
+hướng(IW) -> hướng(BW) 
 
 =====================
 
-Thóc đắt thế_này , giá_mà chúng_tôi vẫn được cấy ở đó thì hay biết_mấy ” - một nông_dân xã Tiên_Ngoại , huyện Duy_Tiên thốt lên như vậy .
-Thóc đắt_thế này , giá mà chúng_tôi vẫn được cấy ở đó thì hay biết mấy ” - một nông_dân xã_Tiên_Ngoại , huyện Duy_Tiên thốt lên như vậy .
+Muốn cắt_cơn và nhanh_chóng chấm_dứt căn_bệnh lạm_phát trầm_trọng đang gây tổn_hại lớn cho đời_sống kinh_tế - xã_hội hiện_nay , cần có những liệu_pháp mạnh hơn và căn_bản hơn , trọng_tâm là những loại biện_pháp cốt_yếu sau đây :
+Muốn cắt cơn và nhanh_chóng chấm_dứt căn_bệnh lạm_phát trầm_trọng đang gây tổn_hại lớn cho đời_sống kinh_tế - xã_hội hiện_nay , cần có những liệu_pháp mạnh hơn và căn_bản hơn , trọng_tâm là những loại biện_pháp cốt_yếu sau đây :
  
-này(IW) -> này(BW) 
-mà(IW) -> mà(BW) 
-mấy(IW) -> mấy(BW) 
+cơn(IW) -> cơn(BW) 
 
 =====================
 
-Nhưng với thực_tế trong lĩnh_vực Tam_nông ( nông_nghiệp , nông_thôn , nông_dân ) hiện_nay thì quả_là rất khó .
-Nhưng với thực_tế trong lĩnh_vực Tam_nông ( nông_nghiệp , nông_thôn , nông_dân ) hiện_nay thì quả là rất khó .
+Không_những thế , lãi_suất tiền gửi và tiền cho vay cao sẽ trở_thành những cục nước_đá lạnh làm hạ nhiệt các nhà đầu_cơ trong các lĩnh_vực kinh_doanh bất_động_sản , chứng_khoán và hàng_hoá tiêu_dùng cao_cấp , đắt tiền , siêu_lợi_nhuận , vì lãi_suất cao chính là con dao sắc_bén nhất cắt thẳng vào các khoản siêu_lợi_nhuận của các nhà_đầu_cơ , và khi siêu_lợi_nhuận không còn nữa thì chắc_chắn các nhà_đầu_cơ sẽ buộc phải chuyển các khoản đầu_cơ hết lợi_nhuận siêu_ngạch vào các ngân_hàng để từ đó tái_phân_bố nguồn_lực đầu_tư vào các lĩnh_vực hoạt_động sản_xuất , kinh_doanh lành_mạnh và hiệu_quả .
+Không_những thế , lãi_suất tiền gửi và tiền cho vay cao sẽ trở_thành những cục nước_đá lạnh làm hạ_nhiệt các nhà_đầu_cơ trong các lĩnh_vực kinh_doanh bất_động_sản , chứng_khoán và hàng_hoá tiêu_dùng cao_cấp , đắt tiền , siêu_lợi_nhuận , vì lãi_suất cao chính là con dao sắc_bén nhất cắt thẳng vào các khoản siêu_lợi_nhuận của các nhà_đầu_cơ , và khi siêu_lợi_nhuận không còn nữa thì chắc_chắn các nhà_đầu_cơ sẽ buộc phải chuyển các khoản đầu_cơ hết lợi_nhuận siêu_ngạch vào các ngân_hàng để từ đó tái phân_bố nguồn_lực đầu_tư vào các lĩnh_vực hoạt_động sản_xuất , kinh_doanh lành_mạnh và hiệu_quả .
  
-là(IW) -> là(BW) 
+phân(IW) -> phân(BW) 
 
 =====================
 
-Tình_hình ruộng_đất hiện vô_cùng manh_mún .
-Tình_hình ruộng đất_hiện vô_cùng manh_mún .
+Áp_dụng chế_độ tỉ_giá_hối_đoái và thuế xuất_nhập_khẩu linh_hoạt trên cơ_sở khuyến_khích xuất_khẩu , không “ hi_sinh ” xuất_khẩu để thúc_đẩy nhập_khẩu vì lợi_ích trước_mắt mà phạm sai_lầm về chiến_lược lâu_dài .
+Áp_dụng chế_độ tỉ_giá hối_đoái và thuế xuất_nhập_khẩu linh_hoạt trên cơ_sở khuyến_khích xuất_khẩu , không “ hi_sinh ” xuất_khẩu để thúc_đẩy nhập_khẩu vì lợi_ích trước_mắt mà phạm sai_lầm về chiến_lược lâu_dài .
  
-đất(IW) -> đất(BW) 
+hối(IW) -> hối(BW) 
 
 =====================
 
-Cả nước hiện có trên 75 triệu thửa ruộng , thuộc quyền_sở_hữu của 9 triệu 259 nghìn hộ nông_dân .
-Cả nước hiện có trên 75 triệu thửa ruộng , thuộc quyền sở_hữu của 9 triệu 259 nghìn hộ nông_dân .
+Sự điều_chỉnh này là hoàn_toàn cần_thiết vì nếu_như trước đây chúng_ta đã cắt_giảm ngay trong đợt đầu đối_với các loại hàng_hoá bao_cấp thuộc danh_mục xa_xỉ_phẩm , thì nay không có lí_do gì để chúng_ta trợ_cấp qua thuế đối_với các loại hàng_hoá này trong khi không hỗ_trợ qua thuế cho các hàng_hoá là nguyên_liệu đầu_vào cho sản_xuất và xuất_khẩu .
+Sự điều_chỉnh này là hoàn_toàn cần_thiết vì nếu như trước đây chúng_ta đã cắt_giảm ngay trong đợt đầu đối_với các loại hàng_hoá bao_cấp thuộc danh_mục xa_xỉ_phẩm , thì nay không có lí_do gì để chúng_ta trợ_cấp qua thuế đối_với các loại hàng_hoá này trong khi không hỗ_trợ qua thuế cho các hàng_hoá là nguyên_liệu đầu_vào cho sản_xuất và xuất_khẩu .
+ 
+như(IW) -> như(BW) 
+
+=====================
+
+Mặc_dù biết rất rõ chúng_ta đang gặp nhiều khó_khăn rất lớn , nhưng các cấp chính_sách của ta hiện_nay dường_như chưa sẵn_sàng chấp_nhận sự “ thoái_lui ” tạm_thời này , vì mức tăng_trưởng cao một_chục năm trước 2007 quả_thực là một thành_tích mà chúng_ta đã phải phấn_đấu nhiều năm mới đạt được , nay phải cắt bớt đi là rất đau và rất đáng tiếc .
+Mặc_dù biết rất rõ chúng_ta đang gặp nhiều khó_khăn rất lớn , nhưng các cấp chính_sách của ta hiện_nay dường_như chưa sẵn_sàng chấp_nhận sự “ thoái_lui ” tạm_thời này , vì mức tăng_trưởng cao một chục năm trước 2007 quả_thực_là một thành_tích mà chúng_ta đã phải phấn_đấu nhiều năm mới đạt được , nay phải cắt bớt đi là rất đau và rất đáng tiếc .
+ 
+chục(IW) -> chục(BW) 
+
+=====================
+
+Còn theo CIA_World_Factbook , đường bờ biển Việt_Nam có chiều dài là 3.444 km ( xếp thứ 32 trong số 156 quốc_gia và vùng lãnh_thổ có biển ) .
+Còn theo CIA World_Factbook , đường bờ biển Việt_Nam có chiều dài là 3.444 km ( xếp thứ 32 trong số 156 quốc_gia và vùng lãnh_thổ có biển ) .
+ 
+World(IW) -> World(BW) 
+
+=====================
+
+Theo Bách_khoa_toàn_thư_Địa_lí_Xô_Viết , Biển_Đông có diện_tích là 3.537.000 km² ( đứng thứ tư trong số 61 biển quan_trọng của thế_giới - sau biển Philippine : 5.726.000 km² , biển Ả_Rập : 4.832.000 km² và biển Ô_Khốt : 4.068.000 km² ) .
+Theo Bách_khoa toàn_thư Địa_lí Xô_Viết , Biển_Đông có diện_tích là 3.537.000 km² ( đứng thứ tư trong số 61 biển quan_trọng của thế_giới - sau biển Philippine : 5.726.000 km² , biển Ả_Rập : 4.832.000 km² và biển Ô_Khốt : 4.068.000 km² ) .
+ 
+toàn(IW) -> toàn(BW) 
+Địa(IW) -> Địa(BW) 
+Xô(IW) -> Xô(BW) 
+
+=====================
+
+Về mặt tự_nhiên , Biển_Đông hoàn_toàn nằm trong vùng khí_hậu nhiệt_đới gió_mùa và nằm trong 2 đới : đới gió_mùa nhiệt_đới có mùa đông lạnh ở phía bắc và đới gió_mùa cận_nhiệt_đới nóng quanh_năm ở phía nam .
+Về mặt tự_nhiên , Biển_Đông hoàn_toàn nằm trong vùng khí_hậu nhiệt_đới gió_mùa và nằm trong 2 đới : đới gió_mùa nhiệt_đới có mùa đông lạnh ở phía bắc và đới gió_mùa cận nhiệt_đới nóng quanh_năm ở phía nam .
+ 
+nhiệt(IW) -> nhiệt(BW) 
+
+=====================
+
+Quanh_năm , nhiệt_độ nước_biển đều lớn hơn 25 °C , do_đó không có băng .
+Quanh_năm , nhiệt_độ nước biển đều lớn hơn 25 °C , do_đó không có băng .
+ 
+biển(IW) -> biển(BW) 
+
+=====================
+
+Địa_hình đáy Biển_Đông gồm có thềm_lục_địa được xác_định trong khoảng độ sâu từ 200 - 500 mét và mở_rộng ở phía bắc và phía nam ; sườn và chân lục_địa được xác_định đến độ sâu trung_bình 2.000 - 2.500 mét trên đó có 2 quần_đảo quan_trọng là Hoàng_Sa và Trường_Sa ; đáy biển thẳm khá bằng_phẳng và có độ sâu trên 3.000 mét , độ sâu lớn nhất đạt tới trên 5.000 mét .
+Địa_hình đáy Biển_Đông gồm có thềm_lục_địa được xác_định trong khoảng độ sâu từ 200 - 500 mét và mở_rộng ở phía bắc và phía nam ; sườn và chân lục_địa được xác_định đến độ sâu trung_bình 2.000 - 2.500 mét trên đó có 2 quần_đảo quan_trọng là Hoàng_Sa và Trường_Sa ; đáy biển thẳm khá bằng phẳng và có độ sâu trên 3.000 mét , độ sâu lớn nhất đạt tới trên 5.000 mét .
+ 
+phẳng(IW) -> phẳng(BW) 
+
+=====================
+
+Về mặt địa_chính_trị , Biển_Đông thuộc quyền_sở_hữu của các quốc_gia và vùng lãnh_thổ sau : Bru-Nây , Campuchia , Đài_Loan , Indonesia , Malaysia , Philippine , Singapore , Thái_Lan , Trung_Quốc và Việt_Nam , trong đó Bru-Nây , Indonesia , Philippine , Singapore là các quốc_đảo .
+Về mặt địa_chính_trị , Biển_Đông thuộc quyền sở_hữu của các quốc_gia và vùng lãnh_thổ sau : Bru-Nây , Campuchia , Đài_Loan , Indonesia , Malaysia , Philippine , Singapore , Thái_Lan , Trung_Quốc và Việt_Nam , trong đó Bru-Nây , Indonesia , Philippine , Singapore là các quốc_đảo .
  
 sở(IW) -> sở(BW) 
 
 =====================
 
-Vì các thửa ruộng quá nhỏ cho_nên riêng diện_tích đất được dùng làm bờ ruộng đã chiếm tới 20.000 ha .
-Vì các thửa ruộng quá nhỏ cho nên riêng diện_tích đất được dùng làm bờ ruộng đã chiếm tới 20.000 ha .
+Ngoài_ra , Biển_Đông là con đường giao_thông hàng_hải quan_trọng đi từ Đông_Bắc_Á sang Nam_Á , Tây_Á và các khu_vực khác trên thế_giới thuộc Thái_Bình_Dương , Ấn_Độ_Dương vào Địa_Trung_Hải để ra Đại_Tây_Dương .
+Ngoài_ra , Biển_Đông là con đường giao_thông hàng_hải quan_trọng đi từ Đông_Bắc_Á sang Nam_Á , Tây_Á và các khu_vực khác trên thế_giới thuộc Thái_Bình_Dương , Ấn_Độ_Dương vào Địa_Trung_Hải để ra Đại Tây_Dương .
  
-nên(IW) -> nên(BW) 
+Tây(IW) -> Tây(BW) 
 
 =====================
 
-Chủ_trương dồn_điền,_đổi_thửa là bước_đầu của quá_trình tập_trung đất canh_tác , giúp nâng_cấp hệ_thống cơ_sở_hạ_tầng giao_thông , thuỷ_lợi nội_đồng , tăng thêm diện_tích canh_tác và nâng cao năng_suất cây_trồng .
-Chủ_trương dồn_điền, đổi_thửa là bước_đầu của quá_trình tập_trung đất canh_tác , giúp nâng cấp hệ_thống cơ_sở_hạ_tầng giao_thông , thuỷ_lợi nội_đồng , tăng thêm diện_tích canh_tác và nâng cao năng_suất cây_trồng .
+1 . Lãnh_hải của nước Cộng_hoà_xã_hội_chủ_nghĩa_Việt_Nam rộng 12 hải_lí , ở phía ngoài đường_cơ_sở nối_liền các điểm nhô ra nhất của bờ biển và các điểm ngoài cùng của các đảo ven bờ của Việt_Nam .
+1 . Lãnh_hải của nước Cộng_hoà_xã_hội_chủ_nghĩa Việt_Nam rộng 12 hải_lí , ở phía ngoài đường cơ_sở nối_liền các điểm nhô ra nhất của bờ biển và các điểm ngoài_cùng của các đảo ven bờ của Việt_Nam .
  
-đổi(IW) -> đổi(BW) 
-cấp(IW) -> cấp(BW) 
+Việt(IW) -> Việt(BW) 
+cơ(IW) -> cơ(BW) 
 
 =====================
 
-Nhờ dồn_điền,_đổi_thửa mà diện_tích canh_tác ở tỉnh Hưng_Yên đã từ 89.000 ha tăng lên đến 92.309 ha .
-Nhờ dồn_điền, đổi_thửa mà diện_tích canh_tác ở tỉnh Hưng_Yên đã từ 89.000 ha tăng lên đến 92.309 ha .
+Vùng_biển ở phía trong đường_cơ_sở và giáp với bờ biển là nội_thuỷ của nước Cộng_hoà_xã_hội_chủ_nghĩa_Việt_Nam .
+Vùng_biển ở phía trong đường cơ_sở và giáp với bờ biển là nội_thuỷ của nước Cộng_hoà_xã_hội_chủ_nghĩa Việt_Nam .
  
-đổi(IW) -> đổi(BW) 
+cơ(IW) -> cơ(BW) 
+Việt(IW) -> Việt(BW) 
 
 =====================
 
-Khó_khăn rất đáng_kể là chi_phí cho việc đo_đạc , cấp sổ_đỏ cho dân còn quá tốn_kém - trung_bình khoảng 4 - 11 triệu đồng - ha .
-Khó_khăn rất đáng_kể là chi_phí cho việc đo_đạc , cấp sổ_đỏ cho_dân còn quá tốn kém - trung_bình khoảng 4 - 11 triệu đồng - ha .
+Nước Cộng_hoà_xã_hội_chủ_nghĩa_Việt_Nam thực_hiện chủ_quyền đầy_đủ và toàn_vẹn đối_với lãnh_hải của mình cũng như đối_với vùng_trời , đáy biển và lòng đất dưới đáy biển của lãnh_hải .
+Nước Cộng_hoà_xã_hội_chủ_nghĩa Việt_Nam thực_hiện chủ_quyền đầy_đủ và toàn_vẹn đối_với lãnh_hải của mình cũng như đối_với vùng_trời , đáy biển và lòng đất dưới đáy biển của lãnh_hải .
  
-kém(IW) -> kém(BW) 
+Việt(IW) -> Việt(BW) 
 
 =====================
 
-Tôi đã đi thăm và làm_việc tại nhiều nước và tôi thấy rằng cùng_với cơ_giới_hoá , họ đã thay_đổi hoàn_toàn nền nông_nghiệp bằng công_nghệ_cao .
-Tôi đã đi thăm và làm_việc tại nhiều nước và tôi thấy rằng cùng với cơ_giới_hoá , họ đã thay_đổi hoàn_toàn nền nông_nghiệp bằng công_nghệ_cao .
+2 . Vùng tiếp_giáp lãnh_hải của nước Cộng_hoà_xã_hội_chủ_nghĩa_Việt_Nam là vùng_biển tiếp liền phía ngoài lãnh_hải Việt_Nam có chiều rộng là 12 hải_lí hợp với lãnh_hải Việt_Nam thành một vùng_biển rộng 24 hải_lí kể từ đường_cơ_sở dùng để tính chiều rộng lãnh_hải của Việt_Nam .
+2 . Vùng tiếp_giáp lãnh_hải của nước Cộng_hoà_xã_hội_chủ_nghĩa Việt_Nam là vùng_biển tiếp_liền phía ngoài lãnh_hải Việt_Nam có chiều rộng là 12 hải_lí hợp với lãnh_hải Việt_Nam thành một vùng_biển rộng 24 hải_lí kể từ đường_cơ_sở dùng để tính chiều rộng lãnh_hải của Việt_Nam .
  
-với(IW) -> với(BW) 
+Việt(IW) -> Việt(BW) 
 
 =====================
 
-Các nông_sản_phẩm làm ra không_chỉ thoả_mãn nhu_cầu về lương_thực , thực_phẩm với sản_lượng cao , chất_lượng cao mà rất nhiều sản_phẩm giàu đường và tinh_bột đã trở_thành nguyên_liệu phục_vụ cho một ngành đem lại lợi_nhuận rất lớn đó là sản_xuất các sản_phẩm mới của CNSH , nhất_là các sản_phẩm phục_vụ Công_nghiệp dược_phẩm , Công_nghiệp thực_phẩm , Công_nghiệp dầu_khí , Công_nghiệp môi_trường …
-Các nông_sản_phẩm làm ra không chỉ thoả_mãn nhu_cầu về lương_thực , thực_phẩm với sản_lượng cao , chất_lượng cao mà rất nhiều sản_phẩm giàu đường và tinh_bột đã trở_thành nguyên_liệu phục_vụ cho một ngành đem lại lợi_nhuận rất lớn đó là sản_xuất các sản_phẩm mới của CNSH , nhất là các sản_phẩm phục_vụ_Công_nghiệp dược_phẩm , Công_nghiệp thực_phẩm , Công_nghiệp dầu_khí , Công_nghiệp môi_trường …
+Chính_phủ nước Cộng_hoà_xã_hội_chủ_nghĩa_Việt_Nam thực_hiện sự kiểm_soát cần_thiết trong vùng tiếp_giáp lãnh_hải của mình , nhằm bảo_vệ an_ninh , bảo_vệ các quyền_lợi về hải_quan , thuế_khoá , đảm_bảo sự tôn_trọng các quy_định về y_tế , về di_cư , nhập_cư trên lãnh_thổ hoặc trong lãnh_hải Việt_Nam .
+Chính_phủ nước Cộng_hoà_xã_hội_chủ_nghĩa Việt_Nam thực_hiện sự kiểm_soát cần_thiết trong vùng tiếp_giáp lãnh_hải của mình , nhằm bảo_vệ an_ninh , bảo_vệ các quyền_lợi về hải_quan , thuế_khoá , đảm_bảo sự tôn_trọng các quy_định về y_tế , về di_cư , nhập_cư trên lãnh_thổ hoặc trong lãnh_hải Việt_Nam .
  
-chỉ(IW) -> chỉ(BW) 
-là(IW) -> là(BW) 
+Việt(IW) -> Việt(BW) 
 
 =====================
 
-Hiện_tại , ngay đến sắn mốc , Trung_Quốc cũng sẵn_sàng mua với giá cao , với số_lượng lớn bởi họ đâu có dùng để ăn , mà dùng để chế_biến thành vài trăm loại Tinh_bột biến_tính , mà một_số ta đã thấy trong đời_sống như cồn khô , lớp thấm hút trong tã trẻ_em …
-Hiện_tại , ngay đến sắn_mốc , Trung_Quốc cũng sẵn_sàng mua với giá cao , với số_lượng lớn bởi họ đâu có dùng để ăn , mà_dùng để chế_biến thành vài trăm loại Tinh_bột biến tính , mà một_số ta đã thấy trong đời_sống như cồn khô , lớp thấm_hút trong tã trẻ_em …
+3 . Vùng đặc_quyền kinh_tế của nước Cộng_hoà Cộng_hoà_xã_hội_chủ_nghĩa_Việt_Nam tiếp liền lãnh_hải Việt_Nam và hợp với lãnh_hải Việt_Nam thành một vùng_biển rộng 200 hải_lí kể từ đường_cơ_sở dùng để tính chiều rộng lãnh_hải Việt_Nam .
+3 . Vùng đặc_quyền kinh_tế của nước Cộng_hoà_Cộng_hoà_xã_hội_chủ_nghĩa Việt_Nam tiếp_liền lãnh_hải Việt_Nam và hợp với lãnh_hải Việt_Nam thành một vùng_biển rộng 200 hải_lí kể từ đường_cơ_sở dùng để tính chiều rộng lãnh_hải Việt_Nam .
  
-tính(IW) -> tính(BW) 
+Việt(IW) -> Việt(BW) 
 
 =====================
 
-Công_ti_Vedan đã xây_dựng một nhà_máy sản_xuất axit_amin ở Đồng_Nai vào loại lớn nhất thế_giới ngay tại Việt_Nam .
-Công_ti Vedan đã xây_dựng một nhà_máy sản_xuất axit_amin ở Đồng_Nai vào loại lớn nhất thế_giới ngay tại Việt_Nam .
+Nước Cộng_hoà_xã_hội_chủ_nghĩa_Việt_Nam có chủ_quyền hoàn_toàn về việc thăm_dò , khai_thác , bảo_vệ và quản_lí tất_cả các tài_nguyên thiên_nhiên , sinh_vật và không sinh_vật ở vùng nước , ở đáy biển và trong lòng đất dưới đáy biển của vùng đặc_quyền kinh_tế của Việt_Nam ; có quyền và thẩm_quyền riêng_biệt về các hoạt_động khác phục_vụ cho việc thăm_dò và khai_thác vùng đặc_quyền kinh_tế nhằm mục_đích kinh_tế ; có thẩm_quyền riêng_biệt về nghiên_cứu khoa_học trong vùng đặc_quyền kinh_tế của Việt_Nam .
+Nước Cộng_hoà_xã_hội_chủ_nghĩa Việt_Nam có chủ_quyền hoàn_toàn về việc thăm_dò , khai_thác , bảo_vệ và quản_lí tất_cả các tài_nguyên thiên_nhiên , sinh_vật và không sinh_vật ở vùng nước , ở đáy biển và trong lòng đất dưới đáy biển của vùng đặc_quyền kinh_tế của Việt_Nam ; có quyền và thẩm_quyền riêng_biệt về các hoạt_động khác phục_vụ cho việc thăm_dò và khai_thác vùng đặc_quyền kinh_tế nhằm mục_đích kinh_tế ; có thẩm_quyền riêng_biệt về nghiên_cứu khoa_học trong vùng đặc_quyền kinh_tế của Việt_Nam .
  
-Vedan(IW) -> Vedan(BW) 
+Việt(IW) -> Việt(BW) 
 
 =====================
 
-Nhưng thử nghĩ xem , nếu_như chúng_ta cũng hoàn_toàn đủ khả_năng xây_dựng được những nhà_máy Công_nghệ_sinh_học như vậy , có trình_độ khoa_học cao như vậy , thì nông_sản_phẩm của chúng_ta sẽ chuyển thành các sản_phẩm xuất_khẩu có giá_trị cao biết_bao !
-Nhưng thử nghĩ xem , nếu như chúng_ta cũng hoàn_toàn đủ khả_năng xây_dựng được những nhà_máy_Công_nghệ_sinh_học như_vậy , có trình_độ khoa_học_cao như vậy , thì nông_sản_phẩm của chúng_ta sẽ chuyển_thành các sản_phẩm xuất_khẩu có giá_trị cao biết bao !
+Nước Cộng_hoà_xã_hội_chủ_nghĩa_Việt_Nam có thẩm_quyền bảo_vệ môi_trường , chống ô_nhiễm trong vùng đặc_quyền kinh_tế của Việt_Nam .
+Nước Cộng_hoà_xã_hội_chủ_nghĩa Việt_Nam có thẩm_quyền bảo_vệ môi_trường , chống ô_nhiễm trong vùng đặc_quyền kinh_tế của Việt_Nam .
  
-như(IW) -> như(BW) 
-bao(IW) -> bao(BW) 
+Việt(IW) -> Việt(BW) 
 
 =====================
 
-Đứng trước một cánh đồng cà_chua ở Mĩ , tôi đã rất lạ_lẫm bởi không trông thấy một bóng người nào , cũng không thấy cả đất , vì họ dùng ni-lon phủ kín mặt_đất để giữ nước .
-Đứng trước một cánh_đồng cà chua ở Mĩ , tôi đã rất lạ_lẫm bởi không trông thấy một bóng người nào , cũng không thấy cả đất , vì họ dùng ni-lon phủ kín mặt đất để giữ nước .
+Nếu nơi nào bờ ngoài của rìa lục_địa cách đường_cơ_sở dùng để tính chiều rộng lãnh_hải Việt_Nam không đến 200 hải_lí thì thềm_lục_địa nơi ấy mở_rộng ra 200 hải_lí kể từ đường_cơ_sở đó .
+Nếu nơi nào bờ ngoài của rìa lục_địa cách đường_cơ_sở dùng để tính chiều rộng lãnh_hải Việt_Nam không đến 200 hải_lí thì thềm_lục_địa nơi ấy mở_rộng ra 200 hải_lí kể từ đường cơ_sở đó .
  
-chua(IW) -> chua(BW) 
-đất(IW) -> đất(BW) 
+cơ(IW) -> cơ(BW) 
 
 =====================
 
-Hệ_thống tưới_tiêu được đầu_tư rất lớn nhằm tiết_kiệm nước tối_đa , thông_qua những chiếc ống nhựa , nước được nhỏ từng giọt vào từng gốc cà_chua .
-Hệ_thống tưới tiêu được đầu_tư rất lớn nhằm tiết_kiệm nước tối_đa , thông_qua những chiếc ống nhựa , nước được nhỏ từng giọt vào từng gốc cà chua .
+Nước Cộng_hoà_xã_hội_chủ_nghĩa_Việt_Nam có chủ_quyền hoàn_toàn về mặt thăm_dò , khai_thác , bảo_vệ và quản_lí tất_cả các tài_nguyên thiên_nhiên ở thềm_lục_địa Việt_Nam bao_gồm tài_nguyên khoáng_sản , tài_nguyên không sinh_vật và tài_nguyên sinh_vật thuộc loại định_cư ở thềm_lục_địa Việt_Nam .
+Nước Cộng_hoà_xã_hội_chủ_nghĩa Việt_Nam có chủ_quyền hoàn_toàn về mặt thăm_dò , khai_thác , bảo_vệ và quản_lí tất_cả các tài_nguyên thiên_nhiên ở thềm_lục_địa Việt_Nam bao_gồm tài_nguyên khoáng_sản , tài_nguyên không sinh_vật và tài_nguyên_sinh_vật thuộc loại định_cư ở thềm_lục_địa Việt_Nam .
  
-tiêu(IW) -> tiêu(BW) 
-chua(IW) -> chua(BW) 
+Việt(IW) -> Việt(BW) 
 
 =====================
 
-Cho_nên không cần phải dùng các thuốc_trừ_sâu , trừ bệnh rất không an_toàn như ở ta hiện_nay .
-Cho nên không cần phải dùng các thuốc_trừ sâu , trừ bệnh rất không an_toàn như ở ta hiện_nay .
+Theo tuyên_bố này đường_cơ_sở của Việt_Nam là đường_cơ_sở thẳng gồm có 11 điểm và 10 đoạn tính từ ranh_giới trên biển giữa 2 nước Việt_Nam và Campuchia cho đến đảo Cồn_Cỏ .
+Theo tuyên_bố này đường cơ_sở của Việt_Nam là đường cơ_sở thẳng gồm có 11 điểm và 10 đoạn tính từ ranh_giới trên biển giữa 2 nước Việt_Nam và Campuchia cho đến đảo Cồn_Cỏ .
  
-nên(IW) -> nên(BW) 
-sâu(IW) -> sâu(BW) 
+cơ(IW) -> cơ(BW) 
+cơ(IW) -> cơ(BW) 
 
 =====================
 
-Chúng_ta đừng ham cái gọi_là đứng thứ nhì về xuất_khẩu gạo vì điều đó chỉ có ý_nghĩa chứng_tỏ nỗ_lực vươn lên từ một nước thiếu_đói trước_kia mà thôi .
-Chúng_ta đừng ham cái gọi_là đứng thứ nhì về xuất_khẩu gạo vì điều đó chỉ có ý_nghĩa chứng_tỏ nỗ_lực vươn lên từ một nước thiếu đói trước_kia mà thôi .
+Để thể_hiện rõ quyết_tâm bảo_vệ chủ_quyền của mình trên các vùng_biển đã được tuyên_bố , ngày 23 / 6 / 1994 , tại kì họp thứ 5 của Quốc_hội khoá IX , Quốc_hội nước Cộng_Hoà_Xã_Hội_Chủ_Nghĩa_Việt_Nam đã tuyên_bố Phê_duyệt Công_ước_Quốc_tế_về_Luật_Biển năm 1982 .
+Để thể_hiện rõ quyết_tâm bảo_vệ chủ_quyền của mình trên các vùng_biển đã được tuyên_bố , ngày 23 / 6 / 1994 , tại kì họp thứ 5 của Quốc_hội khoá IX , Quốc_hội nước Cộng_Hoà_Xã_Hội_Chủ_Nghĩa_Việt_Nam đã tuyên_bố Phê_duyệt Công_ước_Quốc_tế về Luật_Biển năm 1982 .
  
-đói(IW) -> đói(BW) 
+về(IW) -> về(BW) 
+Luật(IW) -> Luật(BW) 
 
 =====================
 
-Thật khó tưởng_tượng khi Hà_Lan chỉ có 16,34 triệu dân , 69,6 % sống ở thành_thị , vậy_mà có_thể xuất_khẩu 17 tỉ USD nông_sản_phẩm ( bình_quân 4 triệu USD - ha ) .
-Thật_khó tưởng_tượng khi Hà_Lan chỉ có 16,34 triệu dân , 69,6 % sống ở thành_thị , vậy mà có_thể xuất_khẩu 17 tỉ USD nông_sản_phẩm ( bình_quân 4 triệu USD - ha ) .
+Các vùng_biển nêu trên còn được nhấn_mạnh trong các điều 7 , 8 và 9 của Luật_Biên_giới_quốc_gia năm 2003 .
+Các vùng_biển nêu trên còn được nhấn_mạnh trong các điều 7 , 8 và 9 của Luật Biên_giới quốc_gia năm 2003 .
  
-mà(IW) -> mà(BW) 
+Biên(IW) -> Biên(BW) 
+quốc(IW) -> quốc(BW) 
 
 =====================
 
-Hình_ảnh nước ta như cái đòn_gánh ( miền Trung ) với hai đầu là hai thúng gạo ( châu_thổ sông_Hồng và châu_thổ sông_Cửu_Long ) .
-Hình_ảnh nước ta như cái đòn gánh ( miền Trung ) với hai đầu là hai thúng gạo ( châu_thổ sông_Hồng và châu_thổ sông_Cửu_Long ) .
+Để phục_vụ cho phát_triển kinh_tế biển và giữ vững an_ninh chủ_quyền trên các vùng_biển , đến nay nước ta đã ký một_số thoả_thuận trên biển với các nước láng_giềng : Hiệp_định vùng nước lịch_sử Việt_Nam - Campuchia ( 1982 ) , Thoả_thuận khai_thác chung vùng chồng_lấn thềm_lục_địa Việt_Nam - Malaysia ( 1992 ) , Hiệp_định về phân_định ranh_giới biển Việt_Nam - Thái_Lan ( 1997 ) , Hiệp_định phân_định lãnh_hải , vùng đặc_quyền về kinh_tế và thềm_lục_địa trong vịnh Bắc_Bộ giữa Việt_Nam - Trung_Quốc ( 2004 ) và Hiệp_định phân_định thềm_lục_địa Việt_Nam - Indonesia ( 2003 ) .
+Để phục_vụ cho phát_triển kinh_tế biển và giữ vững an_ninh chủ_quyền trên các vùng_biển , đến nay nước ta đã ký một_số thoả_thuận trên biển với các nước láng_giềng : Hiệp_định vùng nước lịch_sử Việt_Nam - Campuchia ( 1982 ) , Thoả_thuận khai_thác chung vùng chồng lấn thềm_lục_địa Việt_Nam - Malaysia ( 1992 ) , Hiệp_định về phân_định ranh_giới biển Việt_Nam - Thái_Lan ( 1997 ) , Hiệp_định phân_định lãnh_hải , vùng đặc_quyền về kinh_tế và thềm_lục_địa trong vịnh Bắc_Bộ giữa Việt_Nam - Trung_Quốc ( 2004 ) và Hiệp_định phân_định thềm_lục_địa Việt_Nam - Indonesia ( 2003 ) .
  
-gánh(IW) -> gánh(BW) 
+lấn(IW) -> lấn(BW) 
 
 =====================
 
-Điều không_thể hiểu được là Việt_Nam mà_lại phải nhập_khẩu khá nhiều ngô hạt , đậu_tương , bột cá - những thứ chúng_ta thừa sức sản_xuất .
-Điều không_thể hiểu được là Việt_Nam mà lại phải nhập_khẩu khá nhiều ngô hạt , đậu_tương , bột cá - những thứ chúng_ta thừa sức sản_xuất .
+Có 83 loài sinh_vật biển được ghi vào Sách_Đỏ_Việt_Nam ( 37 loài cá , 6 loài san_hô , 5 loài da_gai , 4 loài tôm_rồng , 1 loài sam , 21 loài ốc , 6 loài động_vật hai mảnh vỏ và 3 loài mực ) .
+Có 83 loài sinh_vật biển được ghi vào Sách_Đỏ Việt_Nam ( 37 loài cá , 6 loài san_hô , 5 loài da_gai , 4 loài tôm_rồng , 1 loài sam , 21 loài ốc , 6 loài động_vật hai mảnh vỏ và 3 loài mực ) .
  
-lại(IW) -> lại(BW) 
+Việt(IW) -> Việt(BW) 
 
 =====================
 
-Vậy tại_sao chúng_ta không dám đầu_tư để đảo_ngược lại được tình_thế này ?
-Vậy tại_sao chúng_ta không dám đầu_tư để đảo ngược_lại được tình_thế này ?
+Rong_biển có hơn 600 loài ( sử_dụng cho chế_phẩm công_nghiệp 24 loài , dược_liệu 18 loài , thực_phẩm 30 loài , thức_ăn gia_súc 10 loài và phân_bón 8 loài ) .
+Rong biển có hơn 600 loài ( sử_dụng cho chế_phẩm công_nghiệp 24 loài , dược_liệu 18 loài , thực_phẩm 30 loài , thức_ăn gia_súc 10 loài và phân_bón 8 loài ) .
  
-ngược(IW) -> ngược(BW) 
+biển(IW) -> biển(BW) 
 
 =====================
 
-Bà_con người H’Mông suốt đời phải ăn ngô , sao ta không đổi gạo cho họ để lấy ngô thay cho việc nhập_khẩu ngô ?
-Bà con_người H’Mông suốt đời phải ăn_ngô , sao_ta không đổi_gạo cho họ để lấy ngô thay cho việc nhập_khẩu ngô ?
+hệ_sinh_thái cỏ biển , hệ_sinh_thái rạn san_hô , hệ_sinh_thái đảo , hệ_sinh_thái bờ đá , hệ_sinh_thái cồn cát , v.v.
+hệ sinh_thái cỏ biển , hệ_sinh_thái rạn san_hô , hệ_sinh_thái đảo , hệ_sinh_thái bờ đá , hệ_sinh_thái cồn cát , v.v.
  
-con(IW) -> con(BW) 
+sinh(IW) -> sinh(BW) 
 
 =====================
 
-Tại_sao bà con nuôi cá xuất_khẩu lắm lúc điêu_đứng vì giá hạ đột_ngột mà ta không chế_biến thành bột cá để khỏi phải nhập_khẩu ?
-Tại_sao bà con_nuôi cá xuất_khẩu lắm lúc điêu đứng vì giá_hạ đột_ngột mà_ta không chế_biến thành_bột cá để khỏi phải nhập_khẩu ?
+Trong các hệ_sinh_thái này , tính đa_dạng_sinh_học rất cao .
+Trong các hệ sinh_thái này , tính đa_dạng sinh_học rất cao .
  
-đứng(IW) -> đứng(BW) 
+sinh(IW) -> sinh(BW) 
+sinh(IW) -> sinh(BW) 
 
 =====================
 
-Nếu ta trồng xen đậu_tương với ngô trên diện_tích rộng thì đâu đến_nỗi phải dùng ngoại_tệ để nhập_khẩu đậu_tương ?
-Nếu ta trồng xen đậu_tương với ngô trên diện_tích rộng thì đâu đến nỗi phải dùng ngoại_tệ để nhập_khẩu đậu_tương ?
+Tiềm_năng nuôi_trồng thuỷ_sản nước_mặn , lợ trong các vùng cửa_sông , đầm_phá và vũng vịnh và vùng_biển ven bờ rất lớn .
+Tiềm_năng nuôi_trồng thuỷ_sản nước_mặn , lợ trong các vùng cửa_sông , đầm phá và vũng vịnh và vùng_biển ven bờ rất lớn .
  
-nỗi(IW) -> nỗi(BW) 
+phá(IW) -> phá(BW) 
 
 =====================
 
-Tôi cho rằng , cần phải suy_nghĩ để có một cuộc cách_mạng , biến nông_nghiệp nước ta ngoài việc thoả_mãn nhu_cầu trong nước còn phải là một môi_trường chuyên sản_xuất những cây nhiệt_đới quý_hiếm , bán cho cả thế_giới với công_nghệ_sạch , bền_vững và nhất_là biến nông_sản_phẩm thành các sản_phẩm Công_nghệ_sinh_học có giá_trị rất cao .
-Tôi cho rằng , cần phải suy_nghĩ để có một cuộc cách_mạng , biến nông_nghiệp nước ta ngoài việc thoả_mãn nhu_cầu trong nước còn phải là một môi_trường chuyên_sản_xuất những cây nhiệt_đới quý_hiếm , bán cho cả thế_giới với công_nghệ_sạch , bền_vững và nhất là biến nông_sản_phẩm thành các sản_phẩm Công_nghệ_sinh_học có giá_trị rất cao .
+Theo Viện_Nghiên_cứu_Hải_sản , tổng trữ_lượng hải_sản biển Việt_Nam dao_động trong khoảng 3,1 - 4,2 triệu tấn , với khả_năng khai_thác 1,4 - 1,6 triệu tấn ; khoảng 0,058 triệu tấn tôm biển và 0,123 triệu tấn mực .
+Theo Viện_Nghiên_cứu Hải_sản , tổng trữ_lượng hải_sản biển Việt_Nam dao_động trong khoảng 3,1 - 4,2 triệu tấn , với khả_năng khai_thác 1,4 - 1,6 triệu tấn ; khoảng 0,058 triệu tấn tôm biển và 0,123 triệu tấn mực .
  
-là(IW) -> là(BW) 
+Hải(IW) -> Hải(BW) 
 
 =====================
 
-Theo tôi , người_làm quản_lí trước_hết phải hiểu được đất có cấu_tượng là gì và không được xâm_phạm đến nó .
-Theo tôi , người làm quản_lí trước_hết phải hiểu được đất có cấu_tượng là gì và không được xâm_phạm đến nó .
+Trên sườn lục_địa - chân lục_địa và đáy biển sâu còn có tiềm_năng các kết hạch sắt - mangan , bùn đa kim rất đáng_kể mà đến nay chưa_thể xác_định được trữ_lượng .
+Trên sườn lục_địa - chân lục_địa và đáy biển sâu còn có tiềm_năng các kết_hạch sắt - mangan , bùn đa kim rất đáng_kể mà đến nay chưa thể xác_định được trữ_lượng .
  
-làm(IW) -> làm(BW) 
+thể(IW) -> thể(BW) 
 
 =====================
 
-Nói cho dễ hiểu , đất xét về lí_tính có 3 loại , một loại là các hạt rất to gọi_là cát ; một loại hạt rất nhỏ , gọi_là sét ; loại đất trồng_trọt có các hạt vừa_phải nhờ đó mới có_thể giữ nước , giữ thức_ăn , giữ không_khí trong đất .
-Nói cho dễ hiểu , đất_xét về lí_tính có 3 loại , một loại là các hạt rất to_gọi là cát ; một loại hạt rất nhỏ , gọi_là sét ; loại đất trồng_trọt có các hạt vừa phải nhờ đó mới có_thể giữ nước , giữ thức_ăn , giữ không khí trong đất .
+Một loại khoáng_sản khác rất có triển_vọng trong trầm_tích đáy biển Việt_Nam được các nhà_địa_chất mới phát_hiện trong thời_gian gần đây là khí cháy ( hydrat_methan ) .
+Một loại khoáng_sản khác rất có triển_vọng trong trầm_tích đáy biển Việt_Nam được các nhà_địa_chất mới phát_hiện trong thời_gian gần đây là khí cháy ( hydrat methan ) .
  
-là(IW) -> là(BW) 
-phải(IW) -> phải(BW) 
-khí(IW) -> khí(BW) 
+methan(IW) -> methan(BW) 
 
 =====================
 
-Người_ta gọi đó là đất có cấu_tượng .
-Người ta gọi_đó là đất có cấu_tượng .
+Nguồn tài_nguyên khoáng_sản trong khối nước_biển có trữ_lượng lớn nhất là muối với trữ_lượng rất lớn bởi_vì độ muối trung_bình của nước_biển là khoảng 32 ‰ và đường bờ biển dài khoảng 3.500 km .
+Nguồn tài_nguyên khoáng_sản trong khối nước biển có trữ_lượng lớn nhất là muối với trữ_lượng rất lớn bởi_vì độ muối trung_bình của nước biển là khoảng 32 ‰ và đường bờ biển dài khoảng 3.500 km .
  
-ta(IW) -> ta(BW) 
+biển(IW) -> biển(BW) 
+biển(IW) -> biển(BW) 
 
 =====================
 
-Chất mùn còn được vi_sinh_vật phân_giải dần_dần để giải_phóng thức_ăn cho cây_trồng .
-Chất mùn còn được vi_sinh_vật phân_giải dần dần để giải_phóng thức_ăn cho cây_trồng .
+Đó chính là địa_hình bờ và đảo cũng như khoảng_không mặt_biển .
+Đó chính là địa_hình bờ và đảo cũng như khoảng không mặt biển .
  
-dần(IW) -> dần(BW) 
+không(IW) -> không(BW) 
+biển(IW) -> biển(BW) 
 
 =====================
 
-Đất có cấu_tượng chính là đất mà nông_dân ta vẫn gọi_là Bờ_xôi,_Ruộng_mật .
-Đất có cấu_tượng chính là đất mà nông_dân ta vẫn gọi_là Bờ xôi, Ruộng_mật .
+Không_gian mặt_biển .
+Không_gian mặt biển .
  
-xôi,(IW) -> xôi,(BW) 
-Ruộng(IW) -> Ruộng(BW) 
+biển(IW) -> biển(BW) 
 
 =====================
 
-Nó nuôi sống dân ta lâu_dài cùng_với sự phát_triển của dân_số .
-Nó nuôi_sống dân_ta lâu_dài cùng với sự phát_triển của dân_số .
+Biển Việt_Nam nối thông với nhiều hướng , từ các hải_cảng ven biển của Việt_Nam thông_qua eo_biển Malakka để đi đến Ấn_Độ_Dương , Trung_Đông , Châu_Âu , Châu_Phi ; qua eo_biển Basi có_thể đi vào Thái_Bình_Dương đến các cảng của Nhật_Bản , Nga , Nam_Mỹ và Bắc_Mỹ ; qua các eo_biển giữa Philippin , Indonesia , Singappor đến Australia và New_Zealand , v.v.
+Biển Việt_Nam nối thông với nhiều hướng , từ các hải_cảng ven biển của Việt_Nam thông_qua eo_biển Malakka để đi đến Ấn_Độ_Dương , Trung_Đông , Châu_Âu , Châu_Phi ; qua eo_biển Basi có_thể đi vào Thái_Bình_Dương đến các cảng của Nhật_Bản , Nga , Nam Mỹ và Bắc_Mỹ ; qua các eo_biển giữa Philippin , Indonesia , Singappor đến Australia và New_Zealand , v.v.
  
-với(IW) -> với(BW) 
+Mỹ(IW) -> Mỹ(BW) 
 
 =====================
 
-Trên Quốc_lộ 5 thuộc địa_phận các tỉnh Hưng_Yên , Hải_Dương , Hải_Phòng đến nay , ven đường thay_vì những cánh đồng lúa xanh tốt hiện đã mọc kín san_sát các nhà_máy , khu_công_nghiệp .
-Trên Quốc_lộ 5 thuộc địa_phận các tỉnh Hưng_Yên , Hải_Dương , Hải_Phòng đến nay , ven đường thay_vì những cánh đồng_lúa xanh tốt_hiện đã mọc kín san_sát các nhà_máy , khu công_nghiệp .
+Địa_hình bờ biển của nước ta rất đa_dạng và độc_đáo do được phát_triển trên các loại đất_đá khác nhau trong điều_kiện khí_hậu có sự phân_hoá rõ_rệt theo chiều bắc - nam .
+Địa_hình bờ biển của nước ta rất đa_dạng và độc_đáo do được phát_triển trên các loại đất đá khác nhau trong điều_kiện khí_hậu có sự phân_hoá rõ_rệt theo chiều bắc - nam .
  
-công(IW) -> công(BW) 
+đá(IW) -> đá(BW) 
 
 =====================
 
-Điều này có nghĩa_là chúng_ta đã không chuẩn_bị trước cho các nhà_đầu_tư về nơi đến mà toàn để cho họ tự đi chọn , toàn nhằm vào những chỗ “ bờ_xôi_ruộng_mật ” để bê-tông_hoá chúng .
-Điều này có nghĩa_là chúng_ta đã không chuẩn bị trước cho các nhà_đầu_tư về nơi đến mà toàn để cho họ tự đi chọn , toàn nhằm vào những chỗ “ bờ xôi ruộng_mật ” để bê-tông_hoá chúng .
+Có nhiều bãi_tắm đẹp với cát mịn và sạch rải_rác từ Trà_Cổ ( Móng_Cái , Quảng_Ninh ) đến Bãi_Nai ( Hà_Tiên , Kiên_Giang ) và nhiều bãi_tắm còn rất hoang_sơ trên các đảo ( Ngọc_Vừng , Quan_Lạn ở Quảng_Ninh ; Hòn_La ở Quảng_Bình , Côn_Đảo , Phú_Quốc , v.v. ) .
+Có nhiều bãi tắm đẹp với cát mịn và sạch rải_rác từ Trà_Cổ ( Móng_Cái , Quảng_Ninh ) đến Bãi_Nai ( Hà_Tiên , Kiên_Giang ) và nhiều bãi tắm còn rất hoang_sơ trên các đảo ( Ngọc_Vừng , Quan_Lạn ở Quảng_Ninh ; Hòn_La ở Quảng_Bình , Côn_Đảo , Phú_Quốc , v.v. ) .
  
-bị(IW) -> bị(BW) 
-xôi(IW) -> xôi(BW) 
-ruộng(IW) -> ruộng(BW) 
+tắm(IW) -> tắm(BW) 
+tắm(IW) -> tắm(BW) 
 
 =====================
 
-Điều này_khác với Trung_Quốc .
-Điều này khác với Trung_Quốc .
+Vùng_biển nước ta có trên 4000 hòn đảo lớn_nhỏ trong đó vùng_biển đông_bắc có trên 3.000 đảo , bắc Trung_Bộ trên 40 đảo , còn lại ở vùng_biển Nam_Trung_Bộ , vùng_biển Tây_Nam và hai quần_đảo Hoàng_Sa và Trường_Sa .
+Vùng_biển nước ta có trên 4000 hòn_đảo lớn nhỏ trong đó vùng_biển đông_bắc có trên 3.000 đảo , bắc Trung_Bộ trên 40 đảo , còn lại ở vùng_biển Nam_Trung_Bộ , vùng_biển Tây_Nam và hai quần_đảo Hoàng_Sa và Trường_Sa .
  
-khác(IW) -> khác(BW) 
+nhỏ(IW) -> nhỏ(BW) 
 
 =====================
 
-Tôi đã đến thăm Khu_tự_trị Nội_Mông_Cổ , một vùng_đất rộng mênh_mông , chất đất không tốt , khí_hậu bất_lợi , chỉ thích_hợp chăn_nuôi mà thôi .
-Tôi đã đến thăm Khu tự_trị Nội_Mông Cổ , một vùng đất_rộng mênh_mông , chất_đất không tốt , khí_hậu bất_lợi , chỉ thích_hợp chăn_nuôi mà thôi .
+Đây là điều_kiện thuận_lợi để xây_dựng cơ_sở_hạ_tầng phục_vụ cho khai_thác - chế_biến hải_sản , giao_thông vận_tải đường_biển , du_lịch - thể_thao - nghỉ_dưỡng , v.v.
+Đây là điều_kiện thuận_lợi để xây_dựng cơ_sở_hạ_tầng phục_vụ cho khai_thác - chế_biến hải_sản , giao_thông vận_tải đường_biển , du_lịch - thể_thao - nghỉ dưỡng , v.v.
  
-tự(IW) -> tự(BW) 
-Cổ(IW) -> Cổ(BW) 
-đất(IW) -> đất(BW) 
+dưỡng(IW) -> dưỡng(BW) 
 
 =====================
 
-Họ đã biến thành những khu_công_nghiệp rộng_lớn bằng cách làm đường_cao_tốc , xây_dựng các nhà_máy sản_xuất đất_hiếm ( do tìm thấy nguồn đất_hiếm rất lớn tại đây ) và bạt_ngàn các nhà_máy gang_thép .
-Họ đã biến_thành những khu công_nghiệp rộng lớn bằng cách làm đường cao_tốc , xây_dựng các nhà_máy sản_xuất đất_hiếm ( do tìm thấy nguồn đất_hiếm rất lớn tại đây ) và bạt ngàn các nhà_máy gang_thép .
+Phát_triển kinh_tế biển và bảo_vệ an_ninh chủ_quyền quốc_gia trên biển là một mục_tiêu đã được đặt ra ngay từ thời khai_thiên_lập_địa , dù_rằng mỗi thời có cách nhìn khác nhau về biển , nhưng đều với một phương_châm là : lấn biển để xây_dựng và bảo_vệ tổ_quốc .
+Phát_triển kinh_tế biển và bảo_vệ an_ninh chủ_quyền quốc_gia trên biển là một mục_tiêu đã được đặt ra ngay từ thời khai thiên_lập địa , dù_rằng mỗi thời có cách nhìn khác nhau về biển , nhưng đều với một phương_châm là : lấn biển để xây_dựng và bảo_vệ tổ_quốc .
  
-công(IW) -> công(BW) 
-lớn(IW) -> lớn(BW) 
-cao(IW) -> cao(BW) 
-ngàn(IW) -> ngàn(BW) 
+thiên(IW) -> thiên(BW) 
+địa(IW) -> địa(BW) 
 
 =====================
 
-Họ nói với tôi một chân_lí : Muốn làm_giàu trước_hết hãy làm đường !
-Họ nói với tôi một chân_lí : Muốn làm giàu trước hết_hãy làm đường !
+Việc sử_dụng thuỷ_triều để đánh quân Nam_Hán trên sông Bạch_Đằng của Ngô_Quyền vào năm 938 đã kết_thúc một khoảng thời_gian dài trong lịch_sử Việt_Nam là đỉnh_cao của việc sử_dụng tài_nguyên của biển của dân_tộc ta trong thời_kì chưa có nhà_nước phong_kiến độc_lập tự_chủ .
+Việc sử_dụng thuỷ_triều để đánh_quân Nam Hán trên sông Bạch_Đằng của Ngô_Quyền vào năm 938 đã kết_thúc một khoảng thời_gian dài trong lịch_sử Việt_Nam là đỉnh_cao của việc sử_dụng tài_nguyên của biển của dân_tộc ta trong thời_kì chưa có nhà_nước phong_kiến độc_lập tự_chủ .
  
-giàu(IW) -> giàu(BW) 
-hết(IW) -> hết(BW) 
+Hán(IW) -> Hán(BW) 
 
 =====================
 
-Tại_sao chúng_ta có vô_vàn các vùng_đất đá_ong_hoá , đất bạc_màu ở trung_du Bắc_Bộ , ở miền Trung mà_lại không đầu_tư làm đường , làm cơ_sở_hạ_tầng để thu_hút các nhà_đầu_tư đến đó , nhằm xây_dựng những khu_công_nghiệp , khu_chế_xuất rộng_lớn ?
-Tại_sao chúng_ta có vô_vàn các vùng_đất đá_ong_hoá , đất bạc_màu ở trung du_Bắc_Bộ , ở miền Trung mà lại không đầu_tư làm đường , làm cơ_sở_hạ_tầng để thu_hút các nhà_đầu_tư đến đó , nhằm xây_dựng những khu_công_nghiệp , khu chế_xuất rộng_lớn ?
+Chẳng_hạn , vợ của vua Trần_Anh_Tông đã được phong đất ở khu_vực Diêm_Điền ( Thái_Bình ) và đã trở_thành Bà_Chúa_Muối .
+Chẳng_hạn , vợ của vua Trần Anh_Tông đã được phong đất ở khu_vực Diêm_Điền ( Thái_Bình ) và đã trở_thành Bà_Chúa_Muối .
  
-du(IW) -> du(BW) 
-lại(IW) -> lại(BW) 
-chế(IW) -> chế(BW) 
+Anh(IW) -> Anh(BW) 
 
 =====================
 
-Nếu làm khác đi chúng_ta sẽ phải chịu trách_nhiệm nặng_nề trước các thế_hệ mai_sau .
-Nếu làm khác đi chúng_ta sẽ phải chịu trách_nhiệm nặng_nề trước các thế_hệ mai sau .
+Các sản_vật khác được khai_thác từ biển như đánh_bắt cá và làm nước_mắm , khai_thác tổ yến và một_số loài thân_mềm có giá_trị ( ốc_hương , ốc_xà_cừ , ốc_tai_tượng , v.v. ) được xem là một trong những lĩnh_vực kinh_tế biển có truyền_thống lâu_đời nhất vẫn tiếp_tục phát_triển .
+Các sản_vật khác được khai_thác từ biển như đánh_bắt cá và làm nước_mắm , khai_thác tổ yến và một_số loài thân_mềm có giá_trị ( ốc_hương , ốc xà_cừ , ốc_tai_tượng , v.v. ) được xem là một trong những lĩnh_vực kinh_tế biển có truyền_thống lâu_đời nhất vẫn tiếp_tục phát_triển .
  
-sau(IW) -> sau(BW) 
+xà(IW) -> xà(BW) 
 
 =====================
 
-Tôi phản_đối kịch_liệt cách nghĩ đơn_giản là trên một ha làm công_nghiệp thì lợi hơn biết_bao_nhiêu so với trồng cây_nông_nghiệp ?
-Tôi phản_đối_kịch liệt_cách nghĩ đơn_giản là trên một ha làm công_nghiệp thì lợi hơn biết bao_nhiêu so với trồng cây nông_nghiệp ?
- 
-liệt(IW) -> liệt(BW) 
-bao(IW) -> bao(BW) 
-nông(IW) -> nông(BW) 
-
-=====================
-
-Chúng_ta phải làm đường hay mời đầu_tư làm đường , để rồi tạo ra các khu_công_nghiệp , các khu_chế_xuất nằm ngoài các thửa đất Bờ_xôi,_Ruộng_mật .
-Chúng_ta phải làm đường hay mời đầu_tư làm đường , để rồi tạo ra các khu công_nghiệp , các khu chế_xuất nằm_ngoài các thửa đất Bờ xôi, Ruộng_mật .
- 
-công(IW) -> công(BW) 
-chế(IW) -> chế(BW) 
-xôi,(IW) -> xôi,(BW) 
-Ruộng(IW) -> Ruộng(BW) 
-
-=====================
-
-Một thông_tin mà các đồng_chí lãnh_đạo từ trung_ương đến địa_phương nên biết là ở Trung_Quốc muốn chuyển_đổi sản_xuất trên diện_tích từ 5 mẫu Trung_Quốc ( 1 - 3 ha ) nhất_thiết cần có sự chấp_thuận của Quốc_vụ_viện ( Chính_phủ ) .
-Một thông_tin mà các đồng_chí lãnh_đạo từ trung_ương đến địa_phương nên biết là ở Trung_Quốc_muốn chuyển_đổi sản_xuất trên diện_tích từ 5 mẫu Trung_Quốc ( 1 - 3 ha ) nhất_thiết cần có sự chấp_thuận của Quốc_vụ viện ( Chính_phủ ) .
- 
-viện(IW) -> viện(BW) 
-
-=====================
-
-Một chuyên_gia Trung_Quốc cho tôi biết miền Bắc và miền Trung Việt_Nam còn có biết_bao đồi_núi thấp .
-Một chuyên_gia Trung_Quốc cho tôi biết miền Bắc và miền Trung Việt_Nam còn có biết bao_đồi núi thấp .
- 
-bao(IW) -> bao(BW) 
-núi(IW) -> núi(BW) 
-
-=====================
-
-Trồng mấy cây bạch_đàn mảnh_mai , còi_cọc thật_là lãng_phí quá .
-Trồng mấy cây bạch đàn mảnh mai , còi_cọc thật là lãng_phí quá .
- 
-đàn(IW) -> đàn(BW) 
-mai(IW) -> mai(BW) 
-là(IW) -> là(BW) 
-
-=====================
-
-Ở Quảng_Tây ( Trung_Quốc ) người_ta đã và đang san phẳng dần các đồi_núi thấp và trải thảm_đỏ cho các nhà_đầu_tư đến để xây_dựng các khu_công_nghiệp , khu_chế_xuất .
-Ở Quảng_Tây ( Trung_Quốc ) người ta đã và đang san_phẳng dần các đồi núi thấp và trải thảm_đỏ cho các nhà_đầu_tư đến để xây_dựng các khu công_nghiệp , khu chế_xuất .
- 
-ta(IW) -> ta(BW) 
-núi(IW) -> núi(BW) 
-công(IW) -> công(BW) 
-chế(IW) -> chế(BW) 
-
-=====================
-
-Quy_hoạch đi trước và quy_hoạch đó phải được pháp_lí_hoá , sau đó phải có lộ_trình để chỉnh_sửa hệ_thống chính_sách hiện_nay .
-Quy_hoạch đi trước và quy_hoạch đó phải được pháp_lí_hoá , sau đó phải có lộ_trình để_chỉnh sửa hệ_thống chính_sách hiện_nay .
- 
-sửa(IW) -> sửa(BW) 
-
-=====================
-
-Nếu quy_hoạch Hải_Dương - Hưng_Yên là trọng_điểm sản_xuất nông_nghiệp hàng_hoá nhưng lại ưu_tiên phát_triển công_nghiệp ở đây thì thật_là tự mình trói mình . ”
-Nếu quy_hoạch Hải_Dương - Hưng_Yên là trọng_điểm sản_xuất nông_nghiệp hàng_hoá nhưng lại ưu_tiên phát_triển công_nghiệp ở đây thì thật là tự mình trói mình . ”
+Trong đó “ Quốc_Triều hình_luật ” được xem như_là bộ “ luật chống tham_nhũng ” đối_với những quan_chức làm_việc ở các cửa_khẩu , đặc_biệt ở xứ Hải_Đông .
+Trong đó “ Quốc_Triều hình_luật ” được xem như là bộ “ luật chống tham_nhũng ” đối_với những quan_chức làm_việc ở các cửa_khẩu , đặc_biệt ở xứ Hải_Đông .
  
 là(IW) -> là(BW) 
 
 =====================
 
-Tôi cho rằng suốt dọc miền Trung và vùng trung_du Bắc_Bộ , nơi đất_đai khô_cằn , bạc_mầu hoàn_toàn có_thể xây_dựng thành các khu_công_nghiệp , khu_chế_xuất rộng_lớn .
-Tôi cho rằng suốt dọc miền Trung và vùng trung_du_Bắc_Bộ , nơi đất_đai khô cằn , bạc_mầu hoàn_toàn có_thể xây_dựng thành các khu công_nghiệp , khu chế_xuất rộng_lớn .
+Trong khoảng thời_gian kéo_dài gần 40 năm ( trong đó giai_đoạn 1945 - 1954 cả nước thực_hiện cuộc kháng_chiến chống Pháp và giai_đoạn 1954 - 1975 đất_nước bị chia_cắt thành 2 miền ) , kinh_tế biển của Việt_Nam đã có những tiến_bộ nhất_định , song vẫn trong tình_trạng lạc_hậu trong nền kinh_tế tự_túc tự_cấp với phương_thức “ săn_bắn - hái_lượm ” bằng các dụng_cụ thô_sơ và nhỏ_bé chỉ thực_hiện được ở gần bờ .
+Trong khoảng thời_gian kéo_dài gần 40 năm ( trong đó giai_đoạn 1945 - 1954 cả nước thực_hiện cuộc kháng_chiến chống Pháp và giai_đoạn 1954 - 1975 đất_nước bị chia cắt thành 2 miền ) , kinh_tế biển của Việt_Nam đã có những tiến_bộ nhất_định , song vẫn trong tình_trạng lạc_hậu trong nền kinh_tế_tự_túc tự_cấp với phương_thức “ săn_bắn - hái_lượm ” bằng các dụng_cụ thô_sơ và nhỏ_bé chỉ thực_hiện được ở gần bờ .
  
-cằn(IW) -> cằn(BW) 
-công(IW) -> công(BW) 
-chế(IW) -> chế(BW) 
+cắt(IW) -> cắt(BW) 
 
 =====================
 
-Tại đây phải suy_nghĩ xem nên trồng cây gì , nuôi con gì để thoả_mãn vừa đủ nhu_cầu trong nước ( cho hiện_nay và cho tương_lai ) , để thoả_mãn nguyên_liệu cho một ngành Công_nghệ_sinh_học cần phát_triển nhanh_chóng và còn cần nghiên_cứu kĩ xem nên làm cái gì để xuất_khẩu được nhiều tiền nhất , có_thể gấp hàng chục , hàng trăm lần so với lúa_gạo .
-Tại đây phải suy_nghĩ xem nên trồng cây gì , nuôi con gì để thoả_mãn vừa đủ nhu_cầu trong nước ( cho hiện_nay và cho tương_lai ) , để thoả mãn nguyên_liệu cho một ngành Công_nghệ_sinh_học cần phát_triển nhanh_chóng và còn cần nghiên_cứu kĩ_xem nên làm cái gì để xuất_khẩu được nhiều tiền nhất , có_thể gấp hàng chục , hàng_trăm lần so với lúa_gạo .
+Sau khi hoà_bình lập lại , ở Miền_Bắc , đảng và Chính_phủ đã quan_tâm đến phát_triển kinh_tế biển , song tập_trung chủ_yếu cho nghề khai_thác thuỷ_sản .
+Sau khi hoà_bình lập lại , ở Miền Bắc , đảng và Chính_phủ đã quan_tâm đến phát_triển kinh_tế biển , song tập_trung chủ_yếu cho nghề khai_thác thuỷ_sản .
  
-mãn(IW) -> mãn(BW) 
+Bắc(IW) -> Bắc(BW) 
 
 =====================
 
-Ở nước ta 1 ha ở đồng_bằng sông_Hồng chỉ có_thể thu được bình_quân trên_dưới 30 triệu đồng ( khoảng 1875 USD ) .
-Ở nước ta 1 ha ở đồng_bằng sông_Hồng chỉ có_thể thu được bình_quân trên dưới 30 triệu đồng ( khoảng 1875 USD ) .
+Lúc này , ngoài việc thành_lập các Viện_Nghiên_cứu_biển và Viện_nghiên_cứu_Hải_sản để điều_tra nguồn lợi cá biển và các nghiên_cứu cơ_bản khác , các tập_đoàn đánh_cá như Hạ_Long , Việt - Đức , Việt - Trung và nhà_máy cá hộp Hạ_Long đã ra_đời .
+Lúc này , ngoài việc thành_lập các Viện_Nghiên_cứu biển và Viện_nghiên_cứu Hải_sản để điều_tra nguồn lợi cá biển và các nghiên_cứu cơ_bản khác , các tập_đoàn đánh_cá như Hạ_Long , Việt - Đức , Việt - Trung và nhà_máy cá hộp Hạ_Long đã ra_đời .
  
-dưới(IW) -> dưới(BW) 
+biển(IW) -> biển(BW) 
+Hải(IW) -> Hải(BW) 
 
 =====================
 
-Năm 2008 là năm nước ta thu_hút được nhiều nguồn đầu_tư rất lớn , nếu chúng_ta không chuẩn_bị trước thì vài chục tỉ đôla đó sẽ lấn_chiếm hết vào các Bờ_xôi_Ruộng_mật , đó là một nguy_cơ đau_đớn lắm .
-Năm 2008 là năm nước ta thu_hút được nhiều nguồn đầu_tư rất lớn , nếu chúng_ta không chuẩn bị trước thì vài chục tỉ đôla đó sẽ lấn chiếm hết vào các Bờ xôi Ruộng_mật , đó là một nguy_cơ đau đớn_lắm .
+Chiến_lược phát_triển kinh_tế biển từ nay đến 2020 của Việt_Nam đã được xác_định rõ trong Nghị_quyết 4 của Ban_chấp_hành Trung_ương Đảng_Cộng_Sản_Việt_Nam khoá X về “ Chiến_lược biển Việt_Nam đến năm 2020 ” với mục_tiêu “ kinh_tế biến đóng_góp 53 - 55 % GDP , 55 - 60 % kim_ngạch xuất_khẩu của cả nước , giải_quyết tốt các vấn_đề xã_hội , cải_thiện một bước đáng_kể đời_sống của nhân_dân vùng_biển và ven biển ” ( trg. 5 ) .
+Chiến_lược phát_triển kinh_tế biển từ nay đến 2020 của Việt_Nam đã được xác_định rõ trong Nghị_quyết 4 của Ban chấp_hành Trung_ương Đảng_Cộng_Sản_Việt_Nam khoá X về “ Chiến_lược biển Việt_Nam đến năm 2020 ” với mục_tiêu “ kinh_tế biến đóng_góp 53 - 55 % GDP , 55 - 60 % kim_ngạch xuất_khẩu của cả nước , giải_quyết tốt các vấn_đề xã_hội , cải_thiện một bước đáng_kể đời_sống của nhân_dân vùng_biển và ven biển ” ( trg. 5 ) .
  
-bị(IW) -> bị(BW) 
-chiếm(IW) -> chiếm(BW) 
-xôi(IW) -> xôi(BW) 
-Ruộng(IW) -> Ruộng(BW) 
-đớn(IW) -> đớn(BW) 
+chấp(IW) -> chấp(BW) 
 
 =====================
 
-Theo thống_kê hiện_nay , trung_bình mỗi hec-ta đất bị thu_hồi ảnh_hưởng tới việc_làm của trên 10 lao_động nông_nghiệp .
-Theo thống_kê hiện_nay , trung_bình mỗi hec-ta đất bị thu_hồi ảnh_hưởng tới việc làm của trên 10 lao_động nông_nghiệp .
+Các hình_thức và chủng_loại nuôi_trồng cũng trở_nên đa_dạng hơn ( nuôi tôm , cua , cá trong đầm ; trong lồng , bè - đối_với một_số cá đặc_sản và tôm_hùm ; nuôi các loại thân_mềm như ốc_hương , vẹm_xanh , tu_hài , ngao , v.v. ) .
+Các hình_thức và chủng_loại nuôi_trồng cũng trở_nên đa_dạng hơn ( nuôi tôm , cua , cá trong đầm ; trong lồng , bè - đối_với một_số cá đặc_sản và tôm_hùm ; nuôi các loại thân_mềm như ốc_hương , vẹm xanh , tu hài , ngao , v.v. ) .
  
-làm(IW) -> làm(BW) 
+xanh(IW) -> xanh(BW) 
+hài(IW) -> hài(BW) 
 
 =====================
 
-Diện_tích đất nông_nghiệp bị thu_hồi hầu_hết là vùng_đất tốt , có điều_kiện thuận_lợi cho canh_tác , trong khi các diện_tích đất đền_bù là đất xấu , cách xa khu dân_cư và điều_kiện hạ_tầng phục_vụ sản_xuất còn nhiều khó_khăn .
-Diện_tích đất nông_nghiệp bị thu_hồi hầu_hết là vùng đất tốt , có điều_kiện thuận_lợi cho canh_tác , trong khi các diện_tích đất đền bù là đất_xấu , cách xa_khu dân_cư và điều_kiện hạ_tầng phục_vụ sản_xuất còn nhiều khó_khăn .
+Phương_thức nuôi cũng càng_ngày_càng hiện_đại hơn : từ nuôi quảng_canh sang thâm_canh và nuôi công_nghiệp .
+Phương_thức nuôi cũng càng ngày_càng hiện_đại hơn : từ nuôi quảng_canh sang thâm_canh và nuôi công_nghiệp .
  
-đất(IW) -> đất(BW) 
-bù(IW) -> bù(BW) 
+ngày(IW) -> ngày(BW) 
 
 =====================
 
-Việc thực_hiện định_giá đền_bù đất cũng_như tài_sản trên đất chưa phù_hợp với giá thị_trường và khu tái_định_cư .
-Việc thực_hiện định_giá đền bù đất cũng như tài_sản trên đất chưa phù_hợp với giá_thị_trường và khu tái_định_cư .
+Ngành khai_thác dầu_thô và khí_thiên_nhiên trên biển ở nước ta còn rất trẻ và có tấn dầu_thô đầu_tiên vào năm 1986 .
+Ngành khai_thác dầu_thô và khí thiên_nhiên trên biển ở nước ta còn rất trẻ và có tấn dầu_thô đầu_tiên vào năm 1986 .
  
-bù(IW) -> bù(BW) 
-như(IW) -> như(BW) 
+thiên(IW) -> thiên(BW) 
 
 =====================
 
-Một_số địa_phương chạy theo phong_trào , phát_triển công_nghiệp , dịch_vụ bằng mọi giá mà chưa chú_ý đúng_mức đến tác_động đối_với người_dân .
-Một_số địa_phương chạy theo phong_trào , phát_triển công_nghiệp , dịch_vụ bằng mọi giá mà chưa chú_ý đúng mức đến tác_động đối_với người_dân .
+Trong những năm qua , giá_trị khai_thác dầu_mỏ và khí_thiên_nhiên liên_tục tăng .
+Trong những năm qua , giá_trị khai_thác dầu_mỏ và khí thiên_nhiên liên_tục tăng .
  
-mức(IW) -> mức(BW) 
+thiên(IW) -> thiên(BW) 
 
 =====================
 
-Thời_gian triển_khai công_tác thu_hồi đất kéo_dài nhiều năm gây bất_lợi đến tâm_lí cũng_như việc ổn_định đời_sống và việc_làm của các hộ dân nằm trong diện bị thu_hồi đất .
-Thời_gian triển_khai công_tác thu_hồi đất kéo_dài nhiều năm gây bất_lợi đến tâm_lí cũng như việc ổn_định đời_sống và việc_làm của các hộ_dân nằm trong diện bị thu_hồi đất .
+Hệ_thống cảng của nước ta gồm cảng biển và cảng sông với khoảng trên 90 cảng lớn_nhỏ và được phân_bố tương_đối đều dọc theo bờ biển từ bắc vào nam .
+Hệ_thống cảng của nước ta gồm cảng biển và cảng sông với khoảng trên 90 cảng lớn nhỏ và được phân_bố tương_đối đều dọc theo bờ biển từ bắc vào nam .
  
-như(IW) -> như(BW) 
+nhỏ(IW) -> nhỏ(BW) 
 
 =====================
 
-Các yếu_tố trượt_giá hầu_như chưa được tính đến trong định_giá đền_bù cho người_dân .
-Các yếu_tố trượt giá hầu_như chưa được tính đến trong định_giá đền bù cho người_dân .
+Đó là sự xung_đột giữa các lĩnh_vực kinh_tế biển với nhau ( nghề cá - phát_triển công_nghiệp - giao_thông vận_tải - du_lịch ) và ngay trong một lĩnh_vực ( chẳng_hạn giữa đánh_bắt - nuôi_trồng - chế_biến hải_sản , giữa cảng và tàu , giữa xây_dựng hạ_tầng_cơ_sở và cảnh_quan trong du_lịch biển , v.v. ) .
+Đó là sự xung_đột giữa các lĩnh_vực kinh_tế biển với nhau ( nghề cá - phát_triển công_nghiệp - giao_thông vận_tải - du_lịch ) và ngay trong một lĩnh_vực ( chẳng_hạn giữa đánh_bắt - nuôi_trồng - chế_biến hải_sản , giữa cảng và tàu , giữa xây_dựng hạ_tầng cơ_sở và cảnh_quan trong du_lịch biển , v.v. ) .
  
-giá(IW) -> giá(BW) 
-bù(IW) -> bù(BW) 
+cơ(IW) -> cơ(BW) 
 
 =====================
 
-Chỉ mới có một tỉ_lệ rất nhỏ ( khoảng vài % ) chuyển được sang nghề mới và tìm được việc_làm ổn_định .
-Chỉ mới có một tỉ_lệ rất nhỏ ( khoảng vài % ) chuyển được sang nghề mới và tìm được việc làm ổn_định .
+Trong khi đó , mục_tiêu hiện_nay của cộng_đồng quốc_tế nói_chung và của từng quốc_gia ven biển nói_riêng là phát_triển bền_vững như Chương_trình_Nghị_sự_21 , chương 17 của Liên_Hợp_quốc đã đưa ra .
+Trong khi đó , mục_tiêu hiện_nay của cộng_đồng quốc_tế nói_chung và của từng quốc_gia ven biển nói_riêng là phát_triển bền_vững như Chương_trình_Nghị_sự 21 , chương 17 của Liên_Hợp_quốc đã đưa ra .
  
-làm(IW) -> làm(BW) 
+21(IW) -> 21(BW) 
 
 =====================
 
-Việc_làm và thu_nhập của các hộ sống chủ_yếu dựa vào sản_xuất nông_nghiệp là đối_tượng bị tác_động lớn nhất sau khi thu_hồi đất và gặp nhiều khó_khăn trong tìm_kiếm việc_làm mới .
-Việc_làm và thu_nhập của các hộ_sống chủ_yếu dựa vào sản_xuất nông_nghiệp là đối_tượng bị tác_động lớn nhất sau khi thu_hồi đất và gặp nhiều khó_khăn trong tìm_kiếm việc làm mới .
+Các vùng_biển của Việt_Nam đã được Chính_phủ tuyên_bố bao_gồm vùng nội_thuỷ ( phía trong đường_cơ_sở ) , lãnh_hải ( rộng 12 hải_lí tính từ đường_cơ_sở ) , vùng tiếp_giáp lãnh_hải ( rộng 24 hải_lí tính từ đường_cơ_sở ) , vùng đặc_quyền kinh_tế ( rộng 200 hải_lí tính từ đường_cơ_sở ) và thềm_lục_địa ( mở_rộng đến bờ ngoài của rìa lục_địa , nơi nào hẹp hơn thì mở_rộng đến 200 hải_lí ) .
+Các vùng_biển của Việt_Nam đã được Chính_phủ tuyên_bố bao_gồm vùng nội_thuỷ ( phía trong đường cơ_sở ) , lãnh_hải ( rộng 12 hải_lí tính từ đường cơ_sở ) , vùng tiếp_giáp lãnh_hải ( rộng 24 hải_lí tính từ đường cơ_sở ) , vùng đặc_quyền kinh_tế ( rộng 200 hải_lí tính từ đường cơ_sở ) và thềm_lục_địa ( mở_rộng đến bờ ngoài của rìa lục_địa , nơi nào hẹp hơn thì mở_rộng đến 200 hải_lí ) .
  
-làm(IW) -> làm(BW) 
+cơ(IW) -> cơ(BW) 
+cơ(IW) -> cơ(BW) 
+cơ(IW) -> cơ(BW) 
+cơ(IW) -> cơ(BW) 
 
 =====================
 
-Từ năm 2000 - 2007 , Hà_Nội triển_khai gần 3.000 dự_án đầu_tư liên_quan đến việc thu_hồi đất , trung_bình 300 dự_án - năm , làm ảnh_hưởng trên 178.000 hộ dân .
-Từ năm 2000 - 2007 , Hà_Nội_triển khai gần 3.000 dự_án đầu_tư liên_quan đến việc thu_hồi đất , trung_bình 300 dự_án - năm , làm ảnh_hưởng trên 178.000_hộ dân .
+Các vùng_biển của Việt_Nam có nguồn tài_nguyên thiên_nhiên phong_phú cả trong khối nước , trên đáy biển và trong lòng đất dưới đáy biển bao_gồm tài_nguyên sinh_vật ( động , thực_vật ) , tài_nguyên khoáng_sản ( dầu_mỏ , khí_thiên_nhiên , than , các loại sa_khoáng , vật_liệu xây_dựng , ... ) , tài_nguyên năng_lượng ( thuỷ_triều , sóng , gió , mặt_trời , v.v. ) và các tài_nguyên đặc_biệt khác ( không_gian mặt_biển , địa_hình bờ và đảo , các cảnh_quan , v.v. ) .
+Các vùng_biển của Việt_Nam có nguồn tài_nguyên thiên_nhiên phong_phú cả trong khối nước , trên đáy biển và trong lòng đất dưới đáy biển bao_gồm tài_nguyên_sinh_vật ( động , thực_vật ) , tài_nguyên khoáng_sản ( dầu_mỏ , khí thiên_nhiên , than , các loại sa_khoáng , vật_liệu xây_dựng , ... ) , tài_nguyên năng_lượng ( thuỷ_triều , sóng , gió , mặt_trời , v.v. ) và các tài_nguyên đặc_biệt khác ( không_gian mặt biển , địa_hình bờ và đảo , các cảnh_quan , v.v. ) .
  
-khai(IW) -> khai(BW) 
+thiên(IW) -> thiên(BW) 
+biển(IW) -> biển(BW) 
 
 =====================
 
-Như_vậy số đất phải thu_hồi sẽ lên đến hàng chục nghìn héc-ta “ bờ_xôi_ruộng_mật ” .
-Như vậy_số đất phải thu_hồi sẽ lên đến hàng_chục nghìn héc-ta “ bờ xôi ruộng_mật ” .
+trước_tiên cần phải đánh_giá và dự_báo những biến_động về các điều_kiện tự_nhiên và tài_nguyên thiên_nhiên , kinh_tế - văn_hoá - xã_hội của toàn_bộ các vùng_biển và thềm_lục_địa cũng như dải đất_liền ven biển .
+trước tiên cần phải đánh_giá và dự_báo những biến_động về các điều_kiện tự_nhiên và tài_nguyên thiên_nhiên , kinh_tế - văn_hoá - xã_hội của toàn_bộ các vùng_biển và thềm_lục_địa cũng như dải đất_liền ven biển .
  
-vậy(IW) -> vậy(BW) 
-xôi(IW) -> xôi(BW) 
-ruộng(IW) -> ruộng(BW) 
-
-=====================
-
-Do_đó , số hộ dân bị mất đất sản_xuất còn nhiều hơn nữa .
-Do đó , số_hộ dân bị mất đất_sản_xuất còn nhiều hơn nữa .
- 
-đó(IW) -> đó(BW) 
-
-=====================
-
-Nhưng phần_lớn lao_động lại ở độ tuổi cao , trình_độ văn_hoá hạn_chế , khó có khả_năng tiếp_thu kiến_thức mới nên không đáp_ứng được yêu_cầu lao_động chất_lượng cao .
-Nhưng phần lớn lao_động lại ở độ tuổi cao , trình_độ văn_hoá hạn_chế , khó có khả_năng tiếp_thu kiến_thức mới nên không đáp_ứng được yêu_cầu lao_động chất_lượng cao .
- 
-lớn(IW) -> lớn(BW) 
-
-=====================
-
-Lãnh_đạo Sở LĐ-TBXH Hà_Nội cho_biết , gần 58 % người_dân sử_dụng tiền đền_bù để xây_dựng nhà_cửa , trong khi đó , đầu_tư cho sản_xuất phi_nông_nghiệp chỉ chiếm 1,27 % , cho học nghề là 2,55 % .
-Lãnh_đạo_Sở LĐ-TBXH Hà_Nội cho biết , gần 58 % người_dân sử_dụng tiền đền bù để xây_dựng nhà_cửa , trong khi đó , đầu_tư cho sản_xuất phi nông_nghiệp chỉ chiếm 1,27 % , cho học_nghề là 2,55 % .
- 
-biết(IW) -> biết(BW) 
-bù(IW) -> bù(BW) 
-nông(IW) -> nông(BW) 
-
-=====================
-
-Về chuyện đền_bù đất_đai , tôi có dịp hỏi_thăm nông_dân Trung_Quốc và được biết khi thu_hồi đất nông_dân sẽ được tặng 1 căn_hộ , được cấp một_số tiền để kinh_doanh tạm trong các căn nhà thô_sơ trong khu_công_nghiệp và quan_trọng hơn là được coi là cổ_phần góp vào nhà_máy , được chia lãi hàng năm , số trẻ tuổi được cho đi học nghề để trở_thành công_nhân ở ngay các nhà_máy đó .
-Về chuyện đền bù đất_đai , tôi có dịp hỏi thăm nông_dân Trung_Quốc và được biết khi thu_hồi đất nông_dân sẽ được tặng 1 căn_hộ , được cấp một_số tiền để kinh_doanh tạm trong các căn_nhà thô_sơ trong khu công_nghiệp và quan_trọng hơn là được coi là cổ phần_góp vào nhà_máy , được chia lãi hàng năm , số trẻ tuổi được cho đi học_nghề để trở_thành công_nhân ở ngay các nhà_máy đó .
- 
-bù(IW) -> bù(BW) 
-thăm(IW) -> thăm(BW) 
-công(IW) -> công(BW) 
-phần(IW) -> phần(BW) 
-
-=====================
-
-Điều này khác hẳn với kiểu đền_bù hàng núi tiền mà vẫn không hề đảm_bảo gì cho cuộc_sống của người nông_dân bị thu_hồi đất , nhất_là cho con_cháu của họ , nếu không chuyển được lớp trẻ sang lĩnh_vực công_nghiệp hay dịch_vụ .
-Điều này khác hẳn với kiểu đền bù hàng núi tiền mà vẫn không hề đảm_bảo gì cho cuộc_sống của người nông_dân bị thu_hồi đất , nhất_là cho con_cháu của họ , nếu không chuyển được lớp trẻ sang lĩnh_vực công_nghiệp hay dịch_vụ .
- 
-bù(IW) -> bù(BW) 
-
-=====================
-
-Còn một chuyện rất đau_đầu nữa là không có_lí gì năm nào chúng_ta cũng bị bọ_rầy , bị nấm_đạo_ôn , bị vàng_lùn , vàng_xoắn_lá , rồi thì cúm_gia_cầm , lợn_tai_xanh , trâu_bò lở_mồm_long_móng , tôm nhiễm virút ...
-Còn một chuyện rất đau_đầu nữa là không có_lí gì năm nào chúng_ta cũng bị bọ_rầy , bị nấm đạo_ôn , bị vàng lùn , vàng xoắn lá , rồi thì cúm gia_cầm , lợn tai_xanh , trâu_bò lở mồm long_móng , tôm_nhiễm virút ...
- 
-đạo(IW) -> đạo(BW) 
-lùn(IW) -> lùn(BW) 
-xoắn(IW) -> xoắn(BW) 
-lá(IW) -> lá(BW) 
-gia(IW) -> gia(BW) 
-tai(IW) -> tai(BW) 
-mồm(IW) -> mồm(BW) 
-long(IW) -> long(BW) 
-
-=====================
-
-Tôi không tin trên thế_giới không có giống lúa nào kháng bọ_rầy , kháng nấm_đạo_ôn , không đủ văcxin phòng_chống có hiệu_quả bệnh_tật cho gia_súc , gia_cầm .
-Tôi không_tin trên thế_giới không có giống lúa nào kháng bọ rầy , kháng_nấm đạo_ôn , không đủ văcxin phòng_chống có hiệu_quả bệnh_tật cho gia_súc , gia_cầm .
- 
-rầy(IW) -> rầy(BW) 
-đạo(IW) -> đạo(BW) 
-
-=====================
-
-Sau đó yêu_cầu các Viện này phải tháo_gỡ bằng_được các vấn_đề cần nhanh_chóng khắc_phục .
-Sau đó yêu_cầu các Viện_này phải tháo_gỡ bằng được các vấn_đề cần nhanh_chóng khắc_phục .
- 
-được(IW) -> được(BW) 
-
-=====================
-
-Rõ_ràng thu_nhập của nông_dân đang bị giảm đi hơn 50 % sau khi đã trừ đi mọi chi_phí_sản_xuất .
-Rõ_ràng thu_nhập của nông_dân đang bị giảm đi hơn 50 % sau khi đã trừ đi mọi chi_phí sản_xuất .
- 
-sản(IW) -> sản(BW) 
-
-=====================
-
-Thực_phẩm_chuyển_gen hay Thực_phẩm_biến_đổi_gen ( GMF - genetically_modified_food ) là thực_phẩm mà bản_thân chúng hoặc chế_biến từ các cơ_thể động_thực_vật mang các gen tái_tổ_hợp được chuyển vào một_cách nhân_tạo nhằm phục_vụ các lợi_ích kinh_tế .
-Thực_phẩm chuyển_gen hay Thực_phẩm biến_đổi_gen ( GMF - genetically modified food ) là thực_phẩm mà bản_thân chúng hoặc chế_biến từ các cơ_thể động thực_vật mang các gen_tái tổ_hợp được chuyển vào một_cách nhân_tạo nhằm phục_vụ các lợi_ích kinh_tế .
- 
-chuyển(IW) -> chuyển(BW) 
-biến(IW) -> biến(BW) 
-modified(IW) -> modified(BW) 
-food(IW) -> food(BW) 
-thực(IW) -> thực(BW) 
-tổ(IW) -> tổ(BW) 
-
-=====================
-
-Trong các giải_pháp được nhiều nước quan_tâm đó là việc mở_rộng việc nghiên_cứu và triển_khai các loại thực_phẩm_chuyển_gen .
-Trong các giải_pháp được nhiều nước quan_tâm đó là việc mở_rộng việc nghiên_cứu và triển_khai các loại thực_phẩm chuyển_gen .
- 
-chuyển(IW) -> chuyển(BW) 
-
-=====================
-
-Thực_phẩm_chuyển_gen ( GMF ) là những thực_phẩm được sinh_ra hay chế_biến từ các cơ_thể chuyển gen ( GMO - genetically_modified_organisms ) .
-Thực_phẩm chuyển_gen ( GMF ) là những thực_phẩm được sinh ra hay chế_biến từ các cơ_thể chuyển_gen ( GMO - genetically modified organisms ) .
- 
-chuyển(IW) -> chuyển(BW) 
-ra(IW) -> ra(BW) 
-modified(IW) -> modified(BW) 
-organisms(IW) -> organisms(BW) 
-
-=====================
-
-GMF xuất_hiện từ thập_kỉ 90 của thế_kỉ trước với các cây thực_phẩm như lúa_mì , đậu_tương , ngô , cà_chua ...
-GMF xuất_hiện từ thập_kỉ 90 của thế_kỉ trước với các cây thực_phẩm như lúa_mì , đậu_tương , ngô , cà chua ...
- 
-chua(IW) -> chua(BW) 
-
-=====================
-
-Ngoài_ra là đậu_tương kháng được với thuốc trừ cỏ glyphosate nên được nông_dân đỡ rất nhiều công_sức trừ cỏ .
-Ngoài ra là đậu tương_kháng được với thuốc_trừ cỏ glyphosate nên được nông_dân đỡ rất nhiều công_sức trừ_cỏ .
- 
-ra(IW) -> ra(BW) 
-tương(IW) -> tương(BW) 
-
-=====================
-
-Năm 2006 tại Mĩ 89 % diện_tích trồng đậu_tương , 83 % diện_tích trồng bông và 61 % diện_tích trồng ngô là được trồng bởi các giống chuyển gen ( GMO hay GMC - genetically_modified_cultures ) .
-Năm 2006 tại Mĩ 89 % diện_tích trồng đậu_tương , 83 % diện_tích trồng bông và 61 % diện_tích trồng ngô là được trồng bởi các giống chuyển_gen ( GMO hay GMC - genetically modified cultures ) .
- 
-modified(IW) -> modified(BW) 
-cultures(IW) -> cultures(BW) 
-
-=====================
-
-Từ năm 1994 Công_ti_Calgene ( Mĩ ) đã đưa ra thị_trường loại cà_chua chuyển gen Flavr_Savr .
-Từ năm 1994_Công_ti Calgene ( Mĩ ) đã đưa ra thị_trường loại cà chua chuyển_gen Flavr_Savr .
- 
-Calgene(IW) -> Calgene(BW) 
-chua(IW) -> chua(BW) 
-
-=====================
-
-Mùa_hè 1996 sốt cà_chua chuyển gen Flavr_Savr đã bắt_đầu được bán ở Châu_Âu .
-Mùa_hè 1996_sốt cà chua chuyển_gen Flavr_Savr đã bắt_đầu được bán ở Châu_Âu .
- 
-chua(IW) -> chua(BW) 
-
-=====================
-
-Trong tương_lai Chuối chuyển gen được coi như một loại nồi phản_ứng sinh_học ( bioreactor ) mang kháng_nguyên để thay cho vaccine phòng_chống bệnh viêm_gan_B do HBV ...
-Trong tương_lai Chuối_chuyển gen được coi như một loại nồi phản_ứng sinh_học ( bioreactor ) mang kháng_nguyên để thay cho vaccine phòng_chống bệnh viêm gan_B do HBV ...
- 
-gan(IW) -> gan(BW) 
-
-=====================
-
-Chuyển gen để thay_thế việc tiêm vaccin còn thực_hiện thành_công ở khoai_tây và cà_chua .
-Chuyển_gen để thay_thế việc tiêm_vaccin còn thực_hiện thành_công ở khoai_tây và cà chua .
- 
-chua(IW) -> chua(BW) 
-
-=====================
-
-Ngoài việc chuyển được vào cây_trồng gen kháng sâu hại , gen kháng thuốc diệt cỏ người_ta còn chuyển được cả gen đề_kháng với một_số bệnh do virút , vi_khuẩn và nấm gây ra ở cây_trồng .
-Ngoài_việc chuyển được vào cây_trồng gen_kháng sâu_hại , gen kháng thuốc diệt cỏ người ta còn chuyển được cả gen đề_kháng với một_số bệnh do_virút , vi_khuẩn và nấm gây ra ở cây_trồng .
- 
-ta(IW) -> ta(BW) 
-
-=====================
-
-Bên_cạnh đó là việc chuyển gen chịu lạnh cho các cây_lương_thực , thực_phẩm trồng ở các nước ôn_đới , đặc_biệt là cho thuốc_lá và khoai_tây , vốn là những cây ít chịu lạnh .
-Bên_cạnh đó là việc chuyển_gen chịu lạnh cho các cây lương_thực , thực_phẩm trồng ở các nước ôn_đới , đặc_biệt là cho thuốc lá và khoai_tây , vốn là những cây ít_chịu lạnh .
- 
-lương(IW) -> lương(BW) 
-lá(IW) -> lá(BW) 
-
-=====================
-
-Các nhà nghiên_cứu ở Viện_Công_nghệ_khoa_học_thực_vật Thụy_Sĩ đã thành_công trong việc tạo ra giống lúa “ vàng ” chứa phong_phú beta - carotene ( vitamin_A ) và giống lúa này đã được Quỹ_Rockefeller tài_trợ để triển_khai ở một_số nước đang phát_triển .
-Các nhà_nghiên_cứu ở Viện_Công_nghệ_khoa_học thực_vật Thụy_Sĩ đã thành_công trong việc tạo ra giống lúa “ vàng ” chứa phong_phú beta - carotene ( vitamin_A ) và giống lúa này đã được Quỹ_Rockefeller tài_trợ để triển_khai ở một_số nước đang phát_triển .
- 
-thực(IW) -> thực(BW) 
-
-=====================
-
-Với giống lúa này người_ta hi_vọng sẽ cứu được nhiều người trong số 500.000 người bị mù_loà trên thế_giới hàng năm .
-Với giống lúa này người ta hi_vọng sẽ cứu được nhiều người trong số 500.000 người bị mù_loà trên thế_giới hàng năm .
- 
-ta(IW) -> ta(BW) 
-
-=====================
-
-Gần đây một_số thực_vật chuyển gen còn được dùng để thu_hút kim_loại nặng trong đất và làm giải_toả tình_trạng ô_nhiễm môi_trường bởi kim_loại nặng .
-Gần đây một số thực_vật chuyển_gen còn được dùng để thu_hút kim_loại nặng trong đất và làm giải_toả tình_trạng ô_nhiễm môi_trường bởi kim_loại nặng .
- 
-số(IW) -> số(BW) 
-
-=====================
-
-Toà_thánh Vatican và một_số quốc_gia , một_số Tổ_chức bảo_vệ môi_trường đưa ra nhiều lí_do để phản_đối cây_trồng chuyển gen .
-Toà thánh_Vatican và một_số quốc_gia , một_số Tổ_chức bảo_vệ môi_trường đưa ra nhiều lí_do để phản_đối cây_trồng chuyển_gen .
- 
-thánh(IW) -> thánh(BW) 
-
-=====================
-
-Có lí_do là các phấn hoa từ cây chuyển gen Bt diệt sâu hại có_thể làm chết bướm và một_số côn_trùng có_ích .
-Có lí_do là các phấn_hoa từ cây chuyển_gen Bt_diệt sâu hại có_thể làm chết_bướm và một_số côn_trùng có ích .
- 
-ích(IW) -> ích(BW) 
-
-=====================
-
-Một_số ý_kiến lại cho rằng cây chuyển gen có_thể tạo nên các dị_ứng_nguyên ( allergen ) mới gây nên hiện_tượng dị_ứng ở người .
-Một_số ý_kiến lại cho rằng cây chuyển_gen có_thể tạo nên các dị ứng_nguyên ( allergen ) mới gây nên hiện_tượng dị_ứng ở người .
- 
-ứng(IW) -> ứng(BW) 
-
-=====================
-
-Tuy có những phản_ứng gay_gắt từ một_số quốc_gia ở Châu_Âu và một_số tổ_chức quốc_tế nhưng chưa có chứng_minh nào được xác_nhận rộng_rãi và diện_tích nuôi_trồng động_thực_vật chuyển gen ( GMO ) vẫn đang ngày_càng tăng nhanh .
-Tuy có những phản_ứng gay_gắt từ một_số quốc_gia ở Châu_Âu và một_số tổ_chức quốc_tế nhưng chưa có chứng_minh nào được xác_nhận rộng_rãi và diện_tích nuôi trồng_động thực_vật chuyển_gen ( GMO ) vẫn đang ngày_càng tăng nhanh .
- 
-trồng(IW) -> trồng(BW) 
-thực(IW) -> thực(BW) 
-
-=====================
-
-Giáo_sư Wayne_Parrot - một chuyên_gia về đất và cây_trồng tại Đại_học_Georgia - nhấn_mạnh tiềm_năng của thực_vật chuyển gen , nhất_là ngũ_cốc và hoa_quả .
-Giáo_sư Wayne_Parrot - một chuyên_gia về đất và cây_trồng tại Đại_học_Georgia - nhấn_mạnh tiềm_năng của thực_vật chuyển_gen , nhất là ngũ_cốc và hoa_quả .
- 
-là(IW) -> là(BW) 
-
-=====================
-
-Thực_tế , công_nghệ gen đã làm tăng năng_suất , dẫn tới sự giảm_giá ngũ_cốc trên toàn_cầu , khiến tỉ_lệ suy_dinh_dưỡng trong cộng_đồng thế_giới ngày_một giảm ” .
-Thực_tế , công_nghệ_gen đã làm tăng năng_suất , dẫn tới sự giảm_giá ngũ_cốc trên toàn_cầu , khiến tỉ_lệ suy dinh_dưỡng trong cộng_đồng thế_giới ngày_một giảm ” .
- 
-dinh(IW) -> dinh(BW) 
-
-=====================
-
-Tiếp_theo , GS. Parrot giới_thiệu một_số thành_tựu mới nhất của công_nghệ_sinh_học , ứng_dụng trên đậu_nành và ngô chuyển gen ở Mĩ .
-Tiếp_theo , GS. Parrot_giới thiệu một số thành_tựu mới nhất của công_nghệ_sinh_học , ứng_dụng trên đậu_nành và ngô chuyển_gen ở Mĩ .
- 
-thiệu(IW) -> thiệu(BW) 
-số(IW) -> số(BW) 
-
-=====================
-
-Hai loài thực_vật này , sau khi được chuyển gen , đã có khả_năng đề_kháng sâu_bệnh và cho năng_suất cao hơn hẳn .
-Hai loài thực_vật này , sau khi được chuyển_gen , đã có khả_năng đề_kháng sâu bệnh và cho năng_suất cao hơn hẳn .
- 
-bệnh(IW) -> bệnh(BW) 
-
-=====================
-
-Bàn về các vấn_đề liên_quan đến môi_trường và vệ_sinh an_toàn của thực_phẩm_chuyển_gen , Tiến_sĩ Subhash_Gupta , Cục kiểm_tra sức_khoẻ động_thực_vật thuộc Bộ_Nông_nghiệp Mĩ , cho_biết : “ Ở Mĩ , sản_phẩm công_nghệ_sinh_học phải trải qua các cuộc khảo_sát kĩ_lưỡng bởi nhiều tổ_chức trước khi được đưa ra sử_dụng cho người hoặc động_vật .
-Bàn về các vấn_đề liên_quan đến môi_trường và vệ_sinh an_toàn của thực_phẩm chuyển_gen , Tiến_sĩ Subhash_Gupta , Cục_kiểm_tra sức khoẻ_động thực_vật thuộc Bộ_Nông_nghiệp Mĩ , cho biết : “ Ở Mĩ , sản_phẩm công_nghệ_sinh_học phải trải qua các cuộc khảo_sát kĩ_lưỡng bởi nhiều tổ_chức trước khi được đưa ra sử_dụng cho người hoặc động_vật .
- 
-chuyển(IW) -> chuyển(BW) 
-khoẻ(IW) -> khoẻ(BW) 
-thực(IW) -> thực(BW) 
-biết(IW) -> biết(BW) 
-
-=====================
-
-Vì các tổ_chức này đã có những kinh_nghiệm cần_thiết , nên họ có khả_năng bổ_sung , tối_ưu_hoá và đề_xuất những quy_định mới cho thực_phẩm_chuyển_gen ” .
-Vì các tổ_chức này đã có những kinh_nghiệm cần_thiết , nên họ có khả_năng bổ_sung , tối_ưu_hoá và đề_xuất những quy_định mới cho thực_phẩm chuyển_gen ” .
- 
-chuyển(IW) -> chuyển(BW) 
-
-=====================
-
-Việt_Nam đã đạt được một_số thành_tựu đáng ghi_nhận về nghiên_cứu gen , như việc phát_hiện các gen kháng sâu và thuốc diệt cỏ , cùng các gen chỉ_thị liên_quan đến khả_năng chống bệnh đạo_ôn , bạc_lá của lúa , nhân gen , chỉ_thị phân_tử ADN , nghiên_cứu di_truyền miễn_dịch thực_vật , sản_xuất vacxin cho gia_súc , gia_cầm ...
-Việt_Nam đã đạt được một số thành_tựu đáng ghi_nhận về nghiên_cứu gen , như việc phát_hiện các gen_kháng sâu và thuốc diệt_cỏ , cùng các gen chỉ_thị liên_quan đến khả_năng chống bệnh đạo_ôn , bạc lá của lúa , nhân_gen , chỉ_thị phân_tử ADN , nghiên_cứu di_truyền miễn_dịch thực_vật , sản_xuất vacxin cho gia_súc , gia_cầm ...
- 
-số(IW) -> số(BW) 
-lá(IW) -> lá(BW) 
-
-=====================
-
-Việc thiếu một quy_chế về an_toàn sinh_học , cũng_như những vấn_đề về sở_hữu_trí_tuệ , rào_cản kĩ_thuật đối_với thương_mại , nhãn_hiệu sản_phẩm ... chính là nguyên_nhân khiến sản_phẩm công_nghệ_sinh_học của Việt_Nam chưa nâng cao nhanh_chóng được sản_lượng , chất_lượng và khó đặt_chân vào thị_trường quốc_tế .
-Việc thiếu một quy_chế về an_toàn sinh_học , cũng như những vấn_đề về sở_hữu_trí_tuệ , rào_cản kĩ_thuật đối_với thương_mại , nhãn_hiệu sản_phẩm ... chính là nguyên_nhân khiến sản_phẩm công_nghệ_sinh_học của Việt_Nam chưa nâng cao nhanh_chóng được sản_lượng , chất_lượng và khó đặt chân vào thị_trường quốc_tế .
- 
-như(IW) -> như(BW) 
-chân(IW) -> chân(BW) 
-
-=====================
-
-Thực_ra thì hầu_hết các mẫu thức_ăn chăn_nuôi trên thị_trường Việt_Nam hiện đều chứa sản_phẩm_biến_đổi_gen ( như ngô và đậu_tương ) với một tỉ_lệ nào_đó , theo điều_tra mới_đây của Bộ_Nông_nghiệp_và_PTNT .
-Thực_ra thì hầu_hết các mẫu thức_ăn chăn_nuôi trên thị_trường Việt_Nam hiện đều chứa sản_phẩm biến_đổi_gen ( như ngô và đậu_tương ) với một tỉ_lệ nào đó , theo điều_tra mới đây của Bộ_Nông_nghiệp và PTNT .
- 
-biến(IW) -> biến(BW) 
-đó(IW) -> đó(BW) 
-đây(IW) -> đây(BW) 
-và(IW) -> và(BW) 
-PTNT(IW) -> PTNT(BW) 
-
-=====================
-
-Từ tháng 8 / 2005 , Thủ_tướng Chính_phủ đã ban_hành Quy_chế quản_lí an_toàn sinh_học đối_với sinh_vật_biến_đổi_gen , sản_phẩm , hàng_hoá có nguồn_gốc từ sinh_vật_biến_đổi_gen .
-Từ tháng 8 / 2005 , Thủ_tướng Chính_phủ đã ban_hành Quy_chế quản_lí an_toàn sinh_học đối_với sinh_vật biến_đổi_gen , sản_phẩm , hàng_hoá có nguồn gốc từ sinh_vật biến_đổi_gen .
- 
-biến(IW) -> biến(BW) 
-gốc(IW) -> gốc(BW) 
-biến(IW) -> biến(BW) 
-
-=====================
-
-Theo đó , cho_phép nghiên_cứu , sản_xuất , kinh_doanh sinh_vật_biến_đổi_gen hoặc sản_phẩm của chúng đã được cấp giấy chứng_nhận an_toàn , song trên nhãn phải ghi rõ : “ Sản_phẩm có sử_dụng công_nghệ chuyển gen ” .
-Theo đó , cho_phép nghiên_cứu , sản_xuất , kinh_doanh sinh_vật biến_đổi_gen hoặc sản_phẩm của chúng đã được cấp giấy_chứng_nhận an_toàn , song trên nhãn phải ghi rõ : “ Sản_phẩm có sử_dụng công_nghệ chuyển_gen ” .
- 
-biến(IW) -> biến(BW) 
-
-=====================
-
-Nhưng đến nay , do thiếu văn_bản hướng_dẫn thực_hiện nên quy_chế trên vẫn chưa thực_sự phát_huy tác_dụng .
-Nhưng đến nay , do thiếu văn_bản hướng dẫn thực_hiện nên quy_chế trên vẫn chưa thực_sự phát_huy tác_dụng .
- 
-dẫn(IW) -> dẫn(BW) 
-
-=====================
-
-Qua điều_tra trên , Bộ_Nông_nghiệp_và_Phát_triển_nông_thôn cũng nhận_định , rất có_thể một_số thực_phẩm chế_biến từ đậu_tương , ngô , cải_dầu ... đang được lưu_hành trên thị_trường có chứa sản_phẩm_biến_đổi_gen mà ngoài nhãn_mác không hề ghi rõ .
-Qua điều_tra trên , Bộ_Nông_nghiệp và Phát_triển nông_thôn cũng nhận_định , rất có_thể một số thực_phẩm chế_biến từ đậu_tương , ngô , cải_dầu ... đang được lưu_hành trên thị_trường có chứa sản_phẩm biến_đổi_gen mà_ngoài nhãn_mác không hề ghi rõ .
- 
-và(IW) -> và(BW) 
-Phát(IW) -> Phát(BW) 
-nông(IW) -> nông(BW) 
-số(IW) -> số(BW) 
-biến(IW) -> biến(BW) 
-
-=====================
-
-PGS Lê_Trần_Bình , Viện_trưởng Viện_Công_nghệ_sinh_học có một ý_kiến rất đáng chú_ý : “ Việc phát_triển thực_phẩm_biến_đổi_gen cũng giống như việc đi máy_bay , biết rõ là sẽ có rủi_ro là máy_bay có_thể gặp tai_nạn , nhưng chúng_ta không_thể không đi mà chỉ có cách chuẩn_bị tốt nhất để đảm_bảo cho chuyến bay an_toàn ” .
-PGS Lê_Trần_Bình , Viện_trưởng Viện_Công_nghệ_sinh_học có một ý_kiến rất đáng chú_ý : “ Việc phát_triển thực_phẩm biến_đổi_gen cũng giống như việc đi máy_bay , biết rõ là sẽ có rủi_ro là máy_bay có_thể gặp tai_nạn , nhưng chúng_ta không_thể không đi mà chỉ có cách chuẩn_bị tốt nhất để đảm_bảo cho chuyến bay an_toàn ” .
- 
-biến(IW) -> biến(BW) 
-
-=====================
-
-Một thời_gian dài , các nước EU không chịu nhập thực_phẩm_chuyển_gene của Mĩ , nhưng về sau_này họ chỉ yêu_cầu thực_phẩm_chuyển_gen phải có lí_lịch chuyển gen rõ_ràng .
-Một thời_gian dài , các nước EU không chịu_nhập thực_phẩm chuyển_gene của Mĩ , nhưng về sau này họ chỉ yêu_cầu thực_phẩm chuyển_gen phải có lí_lịch chuyển_gen rõ_ràng .
- 
-chuyển(IW) -> chuyển(BW) 
-này(IW) -> này(BW) 
-chuyển(IW) -> chuyển(BW) 
-
-=====================
-
-Từ giữa thập_kỉ 90 của thế_kỉ trước hơn 60 % sản_phẩm lương_thực , thực_phẩm chế_biến ở các siêu_thị Mĩ như bánh pizza , khoai_tây lát , xi-rô ngô , bột_mỡ , đậu_tương , cải_dầu , ... đều là các thực_phẩm_chuyển_gen .
-Từ giữa thập_kỉ 90 của thế_kỉ trước hơn 60 % sản_phẩm lương_thực , thực_phẩm chế_biến ở các siêu_thị_Mĩ như bánh_pizza , khoai_tây lát , xi-rô_ngô , bột mỡ , đậu_tương , cải_dầu , ... đều là các thực_phẩm chuyển_gen .
- 
-mỡ(IW) -> mỡ(BW) 
-chuyển(IW) -> chuyển(BW) 
-
-=====================
-
-Về ý_kiến cho rằng sinh_vật_biến_đổi_gen có_thể gây tác_hại về lâu_dài như chuyển gen sang các loài khác , gây bùng_phát dịch , người ăn vào sẽ bị đột_biến ... PGS Lê_Trần_Bình cho rằng : những ý_kiến như vậy xuất_phát từ việc thiếu hiểu_biết , và không chứng_minh được tác_hại của chúng .
-Về ý_kiến cho rằng sinh_vật biến_đổi_gen có_thể gây tác_hại về lâu_dài như chuyển gen sang các loài khác , gây bùng_phát dịch , người_ăn vào sẽ bị đột_biến ... PGS Lê Trần_Bình cho rằng : những ý_kiến như vậy xuất_phát từ việc thiếu hiểu_biết , và không_chứng_minh được tác_hại của chúng .
- 
-biến(IW) -> biến(BW) 
-Trần(IW) -> Trần(BW) 
-
-=====================
-
-Thực_tế , hiện_tượng đột_biến ở cỏ , hay phát_triển khả_năng kháng thuốc là hoàn_toàn bình_thường , vẫn xảy ra trong tự_nhiên , chứ không chờ tới khi có sinh_vật_biến_đổi_gen .
-Thực_tế , hiện_tượng đột_biến ở cỏ , hay phát_triển khả_năng kháng_thuốc là hoàn_toàn bình_thường , vẫn xảy ra trong tự_nhiên , chứ không chờ tới khi có sinh_vật biến_đổi_gen .
- 
-biến(IW) -> biến(BW) 
-
-=====================
-
-Mặt_khác , đối_với thực_vật bậc cao , việc gen của cây này “ phát_tán ” sang cây kia chỉ có_thể xảy ra thông_qua thụ_phấn chéo , và chỉ khi chúng cùng loài , hoặc rất gần loài với nhau .
-Mặt_khác , đối_với thực_vật bậc cao , việc_gen của cây này “ phát_tán ” sang cây_kia chỉ có_thể xảy ra thông_qua thụ phấn_chéo , và chỉ khi chúng_cùng loài , hoặc rất gần loài với nhau .
- 
-phấn(IW) -> phấn(BW) 
-
-=====================
-
-Trong lịch_sử tiến_hoá , chưa bao_giờ các loài xa nhau có_thể trộn_lẫn gen vào nhau được , nếu chuyện đó xảy ra thì giờ chúng_ta đã có đủ loài kì_quái .
-Trong lịch_sử tiến_hoá , chưa bao_giờ các loài xa nhau có_thể trộn lẫn gen vào nhau được , nếu chuyện đó xảy ra thì giờ chúng_ta đã có đủ loài kì_quái .
- 
-lẫn(IW) -> lẫn(BW) 
-
-=====================
-
-Ông cho_biết : Việc nghiên_cứu sản_xuất các giống cây_trồng , vật_nuôi chuyển gen thực_sự là một cơ_hội phát_triển và là công_cụ mạnh để thúc_đẩy nền kinh_tế .
-Ông cho biết : Việc nghiên_cứu sản_xuất các giống cây_trồng , vật_nuôi chuyển gen thực_sự là một cơ_hội phát_triển và là công_cụ mạnh để thúc_đẩy nền kinh_tế .
- 
-biết(IW) -> biết(BW) 
-
-=====================
-
-Ai đứng ngoài cuộc lúc này thì sẽ bỏ mất cơ_hội đó , kéo đất_nước đi chậm lại .
-Ai đứng ngoài cuộc lúc này thì sẽ bỏ mất cơ_hội đó , kéo đất nước đi chậm lại .
- 
-nước(IW) -> nước(BW) 
-
-=====================
-
-Công_nghệ chuyển gene nâng cao năng_suất cây_trồng , đảm_bảo an_ninh_lương_thực , giảm chi_phí phòng sâu_bệnh , tạo ra sản_phẩm theo ý_muốn ...
-Công_nghệ_chuyển gene nâng cao năng_suất cây_trồng , đảm_bảo an_ninh lương_thực , giảm chi_phí phòng sâu_bệnh , tạo ra sản_phẩm theo ý_muốn ...
- 
-lương(IW) -> lương(BW) 
-
-=====================
-
-Ví_dụ hiện_nay , với cây_bông thường , một vụ cần đến 16 - 17 lần phun thuốc_trừ_sâu .
-Ví_dụ hiện_nay , với cây bông thường , một_vụ cần đến 16 - 17 lần phun thuốc_trừ sâu .
- 
-bông(IW) -> bông(BW) 
-sâu(IW) -> sâu(BW) 
-
-=====================
-
-Ở đây vấn_đề không còn là thích hay không thích nữa , mà là nếu thị_trường Việt_Nam không chấp_nhận cây_bông chuyển gene thì mãi_mãi chúng_ta sẽ vẫn phải nhập 95 - 98 % nguyên_liệu .
-Ở đây vấn_đề không còn là thích hay không thích_nữa , mà là nếu thị_trường Việt_Nam không chấp_nhận cây bông chuyển_gene thì mãi_mãi chúng_ta sẽ vẫn phải nhập 95 - 98 % nguyên_liệu .
- 
-bông(IW) -> bông(BW) 
-
-=====================
-
-Cũng như vậy , cây đậu_tương trung_bình cần phun thuốc 6 - 7 lần / vụ .
-Cũng như vậy , cây đậu tương_trung bình cần phun thuốc 6 - 7 lần / vụ .
- 
-tương(IW) -> tương(BW) 
-bình(IW) -> bình(BW) 
-
-=====================
-
-Nếu có loại đậu_tương chuyển gene kháng sâu thì sẽ không cần phải nhập_khẩu nữa , vì khi đó giá đậu_tương trong nước đã rất rẻ rồi .
-Nếu có loại đậu tương_chuyển gene kháng_sâu thì sẽ không cần phải nhập_khẩu nữa , vì khi đó giá đậu_tương trong nước đã rất rẻ rồi .
- 
-tương(IW) -> tương(BW) 
-
-=====================
-
-Tôi đồng_tình với những ý_kiến có đầy_đủ cơ_sở khoa_học này và mong_muốn Chính_phủ sớm ban_hành những văn_bản chính_thức về Quản_lí an_toàn sinh_học đối_với sinh_vật_chuyển_gen ( GMO ) và thực_phẩm_chuyển_gen ( GMF ) .
-Tôi đồng_tình với những ý_kiến có đầy_đủ cơ_sở khoa_học này và mong_muốn Chính_phủ sớm ban_hành_những văn_bản chính_thức về Quản_lí an_toàn sinh_học đối_với sinh_vật chuyển_gen ( GMO ) và thực_phẩm chuyển_gen ( GMF ) .
- 
-chuyển(IW) -> chuyển(BW) 
-chuyển(IW) -> chuyển(BW) 
-
-=====================
-
-Chúng_ta thường nói đến Rau_sạch , Rau_an_toàn để phân_biệt với các rau bình_thường bán ngoài chợ .
-Chúng_ta thường nói đến Rau_sạch , Rau an_toàn để phân_biệt với các rau bình thường bán_ngoài chợ .
- 
-an(IW) -> an(BW) 
-thường(IW) -> thường(BW) 
-
-=====================
-
-Đã là rau dùng cho người ăn nhẽ_ra đều phải là rau_sạch , rau_an_toàn .
-Đã là rau dùng cho người_ăn nhẽ ra đều phải là rau_sạch , rau an_toàn .
- 
-ra(IW) -> ra(BW) 
-an(IW) -> an(BW) 
-
-=====================
-
-Một là , dùng các thuốc_trừ_sâu quá độc_hại , dùng quá liều_lượng cho_phép và dùng đến tận gần lúc thu_hoạch .
-Một là , dùng các thuốc_trừ sâu quá độc_hại , dùng quá liều_lượng cho_phép và dùng đến tận gần lúc thu_hoạch .
- 
-sâu(IW) -> sâu(BW) 
-
-=====================
-
-Hai là , nhiều thuốc_trừ_sâu ngoài danh_mục cho_phép ( như các loại lân hữu_cơ , clo hữu_cơ ) vẫn được nhập lậu từ Trung_Quốc sang .
-Hai là , nhiều thuốc_trừ sâu_ngoài danh_mục cho_phép ( như các loại lân hữu_cơ , clo hữu_cơ ) vẫn được nhập_lậu từ Trung_Quốc sang .
- 
-sâu(IW) -> sâu(BW) 
-
-=====================
-
-Bốn là , dùng phân_tươi và nước_tiểu người và gia_súc để bón cho rau , dẫn đến việc nhiễm vi_khuẩn và kí_sinh_trùng gây bệnh .
-Bốn là , dùng phân_tươi và nước tiểu_người và gia_súc để bón cho rau , dẫn đến việc_nhiễm vi_khuẩn và kí_sinh_trùng gây bệnh .
- 
-tiểu(IW) -> tiểu(BW) 
-
-=====================
-
-Năm là , dùng nước ở các nguồn sông_ngòi , rãnh nước ô_nhiễm để tưới trực_tiếp lên rau .
-Năm là , dùng nước ở các nguồn sông ngòi , rãnh nước ô_nhiễm để tưới trực_tiếp lên rau .
- 
-ngòi(IW) -> ngòi(BW) 
-
-=====================
-
-Người tiêu_dùng không biết nên mua loại rau nào , kể_cả các rau để là Rau_sạch , Rau_an_toàn cũng không có gì đảm_bảo .
-Người tiêu_dùng không biết nên mua loại rau_nào , kể_cả các rau để là Rau_sạch , Rau an_toàn cũng không có gì đảm_bảo .
- 
-an(IW) -> an(BW) 
-
-=====================
-
-Các vùng sản_xuất rau_sạch , rau_an_toàn tuy đã chi_phí rất nhiều công_quỹ để hướng_dẫn nông_dân không dùng thuốc_trừ_sâu trước khi thu_hoạch một thời_gian nhất_định , nhưng không có người nông_dân nào thấy sâu_bệnh đang phá_hại ruộng nhà mình mà không lén_lút phun thuốc_trừ_sâu , trừ bệnh .
-Các vùng sản_xuất rau_sạch , rau an_toàn tuy đã chi_phí rất nhiều công_quỹ để hướng dẫn nông_dân không dùng thuốc_trừ sâu trước khi thu_hoạch một thời_gian nhất_định , nhưng không có người nông_dân nào thấy sâu bệnh đang phá hại ruộng nhà_mình mà không lén_lút phun thuốc_trừ sâu , trừ bệnh .
- 
-an(IW) -> an(BW) 
-dẫn(IW) -> dẫn(BW) 
-sâu(IW) -> sâu(BW) 
-bệnh(IW) -> bệnh(BW) 
-hại(IW) -> hại(BW) 
-sâu(IW) -> sâu(BW) 
-
-=====================
-
-Ngay việc chọn rau có sâu ăn ít_nhiều để mua ( vì nghĩ rằng rau đã có sâu tức_là không dùng thuốc_trừ_sâu ) cũng không còn đáng tin_cậy .
-Ngay_việc chọn rau có sâu_ăn ít nhiều để mua ( vì nghĩ rằng rau đã có sâu tức_là không dùng thuốc_trừ sâu ) cũng không còn đáng tin_cậy .
- 
-nhiều(IW) -> nhiều(BW) 
-sâu(IW) -> sâu(BW) 
-
-=====================
-
-Nhiều người thiếu lương_tâm đã cố_tình để cho sâu ăn ít_nhiều trên rau rồi mới phun thuốc .
-Nhiều người thiếu lương_tâm đã cố_tình để cho sâu_ăn ít nhiều trên rau rồi mới phun thuốc .
- 
-nhiều(IW) -> nhiều(BW) 
-
-=====================
-
-Thậm_chí còn có một thiểu_số thương_nhân còn gom giữ sâu để thỉnh_thoảng rắc lên trên rau nhằm đánh_lừa người mua là rau không dùng thuốc_trừ_sâu .
-Thậm_chí còn có một_thiểu_số thương_nhân còn gom giữ sâu để thỉnh_thoảng rắc lên trên rau nhằm đánh lừa người mua là rau không dùng thuốc_trừ sâu .
- 
-lừa(IW) -> lừa(BW) 
-sâu(IW) -> sâu(BW) 
-
-=====================
-
-Chúng_tôi đã thí_điểm hướng_dẫn việc sản_xuất Rau có bảo_đảm ở hai trang_trại tại Kiến_An và tại ngoại_ô thành_phố Hồ_Chí_Minh .
-Chúng_tôi đã thí_điểm hướng dẫn_việc sản_xuất Rau có bảo_đảm ở hai trang_trại tại Kiến_An và tại ngoại_ô thành_phố Hồ_Chí_Minh .
- 
-dẫn(IW) -> dẫn(BW) 
-
-=====================
-
-Rau được bao trong các bao_bì có ghi hẳn nội_dung : Nếu có dư_lượng thuốc_trừ_sâu hoá_học Công_ti chịu trách_nhiệm trước pháp_luật .
-Rau được bao trong các bao_bì có ghi_hẳn nội_dung : Nếu có dư_lượng thuốc_trừ sâu_hoá học_Công_ti chịu trách_nhiệm trước pháp_luật .
- 
-sâu(IW) -> sâu(BW) 
-học(IW) -> học(BW) 
-
-=====================
-
-Các Công_ti này phải chịu sự giám_sát của Sở_Nông_nghiệp_&amp;_Phát_triển_nông_thôn và Sở_Khoa_học_&amp;_Công_nghệ địa_phương .
-Các Công_ti này phải chịu sự giám_sát của Sở_Nông_nghiệp &amp; Phát_triển nông_thôn và Sở_Khoa_học_&amp; Công_nghệ địa_phương .
- 
-&amp;(IW) -> &amp;(BW) 
-Phát(IW) -> Phát(BW) 
-nông(IW) -> nông(BW) 
-Công(IW) -> Công(BW) 
-
-=====================
-
-Hai là , chọn các thứ rau mọc nhanh và ít có sâu_bệnh .
-Hai là , chọn các thứ rau mọc nhanh và ít có sâu bệnh .
- 
-bệnh(IW) -> bệnh(BW) 
-
-=====================
-
-Bốn là , dùng thuốc_trừ_sâu sinh_học - thuốc vi_khuẩn BT và thuốc kháng_sinh Abamectin khi phát_hiện có sâu ( thường bọ_nhảy bị diệt rất dễ bởi Abamectin ) .
-Bốn là , dùng thuốc_trừ sâu sinh_học - thuốc vi_khuẩn BT và thuốc kháng_sinh Abamectin khi phát_hiện có sâu ( thường bọ_nhảy bị diệt rất dễ bởi_Abamectin ) .
- 
-sâu(IW) -> sâu(BW) 
-
-=====================
-
-Năm là , tuyệt_đối không dùng bất_kì thuốc_trừ_sâu hoá_học nào .
-Năm là , tuyệt_đối không dùng bất_kì thuốc_trừ sâu_hoá học_nào .
- 
-sâu(IW) -> sâu(BW) 
-học(IW) -> học(BW) 
-
-=====================
-
-Chỉ dùng phân_hữu_cơ ủ hoai và bón vào đất trước khi trồng rau là chính .
-Chỉ dùng phân hữu_cơ_ủ hoai và bón vào đất trước khi trồng rau là chính .
- 
-hữu(IW) -> hữu(BW) 
-
-=====================
-
-Loại mô_hình này bất_kì địa_phương nào cũng có_thể thực_hiện được nhưng cần tập_trung ruộng_đất trồng rau và có người chịu trách_nhiệm cụ_thể trước pháp_luật .
-Loại mô_hình này bất_kì địa_phương nào cũng có_thể thực_hiện được nhưng cần tập_trung ruộng đất_trồng rau và có người chịu trách_nhiệm cụ_thể trước pháp_luật .
- 
-đất(IW) -> đất(BW) 
-
-=====================
-
-Mặt_khác nên nghiên_cứu trồng đại_trà các loại rau dại thường có sức đề_kháng rất cao với sâu_bệnh cho_nên hầu_như không phải dùng tới thuốc trừ sâu_bệnh .
-Mặt khác nên nghiên_cứu trồng đại_trà các loại rau_dại thường có sức đề_kháng rất cao với sâu bệnh cho nên hầu_như không phải dùng tới thuốc_trừ sâu bệnh .
- 
-khác(IW) -> khác(BW) 
-bệnh(IW) -> bệnh(BW) 
-nên(IW) -> nên(BW) 
-bệnh(IW) -> bệnh(BW) 
-
-=====================
-
-Gần đây tại các hàng ăn ở Trung_Quốc người_ta thường thấy rất nhiều các món ăn nấu từ các loại rau lạ .
-Gần đây tại các hàng ăn ở Trung_Quốc người ta thường thấy rất nhiều các món ăn_nấu từ các loại rau_lạ .
- 
-ta(IW) -> ta(BW) 
-
-=====================
-
-Tôi muốn giới_thiệu để chúng_ta tham_khảo và học_hỏi kinh_nghiệm của bạn cũng_như phát_hiện thêm các loại rau rừng mà trong thời_gian kháng_chiến bộ_đội ta vẫn dùng để ăn .
-Tôi muốn giới_thiệu để chúng_ta tham_khảo và học_hỏi kinh_nghiệm của bạn cũng như phát_hiện thêm các loại rau rừng mà trong thời_gian kháng_chiến bộ đội ta vẫn dùng để ăn .
- 
-như(IW) -> như(BW) 
-đội(IW) -> đội(BW) 
+tiên(IW) -> tiên(BW) 
 
 =====================
 

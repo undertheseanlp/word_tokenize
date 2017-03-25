@@ -21,7 +21,7 @@ if __name__ == '__main__':
     }
     if OPTIONS["F1_Score"]:
         get_score()
-    # if OPTIONS["Confusion matrix"]:
+     # if OPTIONS["Confusion matrix"]:
     #     f = open(join(dirname(__file__), 'logs', 'crf', 'result.txt'), 'r+')
     #     confusion_matrix = confusion_matrix(actual_label, predict_label, labels=["BW", "IW", "O"])
     #     x = f.read().split('\n')

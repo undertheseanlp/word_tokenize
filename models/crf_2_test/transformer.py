@@ -57,7 +57,7 @@ class Transformer:
 
     def load_train_sents(self):
         corpus = PlainTextCorpus()
-        file_path = join(dirname(dirname(dirname(__file__))), "data", "corpus_2", "train", "input")
+        file_path = join(dirname(dirname(dirname(__file__))), "data", "corpus", "train", "input")
         corpus.load(file_path)
         sentences = []
         for document in corpus.documents:

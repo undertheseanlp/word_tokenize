@@ -5,8 +5,8 @@ from labs.compare_sentence.script import compare_sentence
 from labs.computeF1.to_column import to_column
 
 model_name = "output_crf"
-output_folder = join(dirname(dirname(__file__)), "data", "corpus", "train", "output")
-model_output_folder = join(dirname(dirname(__file__)), "data", "corpus", "train", model_name)
+output_folder = join(dirname(dirname(__file__)), "data", "corpus_2", "train", "output")
+model_output_folder = join(dirname(dirname(__file__)), "data", "corpus_2", "train", model_name)
 print 0
 
 
