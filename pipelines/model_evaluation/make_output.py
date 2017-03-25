@@ -1,5 +1,5 @@
 from os.path import join, dirname
-from pipelines import model_name
+from pipelines.pipelines import model_name
 import importlib
 
 if __name__ == '__main__':
