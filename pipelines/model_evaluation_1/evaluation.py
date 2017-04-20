@@ -3,6 +3,7 @@
 from pipelines.model_evaluation.get_score import get_score
 from analysis_error import error_analysis
 
+
 def count_token(documents):
     count = 0
     for document in documents:
@@ -21,7 +22,7 @@ if __name__ == '__main__':
     }
     if OPTIONS["F1_Score"]:
         get_score()
-     # if OPTIONS["Confusion matrix"]:
+        # if OPTIONS["Confusion matrix"]:
     #     f = open(join(dirname(__file__), 'logs', 'crf', 'result.txt'), 'r+')
     #     confusion_matrix = confusion_matrix(actual_label, predict_label, labels=["BW", "IW", "O"])
     #     x = f.read().split('\n')
@@ -40,12 +41,12 @@ if __name__ == '__main__':
     #     f.close()
     if OPTIONS["Error Analysis"]:
         error_analysis()
-    # if OPTIONS["Time Speed"]:
-    #     f = open(join(dirname(__file__), 'logs', 'crf', 'result.txt'), 'r+')
-    #     x = f.read().split("\n")
-    #     time_stop = time.time()
-    #     time_per_token = (time_stop - time_start) / float(count_token(actual_corpus.documents))
-    #     time_per_token = 1.00 / time_per_token
-    #     x[17] = "Time speed: %0.6f token per second" % time_per_token
-    #     x = x[:-1]
-    #     f.close()
+        # if OPTIONS["Time Speed"]:
+        #     f = open(join(dirname(__file__), 'logs', 'crf', 'result.txt'), 'r+')
+        #     x = f.read().split("\n")
+        #     time_stop = time.time()
+        #     time_per_token = (time_stop - time_start) / float(count_token(actual_corpus.documents))
+        #     time_per_token = 1.00 / time_per_token
+        #     x[17] = "Time speed: %0.6f token per second" % time_per_token
+        #     x = x[:-1]
+        #     f.close()
