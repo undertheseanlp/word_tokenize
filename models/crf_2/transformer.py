@@ -1,8 +1,9 @@
 from os.path import dirname
 from os.path import join
-
 from underthesea.corpus import PlainTextCorpus
 from models.crf_2.feature_selection.feature_2 import word2features
+path = join(dirname(__file__), "punctuation.txt")
+punctuations = open(path, "r").read().split("\n")
 
 
 def sent2features(sent):
@@ -23,10 +24,6 @@ class Transformer:
         return sent2features(sentence)
 
     def format_word(self, sentence):
-        path = join(dirname(__file__), "punctuation.txt")
-        punctuations = open(path, "r").read().split("\n")
-        for punctuation in punctuations:
-            punctuation = unicode(punctuations)
         words = []
         for word in sentence.split(" "):
             if "_" in word:
