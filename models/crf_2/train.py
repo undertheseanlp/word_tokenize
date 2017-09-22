@@ -2,8 +2,8 @@
 import pycrfsuite
 from os.path import join
 from os.path import dirname
-from transformer import sent2labels
-from transformer import Transformer
+
+from models.crf_2.transformer import Transformer, sent2labels
 
 
 def train():
