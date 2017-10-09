@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import pycrfsuite
-from os.path import join
-from os.path import dirname
+from os.path import join, dirname
+import os
 
 from models.crf_2.transformer import Transformer, sent2labels
 
@@ -11,7 +11,8 @@ def train():
     train_sents = transformer.load_train_sents()
     matrix = []
     for sentence in train_sents:
-        matrix.append(transformer.list_to_tuple(transformer.format_word(sentence)))
+        matrix.append(
+            transformer.list_to_tuple(transformer.format_word(sentence)))
     train_sents = matrix
     X_train = [Transformer.extract_features(s) for s in train_sents]
     y_train = [sent2labels(s) for s in train_sents]
@@ -25,8 +26,7 @@ def train():
         # include transitions that are possible, but not observed
         'feature.possible_transitions': True
     })
-    trainer.train(join(dirname(__file__), "crf-model-2"))
+    model_file = join(dirname(__file__), "crf-model-2")
+    trainer.train(model_file)
+    os.remove(model_file)
 
-
-if __name__ == '__main__':
-    train()

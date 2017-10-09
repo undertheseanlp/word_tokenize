@@ -1,1 +1,1 @@
-model_name = "crf_2"lab
+model_name = "crf_2"

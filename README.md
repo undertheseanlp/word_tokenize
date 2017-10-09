@@ -13,4 +13,5 @@ Last update: April 2017
 conda create -n underthesea.word_sent python=3.4
 pip install -r requirements.txt
 pip install git+https://github.com/magizbox/underthesea.flow
+source activate underthesea.word_sent
 ```

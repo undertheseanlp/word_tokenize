@@ -36,9 +36,9 @@ def get_score():
     f1 = f1_score(actual_label, predict_label, list(set(actual_label)), 1, 'weighted', None) * 100
     precision = precision_score(actual_label, predict_label, list(set(actual_label)), 1, 'weighted', None) * 100
     recall = recall_score(actual_label, predict_label, list(set(actual_label)), 1, 'weighted', None) * 100
-    print "F1 = %.2f percent" % f1
-    print "Precision = %.2f" % precision
-    print "Recall = %.2f percent" % recall
+    print("F1 = %.2f percent" % f1)
+    print("Precision = %.2f" % precision)
+    print("Recall = %.2f percent" % recall)
 
 
 if __name__ == '__main__':

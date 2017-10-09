@@ -8,8 +8,6 @@ def to_column(sentence):
     result = []
     path = join(dirname(__file__), "punctuation.txt")
     punctuations = open(path, "r").read().split("\n")
-    for punctuation in punctuations:
-        punctuation = unicode(punctuations)
     for word in sentence.split(" "):
         words.append(word)
     if words[0] == "":
