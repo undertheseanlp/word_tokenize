@@ -2,16 +2,56 @@
 
 This repository contains experiments in Vietnamese Word Segmentation problems. It is a part of [underthesea](https://github.com/magizbox/underthesea) - a Vietnamese NLP Toolkit
 
-* Detail Reports, [link](https://docs.google.com/spreadsheets/d/1i-3WydtRhs8Qmh_-PHxdftQQPnxZ0q4sHhcx8_euNmc/edit#gid=109884615)
-* Vietnamese Word Segmentation publications, [link](https://docs.google.com/spreadsheets/d/1i-3WydtRhs8Qmh_-PHxdftQQPnxZ0q4sHhcx8_euNmc/edit#gid=0)
+# Corpora Summary
 
-Last update: April 2017
-
-# Usage
+Corpus 1
 
 ```
-conda create -n underthesea.word_sent python=3.4
-pip install -r requirements.txt
-pip install git+https://github.com/magizbox/underthesea.flow
-source activate underthesea.word_sent
+Documents: 47
+Sentences: 7182
+Words    : 184005
 ```
+
+Corpus 2
+
+```
+Sentences    : 19692
+Unique Words : 20945
+```
+
+## Reports
+
+![](https://img.shields.io/badge/f1-96.6%25-red.svg)
+
+* [Detail Reports](https://docs.google.com/spreadsheets/d/1OTd_bktaGpnLSy2I8GiFT2xhElRPymoDjPvqt4cAmc0/edit?usp=sharing)
+
+## Usage
+
+**Setup Environment**
+
+```
+# clone project
+$ git clone git@github.com:magizbox/underthesea.word_sent.git
+
+# create environment
+$ cd underthesea.word_sent
+$ conda create -n uts.word_sent python=3.4
+$ pip install -r requirements.txt
+```
+
+**Run experiment**
+
+```
+$ cd underthesea.word_sent
+$ source activate uts.word_sent
+$ python main.py
+```
+
+## Related Works
+
+* [Vietnamese Word Segmentation Tools](https://github.com/magizbox/underthesea/wiki/Vietnamese-NLP-Tools#word-segmentation)
+* [Vietnamese Word Segmentation Publications](https://github.com/magizbox/underthesea/wiki/Vietnamese-NLP-Publications#word-segmentation)
+* [Vietnamese Word Segmentation State of The Art](https://github.com/magizbox/underthesea/wiki/Vietnamese-NLP-SOTA#word-segmentation)
+* [Vietnamese Word Segmentation Service](https://github.com/magizbox/underthesea/wiki/Vietnamese-NLP-Services#word-segmentation)
+
+Last update: October 2017
