@@ -21,7 +21,7 @@ Unique Words : 20945
 
 ## Reports
 
-![](https://img.shields.io/badge/f1-96.6%25-red.svg)
+![](https://img.shields.io/badge/f1-94%25-red.svg)
 
 * [Detail Reports](https://docs.google.com/spreadsheets/d/1i-3WydtRhs8Qmh_-PHxdftQQPnxZ0q4sHhcx8_euNmc/edit?usp=sharing)
 
