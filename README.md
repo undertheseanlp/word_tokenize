@@ -1,8 +1,8 @@
 # Word Segmentation Experiments
 
-![](https://img.shields.io/badge/F1-94%25-red.svg)
+![](https://img.shields.io/badge/build-passing-green.svg) ![](https://img.shields.io/badge/F1-94%25-red.svg)
 
-This repository contains experiments in Vietnamese Word Segmentation problems. It is a part of [underthesea](https://github.com/magizbox/underthesea) project
+This repository contains experiments in Vietnamese Word Segmentation problems. It is a part of [underthesea](https://github.com/magizbox/underthesea) project.
 
 * [Demo]()
 * [Detail Reports](https://docs.google.com/spreadsheets/d/1i-3WydtRhs8Qmh_-PHxdftQQPnxZ0q4sHhcx8_euNmc/edit?usp=sharing)
