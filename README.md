@@ -1,4 +1,4 @@
-# Word Segmentation Experiments
+# Underthesea Word Segmentation
 
 ![](https://img.shields.io/badge/build-passing-brightgreen.svg) ![](https://img.shields.io/badge/F1-94%25-red.svg)
 
