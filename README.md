@@ -38,7 +38,7 @@ $ conda create -n uts.word_sent python=3.4
 $ pip install -r requirements.txt
 ```
 
-**Run experiment**
+**Run Experiments**
 
 ```
 $ cd underthesea.word_sent
