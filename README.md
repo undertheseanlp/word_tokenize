@@ -23,7 +23,7 @@ Unique Words : 20945
 
 ![](https://img.shields.io/badge/f1-96.6%25-red.svg)
 
-* [Detail Reports](https://docs.google.com/spreadsheets/d/1OTd_bktaGpnLSy2I8GiFT2xhElRPymoDjPvqt4cAmc0/edit?usp=sharing)
+* [Detail Reports](https://docs.google.com/spreadsheets/d/1i-3WydtRhs8Qmh_-PHxdftQQPnxZ0q4sHhcx8_euNmc/edit?usp=sharing)
 
 ## Usage
 
