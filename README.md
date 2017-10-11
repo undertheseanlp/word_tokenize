@@ -9,6 +9,8 @@ This repository contains experiments in Vietnamese Word Segmentation problems. I
 
 # Corpora Summary
 
+Corpus is in [UniversalDependencies format](https://github.com/UniversalDependencies/UD_Vietnamese).
+
 ```
 # Corpus 1
 Documents: 47
