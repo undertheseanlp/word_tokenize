@@ -10,7 +10,7 @@ This repository contains experiments in Vietnamese Word Segmentation problems. I
 # Corpora Summary
 
 ```
-# Copus 1
+# Corpus 1
 Documents: 47
 Sentences: 7182
 Words    : 184005
