@@ -5,7 +5,7 @@
 This repository contains experiments in Vietnamese Word Segmentation problems. It is a part of [underthesea](https://github.com/magizbox/underthesea) project.
 
 * [Demo](http://magizbox.com:9386)
-* [Detail Reports](https://docs.google.com/spreadsheets/d/1i-3WydtRhs8Qmh_-PHxdftQQPnxZ0q4sHhcx8_euNmc/edit?usp=sharing)
+* [Detail Report](https://docs.google.com/spreadsheets/d/1i-3WydtRhs8Qmh_-PHxdftQQPnxZ0q4sHhcx8_euNmc/edit?usp=sharing)
 
 # Corpora Summary
 
