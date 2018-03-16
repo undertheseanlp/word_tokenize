@@ -1,0 +1,69 @@
+1 . Giới thiệu
+Trong phân tích đánh giá tai biến thiên nhiên đòi hỏi phải xác định được mức độ hoạt động cũng như dự báo được cường độ hoạt động của chúng trong tương lai .
+Tai biến trượt lở đất là quá tự nhiên trên sườn mái dốc dưới tác động trực tiếp của trọng lực , quá trình này xảy ra do ảnh hưởng của rất nhiều nhân tố tự nhiên ( địa chất , địa mạo , khí hậu , lớp phủ thực vật , ... ) và xã hội ( sản xuất nông nghiệp , xây dựng , ... ) , mỗi nhân tố ảnh hưởng đến quá trình theo cường độ và tầm quan trọng khác nhau .
+Vì thế , nghiên cứu trượt lở phải dựa trên quan điểm địa lí tổng hợp và GIS là công cụ rất hữu ích để thực hiện công việc này .
+Trong khuôn khổ bài báo , chúng tôi xin nêu một vài kết quả nghiên cứu đạt được nhờ sử dụng mô hình phân tích không gian trong môi trường GIS kết hợp với đánh giá đa tiêu chuẩn ( MCE ) trong việc nghiên cứu trượt lở đất ở tỉnh Lào Cai .
+Về khu vực nghiên cứu , Lào Cai nằm ở phía bắc lãnh thổ Việt Nam , cách Hà Nội khoảng 300 km về phía tây bắc .
+Tỉnh hiện đang nằm trên nền địa chất hết sức phức tạp với 3 đới cấu trúc địa chất khác nhau , địa hình phân cắt mạnh kết hợp với lượng mưa lớn , tập trung đã thúc đẩy các quá trình tai biến xảy ra rất mạnh mẽ , gây thiệt hại nặng nề về kinh tế và gây tâm lí hoang mang cho đồng bào dân tộc thiểu số .
+Gần đây nhất , vào tháng 9 năm 2004 trên địa bàn tỉnh đã xảy ra 2 vụ trượt lở nghiêm trọng làm chết 26 người , thiệt hại về của lên tới hàng chục tỉ đồng .
+Thiết nghĩ , với vị trí hết sức quan trọng về kinh tế - xã hội cũng như an ninh quốc phòng , tỉnh Lào Cai rất cần có các công trình nghiên cứu cơ bản nhằm giảm thiểu thiệt hại do tai biến thiên nhiên gây ra cũng như trong khai thác sử dụng tài nguyên và bảo vệ môi trường
+2 . Quan điểm nghiên cứu và quy trình thực hiện
+Một trong những vấn đề quan trọng của việc nghiên cứu tai biến trượt lở là xác định được tính nhạy cảm của sườn mái dốc với quá trình trượt lở .
+Tính nhạy cảm này phụ thuộc vào các nhân tố ảnh hưởng có tác dụng chống lại thành phần gây trượt của trọng lực .
+Cơ sở của việc đánh giá mức độ nhạy cảm với trượt lở đất chính là việc đánh giá đơn lẻ các nhân tố ảnh hưởng rồi đến đánh giá tổng hợp các nhân tố ảnh hưởng tới quá trình trượt lở .
+Mục đích của bài báo này nhằm làm sáng tỏ vai trò của GIS và MCE trong việc xác định những vùng có nguy cơ trượt lở cao .
+Trong đó các nhân tố ảnh hưởng như địa chất , địa mạo , khí hậu , lớp phủ thực vật , ... được đánh giá dựa trên tầm quan trọng của chúng đối với quá trình trượt lở .
+Để đạt được mục đích nghiên cứu cần thực hiện các bước sau :
+a . Xác định các nhân tố ảnh hưởng như : độ dốc , lượng mưa , loại đất đá , mật độ chia cắt ( các yếu tố dạng tuyến ) và độ che phủ của thực vật .
+Đây là những nhân tố hết sức quan trọng trong việc đánh giá tính nhạy với trượt lở của sườn mái dốc .
+b . Phân cấp các mức độ ảnh hưởng với quá trình trượt lở đối với mỗi nhân tố ảnh hưởng .
+Tuỳ vào mức độ chi tiết của tài liệu mà ta phân thành nhiều cấp ảnh hưởng khác nhau .
+c . Phân hạng mức độ tác động ( tầm quan trọng ) của các nhân tố ảnh hưởng tới quá trình trượt lở dựa trên các kiến thức chuyên gia và sử dụng MCE để định lượng hoá ( xác định trọng số ) mức độ ảnh hưởng của các nhân tố .
+d . Xây dựng bản đồ nhạy cảm với trượt lở đất tỉnh Lào Cai bằng cách sử dụng công cụ tính toán trong môi trường GIS được phân cấp thành : “ rất nhạy cảm ” , “ nhạy cảm ” , “ nhạy cảm trung bình ” , “ kém nhạy cảm và ổn định ” .
+3 . Kết quả nghiên cứu
+Môi trường GIS cho phép tính toán , phân tích và tổng hợp các dữ liệu không gian .
+MCE ứng dụng việc phân hạng ( ranking ) và gán trọng số nhằm mục đích đánh giá tổng hợp tính nhạy cảm cho từng đơn vị không gian cụ thể .
+Dựa trên cơ sở này , mô hình “ nhạy cảm ” ( asusceptibility model ) được thiết lập để đánh giá cho các không gian .
+Bản đồ tổng hợp xác định tính nhạy cảm với tai biến trượt lở được xây dựng trên các nhân tố sau :
+- Loại đất đá ( Bản đồ thạch học )
+- Mức độ phong hoá của đất đá ( Bản đồ vỏ phong hoá )
+- Mật độ đứt gãy ( Bản đồ đứt gãy )
+- Mức độ phân cắt địa hình ( Bản đồ mật độ phân cắt sâu , Bản đồ mật độ các yếu tố dạng tuyến )
+- Độ dốc ( Bản đồ độ dốc )
+- Khả năng chứa nước ngầm ( Bản đồ địa chất thuỷ văn )
+- Lượng mưa ( Bản đồ cường độ mưa và lượng mưa trung bình năm )
+- Mức độ che phủ thực vật ( Bản đồ độ che phủ thực vật )
+Khi các tiêu chuẩn trên được thu từ dữ liệu gốc , các thuộc tính ảnh hưởng đến quá trình tai biến cần được đưa về dạng chỉ số để chúng có thể so sánh với nhau .
+Các tiêu chuẩn trên được biểu diễn dưới dạng các bản đồ .
+Trên cơ sở các thuộc tính của mỗi tiêu chuẩn , bằng công cụ của GIS , các bản đồ này được phân loại ( classification ) và phân cấp ( ranking ) tuỳ theo mức độ ảnh hưởng của mỗi nhân tố .
+Trong khi phân cấp , phương pháp cho điểm trong MCE được áp dụng .
+Các cấp của một bản đồ được phân cấp bằng số từ 10 đến 5 để xác định cấp định lượng từ mức độ tác động “ ảnh hưởng rất mạnh ” đến “ không ảnh hưởng ” được thể hiện bằng thang sau :
+Giá trị “ - 10 ” thể hiện : nếu có bất kỳ một vùng nào đó được xét là không ảnh hưởng thì vùng này không được đưa vào phân cấp nhạy cảm với trượt lở ( Ví dụ như với nhân tố lớp phủ thực vật thì các diện tích mặt nước không được đưa vào tính toán ) .
+Sau đây là một ví dụ của phương pháp này đối với “ thành phần thạch học ” được dựa trên thành phần cấp hạt , mức độ phân lớp hay dạng khối , mức độ dập vỡ và khả năng phong hoá .
+Thông thường , các đá có sự xen kẽ các lớp đá cứng với đá mềm ( đá phiến sét ( PZ-PR ) , phiến biotit , sét than hệ tầng Ngòi Chi , Cam Đường ) , dẫn đến hiện tượng xâm thực , phong hoá chọn lọc .
+Đặc biệt , đất đá bị cà nát mạnh nên trong vỏ phong hoá có nhiều mảnh vỡ cả trong đới litoma lẫn trong đới saprolit .
+Tính không đồng nhất cao độ này của lớp vỏ phong hoá tạo điều kiện để nước ngầm vận động trên mặt phân cách giữa mảnh đá với đất mịn , tạo thuận lợi cho quá trình trượt lở đất .
+Vì vậy , trong khu vực nghiên cứu các đá này được phân cấp cao hơn so với các trầm tích N , Q và các đá xâm nhập có thành phần bazơ .
+Các tiêu chuẩn khác cũng được đánh giá tương tự như vậy .
+Việc cho điểm số này dựa trên kinh nghiệm và kiến thức của các chuyên gia nên không tránh khỏi ý kiến chủ quan .
+Sự phân bố không gian của nhân tố thành phần vật chất được thể hiện ở hình 2 .
+Trong đó : Ttb là tổng giá trị của các nhân tố ảnh hưởng , Ti là các điểm đánh giá theo nhân tố ảnh hưởng được phân bố trên các bản đồ thành phần , wi là trọng số của các bản đồ thành phần .
+Trọng số cho mỗi nhân tố ảnh hưởng được xác định bằng sử dụng phép so sánh cặp trong đánh giá đa tiêu chuẩn ( MCE ) .
+Các bản đồ thành phần được đánh giá dựa trên mức độ quan trọng của nó đối với việc hình thành bản đồ tổng hợp .
+Cơ sở của việc xác định mức độ quan trọng của các nhân tố dựa trên mức độ phân dị ảnh hưởng của chúng tới quá trình .
+Hay nói cách khác , nhân tố nào có mức độ phân dị cao thì được coi là quan trọng hơn nhân tố có độ phân dị thấp .
+Trong bài báo này , nhân tố “ độ dốc ” được đánh giá quan trọng hơn vì nó rất phân dị về mặt không gian còn nhân tố “ mật độ lineament ” thì được đánh giá là kém quan trọng hơn bởi nó ít phân dị cho dù giá trị mật độ là cao .
+Phép so sánh cặp cho phép so sánh từng nhân tố với nhau , cuối cùng nhân tố nào được đánh giá là quan trọng nhất , tác động mạnh nhất tới quá trình trượt lở sẽ được đánh giá là “ tuyệt đối quan trọng ” .
+Nhân tố nào được đánh giá là ít tác động đến quá trình trượt lở thì được đánh giá là “ ít quan trọng ” .
+Các nhân tố này được phân hạng và chuyển ra dạng số như sau nhằm thuận lợi cho việc tính toán .
+So với các kết quả nghiên cứu thực tế , bản đồ nhạy cảm với trượt lở tỉnh Lào Cai rất phù hợp với bình đồ địa động lực chung của khu vực .
+Hai điểm chìa khoá mà chúng tôi đã tiến hành nghiên cứu thực địa đó là các khối trượt thuộc khu vực cầu Mống Sến và khối trượt cạnh UBND xã Phìn Ngan , huyện Bát Xát nằm trong khu vực rất nhạy cảm trên bản đồ kết quả , các khu vực này đều có độ dốc cao và nằm trên ranh giới tiếp xúc của các loại đất đá khác nhau , đó cũng là những tiêu chí mà chúng tôi đánh giá quan trọng và có mức độ ảnh hưởng cao .
+4 . Kết luận
+Kết quả thu được nhờ áp dụng GIS và MCE không chỉ thể hiện ở những bản phân bố không gian mà còn ở dạng các bảng thuộc tính .
+Phương pháp đánh giá trọng số bằng MCE có thể áp dụng trong nhiều chuyên ngành của khoa học địa lí bằng việc thay đổi các kịch bản cũng như các tiêu chuẩn đánh giá khác .
+Dựa vào GIS và MCE , kết quả đánh giá mức độ nhạy cảm với trượt lở đất khu vực tỉnh Lào Cai được thể hiện như sau : Khu vực có quá trình đổ lở xảy ra mạnh nhất thuộc dãy núi Hoàng Liên Sơn và khối núi Pò Sen phát triển trên đá granit .
+Khu vực có trượt lở đất mạnh nhất phát triển dọc theo thung lũng sông Hồng với địa hình gò đồi phát triển trên đá phiến sét và sét than .
+Quá trình lở đất phát triển mạnh ở các khu vực tiếp xúc giữa đá granit và đá phiến , giữa đá vôi và đá sét vôi .
+
+
+
