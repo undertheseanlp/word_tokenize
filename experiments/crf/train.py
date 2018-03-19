@@ -47,3 +47,4 @@ if __name__ == '__main__':
 
     y_pred = estimator.predict(X_dev)
     f1_score = multilabel_f1_score(y_dev, y_pred)
+    print(f1_score)
