@@ -1,14 +1,6 @@
 from sklearn.metrics import f1_score
 
 
-def _flat(l):
-    """
-    :type l: list of list
-    """
-    return [item[0] for item in l]
-
-
 def score(y_true, y_pred):
-    y_pred = _flat(y_pred)
-    y_true = _flat(y_true)
-    print("F1 :", f1_score(y_true, y_pred))
+    f1 = sum([f1_score(y_true[i], y_pred[i], average='weighted') for i in range(len(y_pred))])/len(y_pred)
+    return f1

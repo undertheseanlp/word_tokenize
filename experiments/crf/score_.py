@@ -5,10 +5,7 @@ def create_tags(sentences):
         i = 0
         current_tag = [None, None, None, None]
         while i < len(iob_tags):
-            if iob_tags[i] == "O" and current_tag[0]:
-                tags.append(tuple(current_tag))
-                current_tag = [None, None, None, None]
-            elif iob_tags[i].startswith("B"):
+            if iob_tags[i].startswith("B"):
                 current_tag[0] = iob_tags[i][2:]
                 current_tag[1] = i
                 current_tag[2] = i
@@ -33,9 +30,12 @@ def iob_score(y_true, y_pred):
     """
     tags_true = create_tags(y_true)
     tags_pred = create_tags(y_pred)
-    ref = len(tags_true)
-    true = len(set(tags_true).intersection(tags_pred))
-    sys = len(tags_pred)
+    # ref = len(tags_true)
+    ref = len(y_true)
+    # true = len(set(tags_true).intersection(tags_pred))
+    # sys = len(tags_pred)
+    true = len(set(y_pred).intersection(y_pred))
+    sys = len(y_pred)
     if ref == 0 or true == 0 or sys == 0:
         return 0
     p = true / sys
