@@ -1,14 +1,13 @@
 from os.path import dirname, join
-from languageflow.model.crf import CRF
 from sklearn.model_selection import train_test_split
+from languageflow.model.crf import CRF
 
 from custom_transformer import CustomTransformer
-from feature_transformer import template
+from feature_template import template
 from load_data import load_dataset
-from score import multilabel_f1_score
+from score import score
 
 if __name__ == '__main__':
-
     # =========================================================================#
     #                                Data                                      #
     # =========================================================================#
@@ -24,10 +23,12 @@ if __name__ == '__main__':
     # =========================================================================#
     transformer = CustomTransformer(template)
     X, y = transformer.transform(sentences)
+    X_train, X_dev, y_train, y_dev = train_test_split(X, y, test_size=0.1)
 
     # =========================================================================#
-    #                                Train                                     #
+    #                               Models
     # =========================================================================#
+
     crf_params = {
         'c1': 1.0,  # coefficient for L1 penalty
         'c2': 1e-3,  # coefficient for L2 penalty
@@ -44,5 +45,5 @@ if __name__ == '__main__':
     #                                Evaluate                                  #
     # =========================================================================#
     y_pred = estimator.predict(X_dev)
-    f1_score = multilabel_f1_score(y_dev, y_pred)
+    f1 = score(y_dev, y_pred)
     print(0)
