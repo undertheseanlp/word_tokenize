@@ -5,9 +5,7 @@ from languageflow.model.crf import CRF
 from custom_transformer import CustomTransformer
 from feature_template import template
 from load_data import load_dataset
-# from score import  multilabel_f1_score
-# from score_ import iob_score
-from score import score
+from score import multilabel_f1_score
 
 if __name__ == '__main__':
     # =========================================================================#
@@ -18,7 +16,7 @@ if __name__ == '__main__':
         file = join(dirname(dirname(dirname(__file__))), "data", "vlsp2016",
                     "corpus", f)
         sentences += load_dataset(file)
-        sentences = sentences[:100]
+        sentences = sentences[:1000]
 
     # =========================================================================#
     #                                Transformer                               #
@@ -47,5 +45,5 @@ if __name__ == '__main__':
     #                                Evaluate                                  #
     # =========================================================================#
     y_pred = estimator.predict(X_dev)
-    f1 = score(y_dev, y_pred)
+    f1 = multilabel_f1_score(y_dev, y_pred)
     print(f1)
