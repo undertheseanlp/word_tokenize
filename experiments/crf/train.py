@@ -17,7 +17,7 @@ if __name__ == '__main__':
         file = join(dirname(dirname(dirname(__file__))), "data", "vlsp2016",
                     "corpus", f)
         sentences += load_dataset(file)
-        sentences = sentences[:1000]
+        sentences = sentences[:100]
 
     # =========================================================================#
     #                                Transformer                               #
@@ -39,7 +39,6 @@ if __name__ == '__main__':
     }
     file_name = join(dirname(__file__), "models", "model.bin")
     estimator = CRF(params=crf_params, filename=file_name)
-    X_train, X_dev, y_train, y_dev = train_test_split(X, y, test_size=0.1)
     estimator.fit(X_train, y_train)
 
     # =========================================================================#
