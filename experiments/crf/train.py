@@ -2,6 +2,7 @@ from os.path import dirname, join
 from sklearn.model_selection import train_test_split
 from languageflow.model.crf import CRF
 
+import joblib
 from custom_transformer import CustomTransformer
 from feature_template import template
 from load_data import load_dataset
@@ -36,7 +37,7 @@ if __name__ == '__main__':
         # include transitions that are possible, but not observed
         'feature.possible_transitions': True
     }
-    file_name = join(dirname(__file__), "model.bin")
+    file_name = join(dirname(__file__), "models", "model.bin")
     estimator = CRF(params=crf_params, filename=file_name)
     X_train, X_dev, y_train, y_dev = train_test_split(X, y, test_size=0.1)
     estimator.fit(X_train, y_train)
