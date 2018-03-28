@@ -1,8 +1,8 @@
 from os.path import dirname, join
 from sklearn.model_selection import train_test_split
 from languageflow.model.crf import CRF
+import time
 
-import joblib
 from custom_transformer import CustomTransformer
 from feature_template import template
 from load_data import load_dataset
@@ -45,6 +45,10 @@ if __name__ == '__main__':
     # =========================================================================#
     #                                Evaluate                                  #
     # =========================================================================#
+    start = time.time()
     y_pred = estimator.predict(X_dev)
+    end = time.time()
+    test_time = end - start
     f1 = multilabel_f1_score(y_dev, y_pred)
-    print(f1)
+    print("F1 score: ", f1)
+    print("Test time: ", test_time)
