@@ -1,5 +1,5 @@
 from unittest import TestCase
-from models import word_sent
+from model import word_sent
 
 
 class TestWordSent(TestCase):

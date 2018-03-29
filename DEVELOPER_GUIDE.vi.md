@@ -1,30 +1,87 @@
 # Xây dựng model tách từ trong xử lí văn bản tiếng Việt
 
 ## Cấu trúc
-| Thư mục                                                                                                                                                                                                           | Mục đích                                                                                                                                                                                                                                                  |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| data                                                                                                                                                                                                              | Chứa dữ liệu trong quá trình huấn luyện                                                                                                                                                                                                                   |
-|  anonymous<br/>&nbsp;&nbsp;&nbsp; corpus<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; train<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; test<br/>&nbsp;&nbsp;&nbsp;&nbsp; raw<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; input<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output<br/>&nbsp;&nbsp;&nbsp; eda<br/>&nbsp;&nbsp;&nbsp; preprocess.py<br/>&nbsp;&nbsp;&nbsp; eda.py<br/>                                                                                     | Với dữ liệu thu thập được tiến hành phân vào các thư mục  - raw: chứa dữ liệu thô - corpus: chứa dữ liệu cho việc huấn luyện và đánh giá mô hình. Các file preprocess.py và eda.py giúp phân loại và đánh giá sơ bộ dữ liệu trên.                         |
-|  vlsp2016<br/>&nbsp;&nbsp;&nbsp; corpus<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; train.txt<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; test.txt<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dev.txt<br/>&nbsp;&nbsp;&nbsp; raw<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; train.txt<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; test.txt<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dev.txt<br/>&nbsp;&nbsp;&nbsp; preprocess.py                                                                              | Dữ liệu từ vlsp 2016 định dạng CoNLL đã phân làm các file train, test, dev tương ứng  được lưu tại thư mục rawFile preprocess.py biến đổi dữ liệu trên về các file tương ứng với định dạng: ``` Chúng BW ta IW thường BW nói BW đến BW Rau BW sạch IW ``` |
-| experiments                                                                                                                                                                                                       | chứa các thử nghiệm và đánh giá mô hình với các feature và model.                                                                                                                                                                                         |
-| crf<br/>&nbsp;&nbsp;&nbsp; models<br/>&nbsp;&nbsp;&nbsp; exported<br/>&nbsp;&nbsp;&nbsp; load_data.py<br/>&nbsp;&nbsp;&nbsp; score.py<br/>&nbsp;&nbsp;&nbsp; train.py<br/>&nbsp;&nbsp;&nbsp;&nbsp;custom_transformer.py<br/>&nbsp;&nbsp;&nbsp;&nbsp;feature_template.py<br/>&nbsp;&nbsp;&nbsp;&nbsp;test_model.py<br/>&nbsp;&nbsp;&nbsp;&nbsp;analyze.py<br/>&nbsp;&nbsp;&nbsp;&nbsp;to_column.py<br/>&nbsp;&nbsp;&nbsp;&nbsp;model.py                                                                                                          | Thử nghiệm model crf tại file train.py sử dụng các feature tại feature_temple.py và các biến đổi từ custom_transformer.py trên dữ liệu vlsp2016 được lấy từ load_data.py. File score.py giúp đưa ra các đánh giá dựa trên tỉ số F1. Mô hình được kiểm thử với các thí nghiệm nhỏ tại file test_model.py. Đánh giá mô hình trên dữ liệu test được thực hiện tại file analyze.py                       |
-| crf_techbk<br/>&nbsp;&nbsp;&nbsp; feature_engineering<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; crfutils.py<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; features.py<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; word_pattern.py<br/>&nbsp;&nbsp;&nbsp; models<br/>&nbsp;&nbsp;&nbsp; tools<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; readers.py<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; writers.py<br/>&nbsp;&nbsp;&nbsp; load_data.py<br/>&nbsp;&nbsp;&nbsp; model.py<br/>&nbsp;&nbsp;&nbsp; predict.py<br/>&nbsp;&nbsp;&nbsp; process.py<br/>&nbsp;&nbsp;&nbsp; text.py<br/>&nbsp;&nbsp;&nbsp; words.txt              |Thử nghiệm model crf tại file model.py sử dụng các feature tại thư mục feature_engineering và các biến đổi từ preprocess.py trên dữ liệu vlsp2016 được lấy từ load_data.py, đồng thời đưa ra các đánh giá dựa trên tỉ số F1.
+```
+word_sent/
+  ├─ data/                                  <!-- chứa dữ liệu trong quá trình huấn luyện và đánh giá mô hình
+  |   ├── anonymous/
+  |   |     ├── corpus/                     <!-- dữ liệu sau quá trình tiền xử lí 
+  |   |     │   ├── test
+  |   |     │   └── train
+  |   |     ├── eda/                        <!-- tổng quát về dữ liệu
+  |   |     │   └── stats.txt
+  |   |     ├── raw/                        <!-- chứa dữ liệu thô
+  |   |     │    ├── input
+  |   |     │    └── output
+  |   |     ├── eda.py
+  |   |     └── preprocess.py               <!-- tiền xử lí dữ liệu 
+  |   |
+  |   └─── vlsp2016/                        <!-- dữ liệu từ vlsp 2016
+  |         ├── corpus/   
+  |         │   ├── dev.txt                 <!-- dữ liệu đánh giá trong quá trình huấn luyện
+  |         │   ├── test.txt                <!-- dữ liệu đánh giá mô hình
+  |         │   └── train.txt               <!-- dữ liệu huấn luyện
+  |         ├── raw/                        <!-- dữ liệu thô
+  |         │   ├── dev.txt
+  |         │   ├── test.txt
+  |         │   └── train.tx
+  |         └── preprocess.py               <!-- các bước tiền xử lí dữ liệu thô đưa vào corpus
+  |
+  └─ experiments/                           <!-- chứa các thí nghiệm với feature và model.
+      ├── crf/                              <!-- thử nghiệm mô hình với CRF
+      |     ├── exported/                   <!-- kết quả thử nghiệm
+      |     │   ├── reports.txt
+      |     ├── model/                      
+      |     │   ├── __init__.py             <!-- hàm tách từ
+      |     │   ├── model.bin
+      |     │   └── transformer.bin
+      |     ├── analyze.py                  <!-- đánh giá mô hình với dữ liệu test 
+      |     ├── custom_transformer.py       <!-- các bước biến đổi dữ liệu
+      |     ├── load_data.py                <!-- lấy dữ liệu từ corpus
+      |     ├── model.py                    <!-- các quá trình huấn luyện dữ liệu
+      |     ├── punctuation.txt                
+      |     ├── score.py                    <!-- kết quả f1 của mô hình
+      |     ├── test_model.py               <!-- các thí nghiệm nhỏ kiểm tra hoạt động của mô hình
+      |     ├── train.py                    <!-- các bước thực hiện huấn luyện
+      |     └── to_column.py                <!-- biến dữ liệu dạng câu thành dạng CoNLL
+      |
+      └── crf_techbk/
+            ├── feature_engineering/        <!-- các tính năng cho mô hình
+            |   ├── __init__.py
+            │   ├── crfutils.py
+            │   ├── features.py
+            │   └── word_pattern.py
+            ├── model/                      <!-- chứa mô hình sau khi huấn luyện
+            │   └── model.bin
+            ├── tools/ 
+            │   ├── __init__.py
+            │   ├── readers.py              <!-- đọc dữ liệu
+            │   └── writers.bin             <!-- định dạng dữ liệu
+            ├── load_data.py                <!-- lấy dữ liệu từ corpus
+            ├── model.py                    <!-- huấn luyện dữ liệu
+            ├── predict.py                  <!-- tách từ, sử dụng mô hình đã huấn luyện
+            ├── process.py                  <!-- trích rút đặc trưng
+            ├── reports.txt                 <!-- kết quả đánh giá mô hình
+            ├── text.py                     
+            └── words.py                    <!-- từ điển tiếng Việt
+```
 ## Xây dựng mô hình
 
-<strong>Bước 1</strong>: Tiền xử lí dữ liệu (dữ liệu vlsp2016). 
+**Bước 1**: Tiền xử lí dữ liệu (dữ liệu vlsp2016). 
 
-Dữ liệu trước xử lí đặt tại thư mục raw gồm các file text: train, dev, test. Quá trình tiền xử lí bao gồm các bước: lấy token tại cột đầu tiên của dữ liệu raw, biến đổi từng token với mỗi token đơn thành "BW", với những token gồm word và dấu "_" thì word đầu tiên là "BW", các word sau là "IW". 
+Dữ liệu trước xử lí đặt tại thư mục raw gồm các file text: `train.txt`, `dev.txt`, `test.txt`. Quá trình tiền xử lí bao gồm các bước: lấy token tại cột đầu tiên của dữ liệu raw, biến đổi từng token với mỗi token đơn thành `BW`, với những token gồm word và dấu `_` thì word đầu tiên là `BW`, các word sau là `IW`. 
 
 Dữ liệu sau khi xử lí sẽ được đưa vào các file tương ứng trong corpus.
 
-<strong>Bước 2</strong>: Huấn luyện dữ liệu
+**Bước 2**: Huấn luyện dữ liệu
 
-Lấy dữ liệu từ corpus bằng hàm load_data. 
+Lấy dữ liệu từ corpus bằng hàm `load_data`. 
 
-Sau đó biến đổi dữ liệu bằng hàm custom_transformer với các temple lấy từ file feature_template.py. Chia dữ liệu thành 2 phần train và test bằng hàm train_test_split với test_size=0.1. 
+Sau đó biến đổi dữ liệu bằng hàm `custom_transformer` với các temple lấy từ file `feature_template.py`. Chia dữ liệu thành 2 phần train và test bằng hàm `train_test_split` với `test_size=0.1`. 
 
-Sử dụng CRF để huấn luyện dữ liệu train đã được chia. Mô hình được đóng gói thành file model.bin và lưu tại thư mục models.
+Sử dụng CRF để huấn luyện dữ liệu `train` đã được chia từ bước trên. Mô hình và các biến đổi dữ liệu được đóng gói lần lượt thành file `model.bin`, `transfomer.bin` và lưu tại thư mục model.
 
-<strong>Bước 3</strong>: Đánh giá mô hình
-Từ mô hình đã huấn luyện, tiến hành dự đoán với dữ liệu test. So sánh dữ liệu dự đoán và dữ liệu đánh giá để tính chỉ số F1.
+**Bước 3**: Đánh giá mô hình
+
+Từ mô hình đã huấn luyện, tiến hành dự đoán với dữ liệu `test`. So sánh dữ liệu dự đoán và dữ liệu đánh giá để tính chỉ số `F1`.
 

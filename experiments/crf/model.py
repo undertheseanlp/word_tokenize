@@ -36,7 +36,7 @@ class CRFModel(Model):
             # include transitions that are possible, but not observed
             'feature.possible_transitions': True
         }
-        file_name = join(dirname(__file__), "models", "model.bin")
+        file_name = join(dirname(__file__), "model", "model.bin")
         X_train, X_dev, y_train, y_dev = train_test_split(self.X, self.y, test_size=0.01)
         self.estimator = CRF(params=crf_params, filename=file_name)
         self.estimator.fit(X_train, y_train)
@@ -45,4 +45,4 @@ class CRFModel(Model):
         print("dev score: ", f1)
 
     def export(self):
-        joblib.dump(self.transformer, "models/transformer.bin")
+        joblib.dump(self.transformer, "model/transformer.bin")

@@ -41,5 +41,4 @@ def word_sent(sentence, format=None):
         y = [estimator.tag(x) for x in X]
         end = time.time()
         test_time = end - start
-        print("test time: ", test_time)
         return y, test_time
