@@ -35,8 +35,8 @@ def train_test(data=None):
     end = time.time()
     test_time = end - start
     F1 = metrics.flat_f1_score(y_test, y_pred, average='weighted')
-    print(F1)
-    print(test_time)
+    print("F1: ", F1)
+    print("Test time: ", test_time)
 
     print(metrics.flat_classification_report(
         y_test, y_pred, digits=3
