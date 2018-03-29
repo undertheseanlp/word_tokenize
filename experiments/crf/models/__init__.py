@@ -7,9 +7,7 @@ import pycrfsuite
 from to_columns import to_column
 
 sys.path.insert(0, dirname(__file__))
-
 transformer = joblib.load(join(dirname(__file__), "transformer.bin"))
-
 model = join(dirname(__file__), "model.bin")
 estimator = pycrfsuite.Tagger()
 estimator.open(model)
