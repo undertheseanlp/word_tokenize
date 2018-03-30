@@ -3,8 +3,7 @@ from os.path import join, dirname
 from load_data import load_dataset
 from custom_transformer import CustomTransformer
 from feature_template import template
-from model import CRFModel
-
+from models import CRFModel
 
 if __name__ == '__main__':
     sentences = []

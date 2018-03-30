@@ -21,7 +21,7 @@ def to_column(sentence):
             for i in range(len(tokens)):
                 if i == 0:
                     if tokens[i] != "":
-                        result.append([tokens[i], "BW"])
+                        result.append([tokens[i], "B-W"])
                 else:
-                    result.append([tokens[i], "IW"])
+                    result.append([tokens[i], "I-W"])
     return result

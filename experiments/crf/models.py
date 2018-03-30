@@ -7,8 +7,8 @@ from score import multilabel_f1_score
 
 
 class Model:
-    def __init__(self, transformers):
-        self.transformers = transformers
+    def __init__(self, transformer):
+        self.transformer = transformer
 
     def transform(self):
         raise Exception("Need implement")

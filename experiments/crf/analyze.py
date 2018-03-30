@@ -14,7 +14,7 @@ transformer = joblib.load(join(dirname(__file__), "model", "transformer.bin"))
 X_test, y_test = transformer.transform(sentences)
 y_predict, test_time = word_sent(sentences)
 f1 = multilabel_f1_score(y_test, y_predict)
-score = "f1 score: " + str(f1) + "\n" + "Test time: " + str(test_time)
-with open("exported/reports.txt", "w") as f:
+score = "F1 score: " + str(f1) + "\n" + "Test time: " + str(test_time)
+with open("reports.txt", "w") as f:
     f.write(score)
 print(score)

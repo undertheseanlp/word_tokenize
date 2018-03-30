@@ -25,7 +25,7 @@ def preprocess(sentences):
     def process_token(t):
         tokens = t[0].split("_")
         tokens = [token for i, token in enumerate(tokens)]
-        output = [[token, "BW"] if i == 0 else [token, "IW"] for i, token in enumerate(tokens)]
+        output = [[token, "B-W"] if i == 0 else [token, "I-W"] for i, token in enumerate(tokens)]
         return output
 
     def flat_list(l):

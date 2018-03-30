@@ -21,7 +21,7 @@ def word_sent(sentence, format=None):
         tokenized_sentence = u""
         text = [i[0] for i in sentence]
         for tag, word in zip(y[0], text):
-            if tag == "IW":
+            if tag == "I-W":
                 tokenized_sentence = tokenized_sentence + u"_" + word
             else:
                 tokenized_sentence = tokenized_sentence + word
