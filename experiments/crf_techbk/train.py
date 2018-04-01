@@ -7,6 +7,37 @@ from load_data import get_tokenizer
 import time
 
 
+###
+# Bước 1: Lựa chọn mô hình (train + dev/ test)
+# CRF1 -> model -> score1
+# CRF2 -> model -> score2
+# CRF1 + params1 -> model -> score3
+# CRF2 + params2 -> model -> score4
+# -> best_model (Estimator + Feature Selector)
+# << model.py + interface Model >>
+
+
+# Bước 2: Tạo file predict -> Train full trên toàn bộ dữ liệu (train + dev + test)
+# Model -> best_model -> final_function
+# -> 1: text -> Transformer -> vector
+# -> 2: vector -> Estimator -> y
+# -> 3: y -> Transformer -> y
+# Benchmark final_function -> (F1 score + speed score)
+###
+
+class Model:
+    def train(self, train_set):
+        pass
+
+    def test(self, dev_set):
+        pass
+
+class Model1(Model):
+    def train(self):
+        pass
+    def test(self):
+        pass
+
 def train_test(data=None):
     train_sents, dev_sents, test_sents = data or get_tokenizer()
 
@@ -27,7 +58,7 @@ def train_test(data=None):
         c2=0.1,
         max_iterations=100,
         all_possible_transitions=True,
-        model_filename='models/model.bin'
+        model_filename='model/model.bin'
     )
     crf.fit(X_train, y_train, X_dev=X_dev, y_dev=y_dev)
     start = time.time()
@@ -41,6 +72,10 @@ def train_test(data=None):
     print(metrics.flat_classification_report(
         y_test, y_pred, digits=3
     ))
+
+
+def test():
+    print("Test")
 
 
 def train_full(data=None):

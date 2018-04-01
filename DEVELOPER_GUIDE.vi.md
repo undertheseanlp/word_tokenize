@@ -1,21 +1,10 @@
 # Xây dựng model tách từ trong xử lí văn bản tiếng Việt
 
 ## Cấu trúc
+
 ```
-word_sent/
-  ├─ data/                                  <!-- chứa dữ liệu trong quá trình huấn luyện và đánh giá mô hình
-  |   ├── anonymous/
-  |   |     ├── corpus/                     <!-- dữ liệu sau quá trình tiền xử lí 
-  |   |     │   ├── test
-  |   |     │   └── train
-  |   |     ├── eda/                        <!-- tổng quát về dữ liệu
-  |   |     │   └── stats.txt
-  |   |     ├── raw/                        <!-- chứa dữ liệu thô
-  |   |     │    ├── input
-  |   |     │    └── output
-  |   |     ├── eda.py
-  |   |     └── preprocess.py               <!-- tiền xử lí dữ liệu 
-  |   |
+word_tokenize/
+  ├─ data/                                  <!-- chứa dữ liệu trong quá trình huấn luyện và đánh giá mô hình 
   |   └─── vlsp2016/                        <!-- dữ liệu từ vlsp 2016
   |         ├── corpus/   
   |         │   ├── dev.txt                 <!-- dữ liệu đánh giá trong quá trình huấn luyện
@@ -26,7 +15,6 @@ word_sent/
   |         │   ├── test.txt
   |         │   └── train.tx
   |         └── preprocess.py               <!-- các bước tiền xử lí dữ liệu thô đưa vào corpus
-  |
   └─ experiments/                           <!-- chứa các thí nghiệm với feature và model.
       ├── crf/                              <!-- thử nghiệm mô hình với CRF
       |     ├── exported/                   <!-- kết quả thử nghiệm
@@ -44,7 +32,6 @@ word_sent/
       |     ├── test_model.py               <!-- các thí nghiệm nhỏ kiểm tra hoạt động của mô hình
       |     ├── train.py                    <!-- các bước thực hiện huấn luyện
       |     └── to_column.py                <!-- biến dữ liệu dạng câu thành dạng CoNLL
-      |
       └── crf_techbk/
             ├── feature_engineering/        <!-- các tính năng cho mô hình
             |   ├── __init__.py
@@ -67,11 +54,11 @@ word_sent/
 ```
 ## Xây dựng mô hình
 
-**Bước 1**: Tiền xử lí dữ liệu (dữ liệu vlsp2016). 
+**Bước 1**: Chuẩn bị dữ liệu  
 
 Dữ liệu trước xử lí đặt tại thư mục raw gồm các file text: `train.txt`, `dev.txt`, `test.txt`. Quá trình tiền xử lí bao gồm các bước: lấy token tại cột đầu tiên của dữ liệu raw, biến đổi từng token với mỗi token đơn thành `BW`, với những token gồm word và dấu `_` thì word đầu tiên là `BW`, các word sau là `IW`. 
 
-Dữ liệu sau khi xử lí sẽ được đưa vào các file tương ứng trong corpus.
+Dữ liệu sau khi xử lí sẽ được đưa vào các file tương ứng trong `corpus`.
 
 **Bước 2**: Huấn luyện dữ liệu
 
