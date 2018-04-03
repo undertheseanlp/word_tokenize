@@ -1,11 +1,24 @@
+"""
+File output co dang nhu CONLL
+
+Toi B-W I-W
+la B-W B-W
+...
+...
+
+"""
 import sys
-from os.path import dirname, join
+import argparse
 
-current_folder = dirname(__file__)
-# path = join(dirname(current_folder), "experiments", "abc")
-path = "../experiments/abc"
-print(path)
-sys.path.append(path)
 
-from final_model import f1
-f1()
+def main(exp_path):
+    pass
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("output_test", type=str, help="File output test")
+
+    args = parser.parse_args()
+
+    main(**vars(args))
