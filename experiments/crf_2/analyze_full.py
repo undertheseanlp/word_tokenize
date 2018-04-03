@@ -7,8 +7,8 @@ from sklearn_crfsuite import metrics
 from load_data import load_dataset
 
 
-transformer = joblib.load(join(dirname(__file__), "model", "transformer.bin"))
-path = join(dirname(__file__), "model", "model.bin")
+transformer = joblib.load(join(dirname(__file__), "final_model", "transformer.bin"))
+path = join(dirname(__file__), "final_model", "model.bin")
 estimator = pycrfsuite.Tagger()
 estimator.open(path)
 
@@ -21,5 +21,5 @@ test_time = end - start
 f1_test_score = metrics.flat_f1_score(y_test, y_pred, average='weighted')
 print("F1 score: ", f1_test_score)
 print("Test time: ", test_time)
-with open("report.txt", "w") as f:
+with open("report_full.txt", "w") as f:
     f.write("F1 score: " + str(f1_test_score) + "\n" + "Test time: " + str(test_time))
