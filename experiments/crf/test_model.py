@@ -1,22 +1,28 @@
 from unittest import TestCase
-from model import word_sent
+from final_model import word_tokenize
 
 
 class TestWordSent(TestCase):
-    def test_word_sent_1(self):
-        text = "Thủ tướng quyết định mở rộng Sân bay Tân Sơn Nhất về phía Nam"
-        actual = word_sent(text, format="text")
-        expected = 'Thủ_tướng quyết_định mở_rộng Sân_bay Tân_Sơn_Nhất về phía Nam'
+    def test_word_tokenize_1(self):
+        text = "Vẫn trăn trở việc phá dỡ công trình xâm hại di sản Tràng An"
+        actual = word_tokenize(text, format="text")
+        expected = 'Vẫn trăn_trở việc phá dỡ công_trình xâm_hại di_sản Tràng_An'
         self.assertEquals(actual, expected)
 
-    def test_word_sent_2(self):
-        text = "HLV Park Hang Seo thực hiện một thử nghiệm khá thành công ở trận đấu giữa đội tuyển Việt Nam và Jordan"
-        actual = word_sent(text, format="text")
-        expected = 'HLV Park_Hang_Seo thực_hiện một thử_nghiệm khá thành_công ở trận đấu giữa đội_tuyển Việt_Nam và Jordan'
+    def test_word_tokenize_2(self):
+        text = "Người đàn ông nhịn đói đi bộ suốt 6 ngày để trốn khỏi trại vàng"
+        actual = word_tokenize(text, format="text")
+        expected = 'Người đàn_ông nhịn_đói đi_bộ suốt 6 ngày để trốn khỏi trại vàng'
         self.assertEquals(actual, expected)
 
-    def test_word_sent_3(self):
-        text = "Chúng ta thường nói đến Rau sạch, Rau an toàn để phân biệt với các rau bình thường bán ngoài chợ."
-        actual = word_sent(text, format="text")
-        expected = 'Chúng_ta thường nói đến Rau sạch, Rau an_toàn để phân_biệt với các rau bình_thường bán ngoài chợ.'
+    def test_word_tokenize_3(self):
+        text = "Nông dân Hà Nội tất bật thu hoạch dâu chín"
+        actual = word_tokenize(text, format="text")
+        expected = 'Nông_dân Hà_Nội tất_bật thu_hoạch dâu chín'
+        self.assertEqual(actual, expected)
+
+    def test_word_tokenize_4(self):
+        text = "Nghi vấn mới về hung thủ hạ độc cựu điệp viên hai mang Nga"
+        actual = word_tokenize(text, format="text")
+        expected = 'Nghi_vấn mới về hung_thủ hạ độc cựu điệp_viên hai mang Nga'
         self.assertEqual(actual, expected)

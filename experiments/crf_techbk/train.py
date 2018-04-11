@@ -25,19 +25,6 @@ import time
 # Benchmark final_function -> (F1 score + speed score)
 ###
 
-class Model:
-    def train(self, train_set):
-        pass
-
-    def test(self, dev_set):
-        pass
-
-class Model1(Model):
-    def train(self):
-        pass
-    def test(self):
-        pass
-
 def train_test(data=None):
     train_sents, dev_sents, test_sents = data or get_tokenizer()
 
@@ -72,10 +59,6 @@ def train_test(data=None):
     print(metrics.flat_classification_report(
         y_test, y_pred, digits=3
     ))
-
-
-def test():
-    print("Test")
 
 
 def train_full(data=None):

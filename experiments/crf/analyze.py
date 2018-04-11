@@ -1,19 +1,25 @@
 from os.path import join, dirname
+import time
 import joblib
-
-from experiments.crf.score import multilabel_f1_score
-from load_data import load_dataset
-from model import word_tokenize
+import pycrfsuite
 from sklearn_crfsuite import metrics
 
-sentences = []
-test_data = join(dirname(dirname(dirname(__file__))), "data", "vlsp2016", "corpus", "test.txt")
-sentences += load_dataset(test_data)
-sentences = sentences[:100]
-transformer = joblib.load(join(dirname(__file__), "model", "transformer.bin"))
-X_test, y_test = transformer.transform(sentences)
+from load_data import load_dataset
 
-y_predict, test_time = word_tokenize(sentences)
-F1 = multilabel_f1_score(y_test, y_predict)
-print("F1: ", F1)
-print(0)
+
+transformer = joblib.load(join(dirname(__file__), "model", "transformer.bin"))
+path = join(dirname(__file__), "model", "model.bin")
+estimator = pycrfsuite.Tagger()
+estimator.open(path)
+
+test_set = load_dataset(join(dirname(dirname(dirname(__file__))), "data", "vlsp2016", "corpus", "test.txt"))
+X_test, y_test = transformer.transform(test_set)
+start = time.time()
+y_pred = [estimator.tag(x) for x in X_test]
+end = time.time()
+test_time = end - start
+f1_test_score = metrics.flat_f1_score(y_test, y_pred, average='weighted')
+print("F1 score: ", f1_test_score)
+print("Test time: ", test_time)
+with open("report.txt", "w") as f:
+    f.write("F1 score: " + str(f1_test_score) + "\n" + "Test time: " + str(test_time))
