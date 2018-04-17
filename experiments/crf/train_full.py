@@ -1,5 +1,4 @@
 from os.path import join, dirname
-import time
 
 import joblib
 from languageflow.model.crf import CRF
@@ -7,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn_crfsuite import metrics
 
 from load_data import load_dataset
-from custom_transformer import CustomTransformer
+from transformer.custom_transformer import CustomTransformer
 from feature_template import template
 
 
