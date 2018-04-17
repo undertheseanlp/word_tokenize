@@ -7,14 +7,14 @@ from transformer.path import get_dictionary_path
 words = DictionaryLoader(get_dictionary_path()).words
 lower_words = set([word.lower() for word in words])
 
-def text_lower(word):
+cdef text_lower(str word):
     return word.lower()
 
 
-def text_isdigit(word):
+cdef text_isdigit(word):
     return str(word.isdigit())
 
-def text_isallcap(word):
+cdef text_isallcap(word):
     word = Text(word)
     for letter in word:
         if not letter.istitle():
@@ -22,7 +22,7 @@ def text_isallcap(word):
     return True
 
 
-def text_istitle(word):
+cdef text_istitle(word):
     word = Text(word)
     if len(word) == 0:
         return False
@@ -51,7 +51,7 @@ def apply_function(name, word):
     return functions[name](word)
 
 
-def template2features(sent, i, token_syntax, debug=True):
+cdef template2features(sent, int i, str token_syntax, debug=True):
     """
     :type token: object
     """
@@ -61,6 +61,7 @@ def template2features(sent, i, token_syntax, debug=True):
     matched = re.match(
         "T\[(?P<index1>\-?\d+)(\,(?P<index2>\-?\d+))?\](\[(?P<column>.*)\])?(\.(?P<function>.*))?",
         token_syntax)
+    cdef int index1
     column = matched.group("column")
     column = int(column) if column else 0
     index1 = int(matched.group("index1"))
@@ -88,11 +89,12 @@ def template2features(sent, i, token_syntax, debug=True):
     return ["%s%s" % (prefix, result)]
 
 
-def word2features(sent, i, template):
+cdef word2features(sent, int i, str* template):
     features = []
     for token_syntax in template:
         features.extend(template2features(sent, i, token_syntax))
     return features
+
 
 class TaggedTransformer:
     def __init__(self, template=None):

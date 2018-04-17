@@ -14,11 +14,11 @@ for f in ["train.txt", "dev.txt"]:
 train_set = train_set[:100]
 
 #
-# start = time.time()
-# transformer = tagged.TaggedTransformer(template)
-# X, y = transformer.transform(train_set)
-# end = time.time()
-# py = end - start
+start = time.time()
+transformer = tagged.TaggedTransformer(template)
+X, y = transformer.transform(train_set)
+end = time.time()
+py = end - start
 py = 1.7218
 
 start = time.time()
