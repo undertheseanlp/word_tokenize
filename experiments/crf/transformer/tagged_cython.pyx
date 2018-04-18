@@ -1,22 +1,22 @@
 import re
 from os.path import join, dirname
-from languageflow.transformer.text import Text
 from languageflow.reader.dictionary_loader import DictionaryLoader
 from transformer.path import get_dictionary_path
 from libcpp cimport bool
+from libcpp.vector cimport vector
+from libcpp.string cimport string
 
 words = DictionaryLoader(get_dictionary_path()).words
 lower_words = set([word.lower() for word in words])
 
-cdef text_lower(str word):
+cdef text_lower(word):
     return word.lower()
 
 
 cdef text_isdigit(word):
-    return str(word.isdigit())
+    return word.isdigit()
 
 cdef text_isallcap(word):
-    word = Text(word)
     for letter in word:
         if not letter.istitle():
             return False
@@ -24,7 +24,6 @@ cdef text_isallcap(word):
 
 
 cdef text_istitle(word):
-    word = Text(word)
     if len(word) == 0:
         return False
     try:
@@ -37,11 +36,11 @@ cdef text_istitle(word):
         return False
 
 
-def text_is_in_dict(word):
-    return str(word.lower() in lower_words)
+cdef text_is_in_dict(word):
+    return word.lower() in lower_words
 
 
-def apply_function(name, word):
+cdef apply_function(name, word):
     functions = {
         "lower": text_lower,
         "istitle": text_istitle,
@@ -52,29 +51,25 @@ def apply_function(name, word):
     return functions[name](word)
 
 
-cdef template2features(list sent, list columns, int size, int i, str token_syntax, int debug=1):
+cdef template2features(list sent, list columns, int size, int i,
+                       token_syntax,
+                       int column, int index1, index2, func,
+                       int debug=1):
     """
     :type token: object
     """
-    matched = re.match(
-        "T\[(?P<index1>\-?\d+)(\,(?P<index2>\-?\d+))?\](\[(?P<column>.*)\])?(\.(?P<function>.*))?", token_syntax)
-    cdef int index1
-    column = matched.group("column")
-    column = int(column) if column else 0
-    index1 = int(matched.group("index1"))
-    index2 = matched.group("index2")
-    index2 = int(index2) if index2 else None
-    func = matched.group("function")
+    cdef s1
+    cdef prefix
     if debug:
-        prefix = "%s=" % token_syntax
+        prefix = token_syntax + "="
     else:
         prefix = ""
     if i + index1 < 0:
         return "%sBOS" % prefix
-    if i + index1 >= len(sent):
+    if i + index1 >= size:
         return "%sEOS" % prefix
     if index2 is not None:
-        if i + index2 >= len(sent):
+        if i + index2 >= size:
             return "%sEOS" % prefix
         word = " ".join(columns[column][i + index1: i + index2 + 1])
     else:
@@ -85,17 +80,38 @@ cdef template2features(list sent, list columns, int size, int i, str token_synta
         result = word
     return "%s%s" % (prefix, result)
 
+cdef vector[vector[string]] fa():
+    cdef vector[vector[string]] output
+    output = [["a", "b", "c"]]
+    return output
 
-cdef list word2features(list sent, int i, list template):
+cdef list word2features(list sent, int i, template):
     cdef list features = []
     cdef int x = 0
-    cdef str output
+    cdef output
     cdef list columns = []
+
+    cdef int column
+    cdef int index1
+
     for j in range(len(sent[0])):
         columns.append([t[j] for t in sent])
     cdef int size = len(sent)
     for token_syntax in template:
-        output = template2features(sent, columns, size, i, token_syntax)
+        matched = re.match(
+        "T\[(?P<index1>\-?\d+)(\,(?P<index2>\-?\d+))?\](\[(?P<column>.*)\])?(\.(?P<function>.*))?", token_syntax)
+        column_ = matched.group("column")
+        if column_:
+            column = int(column_)
+        else:
+            column = 0
+        index1 = int(matched.group("index1"))
+        index2 = matched.group("index2")
+        index2 = int(index2) if index2 else None
+        func = matched.group("function")
+        output = template2features(sent, columns, size, i,
+                                   token_syntax,
+                                   column, index1, index2, func)
         features.append(output)
     return features
 
@@ -120,3 +136,6 @@ class TaggedTransformer:
 
     def sentence2labels(self, s):
         return [row[-1] for row in s]
+
+    def fa2(self):
+        return fa()
