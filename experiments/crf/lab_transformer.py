@@ -11,7 +11,7 @@ for f in ["train.txt", "dev.txt"]:
                 "corpus", f)
     train_set += load_dataset(file)
 
-train_set = train_set[:100]
+train_set = train_set[:10000]
 
 start = time.time()
 transformer = tagged.TaggedTransformer(template)
@@ -29,6 +29,7 @@ cy = end - start
 # tagged_cython.TaggedTransformer().fa2()
 print("Python:", py)
 print("Cython:", cy)
-
+assert(X1 == X2)
 print("Cython is {:0.3f}x faster ^-^".format(py / cy))
+
 # transformer.tagged: 1.778

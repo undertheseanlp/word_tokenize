@@ -1,11 +1,8 @@
 import re
-from os.path import join, dirname
-
 from cymem.cymem cimport Pool
 from languageflow.reader.dictionary_loader import DictionaryLoader
 from transformer.path import get_dictionary_path
 from libcpp cimport bool
-from libcpp.vector cimport vector
 from libcpp.string cimport string
 
 words = DictionaryLoader(get_dictionary_path()).words
@@ -66,9 +63,7 @@ cdef str template2features(list sent, list columns,
         return prefix + "BOS"
     if i + feature.index1 >= size:
         return prefix + "EOS"
-
     if feature.has_index2:
-        print("match index2")
         if i + feature.index2 >= size:
             return prefix + "EOS"
         word = " ".join(columns[feature.column][i + feature.index1: i + feature.index2 + 1])
@@ -123,9 +118,9 @@ cdef class TaggedTransformer:
             string func = b''
             str syntax
             string token_syntax = b''
-            bool has_column = True
-            bool has_index2 = True
-            bool has_func = True
+            bool has_column
+            bool has_index2
+            bool has_func
         n_features = len(features)
         self.n_features = n_features
         self.mem = Pool()
@@ -140,15 +135,18 @@ cdef class TaggedTransformer:
             match_index2 = matched.group("index2")
             match_func = matched.group("func")
             if match_column:
+                has_column = True
                 column = int(match_column)
             else:
                 has_column = False
             index1 = int(match_index1)
             if match_index2:
+                has_index2 = True
                 index2 = int(match_index2)
             else:
                 has_index2 = False
             if match_func:
+                has_func = True
                 func = match_func.encode("utf-8")
             else:
                 has_func = False
