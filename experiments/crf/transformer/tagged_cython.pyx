@@ -5,6 +5,9 @@ from transformer.path import get_dictionary_path
 from libcpp cimport bool
 from libcpp.vector cimport vector
 from libcpp.string cimport string
+from cpython.version cimport PY_MAJOR_VERSION
+
+print(PY_MAJOR_VERSION)
 
 words = DictionaryLoader(get_dictionary_path()).words
 lower_words = set([word.lower() for word in words])
@@ -12,7 +15,7 @@ lower_words = set([word.lower() for word in words])
 cdef text_lower(word):
     return word.lower()
 
-
+text_lower_ = text_lower
 cdef text_isdigit(word):
     return word.isdigit()
 
@@ -52,7 +55,7 @@ cdef apply_function(name, word):
 
 
 cdef template2features(list sent, list columns, int size, int i,
-                       token_syntax,
+                       str token_syntax,
                        int column, int index1, index2, func,
                        int debug=1):
     """
@@ -80,9 +83,8 @@ cdef template2features(list sent, list columns, int size, int i,
         result = word
     return "%s%s" % (prefix, result)
 
-cdef vector[vector[string]] fa():
-    cdef vector[vector[string]] output
-    output = [["a", "b", "c"]]
+cdef vector[string] fa3():
+    output = [b'a', b'b', b'c']
     return output
 
 cdef list word2features(list sent, int i, template):
@@ -138,4 +140,4 @@ class TaggedTransformer:
         return [row[-1] for row in s]
 
     def fa2(self):
-        return fa()
+        return fa3()

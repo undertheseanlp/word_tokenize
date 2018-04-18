@@ -26,6 +26,7 @@ X, y = transformer.transform(train_set)
 end = time.time()
 cy = end - start
 
+# tagged_cython.TaggedTransformer().fa2()
 print("Python:", py)
 print("Cython:", cy)
 

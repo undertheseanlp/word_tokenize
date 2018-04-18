@@ -807,11 +807,11 @@ static const char *__pyx_f[] = {
 struct __pyx_obj___pyx_scope_struct____Pyx_CFunc_object____object___to_py;
 struct __pyx_opt_args_11transformer_13tagged_cython_template2features;
 
-/* "transformer/tagged_cython.pyx":54
+/* "transformer/tagged_cython.pyx":57
  * 
  * 
  * cdef template2features(list sent, list columns, int size, int i,             # <<<<<<<<<<<<<<
- *                        token_syntax,
+ *                        str token_syntax,
  *                        int column, int index1, index2, func,
  */
 struct __pyx_opt_args_11transformer_13tagged_cython_template2features {
@@ -1254,10 +1254,20 @@ static void __Pyx_AddTraceback(const char *funcname, int c_line,
                                int py_line, const char *filename);
 
 /* CIntToPy.proto */
-static CYTHON_INLINE PyObject* __Pyx_PyInt_From_long(long value);
+static CYTHON_INLINE PyObject* __Pyx_PyInt_From_int(int value);
+
+/* Print.proto */
+static int __Pyx_Print(PyObject*, PyObject *, int);
+#if CYTHON_COMPILING_IN_PYPY || PY_MAJOR_VERSION >= 3
+static PyObject* __pyx_print = 0;
+static PyObject* __pyx_print_kwargs = 0;
+#endif
 
 /* CIntToPy.proto */
-static CYTHON_INLINE PyObject* __Pyx_PyInt_From_int(int value);
+static CYTHON_INLINE PyObject* __Pyx_PyInt_From_long(long value);
+
+/* PrintOne.proto */
+static int __Pyx_PrintOne(PyObject* stream, PyObject *o);
 
 /* CIntFromPy.proto */
 static CYTHON_INLINE int __Pyx_PyInt_As_int(PyObject *);
@@ -1296,6 +1306,8 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 /* Module declarations from 'libcpp.string' */
 
+/* Module declarations from 'cpython.version' */
+
 /* Module declarations from 'transformer.tagged_cython' */
 static PyTypeObject *__pyx_ptype___pyx_scope_struct____Pyx_CFunc_object____object___to_py = 0;
 static PyObject *__pyx_f_11transformer_13tagged_cython_text_lower(PyObject *); /*proto*/
@@ -1305,19 +1317,17 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *);
 static PyObject *__pyx_f_11transformer_13tagged_cython_text_is_in_dict(PyObject *); /*proto*/
 static PyObject *__pyx_f_11transformer_13tagged_cython_apply_function(PyObject *, PyObject *); /*proto*/
 static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObject *, PyObject *, int, int, PyObject *, int, int, PyObject *, PyObject *, struct __pyx_opt_args_11transformer_13tagged_cython_template2features *__pyx_optional_args); /*proto*/
-static std::vector<std::vector<std::string> >  __pyx_f_11transformer_13tagged_cython_fa(void); /*proto*/
+static std::vector<std::string>  __pyx_f_11transformer_13tagged_cython_fa3(void); /*proto*/
 static PyObject *__pyx_f_11transformer_13tagged_cython_word2features(PyObject *, int, PyObject *); /*proto*/
 static PyObject *__Pyx_CFunc_object____object___to_py(PyObject *(*)(PyObject *)); /*proto*/
 static std::string __pyx_convert_string_from_py_std__in_string(PyObject *); /*proto*/
 static std::vector<std::string>  __pyx_convert_vector_from_py_std_3a__3a_string(PyObject *); /*proto*/
-static std::vector<std::vector<std::string> >  __pyx_convert_vector_from_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___(PyObject *); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyObject_string_to_py_std__in_string(std::string const &); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyUnicode_string_to_py_std__in_string(std::string const &); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyStr_string_to_py_std__in_string(std::string const &); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyBytes_string_to_py_std__in_string(std::string const &); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyByteArray_string_to_py_std__in_string(std::string const &); /*proto*/
 static PyObject *__pyx_convert_vector_to_py_std_3a__3a_string(const std::vector<std::string>  &); /*proto*/
-static PyObject *__pyx_convert_vector_to_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___(const std::vector<std::vector<std::string> >  &); /*proto*/
 #define __Pyx_MODULE_NAME "transformer.tagged_cython"
 extern int __pyx_module_is_main_transformer__tagged_cython;
 int __pyx_module_is_main_transformer__tagged_cython = 0;
@@ -1337,10 +1347,12 @@ static const char __pyx_k__3[] = "=";
 static const char __pyx_k__4[] = "";
 static const char __pyx_k_re[] = "re";
 static const char __pyx_k_doc[] = "__doc__";
+static const char __pyx_k_end[] = "end";
 static const char __pyx_k_fa2[] = "fa2";
 static const char __pyx_k_row[] = "row";
 static const char __pyx_k_s_s[] = "%s%s";
 static const char __pyx_k_tmp[] = "tmp";
+static const char __pyx_k_file[] = "file";
 static const char __pyx_k_init[] = "__init__";
 static const char __pyx_k_join[] = "join";
 static const char __pyx_k_main[] = "__main__";
@@ -1353,6 +1365,7 @@ static const char __pyx_k_wrap[] = "wrap";
 static const char __pyx_k_group[] = "group";
 static const char __pyx_k_lower[] = "lower";
 static const char __pyx_k_match[] = "match";
+static const char __pyx_k_print[] = "print";
 static const char __pyx_k_range[] = "range";
 static const char __pyx_k_split[] = "split";
 static const char __pyx_k_words[] = "words";
@@ -1375,6 +1388,7 @@ static const char __pyx_k_metaclass[] = "__metaclass__";
 static const char __pyx_k_sentences[] = "sentences";
 static const char __pyx_k_transform[] = "transform";
 static const char __pyx_k_is_in_dict[] = "is_in_dict";
+static const char __pyx_k_text_lower[] = "text_lower_";
 static const char __pyx_k_cfunc_to_py[] = "cfunc.to_py";
 static const char __pyx_k_lower_words[] = "lower_words";
 static const char __pyx_k_stringsource[] = "stringsource";
@@ -1408,15 +1422,17 @@ static PyObject *__pyx_n_s_TaggedTransformer_transform;
 static PyObject *__pyx_n_s_X;
 static PyObject *__pyx_kp_s__3;
 static PyObject *__pyx_kp_s__4;
-static PyObject *__pyx_n_s_a;
-static PyObject *__pyx_n_s_b;
-static PyObject *__pyx_n_s_c;
+static PyObject *__pyx_n_b_a;
+static PyObject *__pyx_n_b_b;
+static PyObject *__pyx_n_b_c;
 static PyObject *__pyx_n_s_cfunc_to_py;
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_n_s_column;
 static PyObject *__pyx_n_s_dirname;
 static PyObject *__pyx_n_s_doc;
+static PyObject *__pyx_n_s_end;
 static PyObject *__pyx_n_s_fa2;
+static PyObject *__pyx_n_s_file;
 static PyObject *__pyx_n_s_function;
 static PyObject *__pyx_n_s_get_dictionary_path;
 static PyObject *__pyx_n_s_group;
@@ -1441,6 +1457,7 @@ static PyObject *__pyx_n_s_module;
 static PyObject *__pyx_n_s_os_path;
 static PyObject *__pyx_n_s_output;
 static PyObject *__pyx_n_s_prepare;
+static PyObject *__pyx_n_s_print;
 static PyObject *__pyx_n_s_qualname;
 static PyObject *__pyx_n_s_range;
 static PyObject *__pyx_n_s_re;
@@ -1458,6 +1475,7 @@ static PyObject *__pyx_kp_s_stringsource;
 static PyObject *__pyx_kp_s_tagged_cython_pyx;
 static PyObject *__pyx_n_s_template;
 static PyObject *__pyx_n_s_test;
+static PyObject *__pyx_n_s_text_lower;
 static PyObject *__pyx_n_s_tmp;
 static PyObject *__pyx_n_s_transform;
 static PyObject *__pyx_n_s_transformer_path;
@@ -1494,7 +1512,7 @@ static PyObject *__pyx_codeobj__19;
 static PyObject *__pyx_codeobj__21;
 /* Late includes */
 
-/* "transformer/tagged_cython.pyx":12
+/* "transformer/tagged_cython.pyx":15
  * lower_words = set([word.lower() for word in words])
  * 
  * cdef text_lower(word):             # <<<<<<<<<<<<<<
@@ -1510,15 +1528,15 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_lower(PyObject *__py
   PyObject *__pyx_t_3 = NULL;
   __Pyx_RefNannySetupContext("text_lower", 0);
 
-  /* "transformer/tagged_cython.pyx":13
+  /* "transformer/tagged_cython.pyx":16
  * 
  * cdef text_lower(word):
  *     return word.lower()             # <<<<<<<<<<<<<<
  * 
- * 
+ * text_lower_ = text_lower
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_word, __pyx_n_s_lower); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_word, __pyx_n_s_lower); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -1531,10 +1549,10 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_lower(PyObject *__py
     }
   }
   if (__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else {
-    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
   }
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -1542,7 +1560,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_lower(PyObject *__py
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "transformer/tagged_cython.pyx":12
+  /* "transformer/tagged_cython.pyx":15
  * lower_words = set([word.lower() for word in words])
  * 
  * cdef text_lower(word):             # <<<<<<<<<<<<<<
@@ -1563,9 +1581,9 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_lower(PyObject *__py
   return __pyx_r;
 }
 
-/* "transformer/tagged_cython.pyx":16
+/* "transformer/tagged_cython.pyx":19
  * 
- * 
+ * text_lower_ = text_lower
  * cdef text_isdigit(word):             # <<<<<<<<<<<<<<
  *     return word.isdigit()
  * 
@@ -1579,15 +1597,15 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_isdigit(PyObject *__
   PyObject *__pyx_t_3 = NULL;
   __Pyx_RefNannySetupContext("text_isdigit", 0);
 
-  /* "transformer/tagged_cython.pyx":17
- * 
+  /* "transformer/tagged_cython.pyx":20
+ * text_lower_ = text_lower
  * cdef text_isdigit(word):
  *     return word.isdigit()             # <<<<<<<<<<<<<<
  * 
  * cdef text_isallcap(word):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_word, __pyx_n_s_isdigit); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 17, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_word, __pyx_n_s_isdigit); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -1600,10 +1618,10 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_isdigit(PyObject *__
     }
   }
   if (__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else {
-    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
   }
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -1611,9 +1629,9 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_isdigit(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "transformer/tagged_cython.pyx":16
+  /* "transformer/tagged_cython.pyx":19
  * 
- * 
+ * text_lower_ = text_lower
  * cdef text_isdigit(word):             # <<<<<<<<<<<<<<
  *     return word.isdigit()
  * 
@@ -1632,7 +1650,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_isdigit(PyObject *__
   return __pyx_r;
 }
 
-/* "transformer/tagged_cython.pyx":19
+/* "transformer/tagged_cython.pyx":22
  *     return word.isdigit()
  * 
  * cdef text_isallcap(word):             # <<<<<<<<<<<<<<
@@ -1654,7 +1672,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_isallcap(PyObject *_
   int __pyx_t_8;
   __Pyx_RefNannySetupContext("text_isallcap", 0);
 
-  /* "transformer/tagged_cython.pyx":20
+  /* "transformer/tagged_cython.pyx":23
  * 
  * cdef text_isallcap(word):
  *     for letter in word:             # <<<<<<<<<<<<<<
@@ -1665,26 +1683,26 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_isallcap(PyObject *_
     __pyx_t_1 = __pyx_v_word; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_word); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_word); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 23, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 20, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 23, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_3)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 20, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 23, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 20, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 23, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 20, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 23, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 20, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 23, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -1694,7 +1712,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_isallcap(PyObject *_
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 20, __pyx_L1_error)
+          else __PYX_ERR(0, 23, __pyx_L1_error)
         }
         break;
       }
@@ -1703,14 +1721,14 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_isallcap(PyObject *_
     __Pyx_XDECREF_SET(__pyx_v_letter, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "transformer/tagged_cython.pyx":21
+    /* "transformer/tagged_cython.pyx":24
  * cdef text_isallcap(word):
  *     for letter in word:
  *         if not letter.istitle():             # <<<<<<<<<<<<<<
  *             return False
  *     return True
  */
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_letter, __pyx_n_s_istitle); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 21, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_letter, __pyx_n_s_istitle); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 24, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __pyx_t_6 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
@@ -1723,19 +1741,19 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_isallcap(PyObject *_
       }
     }
     if (__pyx_t_6) {
-      __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 21, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 24, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     } else {
-      __pyx_t_4 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 21, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 24, __pyx_L1_error)
     }
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 21, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 24, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_8 = ((!__pyx_t_7) != 0);
     if (__pyx_t_8) {
 
-      /* "transformer/tagged_cython.pyx":22
+      /* "transformer/tagged_cython.pyx":25
  *     for letter in word:
  *         if not letter.istitle():
  *             return False             # <<<<<<<<<<<<<<
@@ -1748,7 +1766,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_isallcap(PyObject *_
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       goto __pyx_L0;
 
-      /* "transformer/tagged_cython.pyx":21
+      /* "transformer/tagged_cython.pyx":24
  * cdef text_isallcap(word):
  *     for letter in word:
  *         if not letter.istitle():             # <<<<<<<<<<<<<<
@@ -1757,7 +1775,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_isallcap(PyObject *_
  */
     }
 
-    /* "transformer/tagged_cython.pyx":20
+    /* "transformer/tagged_cython.pyx":23
  * 
  * cdef text_isallcap(word):
  *     for letter in word:             # <<<<<<<<<<<<<<
@@ -1767,7 +1785,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_isallcap(PyObject *_
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "transformer/tagged_cython.pyx":23
+  /* "transformer/tagged_cython.pyx":26
  *         if not letter.istitle():
  *             return False
  *     return True             # <<<<<<<<<<<<<<
@@ -1779,7 +1797,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_isallcap(PyObject *_
   __pyx_r = Py_True;
   goto __pyx_L0;
 
-  /* "transformer/tagged_cython.pyx":19
+  /* "transformer/tagged_cython.pyx":22
  *     return word.isdigit()
  * 
  * cdef text_isallcap(word):             # <<<<<<<<<<<<<<
@@ -1802,7 +1820,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_isallcap(PyObject *_
   return __pyx_r;
 }
 
-/* "transformer/tagged_cython.pyx":26
+/* "transformer/tagged_cython.pyx":29
  * 
  * 
  * cdef text_istitle(word):             # <<<<<<<<<<<<<<
@@ -1829,18 +1847,18 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
   int __pyx_t_11;
   __Pyx_RefNannySetupContext("text_istitle", 0);
 
-  /* "transformer/tagged_cython.pyx":27
+  /* "transformer/tagged_cython.pyx":30
  * 
  * cdef text_istitle(word):
  *     if len(word) == 0:             # <<<<<<<<<<<<<<
  *         return False
  *     try:
  */
-  __pyx_t_1 = PyObject_Length(__pyx_v_word); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 27, __pyx_L1_error)
+  __pyx_t_1 = PyObject_Length(__pyx_v_word); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 30, __pyx_L1_error)
   __pyx_t_2 = ((__pyx_t_1 == 0) != 0);
   if (__pyx_t_2) {
 
-    /* "transformer/tagged_cython.pyx":28
+    /* "transformer/tagged_cython.pyx":31
  * cdef text_istitle(word):
  *     if len(word) == 0:
  *         return False             # <<<<<<<<<<<<<<
@@ -1852,7 +1870,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
     __pyx_r = Py_False;
     goto __pyx_L0;
 
-    /* "transformer/tagged_cython.pyx":27
+    /* "transformer/tagged_cython.pyx":30
  * 
  * cdef text_istitle(word):
  *     if len(word) == 0:             # <<<<<<<<<<<<<<
@@ -1861,7 +1879,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
  */
   }
 
-  /* "transformer/tagged_cython.pyx":29
+  /* "transformer/tagged_cython.pyx":32
  *     if len(word) == 0:
  *         return False
  *     try:             # <<<<<<<<<<<<<<
@@ -1877,27 +1895,27 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
     __Pyx_XGOTREF(__pyx_t_5);
     /*try:*/ {
 
-      /* "transformer/tagged_cython.pyx":30
+      /* "transformer/tagged_cython.pyx":33
  *         return False
  *     try:
  *         titles = [s[0] for s in word.split(" ")]             # <<<<<<<<<<<<<<
  *         for token in titles:
  *             if token[0].istitle() is False:
  */
-      __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 30, __pyx_L4_error)
+      __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 33, __pyx_L4_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_word, __pyx_n_s_split); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 30, __pyx_L4_error)
+      __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_word, __pyx_n_s_split); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 33, __pyx_L4_error)
       __Pyx_GOTREF(__pyx_t_7);
-      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 30, __pyx_L4_error)
+      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 33, __pyx_L4_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       if (likely(PyList_CheckExact(__pyx_t_8)) || PyTuple_CheckExact(__pyx_t_8)) {
         __pyx_t_7 = __pyx_t_8; __Pyx_INCREF(__pyx_t_7); __pyx_t_1 = 0;
         __pyx_t_9 = NULL;
       } else {
-        __pyx_t_1 = -1; __pyx_t_7 = PyObject_GetIter(__pyx_t_8); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 30, __pyx_L4_error)
+        __pyx_t_1 = -1; __pyx_t_7 = PyObject_GetIter(__pyx_t_8); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 33, __pyx_L4_error)
         __Pyx_GOTREF(__pyx_t_7);
-        __pyx_t_9 = Py_TYPE(__pyx_t_7)->tp_iternext; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 30, __pyx_L4_error)
+        __pyx_t_9 = Py_TYPE(__pyx_t_7)->tp_iternext; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 33, __pyx_L4_error)
       }
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       for (;;) {
@@ -1905,17 +1923,17 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
           if (likely(PyList_CheckExact(__pyx_t_7))) {
             if (__pyx_t_1 >= PyList_GET_SIZE(__pyx_t_7)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_8 = PyList_GET_ITEM(__pyx_t_7, __pyx_t_1); __Pyx_INCREF(__pyx_t_8); __pyx_t_1++; if (unlikely(0 < 0)) __PYX_ERR(0, 30, __pyx_L4_error)
+            __pyx_t_8 = PyList_GET_ITEM(__pyx_t_7, __pyx_t_1); __Pyx_INCREF(__pyx_t_8); __pyx_t_1++; if (unlikely(0 < 0)) __PYX_ERR(0, 33, __pyx_L4_error)
             #else
-            __pyx_t_8 = PySequence_ITEM(__pyx_t_7, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 30, __pyx_L4_error)
+            __pyx_t_8 = PySequence_ITEM(__pyx_t_7, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 33, __pyx_L4_error)
             __Pyx_GOTREF(__pyx_t_8);
             #endif
           } else {
             if (__pyx_t_1 >= PyTuple_GET_SIZE(__pyx_t_7)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_7, __pyx_t_1); __Pyx_INCREF(__pyx_t_8); __pyx_t_1++; if (unlikely(0 < 0)) __PYX_ERR(0, 30, __pyx_L4_error)
+            __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_7, __pyx_t_1); __Pyx_INCREF(__pyx_t_8); __pyx_t_1++; if (unlikely(0 < 0)) __PYX_ERR(0, 33, __pyx_L4_error)
             #else
-            __pyx_t_8 = PySequence_ITEM(__pyx_t_7, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 30, __pyx_L4_error)
+            __pyx_t_8 = PySequence_ITEM(__pyx_t_7, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 33, __pyx_L4_error)
             __Pyx_GOTREF(__pyx_t_8);
             #endif
           }
@@ -1925,7 +1943,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 30, __pyx_L4_error)
+              else __PYX_ERR(0, 33, __pyx_L4_error)
             }
             break;
           }
@@ -1933,16 +1951,16 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
         }
         __Pyx_XDECREF_SET(__pyx_v_s, __pyx_t_8);
         __pyx_t_8 = 0;
-        __pyx_t_8 = __Pyx_GetItemInt(__pyx_v_s, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 30, __pyx_L4_error)
+        __pyx_t_8 = __Pyx_GetItemInt(__pyx_v_s, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 33, __pyx_L4_error)
         __Pyx_GOTREF(__pyx_t_8);
-        if (unlikely(__Pyx_ListComp_Append(__pyx_t_6, (PyObject*)__pyx_t_8))) __PYX_ERR(0, 30, __pyx_L4_error)
+        if (unlikely(__Pyx_ListComp_Append(__pyx_t_6, (PyObject*)__pyx_t_8))) __PYX_ERR(0, 33, __pyx_L4_error)
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       }
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __pyx_v_titles = ((PyObject*)__pyx_t_6);
       __pyx_t_6 = 0;
 
-      /* "transformer/tagged_cython.pyx":31
+      /* "transformer/tagged_cython.pyx":34
  *     try:
  *         titles = [s[0] for s in word.split(" ")]
  *         for token in titles:             # <<<<<<<<<<<<<<
@@ -1953,24 +1971,24 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
       for (;;) {
         if (__pyx_t_1 >= PyList_GET_SIZE(__pyx_t_6)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_7 = PyList_GET_ITEM(__pyx_t_6, __pyx_t_1); __Pyx_INCREF(__pyx_t_7); __pyx_t_1++; if (unlikely(0 < 0)) __PYX_ERR(0, 31, __pyx_L4_error)
+        __pyx_t_7 = PyList_GET_ITEM(__pyx_t_6, __pyx_t_1); __Pyx_INCREF(__pyx_t_7); __pyx_t_1++; if (unlikely(0 < 0)) __PYX_ERR(0, 34, __pyx_L4_error)
         #else
-        __pyx_t_7 = PySequence_ITEM(__pyx_t_6, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 31, __pyx_L4_error)
+        __pyx_t_7 = PySequence_ITEM(__pyx_t_6, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 34, __pyx_L4_error)
         __Pyx_GOTREF(__pyx_t_7);
         #endif
         __Pyx_XDECREF_SET(__pyx_v_token, __pyx_t_7);
         __pyx_t_7 = 0;
 
-        /* "transformer/tagged_cython.pyx":32
+        /* "transformer/tagged_cython.pyx":35
  *         titles = [s[0] for s in word.split(" ")]
  *         for token in titles:
  *             if token[0].istitle() is False:             # <<<<<<<<<<<<<<
  *                 return False
  *         return True
  */
-        __pyx_t_8 = __Pyx_GetItemInt(__pyx_v_token, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 32, __pyx_L4_error)
+        __pyx_t_8 = __Pyx_GetItemInt(__pyx_v_token, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 35, __pyx_L4_error)
         __Pyx_GOTREF(__pyx_t_8);
-        __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_istitle); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 32, __pyx_L4_error)
+        __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_istitle); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 35, __pyx_L4_error)
         __Pyx_GOTREF(__pyx_t_10);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         __pyx_t_8 = NULL;
@@ -1984,10 +2002,10 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
           }
         }
         if (__pyx_t_8) {
-          __pyx_t_7 = __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_8); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 32, __pyx_L4_error)
+          __pyx_t_7 = __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_8); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 35, __pyx_L4_error)
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         } else {
-          __pyx_t_7 = __Pyx_PyObject_CallNoArg(__pyx_t_10); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 32, __pyx_L4_error)
+          __pyx_t_7 = __Pyx_PyObject_CallNoArg(__pyx_t_10); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 35, __pyx_L4_error)
         }
         __Pyx_GOTREF(__pyx_t_7);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
@@ -1996,7 +2014,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
         __pyx_t_11 = (__pyx_t_2 != 0);
         if (__pyx_t_11) {
 
-          /* "transformer/tagged_cython.pyx":33
+          /* "transformer/tagged_cython.pyx":36
  *         for token in titles:
  *             if token[0].istitle() is False:
  *                 return False             # <<<<<<<<<<<<<<
@@ -2009,7 +2027,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
           goto __pyx_L8_try_return;
 
-          /* "transformer/tagged_cython.pyx":32
+          /* "transformer/tagged_cython.pyx":35
  *         titles = [s[0] for s in word.split(" ")]
  *         for token in titles:
  *             if token[0].istitle() is False:             # <<<<<<<<<<<<<<
@@ -2018,7 +2036,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
  */
         }
 
-        /* "transformer/tagged_cython.pyx":31
+        /* "transformer/tagged_cython.pyx":34
  *     try:
  *         titles = [s[0] for s in word.split(" ")]
  *         for token in titles:             # <<<<<<<<<<<<<<
@@ -2028,7 +2046,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
       }
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-      /* "transformer/tagged_cython.pyx":34
+      /* "transformer/tagged_cython.pyx":37
  *             if token[0].istitle() is False:
  *                 return False
  *         return True             # <<<<<<<<<<<<<<
@@ -2040,7 +2058,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
       __pyx_r = Py_True;
       goto __pyx_L8_try_return;
 
-      /* "transformer/tagged_cython.pyx":29
+      /* "transformer/tagged_cython.pyx":32
  *     if len(word) == 0:
  *         return False
  *     try:             # <<<<<<<<<<<<<<
@@ -2054,7 +2072,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-    /* "transformer/tagged_cython.pyx":35
+    /* "transformer/tagged_cython.pyx":38
  *                 return False
  *         return True
  *     except:             # <<<<<<<<<<<<<<
@@ -2063,12 +2081,12 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
  */
     /*except:*/ {
       __Pyx_AddTraceback("transformer.tagged_cython.text_istitle", __pyx_clineno, __pyx_lineno, __pyx_filename);
-      if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_7, &__pyx_t_10) < 0) __PYX_ERR(0, 35, __pyx_L6_except_error)
+      if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_7, &__pyx_t_10) < 0) __PYX_ERR(0, 38, __pyx_L6_except_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_GOTREF(__pyx_t_10);
 
-      /* "transformer/tagged_cython.pyx":36
+      /* "transformer/tagged_cython.pyx":39
  *         return True
  *     except:
  *         return False             # <<<<<<<<<<<<<<
@@ -2085,7 +2103,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
     }
     __pyx_L6_except_error:;
 
-    /* "transformer/tagged_cython.pyx":29
+    /* "transformer/tagged_cython.pyx":32
  *     if len(word) == 0:
  *         return False
  *     try:             # <<<<<<<<<<<<<<
@@ -2111,7 +2129,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
     goto __pyx_L0;
   }
 
-  /* "transformer/tagged_cython.pyx":26
+  /* "transformer/tagged_cython.pyx":29
  * 
  * 
  * cdef text_istitle(word):             # <<<<<<<<<<<<<<
@@ -2136,7 +2154,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_istitle(PyObject *__
   return __pyx_r;
 }
 
-/* "transformer/tagged_cython.pyx":39
+/* "transformer/tagged_cython.pyx":42
  * 
  * 
  * cdef text_is_in_dict(word):             # <<<<<<<<<<<<<<
@@ -2153,7 +2171,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_is_in_dict(PyObject 
   int __pyx_t_4;
   __Pyx_RefNannySetupContext("text_is_in_dict", 0);
 
-  /* "transformer/tagged_cython.pyx":40
+  /* "transformer/tagged_cython.pyx":43
  * 
  * cdef text_is_in_dict(word):
  *     return word.lower() in lower_words             # <<<<<<<<<<<<<<
@@ -2161,7 +2179,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_is_in_dict(PyObject 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_word, __pyx_n_s_lower); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_word, __pyx_n_s_lower); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -2174,25 +2192,25 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_is_in_dict(PyObject 
     }
   }
   if (__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 40, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 43, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else {
-    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 40, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 43, __pyx_L1_error)
   }
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_lower_words); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_lower_words); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_t_2, Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_t_4 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_t_2, Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyBool_FromLong(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyBool_FromLong(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "transformer/tagged_cython.pyx":39
+  /* "transformer/tagged_cython.pyx":42
  * 
  * 
  * cdef text_is_in_dict(word):             # <<<<<<<<<<<<<<
@@ -2213,7 +2231,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_text_is_in_dict(PyObject 
   return __pyx_r;
 }
 
-/* "transformer/tagged_cython.pyx":43
+/* "transformer/tagged_cython.pyx":46
  * 
  * 
  * cdef apply_function(name, word):             # <<<<<<<<<<<<<<
@@ -2231,71 +2249,71 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_apply_function(PyObject *
   PyObject *__pyx_t_4 = NULL;
   __Pyx_RefNannySetupContext("apply_function", 0);
 
-  /* "transformer/tagged_cython.pyx":45
+  /* "transformer/tagged_cython.pyx":48
  * cdef apply_function(name, word):
  *     functions = {
  *         "lower": text_lower,             # <<<<<<<<<<<<<<
  *         "istitle": text_istitle,
  *         "isallcap": text_isallcap,
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 45, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_CFunc_object____object___to_py(__pyx_f_11transformer_13tagged_cython_text_lower); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 45, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CFunc_object____object___to_py(__pyx_f_11transformer_13tagged_cython_text_lower); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_lower, __pyx_t_2) < 0) __PYX_ERR(0, 45, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_lower, __pyx_t_2) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "transformer/tagged_cython.pyx":46
+  /* "transformer/tagged_cython.pyx":49
  *     functions = {
  *         "lower": text_lower,
  *         "istitle": text_istitle,             # <<<<<<<<<<<<<<
  *         "isallcap": text_isallcap,
  *         "isdigit": text_isdigit,
  */
-  __pyx_t_2 = __Pyx_CFunc_object____object___to_py(__pyx_f_11transformer_13tagged_cython_text_istitle); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CFunc_object____object___to_py(__pyx_f_11transformer_13tagged_cython_text_istitle); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_istitle, __pyx_t_2) < 0) __PYX_ERR(0, 45, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_istitle, __pyx_t_2) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "transformer/tagged_cython.pyx":47
+  /* "transformer/tagged_cython.pyx":50
  *         "lower": text_lower,
  *         "istitle": text_istitle,
  *         "isallcap": text_isallcap,             # <<<<<<<<<<<<<<
  *         "isdigit": text_isdigit,
  *         "is_in_dict": text_is_in_dict
  */
-  __pyx_t_2 = __Pyx_CFunc_object____object___to_py(__pyx_f_11transformer_13tagged_cython_text_isallcap); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 47, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CFunc_object____object___to_py(__pyx_f_11transformer_13tagged_cython_text_isallcap); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_isallcap, __pyx_t_2) < 0) __PYX_ERR(0, 45, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_isallcap, __pyx_t_2) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "transformer/tagged_cython.pyx":48
+  /* "transformer/tagged_cython.pyx":51
  *         "istitle": text_istitle,
  *         "isallcap": text_isallcap,
  *         "isdigit": text_isdigit,             # <<<<<<<<<<<<<<
  *         "is_in_dict": text_is_in_dict
  *     }
  */
-  __pyx_t_2 = __Pyx_CFunc_object____object___to_py(__pyx_f_11transformer_13tagged_cython_text_isdigit); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 48, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CFunc_object____object___to_py(__pyx_f_11transformer_13tagged_cython_text_isdigit); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_isdigit, __pyx_t_2) < 0) __PYX_ERR(0, 45, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_isdigit, __pyx_t_2) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "transformer/tagged_cython.pyx":49
+  /* "transformer/tagged_cython.pyx":52
  *         "isallcap": text_isallcap,
  *         "isdigit": text_isdigit,
  *         "is_in_dict": text_is_in_dict             # <<<<<<<<<<<<<<
  *     }
  *     return functions[name](word)
  */
-  __pyx_t_2 = __Pyx_CFunc_object____object___to_py(__pyx_f_11transformer_13tagged_cython_text_is_in_dict); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CFunc_object____object___to_py(__pyx_f_11transformer_13tagged_cython_text_is_in_dict); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_is_in_dict, __pyx_t_2) < 0) __PYX_ERR(0, 45, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_is_in_dict, __pyx_t_2) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_functions = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "transformer/tagged_cython.pyx":51
+  /* "transformer/tagged_cython.pyx":54
  *         "is_in_dict": text_is_in_dict
  *     }
  *     return functions[name](word)             # <<<<<<<<<<<<<<
@@ -2303,7 +2321,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_apply_function(PyObject *
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyDict_GetItem(__pyx_v_functions, __pyx_v_name); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_GetItem(__pyx_v_functions, __pyx_v_name); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
@@ -2316,13 +2334,13 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_apply_function(PyObject *
     }
   }
   if (!__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_word); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_word); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_3, __pyx_v_word};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_GOTREF(__pyx_t_1);
     } else
@@ -2330,19 +2348,19 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_apply_function(PyObject *
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_3, __pyx_v_word};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_GOTREF(__pyx_t_1);
     } else
     #endif
     {
-      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 51, __pyx_L1_error)
+      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 54, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_3); __pyx_t_3 = NULL;
       __Pyx_INCREF(__pyx_v_word);
       __Pyx_GIVEREF(__pyx_v_word);
       PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_v_word);
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
@@ -2352,7 +2370,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_apply_function(PyObject *
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "transformer/tagged_cython.pyx":43
+  /* "transformer/tagged_cython.pyx":46
  * 
  * 
  * cdef apply_function(name, word):             # <<<<<<<<<<<<<<
@@ -2375,11 +2393,11 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_apply_function(PyObject *
   return __pyx_r;
 }
 
-/* "transformer/tagged_cython.pyx":54
+/* "transformer/tagged_cython.pyx":57
  * 
  * 
  * cdef template2features(list sent, list columns, int size, int i,             # <<<<<<<<<<<<<<
- *                        token_syntax,
+ *                        str token_syntax,
  *                        int column, int index1, index2, func,
  */
 
@@ -2403,7 +2421,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
     }
   }
 
-  /* "transformer/tagged_cython.pyx":63
+  /* "transformer/tagged_cython.pyx":66
  *     cdef s1
  *     cdef prefix
  *     if debug:             # <<<<<<<<<<<<<<
@@ -2413,19 +2431,19 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
   __pyx_t_1 = (__pyx_v_debug != 0);
   if (__pyx_t_1) {
 
-    /* "transformer/tagged_cython.pyx":64
+    /* "transformer/tagged_cython.pyx":67
  *     cdef prefix
  *     if debug:
  *         prefix = token_syntax + "="             # <<<<<<<<<<<<<<
  *     else:
  *         prefix = ""
  */
-    __pyx_t_2 = PyNumber_Add(__pyx_v_token_syntax, __pyx_kp_s__3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 64, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_Add(__pyx_v_token_syntax, __pyx_kp_s__3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_prefix = __pyx_t_2;
     __pyx_t_2 = 0;
 
-    /* "transformer/tagged_cython.pyx":63
+    /* "transformer/tagged_cython.pyx":66
  *     cdef s1
  *     cdef prefix
  *     if debug:             # <<<<<<<<<<<<<<
@@ -2435,7 +2453,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
     goto __pyx_L3;
   }
 
-  /* "transformer/tagged_cython.pyx":66
+  /* "transformer/tagged_cython.pyx":69
  *         prefix = token_syntax + "="
  *     else:
  *         prefix = ""             # <<<<<<<<<<<<<<
@@ -2448,7 +2466,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
   }
   __pyx_L3:;
 
-  /* "transformer/tagged_cython.pyx":67
+  /* "transformer/tagged_cython.pyx":70
  *     else:
  *         prefix = ""
  *     if i + index1 < 0:             # <<<<<<<<<<<<<<
@@ -2458,7 +2476,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
   __pyx_t_1 = (((__pyx_v_i + __pyx_v_index1) < 0) != 0);
   if (__pyx_t_1) {
 
-    /* "transformer/tagged_cython.pyx":68
+    /* "transformer/tagged_cython.pyx":71
  *         prefix = ""
  *     if i + index1 < 0:
  *         return "%sBOS" % prefix             # <<<<<<<<<<<<<<
@@ -2466,13 +2484,13 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
  *         return "%sEOS" % prefix
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_sBOS, __pyx_v_prefix); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 68, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_sBOS, __pyx_v_prefix); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "transformer/tagged_cython.pyx":67
+    /* "transformer/tagged_cython.pyx":70
  *     else:
  *         prefix = ""
  *     if i + index1 < 0:             # <<<<<<<<<<<<<<
@@ -2481,7 +2499,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
  */
   }
 
-  /* "transformer/tagged_cython.pyx":69
+  /* "transformer/tagged_cython.pyx":72
  *     if i + index1 < 0:
  *         return "%sBOS" % prefix
  *     if i + index1 >= size:             # <<<<<<<<<<<<<<
@@ -2491,7 +2509,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
   __pyx_t_1 = (((__pyx_v_i + __pyx_v_index1) >= __pyx_v_size) != 0);
   if (__pyx_t_1) {
 
-    /* "transformer/tagged_cython.pyx":70
+    /* "transformer/tagged_cython.pyx":73
  *         return "%sBOS" % prefix
  *     if i + index1 >= size:
  *         return "%sEOS" % prefix             # <<<<<<<<<<<<<<
@@ -2499,13 +2517,13 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
  *         if i + index2 >= size:
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_sEOS, __pyx_v_prefix); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 70, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_sEOS, __pyx_v_prefix); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 73, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "transformer/tagged_cython.pyx":69
+    /* "transformer/tagged_cython.pyx":72
  *     if i + index1 < 0:
  *         return "%sBOS" % prefix
  *     if i + index1 >= size:             # <<<<<<<<<<<<<<
@@ -2514,7 +2532,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
  */
   }
 
-  /* "transformer/tagged_cython.pyx":71
+  /* "transformer/tagged_cython.pyx":74
  *     if i + index1 >= size:
  *         return "%sEOS" % prefix
  *     if index2 is not None:             # <<<<<<<<<<<<<<
@@ -2525,28 +2543,28 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
   __pyx_t_3 = (__pyx_t_1 != 0);
   if (__pyx_t_3) {
 
-    /* "transformer/tagged_cython.pyx":72
+    /* "transformer/tagged_cython.pyx":75
  *         return "%sEOS" % prefix
  *     if index2 is not None:
  *         if i + index2 >= size:             # <<<<<<<<<<<<<<
  *             return "%sEOS" % prefix
  *         word = " ".join(columns[column][i + index1: i + index2 + 1])
  */
-    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 72, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = PyNumber_Add(__pyx_t_2, __pyx_v_index2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_Add(__pyx_t_2, __pyx_v_index2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 75, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 72, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = PyObject_RichCompare(__pyx_t_4, __pyx_t_2, Py_GE); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 72, __pyx_L1_error)
+    __pyx_t_5 = PyObject_RichCompare(__pyx_t_4, __pyx_t_2, Py_GE); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 75, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 72, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 75, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     if (__pyx_t_3) {
 
-      /* "transformer/tagged_cython.pyx":73
+      /* "transformer/tagged_cython.pyx":76
  *     if index2 is not None:
  *         if i + index2 >= size:
  *             return "%sEOS" % prefix             # <<<<<<<<<<<<<<
@@ -2554,13 +2572,13 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
  *     else:
  */
       __Pyx_XDECREF(__pyx_r);
-      __pyx_t_5 = __Pyx_PyString_Format(__pyx_kp_s_sEOS, __pyx_v_prefix); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 73, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyString_Format(__pyx_kp_s_sEOS, __pyx_v_prefix); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 76, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __pyx_r = __pyx_t_5;
       __pyx_t_5 = 0;
       goto __pyx_L0;
 
-      /* "transformer/tagged_cython.pyx":72
+      /* "transformer/tagged_cython.pyx":75
  *         return "%sEOS" % prefix
  *     if index2 is not None:
  *         if i + index2 >= size:             # <<<<<<<<<<<<<<
@@ -2569,7 +2587,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
  */
     }
 
-    /* "transformer/tagged_cython.pyx":74
+    /* "transformer/tagged_cython.pyx":77
  *         if i + index2 >= size:
  *             return "%sEOS" % prefix
  *         word = " ".join(columns[column][i + index1: i + index2 + 1])             # <<<<<<<<<<<<<<
@@ -2578,29 +2596,29 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
  */
     if (unlikely(__pyx_v_columns == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 74, __pyx_L1_error)
+      __PYX_ERR(0, 77, __pyx_L1_error)
     }
-    __pyx_t_5 = __Pyx_GetItemInt_List(__pyx_v_columns, __pyx_v_column, int, 1, __Pyx_PyInt_From_int, 1, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 74, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_GetItemInt_List(__pyx_v_columns, __pyx_v_column, int, 1, __Pyx_PyInt_From_int, 1, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 74, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = PyNumber_Add(__pyx_t_2, __pyx_v_index2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 74, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_Add(__pyx_t_2, __pyx_v_index2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyInt_AddObjC(__pyx_t_4, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 74, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_AddObjC(__pyx_t_4, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_GetSlice(__pyx_t_5, (__pyx_v_i + __pyx_v_index1), 0, NULL, &__pyx_t_2, NULL, 1, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 74, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetSlice(__pyx_t_5, (__pyx_v_i + __pyx_v_index1), 0, NULL, &__pyx_t_2, NULL, 1, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyString_Join(__pyx_kp_s_, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 74, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyString_Join(__pyx_kp_s_, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_word = __pyx_t_2;
     __pyx_t_2 = 0;
 
-    /* "transformer/tagged_cython.pyx":71
+    /* "transformer/tagged_cython.pyx":74
  *     if i + index1 >= size:
  *         return "%sEOS" % prefix
  *     if index2 is not None:             # <<<<<<<<<<<<<<
@@ -2610,7 +2628,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
     goto __pyx_L6;
   }
 
-  /* "transformer/tagged_cython.pyx":76
+  /* "transformer/tagged_cython.pyx":79
  *         word = " ".join(columns[column][i + index1: i + index2 + 1])
  *     else:
  *         word = sent[i + index1][column]             # <<<<<<<<<<<<<<
@@ -2620,12 +2638,12 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
   /*else*/ {
     if (unlikely(__pyx_v_sent == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 76, __pyx_L1_error)
+      __PYX_ERR(0, 79, __pyx_L1_error)
     }
     __pyx_t_6 = (__pyx_v_i + __pyx_v_index1);
-    __pyx_t_2 = __Pyx_GetItemInt_List(__pyx_v_sent, __pyx_t_6, int, 1, __Pyx_PyInt_From_int, 1, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_GetItemInt_List(__pyx_v_sent, __pyx_t_6, int, 1, __Pyx_PyInt_From_int, 1, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 79, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_2, __pyx_v_column, int, 1, __Pyx_PyInt_From_int, 0, 1, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_2, __pyx_v_column, int, 1, __Pyx_PyInt_From_int, 0, 1, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 79, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_v_word = __pyx_t_4;
@@ -2633,7 +2651,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
   }
   __pyx_L6:;
 
-  /* "transformer/tagged_cython.pyx":77
+  /* "transformer/tagged_cython.pyx":80
  *     else:
  *         word = sent[i + index1][column]
  *     if func is not None:             # <<<<<<<<<<<<<<
@@ -2644,19 +2662,19 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
   __pyx_t_1 = (__pyx_t_3 != 0);
   if (__pyx_t_1) {
 
-    /* "transformer/tagged_cython.pyx":78
+    /* "transformer/tagged_cython.pyx":81
  *         word = sent[i + index1][column]
  *     if func is not None:
  *         result = apply_function(func, word)             # <<<<<<<<<<<<<<
  *     else:
  *         result = word
  */
-    __pyx_t_4 = __pyx_f_11transformer_13tagged_cython_apply_function(__pyx_v_func, __pyx_v_word); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 78, __pyx_L1_error)
+    __pyx_t_4 = __pyx_f_11transformer_13tagged_cython_apply_function(__pyx_v_func, __pyx_v_word); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 81, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_v_result = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "transformer/tagged_cython.pyx":77
+    /* "transformer/tagged_cython.pyx":80
  *     else:
  *         word = sent[i + index1][column]
  *     if func is not None:             # <<<<<<<<<<<<<<
@@ -2666,7 +2684,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
     goto __pyx_L8;
   }
 
-  /* "transformer/tagged_cython.pyx":80
+  /* "transformer/tagged_cython.pyx":83
  *         result = apply_function(func, word)
  *     else:
  *         result = word             # <<<<<<<<<<<<<<
@@ -2679,15 +2697,15 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
   }
   __pyx_L8:;
 
-  /* "transformer/tagged_cython.pyx":81
+  /* "transformer/tagged_cython.pyx":84
  *     else:
  *         result = word
  *     return "%s%s" % (prefix, result)             # <<<<<<<<<<<<<<
  * 
- * cdef vector[vector[string]] fa():
+ * cdef vector[string] fa3():
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_INCREF(__pyx_v_prefix);
   __Pyx_GIVEREF(__pyx_v_prefix);
@@ -2695,18 +2713,18 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
   __Pyx_INCREF(__pyx_v_result);
   __Pyx_GIVEREF(__pyx_v_result);
   PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_v_result);
-  __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_s_s, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_s_s, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "transformer/tagged_cython.pyx":54
+  /* "transformer/tagged_cython.pyx":57
  * 
  * 
  * cdef template2features(list sent, list columns, int size, int i,             # <<<<<<<<<<<<<<
- *                        token_syntax,
+ *                        str token_syntax,
  *                        int column, int index1, index2, func,
  */
 
@@ -2726,80 +2744,74 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_template2features(PyObjec
   return __pyx_r;
 }
 
-/* "transformer/tagged_cython.pyx":83
+/* "transformer/tagged_cython.pyx":86
  *     return "%s%s" % (prefix, result)
  * 
- * cdef vector[vector[string]] fa():             # <<<<<<<<<<<<<<
- *     cdef vector[vector[string]] output
- *     output = [["a", "b", "c"]]
+ * cdef vector[string] fa3():             # <<<<<<<<<<<<<<
+ *     output = [b'a', b'b', b'c']
+ *     return output
  */
 
-static std::vector<std::vector<std::string> >  __pyx_f_11transformer_13tagged_cython_fa(void) {
-  std::vector<std::vector<std::string> >  __pyx_v_output;
-  std::vector<std::vector<std::string> >  __pyx_r;
+static std::vector<std::string>  __pyx_f_11transformer_13tagged_cython_fa3(void) {
+  PyObject *__pyx_v_output = NULL;
+  std::vector<std::string>  __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
-  PyObject *__pyx_t_2 = NULL;
-  std::vector<std::vector<std::string> >  __pyx_t_3;
-  __Pyx_RefNannySetupContext("fa", 0);
+  std::vector<std::string>  __pyx_t_2;
+  __Pyx_RefNannySetupContext("fa3", 0);
 
-  /* "transformer/tagged_cython.pyx":85
- * cdef vector[vector[string]] fa():
- *     cdef vector[vector[string]] output
- *     output = [["a", "b", "c"]]             # <<<<<<<<<<<<<<
+  /* "transformer/tagged_cython.pyx":87
+ * 
+ * cdef vector[string] fa3():
+ *     output = [b'a', b'b', b'c']             # <<<<<<<<<<<<<<
  *     return output
  * 
  */
-  __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_INCREF(__pyx_n_s_a);
-  __Pyx_GIVEREF(__pyx_n_s_a);
-  PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_a);
-  __Pyx_INCREF(__pyx_n_s_b);
-  __Pyx_GIVEREF(__pyx_n_s_b);
-  PyList_SET_ITEM(__pyx_t_1, 1, __pyx_n_s_b);
-  __Pyx_INCREF(__pyx_n_s_c);
-  __Pyx_GIVEREF(__pyx_n_s_c);
-  PyList_SET_ITEM(__pyx_t_1, 2, __pyx_n_s_c);
-  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 85, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_GIVEREF(__pyx_t_1);
-  PyList_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
+  __Pyx_INCREF(__pyx_n_b_a);
+  __Pyx_GIVEREF(__pyx_n_b_a);
+  PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_b_a);
+  __Pyx_INCREF(__pyx_n_b_b);
+  __Pyx_GIVEREF(__pyx_n_b_b);
+  PyList_SET_ITEM(__pyx_t_1, 1, __pyx_n_b_b);
+  __Pyx_INCREF(__pyx_n_b_c);
+  __Pyx_GIVEREF(__pyx_n_b_c);
+  PyList_SET_ITEM(__pyx_t_1, 2, __pyx_n_b_c);
+  __pyx_v_output = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
-  __pyx_t_3 = __pyx_convert_vector_from_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___(__pyx_t_2); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 85, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_v_output = __pyx_t_3;
 
-  /* "transformer/tagged_cython.pyx":86
- *     cdef vector[vector[string]] output
- *     output = [["a", "b", "c"]]
+  /* "transformer/tagged_cython.pyx":88
+ * cdef vector[string] fa3():
+ *     output = [b'a', b'b', b'c']
  *     return output             # <<<<<<<<<<<<<<
  * 
  * cdef list word2features(list sent, int i, template):
  */
-  __pyx_r = __pyx_v_output;
+  __pyx_t_2 = __pyx_convert_vector_from_py_std_3a__3a_string(__pyx_v_output); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_r = __pyx_t_2;
   goto __pyx_L0;
 
-  /* "transformer/tagged_cython.pyx":83
+  /* "transformer/tagged_cython.pyx":86
  *     return "%s%s" % (prefix, result)
  * 
- * cdef vector[vector[string]] fa():             # <<<<<<<<<<<<<<
- *     cdef vector[vector[string]] output
- *     output = [["a", "b", "c"]]
+ * cdef vector[string] fa3():             # <<<<<<<<<<<<<<
+ *     output = [b'a', b'b', b'c']
+ *     return output
  */
 
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_WriteUnraisable("transformer.tagged_cython.fa", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
+  __Pyx_WriteUnraisable("transformer.tagged_cython.fa3", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
   __Pyx_pretend_to_initialize(&__pyx_r);
   __pyx_L0:;
+  __Pyx_XDECREF(__pyx_v_output);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "transformer/tagged_cython.pyx":88
+/* "transformer/tagged_cython.pyx":90
  *     return output
  * 
  * cdef list word2features(list sent, int i, template):             # <<<<<<<<<<<<<<
@@ -2839,19 +2851,19 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_word2features(PyObject *_
   int __pyx_t_13;
   __Pyx_RefNannySetupContext("word2features", 0);
 
-  /* "transformer/tagged_cython.pyx":89
+  /* "transformer/tagged_cython.pyx":91
  * 
  * cdef list word2features(list sent, int i, template):
  *     cdef list features = []             # <<<<<<<<<<<<<<
  *     cdef int x = 0
  *     cdef output
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_features = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "transformer/tagged_cython.pyx":90
+  /* "transformer/tagged_cython.pyx":92
  * cdef list word2features(list sent, int i, template):
  *     cdef list features = []
  *     cdef int x = 0             # <<<<<<<<<<<<<<
@@ -2860,19 +2872,19 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_word2features(PyObject *_
  */
   __pyx_v_x = 0;
 
-  /* "transformer/tagged_cython.pyx":92
+  /* "transformer/tagged_cython.pyx":94
  *     cdef int x = 0
  *     cdef output
  *     cdef list columns = []             # <<<<<<<<<<<<<<
  * 
  *     cdef int column
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_columns = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "transformer/tagged_cython.pyx":97
+  /* "transformer/tagged_cython.pyx":99
  *     cdef int index1
  * 
  *     for j in range(len(sent[0])):             # <<<<<<<<<<<<<<
@@ -2881,51 +2893,51 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_word2features(PyObject *_
  */
   if (unlikely(__pyx_v_sent == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    __PYX_ERR(0, 97, __pyx_L1_error)
+    __PYX_ERR(0, 99, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_sent, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_sent, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 99, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyObject_Length(__pyx_t_1); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 97, __pyx_L1_error)
+  __pyx_t_2 = PyObject_Length(__pyx_t_1); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 99, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = __pyx_t_2;
   for (__pyx_t_4 = 0; __pyx_t_4 < __pyx_t_3; __pyx_t_4+=1) {
     __pyx_v_j = __pyx_t_4;
 
-    /* "transformer/tagged_cython.pyx":98
+    /* "transformer/tagged_cython.pyx":100
  * 
  *     for j in range(len(sent[0])):
  *         columns.append([t[j] for t in sent])             # <<<<<<<<<<<<<<
  *     cdef int size = len(sent)
  *     for token_syntax in template:
  */
-    __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 100, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     if (unlikely(__pyx_v_sent == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-      __PYX_ERR(0, 98, __pyx_L1_error)
+      __PYX_ERR(0, 100, __pyx_L1_error)
     }
     __pyx_t_5 = __pyx_v_sent; __Pyx_INCREF(__pyx_t_5); __pyx_t_6 = 0;
     for (;;) {
       if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_5)) break;
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-      __pyx_t_7 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_7); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 98, __pyx_L1_error)
+      __pyx_t_7 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_7); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 100, __pyx_L1_error)
       #else
-      __pyx_t_7 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 98, __pyx_L1_error)
+      __pyx_t_7 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 100, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       #endif
       __Pyx_XDECREF_SET(__pyx_v_t, __pyx_t_7);
       __pyx_t_7 = 0;
-      __pyx_t_7 = __Pyx_GetItemInt(__pyx_v_t, __pyx_v_j, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 98, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_GetItemInt(__pyx_v_t, __pyx_v_j, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 100, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_7))) __PYX_ERR(0, 98, __pyx_L1_error)
+      if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_7))) __PYX_ERR(0, 100, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_columns, __pyx_t_1); if (unlikely(__pyx_t_8 == ((int)-1))) __PYX_ERR(0, 98, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_columns, __pyx_t_1); if (unlikely(__pyx_t_8 == ((int)-1))) __PYX_ERR(0, 100, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "transformer/tagged_cython.pyx":99
+  /* "transformer/tagged_cython.pyx":101
  *     for j in range(len(sent[0])):
  *         columns.append([t[j] for t in sent])
  *     cdef int size = len(sent)             # <<<<<<<<<<<<<<
@@ -2934,12 +2946,12 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_word2features(PyObject *_
  */
   if (unlikely(__pyx_v_sent == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
-    __PYX_ERR(0, 99, __pyx_L1_error)
+    __PYX_ERR(0, 101, __pyx_L1_error)
   }
-  __pyx_t_2 = PyList_GET_SIZE(__pyx_v_sent); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 99, __pyx_L1_error)
+  __pyx_t_2 = PyList_GET_SIZE(__pyx_v_sent); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 101, __pyx_L1_error)
   __pyx_v_size = __pyx_t_2;
 
-  /* "transformer/tagged_cython.pyx":100
+  /* "transformer/tagged_cython.pyx":102
  *         columns.append([t[j] for t in sent])
  *     cdef int size = len(sent)
  *     for token_syntax in template:             # <<<<<<<<<<<<<<
@@ -2950,26 +2962,26 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_word2features(PyObject *_
     __pyx_t_1 = __pyx_v_template; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     __pyx_t_9 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_template); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 100, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_template); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_9 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 100, __pyx_L1_error)
+    __pyx_t_9 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 102, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_9)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_5 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_5); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 100, __pyx_L1_error)
+        __pyx_t_5 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_5); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 102, __pyx_L1_error)
         #else
-        __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 100, __pyx_L1_error)
+        __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 102, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_5); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 100, __pyx_L1_error)
+        __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_5); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 102, __pyx_L1_error)
         #else
-        __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 100, __pyx_L1_error)
+        __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 102, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         #endif
       }
@@ -2979,7 +2991,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_word2features(PyObject *_
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 100, __pyx_L1_error)
+          else __PYX_ERR(0, 102, __pyx_L1_error)
         }
         break;
       }
@@ -2988,20 +3000,20 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_word2features(PyObject *_
     __Pyx_XDECREF_SET(__pyx_v_token_syntax, __pyx_t_5);
     __pyx_t_5 = 0;
 
-    /* "transformer/tagged_cython.pyx":101
+    /* "transformer/tagged_cython.pyx":103
  *     cdef int size = len(sent)
  *     for token_syntax in template:
  *         matched = re.match(             # <<<<<<<<<<<<<<
  *         "T\[(?P<index1>\-?\d+)(\,(?P<index2>\-?\d+))?\](\[(?P<column>.*)\])?(\.(?P<function>.*))?", token_syntax)
  *         column_ = matched.group("column")
  */
-    __pyx_t_7 = __Pyx_GetModuleGlobalName(__pyx_n_s_re); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 101, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_GetModuleGlobalName(__pyx_n_s_re); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 103, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_match); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 101, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_match); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 103, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "transformer/tagged_cython.pyx":102
+    /* "transformer/tagged_cython.pyx":104
  *     for token_syntax in template:
  *         matched = re.match(
  *         "T\[(?P<index1>\-?\d+)(\,(?P<index2>\-?\d+))?\](\[(?P<column>.*)\])?(\.(?P<function>.*))?", token_syntax)             # <<<<<<<<<<<<<<
@@ -3023,7 +3035,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_word2features(PyObject *_
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_10)) {
       PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_kp_s_T_P_index1_d_P_index2_d_P_column, __pyx_v_token_syntax};
-      __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_11, 2+__pyx_t_11); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 101, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_11, 2+__pyx_t_11); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 103, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_5);
     } else
@@ -3031,13 +3043,13 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_word2features(PyObject *_
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_10)) {
       PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_kp_s_T_P_index1_d_P_index2_d_P_column, __pyx_v_token_syntax};
-      __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_11, 2+__pyx_t_11); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 101, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_11, 2+__pyx_t_11); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 103, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_5);
     } else
     #endif
     {
-      __pyx_t_12 = PyTuple_New(2+__pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 101, __pyx_L1_error)
+      __pyx_t_12 = PyTuple_New(2+__pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 103, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
       if (__pyx_t_7) {
         __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -3048,7 +3060,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_word2features(PyObject *_
       __Pyx_INCREF(__pyx_v_token_syntax);
       __Pyx_GIVEREF(__pyx_v_token_syntax);
       PyTuple_SET_ITEM(__pyx_t_12, 1+__pyx_t_11, __pyx_v_token_syntax);
-      __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_12, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 101, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_12, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 103, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
     }
@@ -3056,45 +3068,45 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_word2features(PyObject *_
     __Pyx_XDECREF_SET(__pyx_v_matched, __pyx_t_5);
     __pyx_t_5 = 0;
 
-    /* "transformer/tagged_cython.pyx":103
+    /* "transformer/tagged_cython.pyx":105
  *         matched = re.match(
  *         "T\[(?P<index1>\-?\d+)(\,(?P<index2>\-?\d+))?\](\[(?P<column>.*)\])?(\.(?P<function>.*))?", token_syntax)
  *         column_ = matched.group("column")             # <<<<<<<<<<<<<<
  *         if column_:
  *             column = int(column_)
  */
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_matched, __pyx_n_s_group); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 103, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_matched, __pyx_n_s_group); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 105, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 103, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 105, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_XDECREF_SET(__pyx_v_column_, __pyx_t_10);
     __pyx_t_10 = 0;
 
-    /* "transformer/tagged_cython.pyx":104
+    /* "transformer/tagged_cython.pyx":106
  *         "T\[(?P<index1>\-?\d+)(\,(?P<index2>\-?\d+))?\](\[(?P<column>.*)\])?(\.(?P<function>.*))?", token_syntax)
  *         column_ = matched.group("column")
  *         if column_:             # <<<<<<<<<<<<<<
  *             column = int(column_)
  *         else:
  */
-    __pyx_t_13 = __Pyx_PyObject_IsTrue(__pyx_v_column_); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 104, __pyx_L1_error)
+    __pyx_t_13 = __Pyx_PyObject_IsTrue(__pyx_v_column_); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 106, __pyx_L1_error)
     if (__pyx_t_13) {
 
-      /* "transformer/tagged_cython.pyx":105
+      /* "transformer/tagged_cython.pyx":107
  *         column_ = matched.group("column")
  *         if column_:
  *             column = int(column_)             # <<<<<<<<<<<<<<
  *         else:
  *             column = 0
  */
-      __pyx_t_10 = __Pyx_PyNumber_Int(__pyx_v_column_); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 105, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyNumber_Int(__pyx_v_column_); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 107, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      __pyx_t_11 = __Pyx_PyInt_As_int(__pyx_t_10); if (unlikely((__pyx_t_11 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 105, __pyx_L1_error)
+      __pyx_t_11 = __Pyx_PyInt_As_int(__pyx_t_10); if (unlikely((__pyx_t_11 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 107, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __pyx_v_column = __pyx_t_11;
 
-      /* "transformer/tagged_cython.pyx":104
+      /* "transformer/tagged_cython.pyx":106
  *         "T\[(?P<index1>\-?\d+)(\,(?P<index2>\-?\d+))?\](\[(?P<column>.*)\])?(\.(?P<function>.*))?", token_syntax)
  *         column_ = matched.group("column")
  *         if column_:             # <<<<<<<<<<<<<<
@@ -3104,7 +3116,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_word2features(PyObject *_
       goto __pyx_L9;
     }
 
-    /* "transformer/tagged_cython.pyx":107
+    /* "transformer/tagged_cython.pyx":109
  *             column = int(column_)
  *         else:
  *             column = 0             # <<<<<<<<<<<<<<
@@ -3116,50 +3128,50 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_word2features(PyObject *_
     }
     __pyx_L9:;
 
-    /* "transformer/tagged_cython.pyx":108
+    /* "transformer/tagged_cython.pyx":110
  *         else:
  *             column = 0
  *         index1 = int(matched.group("index1"))             # <<<<<<<<<<<<<<
  *         index2 = matched.group("index2")
  *         index2 = int(index2) if index2 else None
  */
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_matched, __pyx_n_s_group); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_matched, __pyx_n_s_group); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 110, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 110, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-    __pyx_t_10 = __Pyx_PyNumber_Int(__pyx_t_5); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyNumber_Int(__pyx_t_5); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 110, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_11 = __Pyx_PyInt_As_int(__pyx_t_10); if (unlikely((__pyx_t_11 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyInt_As_int(__pyx_t_10); if (unlikely((__pyx_t_11 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 110, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __pyx_v_index1 = __pyx_t_11;
 
-    /* "transformer/tagged_cython.pyx":109
+    /* "transformer/tagged_cython.pyx":111
  *             column = 0
  *         index1 = int(matched.group("index1"))
  *         index2 = matched.group("index2")             # <<<<<<<<<<<<<<
  *         index2 = int(index2) if index2 else None
  *         func = matched.group("function")
  */
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_matched, __pyx_n_s_group); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 109, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_matched, __pyx_n_s_group); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 111, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_tuple__7, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 109, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_tuple__7, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 111, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_XDECREF_SET(__pyx_v_index2, __pyx_t_5);
     __pyx_t_5 = 0;
 
-    /* "transformer/tagged_cython.pyx":110
+    /* "transformer/tagged_cython.pyx":112
  *         index1 = int(matched.group("index1"))
  *         index2 = matched.group("index2")
  *         index2 = int(index2) if index2 else None             # <<<<<<<<<<<<<<
  *         func = matched.group("function")
  *         output = template2features(sent, columns, size, i,
  */
-    __pyx_t_13 = __Pyx_PyObject_IsTrue(__pyx_v_index2); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 110, __pyx_L1_error)
+    __pyx_t_13 = __Pyx_PyObject_IsTrue(__pyx_v_index2); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 112, __pyx_L1_error)
     if (__pyx_t_13) {
-      __pyx_t_10 = __Pyx_PyNumber_Int(__pyx_v_index2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 110, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyNumber_Int(__pyx_v_index2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 112, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __pyx_t_5 = __pyx_t_10;
       __pyx_t_10 = 0;
@@ -3170,43 +3182,52 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_word2features(PyObject *_
     __Pyx_DECREF_SET(__pyx_v_index2, __pyx_t_5);
     __pyx_t_5 = 0;
 
-    /* "transformer/tagged_cython.pyx":111
+    /* "transformer/tagged_cython.pyx":113
  *         index2 = matched.group("index2")
  *         index2 = int(index2) if index2 else None
  *         func = matched.group("function")             # <<<<<<<<<<<<<<
  *         output = template2features(sent, columns, size, i,
  *                                    token_syntax,
  */
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_matched, __pyx_n_s_group); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 111, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_matched, __pyx_n_s_group); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 113, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__8, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 111, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__8, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 113, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_XDECREF_SET(__pyx_v_func, __pyx_t_10);
     __pyx_t_10 = 0;
 
-    /* "transformer/tagged_cython.pyx":112
+    /* "transformer/tagged_cython.pyx":115
+ *         func = matched.group("function")
+ *         output = template2features(sent, columns, size, i,
+ *                                    token_syntax,             # <<<<<<<<<<<<<<
+ *                                    column, index1, index2, func)
+ *         features.append(output)
+ */
+    if (!(likely(PyString_CheckExact(__pyx_v_token_syntax))||((__pyx_v_token_syntax) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "str", Py_TYPE(__pyx_v_token_syntax)->tp_name), 0))) __PYX_ERR(0, 115, __pyx_L1_error)
+
+    /* "transformer/tagged_cython.pyx":114
  *         index2 = int(index2) if index2 else None
  *         func = matched.group("function")
  *         output = template2features(sent, columns, size, i,             # <<<<<<<<<<<<<<
  *                                    token_syntax,
  *                                    column, index1, index2, func)
  */
-    __pyx_t_10 = __pyx_f_11transformer_13tagged_cython_template2features(__pyx_v_sent, __pyx_v_columns, __pyx_v_size, __pyx_v_i, __pyx_v_token_syntax, __pyx_v_column, __pyx_v_index1, __pyx_v_index2, __pyx_v_func, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 112, __pyx_L1_error)
+    __pyx_t_10 = __pyx_f_11transformer_13tagged_cython_template2features(__pyx_v_sent, __pyx_v_columns, __pyx_v_size, __pyx_v_i, ((PyObject*)__pyx_v_token_syntax), __pyx_v_column, __pyx_v_index1, __pyx_v_index2, __pyx_v_func, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_XDECREF_SET(__pyx_v_output, __pyx_t_10);
     __pyx_t_10 = 0;
 
-    /* "transformer/tagged_cython.pyx":115
+    /* "transformer/tagged_cython.pyx":117
  *                                    token_syntax,
  *                                    column, index1, index2, func)
  *         features.append(output)             # <<<<<<<<<<<<<<
  *     return features
  * 
  */
-    __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_features, __pyx_v_output); if (unlikely(__pyx_t_8 == ((int)-1))) __PYX_ERR(0, 115, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_features, __pyx_v_output); if (unlikely(__pyx_t_8 == ((int)-1))) __PYX_ERR(0, 117, __pyx_L1_error)
 
-    /* "transformer/tagged_cython.pyx":100
+    /* "transformer/tagged_cython.pyx":102
  *         columns.append([t[j] for t in sent])
  *     cdef int size = len(sent)
  *     for token_syntax in template:             # <<<<<<<<<<<<<<
@@ -3216,7 +3237,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_word2features(PyObject *_
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "transformer/tagged_cython.pyx":116
+  /* "transformer/tagged_cython.pyx":118
  *                                    column, index1, index2, func)
  *         features.append(output)
  *     return features             # <<<<<<<<<<<<<<
@@ -3228,7 +3249,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_word2features(PyObject *_
   __pyx_r = __pyx_v_features;
   goto __pyx_L0;
 
-  /* "transformer/tagged_cython.pyx":88
+  /* "transformer/tagged_cython.pyx":90
  *     return output
  * 
  * cdef list word2features(list sent, int i, template):             # <<<<<<<<<<<<<<
@@ -3260,7 +3281,7 @@ static PyObject *__pyx_f_11transformer_13tagged_cython_word2features(PyObject *_
   return __pyx_r;
 }
 
-/* "transformer/tagged_cython.pyx":120
+/* "transformer/tagged_cython.pyx":122
  * 
  * class TaggedTransformer:
  *     def __init__(self, template=None):             # <<<<<<<<<<<<<<
@@ -3305,7 +3326,7 @@ static PyObject *__pyx_pw_11transformer_13tagged_cython_17TaggedTransformer_1__i
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 120, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 122, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -3321,7 +3342,7 @@ static PyObject *__pyx_pw_11transformer_13tagged_cython_17TaggedTransformer_1__i
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 120, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 122, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("transformer.tagged_cython.TaggedTransformer.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3339,16 +3360,16 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer___in
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "transformer/tagged_cython.pyx":121
+  /* "transformer/tagged_cython.pyx":123
  * class TaggedTransformer:
  *     def __init__(self, template=None):
  *         self.template = template             # <<<<<<<<<<<<<<
  * 
  *     def transform(self, sentences):
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_template, __pyx_v_template) < 0) __PYX_ERR(0, 121, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_template, __pyx_v_template) < 0) __PYX_ERR(0, 123, __pyx_L1_error)
 
-  /* "transformer/tagged_cython.pyx":120
+  /* "transformer/tagged_cython.pyx":122
  * 
  * class TaggedTransformer:
  *     def __init__(self, template=None):             # <<<<<<<<<<<<<<
@@ -3368,7 +3389,7 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer___in
   return __pyx_r;
 }
 
-/* "transformer/tagged_cython.pyx":123
+/* "transformer/tagged_cython.pyx":125
  *         self.template = template
  * 
  *     def transform(self, sentences):             # <<<<<<<<<<<<<<
@@ -3408,11 +3429,11 @@ static PyObject *__pyx_pw_11transformer_13tagged_cython_17TaggedTransformer_3tra
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_sentences)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("transform", 1, 2, 2, 1); __PYX_ERR(0, 123, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("transform", 1, 2, 2, 1); __PYX_ERR(0, 125, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "transform") < 0)) __PYX_ERR(0, 123, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "transform") < 0)) __PYX_ERR(0, 125, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -3425,7 +3446,7 @@ static PyObject *__pyx_pw_11transformer_13tagged_cython_17TaggedTransformer_3tra
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("transform", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 123, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("transform", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 125, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("transformer.tagged_cython.TaggedTransformer.transform", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3454,39 +3475,39 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_2tra
   PyObject *__pyx_t_8 = NULL;
   __Pyx_RefNannySetupContext("transform", 0);
 
-  /* "transformer/tagged_cython.pyx":124
+  /* "transformer/tagged_cython.pyx":126
  * 
  *     def transform(self, sentences):
  *         X = [self.sentence2features(s) for s in sentences]             # <<<<<<<<<<<<<<
  *         y = [self.sentence2labels(s) for s in sentences]
  *         return X, y
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 126, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (likely(PyList_CheckExact(__pyx_v_sentences)) || PyTuple_CheckExact(__pyx_v_sentences)) {
     __pyx_t_2 = __pyx_v_sentences; __Pyx_INCREF(__pyx_t_2); __pyx_t_3 = 0;
     __pyx_t_4 = NULL;
   } else {
-    __pyx_t_3 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_sentences); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 124, __pyx_L1_error)
+    __pyx_t_3 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_sentences); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 124, __pyx_L1_error)
+    __pyx_t_4 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 126, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_4)) {
       if (likely(PyList_CheckExact(__pyx_t_2))) {
         if (__pyx_t_3 >= PyList_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_5 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_5); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 124, __pyx_L1_error)
+        __pyx_t_5 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_5); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 126, __pyx_L1_error)
         #else
-        __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 124, __pyx_L1_error)
+        __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 126, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         #endif
       } else {
         if (__pyx_t_3 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_5); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 124, __pyx_L1_error)
+        __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_5); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 126, __pyx_L1_error)
         #else
-        __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 124, __pyx_L1_error)
+        __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 126, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         #endif
       }
@@ -3496,7 +3517,7 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_2tra
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 124, __pyx_L1_error)
+          else __PYX_ERR(0, 126, __pyx_L1_error)
         }
         break;
       }
@@ -3504,7 +3525,7 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_2tra
     }
     __Pyx_XDECREF_SET(__pyx_v_s, __pyx_t_5);
     __pyx_t_5 = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_sentence2features); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 124, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_sentence2features); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_7 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_6))) {
@@ -3517,13 +3538,13 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_2tra
       }
     }
     if (!__pyx_t_7) {
-      __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_s); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_s); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
     } else {
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_6)) {
         PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_v_s};
-        __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 124, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 126, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
         __Pyx_GOTREF(__pyx_t_5);
       } else
@@ -3531,64 +3552,64 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_2tra
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_6)) {
         PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_v_s};
-        __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 124, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 126, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
         __Pyx_GOTREF(__pyx_t_5);
       } else
       #endif
       {
-        __pyx_t_8 = PyTuple_New(1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 124, __pyx_L1_error)
+        __pyx_t_8 = PyTuple_New(1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 126, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_7); __pyx_t_7 = NULL;
         __Pyx_INCREF(__pyx_v_s);
         __Pyx_GIVEREF(__pyx_v_s);
         PyTuple_SET_ITEM(__pyx_t_8, 0+1, __pyx_v_s);
-        __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 124, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 126, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       }
     }
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_5))) __PYX_ERR(0, 124, __pyx_L1_error)
+    if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_5))) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_X = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "transformer/tagged_cython.pyx":125
+  /* "transformer/tagged_cython.pyx":127
  *     def transform(self, sentences):
  *         X = [self.sentence2features(s) for s in sentences]
  *         y = [self.sentence2labels(s) for s in sentences]             # <<<<<<<<<<<<<<
  *         return X, y
  * 
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (likely(PyList_CheckExact(__pyx_v_sentences)) || PyTuple_CheckExact(__pyx_v_sentences)) {
     __pyx_t_2 = __pyx_v_sentences; __Pyx_INCREF(__pyx_t_2); __pyx_t_3 = 0;
     __pyx_t_4 = NULL;
   } else {
-    __pyx_t_3 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_sentences); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 125, __pyx_L1_error)
+    __pyx_t_3 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_sentences); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 127, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 125, __pyx_L1_error)
+    __pyx_t_4 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 127, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_4)) {
       if (likely(PyList_CheckExact(__pyx_t_2))) {
         if (__pyx_t_3 >= PyList_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_5 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_5); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 125, __pyx_L1_error)
+        __pyx_t_5 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_5); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 127, __pyx_L1_error)
         #else
-        __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 125, __pyx_L1_error)
+        __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 127, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         #endif
       } else {
         if (__pyx_t_3 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_5); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 125, __pyx_L1_error)
+        __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_5); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 127, __pyx_L1_error)
         #else
-        __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 125, __pyx_L1_error)
+        __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 127, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         #endif
       }
@@ -3598,7 +3619,7 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_2tra
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 125, __pyx_L1_error)
+          else __PYX_ERR(0, 127, __pyx_L1_error)
         }
         break;
       }
@@ -3606,7 +3627,7 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_2tra
     }
     __Pyx_XDECREF_SET(__pyx_v_s, __pyx_t_5);
     __pyx_t_5 = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_sentence2labels); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 125, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_sentence2labels); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 127, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_8 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_6))) {
@@ -3619,13 +3640,13 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_2tra
       }
     }
     if (!__pyx_t_8) {
-      __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_s); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 125, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_s); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 127, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
     } else {
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_6)) {
         PyObject *__pyx_temp[2] = {__pyx_t_8, __pyx_v_s};
-        __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 125, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 127, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_GOTREF(__pyx_t_5);
       } else
@@ -3633,32 +3654,32 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_2tra
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_6)) {
         PyObject *__pyx_temp[2] = {__pyx_t_8, __pyx_v_s};
-        __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 125, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 127, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_GOTREF(__pyx_t_5);
       } else
       #endif
       {
-        __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 125, __pyx_L1_error)
+        __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 127, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         __Pyx_GIVEREF(__pyx_t_8); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_8); __pyx_t_8 = NULL;
         __Pyx_INCREF(__pyx_v_s);
         __Pyx_GIVEREF(__pyx_v_s);
         PyTuple_SET_ITEM(__pyx_t_7, 0+1, __pyx_v_s);
-        __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_7, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 125, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_7, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 127, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       }
     }
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_5))) __PYX_ERR(0, 125, __pyx_L1_error)
+    if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_5))) __PYX_ERR(0, 127, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_y = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "transformer/tagged_cython.pyx":126
+  /* "transformer/tagged_cython.pyx":128
  *         X = [self.sentence2features(s) for s in sentences]
  *         y = [self.sentence2labels(s) for s in sentences]
  *         return X, y             # <<<<<<<<<<<<<<
@@ -3666,7 +3687,7 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_2tra
  *     def sentence2features(self, s):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 126, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_v_X);
   __Pyx_GIVEREF(__pyx_v_X);
@@ -3678,7 +3699,7 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_2tra
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "transformer/tagged_cython.pyx":123
+  /* "transformer/tagged_cython.pyx":125
  *         self.template = template
  * 
  *     def transform(self, sentences):             # <<<<<<<<<<<<<<
@@ -3705,7 +3726,7 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_2tra
   return __pyx_r;
 }
 
-/* "transformer/tagged_cython.pyx":128
+/* "transformer/tagged_cython.pyx":130
  *         return X, y
  * 
  *     def sentence2features(self, s):             # <<<<<<<<<<<<<<
@@ -3745,11 +3766,11 @@ static PyObject *__pyx_pw_11transformer_13tagged_cython_17TaggedTransformer_5sen
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_s)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("sentence2features", 1, 2, 2, 1); __PYX_ERR(0, 128, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("sentence2features", 1, 2, 2, 1); __PYX_ERR(0, 130, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "sentence2features") < 0)) __PYX_ERR(0, 128, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "sentence2features") < 0)) __PYX_ERR(0, 130, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -3762,7 +3783,7 @@ static PyObject *__pyx_pw_11transformer_13tagged_cython_17TaggedTransformer_5sen
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("sentence2features", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 128, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("sentence2features", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 130, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("transformer.tagged_cython.TaggedTransformer.sentence2features", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3791,29 +3812,29 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_4sen
   int __pyx_t_7;
   __Pyx_RefNannySetupContext("sentence2features", 0);
 
-  /* "transformer/tagged_cython.pyx":130
+  /* "transformer/tagged_cython.pyx":132
  *     def sentence2features(self, s):
  *         cdef list tmp
  *         cdef list output = []             # <<<<<<<<<<<<<<
  *         cdef int l = len(s)
  *         for i in range(l):
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 130, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_output = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "transformer/tagged_cython.pyx":131
+  /* "transformer/tagged_cython.pyx":133
  *         cdef list tmp
  *         cdef list output = []
  *         cdef int l = len(s)             # <<<<<<<<<<<<<<
  *         for i in range(l):
  *             tmp = word2features(s, i, self.template)
  */
-  __pyx_t_2 = PyObject_Length(__pyx_v_s); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_t_2 = PyObject_Length(__pyx_v_s); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 133, __pyx_L1_error)
   __pyx_v_l = __pyx_t_2;
 
-  /* "transformer/tagged_cython.pyx":132
+  /* "transformer/tagged_cython.pyx":134
  *         cdef list output = []
  *         cdef int l = len(s)
  *         for i in range(l):             # <<<<<<<<<<<<<<
@@ -3825,33 +3846,33 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_4sen
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_i = __pyx_t_5;
 
-    /* "transformer/tagged_cython.pyx":133
+    /* "transformer/tagged_cython.pyx":135
  *         cdef int l = len(s)
  *         for i in range(l):
  *             tmp = word2features(s, i, self.template)             # <<<<<<<<<<<<<<
  *             output.append(tmp)
  *         return output
  */
-    if (!(likely(PyList_CheckExact(__pyx_v_s))||((__pyx_v_s) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "list", Py_TYPE(__pyx_v_s)->tp_name), 0))) __PYX_ERR(0, 133, __pyx_L1_error)
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_template); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
+    if (!(likely(PyList_CheckExact(__pyx_v_s))||((__pyx_v_s) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "list", Py_TYPE(__pyx_v_s)->tp_name), 0))) __PYX_ERR(0, 135, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_template); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = __pyx_f_11transformer_13tagged_cython_word2features(((PyObject*)__pyx_v_s), __pyx_v_i, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
+    __pyx_t_6 = __pyx_f_11transformer_13tagged_cython_word2features(((PyObject*)__pyx_v_s), __pyx_v_i, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 135, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_XDECREF_SET(__pyx_v_tmp, ((PyObject*)__pyx_t_6));
     __pyx_t_6 = 0;
 
-    /* "transformer/tagged_cython.pyx":134
+    /* "transformer/tagged_cython.pyx":136
  *         for i in range(l):
  *             tmp = word2features(s, i, self.template)
  *             output.append(tmp)             # <<<<<<<<<<<<<<
  *         return output
  * 
  */
-    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_output, __pyx_v_tmp); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 134, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_output, __pyx_v_tmp); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 136, __pyx_L1_error)
   }
 
-  /* "transformer/tagged_cython.pyx":135
+  /* "transformer/tagged_cython.pyx":137
  *             tmp = word2features(s, i, self.template)
  *             output.append(tmp)
  *         return output             # <<<<<<<<<<<<<<
@@ -3863,7 +3884,7 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_4sen
   __pyx_r = __pyx_v_output;
   goto __pyx_L0;
 
-  /* "transformer/tagged_cython.pyx":128
+  /* "transformer/tagged_cython.pyx":130
  *         return X, y
  * 
  *     def sentence2features(self, s):             # <<<<<<<<<<<<<<
@@ -3885,7 +3906,7 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_4sen
   return __pyx_r;
 }
 
-/* "transformer/tagged_cython.pyx":137
+/* "transformer/tagged_cython.pyx":139
  *         return output
  * 
  *     def sentence2labels(self, s):             # <<<<<<<<<<<<<<
@@ -3925,11 +3946,11 @@ static PyObject *__pyx_pw_11transformer_13tagged_cython_17TaggedTransformer_7sen
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_s)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("sentence2labels", 1, 2, 2, 1); __PYX_ERR(0, 137, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("sentence2labels", 1, 2, 2, 1); __PYX_ERR(0, 139, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "sentence2labels") < 0)) __PYX_ERR(0, 137, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "sentence2labels") < 0)) __PYX_ERR(0, 139, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -3942,7 +3963,7 @@ static PyObject *__pyx_pw_11transformer_13tagged_cython_17TaggedTransformer_7sen
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("sentence2labels", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 137, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("sentence2labels", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 139, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("transformer.tagged_cython.TaggedTransformer.sentence2labels", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3966,7 +3987,7 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_6sen
   PyObject *__pyx_t_5 = NULL;
   __Pyx_RefNannySetupContext("sentence2labels", 0);
 
-  /* "transformer/tagged_cython.pyx":138
+  /* "transformer/tagged_cython.pyx":140
  * 
  *     def sentence2labels(self, s):
  *         return [row[-1] for row in s]             # <<<<<<<<<<<<<<
@@ -3974,32 +3995,32 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_6sen
  *     def fa2(self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (likely(PyList_CheckExact(__pyx_v_s)) || PyTuple_CheckExact(__pyx_v_s)) {
     __pyx_t_2 = __pyx_v_s; __Pyx_INCREF(__pyx_t_2); __pyx_t_3 = 0;
     __pyx_t_4 = NULL;
   } else {
-    __pyx_t_3 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_s); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __pyx_t_3 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_s); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 140, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __pyx_t_4 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 140, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_4)) {
       if (likely(PyList_CheckExact(__pyx_t_2))) {
         if (__pyx_t_3 >= PyList_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_5 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_5); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 138, __pyx_L1_error)
+        __pyx_t_5 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_5); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 140, __pyx_L1_error)
         #else
-        __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 138, __pyx_L1_error)
+        __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 140, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         #endif
       } else {
         if (__pyx_t_3 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_5); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 138, __pyx_L1_error)
+        __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_5); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 140, __pyx_L1_error)
         #else
-        __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 138, __pyx_L1_error)
+        __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 140, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         #endif
       }
@@ -4009,7 +4030,7 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_6sen
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 138, __pyx_L1_error)
+          else __PYX_ERR(0, 140, __pyx_L1_error)
         }
         break;
       }
@@ -4017,9 +4038,9 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_6sen
     }
     __Pyx_XDECREF_SET(__pyx_v_row, __pyx_t_5);
     __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_GetItemInt(__pyx_v_row, -1L, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_GetItemInt(__pyx_v_row, -1L, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 140, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_5))) __PYX_ERR(0, 138, __pyx_L1_error)
+    if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_5))) __PYX_ERR(0, 140, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -4027,7 +4048,7 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_6sen
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "transformer/tagged_cython.pyx":137
+  /* "transformer/tagged_cython.pyx":139
  *         return output
  * 
  *     def sentence2labels(self, s):             # <<<<<<<<<<<<<<
@@ -4049,11 +4070,11 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_6sen
   return __pyx_r;
 }
 
-/* "transformer/tagged_cython.pyx":140
+/* "transformer/tagged_cython.pyx":142
  *         return [row[-1] for row in s]
  * 
  *     def fa2(self):             # <<<<<<<<<<<<<<
- *         return fa()
+ *         return fa3()
  */
 
 /* Python wrapper */
@@ -4076,23 +4097,23 @@ static PyObject *__pyx_pf_11transformer_13tagged_cython_17TaggedTransformer_8fa2
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("fa2", 0);
 
-  /* "transformer/tagged_cython.pyx":141
+  /* "transformer/tagged_cython.pyx":143
  * 
  *     def fa2(self):
- *         return fa()             # <<<<<<<<<<<<<<
+ *         return fa3()             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_convert_vector_to_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___(__pyx_f_11transformer_13tagged_cython_fa()); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 141, __pyx_L1_error)
+  __pyx_t_1 = __pyx_convert_vector_to_py_std_3a__3a_string(__pyx_f_11transformer_13tagged_cython_fa3()); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 143, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "transformer/tagged_cython.pyx":140
+  /* "transformer/tagged_cython.pyx":142
  *         return [row[-1] for row in s]
  * 
  *     def fa2(self):             # <<<<<<<<<<<<<<
- *         return fa()
+ *         return fa3()
  */
 
   /* function exit code */
@@ -4414,117 +4435,6 @@ static std::vector<std::string>  __pyx_convert_vector_from_py_std_3a__3a_string(
   return __pyx_r;
 }
 
-static std::vector<std::vector<std::string> >  __pyx_convert_vector_from_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___(PyObject *__pyx_v_o) {
-  std::vector<std::vector<std::string> >  __pyx_v_v;
-  PyObject *__pyx_v_item = NULL;
-  std::vector<std::vector<std::string> >  __pyx_r;
-  __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
-  Py_ssize_t __pyx_t_2;
-  PyObject *(*__pyx_t_3)(PyObject *);
-  PyObject *__pyx_t_4 = NULL;
-  std::vector<std::string>  __pyx_t_5;
-  __Pyx_RefNannySetupContext("__pyx_convert_vector_from_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___", 0);
-
-  /* "vector.from_py":47
- * cdef vector[X] __pyx_convert_vector_from_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___(object o) except *:
- *     cdef vector[X] v
- *     for item in o:             # <<<<<<<<<<<<<<
- *         v.push_back(<X>item)
- *     return v
- */
-  if (likely(PyList_CheckExact(__pyx_v_o)) || PyTuple_CheckExact(__pyx_v_o)) {
-    __pyx_t_1 = __pyx_v_o; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
-    __pyx_t_3 = NULL;
-  } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_o); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 47, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 47, __pyx_L1_error)
-  }
-  for (;;) {
-    if (likely(!__pyx_t_3)) {
-      if (likely(PyList_CheckExact(__pyx_t_1))) {
-        if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
-        #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 47, __pyx_L1_error)
-        #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 47, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_4);
-        #endif
-      } else {
-        if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
-        #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 47, __pyx_L1_error)
-        #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 47, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_4);
-        #endif
-      }
-    } else {
-      __pyx_t_4 = __pyx_t_3(__pyx_t_1);
-      if (unlikely(!__pyx_t_4)) {
-        PyObject* exc_type = PyErr_Occurred();
-        if (exc_type) {
-          if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(1, 47, __pyx_L1_error)
-        }
-        break;
-      }
-      __Pyx_GOTREF(__pyx_t_4);
-    }
-    __Pyx_XDECREF_SET(__pyx_v_item, __pyx_t_4);
-    __pyx_t_4 = 0;
-
-    /* "vector.from_py":48
- *     cdef vector[X] v
- *     for item in o:
- *         v.push_back(<X>item)             # <<<<<<<<<<<<<<
- *     return v
- * 
- */
-    __pyx_t_5 = __pyx_convert_vector_from_py_std_3a__3a_string(__pyx_v_item); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 48, __pyx_L1_error)
-    __pyx_v_v.push_back(((std::vector<std::string> )__pyx_t_5));
-
-    /* "vector.from_py":47
- * cdef vector[X] __pyx_convert_vector_from_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___(object o) except *:
- *     cdef vector[X] v
- *     for item in o:             # <<<<<<<<<<<<<<
- *         v.push_back(<X>item)
- *     return v
- */
-  }
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-  /* "vector.from_py":49
- *     for item in o:
- *         v.push_back(<X>item)
- *     return v             # <<<<<<<<<<<<<<
- * 
- * 
- */
-  __pyx_r = __pyx_v_v;
-  goto __pyx_L0;
-
-  /* "vector.from_py":45
- * 
- * @cname("__pyx_convert_vector_from_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___")
- * cdef vector[X] __pyx_convert_vector_from_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___(object o) except *:             # <<<<<<<<<<<<<<
- *     cdef vector[X] v
- *     for item in o:
- */
-
-  /* function exit code */
-  __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("vector.from_py.__pyx_convert_vector_from_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___", __pyx_clineno, __pyx_lineno, __pyx_filename);
-  __Pyx_pretend_to_initialize(&__pyx_r);
-  __pyx_L0:;
-  __Pyx_XDECREF(__pyx_v_item);
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
 /* "string.to_py":31
  * 
  * @cname("__pyx_convert_PyObject_string_to_py_std__in_string")
@@ -4821,60 +4731,6 @@ static PyObject *__pyx_convert_vector_to_py_std_3a__3a_string(const std::vector<
   return __pyx_r;
 }
 
-static PyObject *__pyx_convert_vector_to_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___(const std::vector<std::vector<std::string> >  &__pyx_v_v) {
-  size_t __pyx_v_i;
-  PyObject *__pyx_r = NULL;
-  __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
-  size_t __pyx_t_2;
-  size_t __pyx_t_3;
-  size_t __pyx_t_4;
-  PyObject *__pyx_t_5 = NULL;
-  __Pyx_RefNannySetupContext("__pyx_convert_vector_to_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___", 0);
-
-  /* "vector.to_py":61
- * @cname("__pyx_convert_vector_to_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___")
- * cdef object __pyx_convert_vector_to_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___(vector[X]& v):
- *     return [v[i] for i in range(v.size())]             # <<<<<<<<<<<<<<
- * 
- * 
- */
-  __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 61, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __pyx_v_v.size();
-  __pyx_t_3 = __pyx_t_2;
-  for (__pyx_t_4 = 0; __pyx_t_4 < __pyx_t_3; __pyx_t_4+=1) {
-    __pyx_v_i = __pyx_t_4;
-    __pyx_t_5 = __pyx_convert_vector_to_py_std_3a__3a_string((__pyx_v_v[__pyx_v_i])); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 61, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
-    if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_5))) __PYX_ERR(1, 61, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  }
-  __pyx_r = __pyx_t_1;
-  __pyx_t_1 = 0;
-  goto __pyx_L0;
-
-  /* "vector.to_py":60
- * 
- * @cname("__pyx_convert_vector_to_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___")
- * cdef object __pyx_convert_vector_to_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___(vector[X]& v):             # <<<<<<<<<<<<<<
- *     return [v[i] for i in range(v.size())]
- * 
- */
-
-  /* function exit code */
-  __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("vector.to_py.__pyx_convert_vector_to_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___", __pyx_clineno, __pyx_lineno, __pyx_filename);
-  __pyx_r = 0;
-  __pyx_L0:;
-  __Pyx_XGIVEREF(__pyx_r);
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
 static struct __pyx_obj___pyx_scope_struct____Pyx_CFunc_object____object___to_py *__pyx_freelist___pyx_scope_struct____Pyx_CFunc_object____object___to_py[8];
 static int __pyx_freecount___pyx_scope_struct____Pyx_CFunc_object____object___to_py = 0;
 
@@ -5007,15 +4863,17 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_X, __pyx_k_X, sizeof(__pyx_k_X), 0, 0, 1, 1},
   {&__pyx_kp_s__3, __pyx_k__3, sizeof(__pyx_k__3), 0, 0, 1, 0},
   {&__pyx_kp_s__4, __pyx_k__4, sizeof(__pyx_k__4), 0, 0, 1, 0},
-  {&__pyx_n_s_a, __pyx_k_a, sizeof(__pyx_k_a), 0, 0, 1, 1},
-  {&__pyx_n_s_b, __pyx_k_b, sizeof(__pyx_k_b), 0, 0, 1, 1},
-  {&__pyx_n_s_c, __pyx_k_c, sizeof(__pyx_k_c), 0, 0, 1, 1},
+  {&__pyx_n_b_a, __pyx_k_a, sizeof(__pyx_k_a), 0, 0, 0, 1},
+  {&__pyx_n_b_b, __pyx_k_b, sizeof(__pyx_k_b), 0, 0, 0, 1},
+  {&__pyx_n_b_c, __pyx_k_c, sizeof(__pyx_k_c), 0, 0, 0, 1},
   {&__pyx_n_s_cfunc_to_py, __pyx_k_cfunc_to_py, sizeof(__pyx_k_cfunc_to_py), 0, 0, 1, 1},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
   {&__pyx_n_s_column, __pyx_k_column, sizeof(__pyx_k_column), 0, 0, 1, 1},
   {&__pyx_n_s_dirname, __pyx_k_dirname, sizeof(__pyx_k_dirname), 0, 0, 1, 1},
   {&__pyx_n_s_doc, __pyx_k_doc, sizeof(__pyx_k_doc), 0, 0, 1, 1},
+  {&__pyx_n_s_end, __pyx_k_end, sizeof(__pyx_k_end), 0, 0, 1, 1},
   {&__pyx_n_s_fa2, __pyx_k_fa2, sizeof(__pyx_k_fa2), 0, 0, 1, 1},
+  {&__pyx_n_s_file, __pyx_k_file, sizeof(__pyx_k_file), 0, 0, 1, 1},
   {&__pyx_n_s_function, __pyx_k_function, sizeof(__pyx_k_function), 0, 0, 1, 1},
   {&__pyx_n_s_get_dictionary_path, __pyx_k_get_dictionary_path, sizeof(__pyx_k_get_dictionary_path), 0, 0, 1, 1},
   {&__pyx_n_s_group, __pyx_k_group, sizeof(__pyx_k_group), 0, 0, 1, 1},
@@ -5040,6 +4898,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_os_path, __pyx_k_os_path, sizeof(__pyx_k_os_path), 0, 0, 1, 1},
   {&__pyx_n_s_output, __pyx_k_output, sizeof(__pyx_k_output), 0, 0, 1, 1},
   {&__pyx_n_s_prepare, __pyx_k_prepare, sizeof(__pyx_k_prepare), 0, 0, 1, 1},
+  {&__pyx_n_s_print, __pyx_k_print, sizeof(__pyx_k_print), 0, 0, 1, 1},
   {&__pyx_n_s_qualname, __pyx_k_qualname, sizeof(__pyx_k_qualname), 0, 0, 1, 1},
   {&__pyx_n_s_range, __pyx_k_range, sizeof(__pyx_k_range), 0, 0, 1, 1},
   {&__pyx_n_s_re, __pyx_k_re, sizeof(__pyx_k_re), 0, 0, 1, 1},
@@ -5057,6 +4916,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_s_tagged_cython_pyx, __pyx_k_tagged_cython_pyx, sizeof(__pyx_k_tagged_cython_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_template, __pyx_k_template, sizeof(__pyx_k_template), 0, 0, 1, 1},
   {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
+  {&__pyx_n_s_text_lower, __pyx_k_text_lower, sizeof(__pyx_k_text_lower), 0, 0, 1, 1},
   {&__pyx_n_s_tmp, __pyx_k_tmp, sizeof(__pyx_k_tmp), 0, 0, 1, 1},
   {&__pyx_n_s_transform, __pyx_k_transform, sizeof(__pyx_k_transform), 0, 0, 1, 1},
   {&__pyx_n_s_transformer_path, __pyx_k_transformer_path, sizeof(__pyx_k_transformer_path), 0, 0, 1, 1},
@@ -5068,7 +4928,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 97, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 99, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -5078,58 +4938,58 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "transformer/tagged_cython.pyx":30
+  /* "transformer/tagged_cython.pyx":33
  *         return False
  *     try:
  *         titles = [s[0] for s in word.split(" ")]             # <<<<<<<<<<<<<<
  *         for token in titles:
  *             if token[0].istitle() is False:
  */
-  __pyx_tuple__2 = PyTuple_Pack(1, __pyx_kp_s_); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_tuple__2 = PyTuple_Pack(1, __pyx_kp_s_); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "transformer/tagged_cython.pyx":103
+  /* "transformer/tagged_cython.pyx":105
  *         matched = re.match(
  *         "T\[(?P<index1>\-?\d+)(\,(?P<index2>\-?\d+))?\](\[(?P<column>.*)\])?(\.(?P<function>.*))?", token_syntax)
  *         column_ = matched.group("column")             # <<<<<<<<<<<<<<
  *         if column_:
  *             column = int(column_)
  */
-  __pyx_tuple__5 = PyTuple_Pack(1, __pyx_n_s_column); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 103, __pyx_L1_error)
+  __pyx_tuple__5 = PyTuple_Pack(1, __pyx_n_s_column); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 105, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
 
-  /* "transformer/tagged_cython.pyx":108
+  /* "transformer/tagged_cython.pyx":110
  *         else:
  *             column = 0
  *         index1 = int(matched.group("index1"))             # <<<<<<<<<<<<<<
  *         index2 = matched.group("index2")
  *         index2 = int(index2) if index2 else None
  */
-  __pyx_tuple__6 = PyTuple_Pack(1, __pyx_n_s_index1); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 108, __pyx_L1_error)
+  __pyx_tuple__6 = PyTuple_Pack(1, __pyx_n_s_index1); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
 
-  /* "transformer/tagged_cython.pyx":109
+  /* "transformer/tagged_cython.pyx":111
  *             column = 0
  *         index1 = int(matched.group("index1"))
  *         index2 = matched.group("index2")             # <<<<<<<<<<<<<<
  *         index2 = int(index2) if index2 else None
  *         func = matched.group("function")
  */
-  __pyx_tuple__7 = PyTuple_Pack(1, __pyx_n_s_index2); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 109, __pyx_L1_error)
+  __pyx_tuple__7 = PyTuple_Pack(1, __pyx_n_s_index2); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 111, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "transformer/tagged_cython.pyx":111
+  /* "transformer/tagged_cython.pyx":113
  *         index2 = matched.group("index2")
  *         index2 = int(index2) if index2 else None
  *         func = matched.group("function")             # <<<<<<<<<<<<<<
  *         output = template2features(sent, columns, size, i,
  *                                    token_syntax,
  */
-  __pyx_tuple__8 = PyTuple_Pack(1, __pyx_n_s_function); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 111, __pyx_L1_error)
+  __pyx_tuple__8 = PyTuple_Pack(1, __pyx_n_s_function); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 113, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
 
@@ -5145,67 +5005,67 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__9);
   __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_wrap, 65, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(1, 65, __pyx_L1_error)
 
-  /* "transformer/tagged_cython.pyx":120
+  /* "transformer/tagged_cython.pyx":122
  * 
  * class TaggedTransformer:
  *     def __init__(self, template=None):             # <<<<<<<<<<<<<<
  *         self.template = template
  * 
  */
-  __pyx_tuple__11 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_template); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 120, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_template); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 122, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
-  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_tagged_cython_pyx, __pyx_n_s_init, 120, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 120, __pyx_L1_error)
-  __pyx_tuple__13 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 120, __pyx_L1_error)
+  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_tagged_cython_pyx, __pyx_n_s_init, 122, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 122, __pyx_L1_error)
+  __pyx_tuple__13 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 122, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
   __Pyx_GIVEREF(__pyx_tuple__13);
 
-  /* "transformer/tagged_cython.pyx":123
+  /* "transformer/tagged_cython.pyx":125
  *         self.template = template
  * 
  *     def transform(self, sentences):             # <<<<<<<<<<<<<<
  *         X = [self.sentence2features(s) for s in sentences]
  *         y = [self.sentence2labels(s) for s in sentences]
  */
-  __pyx_tuple__14 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_sentences, __pyx_n_s_X, __pyx_n_s_y, __pyx_n_s_s); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 123, __pyx_L1_error)
+  __pyx_tuple__14 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_sentences, __pyx_n_s_X, __pyx_n_s_y, __pyx_n_s_s); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 125, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
-  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_tagged_cython_pyx, __pyx_n_s_transform, 123, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 123, __pyx_L1_error)
+  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_tagged_cython_pyx, __pyx_n_s_transform, 125, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 125, __pyx_L1_error)
 
-  /* "transformer/tagged_cython.pyx":128
+  /* "transformer/tagged_cython.pyx":130
  *         return X, y
  * 
  *     def sentence2features(self, s):             # <<<<<<<<<<<<<<
  *         cdef list tmp
  *         cdef list output = []
  */
-  __pyx_tuple__16 = PyTuple_Pack(6, __pyx_n_s_self, __pyx_n_s_s, __pyx_n_s_tmp, __pyx_n_s_output, __pyx_n_s_l, __pyx_n_s_i); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __pyx_tuple__16 = PyTuple_Pack(6, __pyx_n_s_self, __pyx_n_s_s, __pyx_n_s_tmp, __pyx_n_s_output, __pyx_n_s_l, __pyx_n_s_i); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
-  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_tagged_cython_pyx, __pyx_n_s_sentence2features, 128, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_tagged_cython_pyx, __pyx_n_s_sentence2features, 130, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 130, __pyx_L1_error)
 
-  /* "transformer/tagged_cython.pyx":137
+  /* "transformer/tagged_cython.pyx":139
  *         return output
  * 
  *     def sentence2labels(self, s):             # <<<<<<<<<<<<<<
  *         return [row[-1] for row in s]
  * 
  */
-  __pyx_tuple__18 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_s, __pyx_n_s_row); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_tuple__18 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_s, __pyx_n_s_row); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
   __Pyx_GIVEREF(__pyx_tuple__18);
-  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_tagged_cython_pyx, __pyx_n_s_sentence2labels, 137, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_tagged_cython_pyx, __pyx_n_s_sentence2labels, 139, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 139, __pyx_L1_error)
 
-  /* "transformer/tagged_cython.pyx":140
+  /* "transformer/tagged_cython.pyx":142
  *         return [row[-1] for row in s]
  * 
  *     def fa2(self):             # <<<<<<<<<<<<<<
- *         return fa()
+ *         return fa3()
  */
-  __pyx_tuple__20 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 140, __pyx_L1_error)
+  __pyx_tuple__20 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__20);
   __Pyx_GIVEREF(__pyx_tuple__20);
-  __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_tagged_cython_pyx, __pyx_n_s_fa2, 140, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 140, __pyx_L1_error)
+  __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_tagged_cython_pyx, __pyx_n_s_fa2, 142, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -5552,48 +5412,60 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "transformer/tagged_cython.pyx":9
- * from libcpp.string cimport string
+  /* "transformer/tagged_cython.pyx":10
+ * from cpython.version cimport PY_MAJOR_VERSION
+ * 
+ * print(PY_MAJOR_VERSION)             # <<<<<<<<<<<<<<
+ * 
+ * words = DictionaryLoader(get_dictionary_path()).words
+ */
+  __pyx_t_2 = __Pyx_PyInt_From_int(PY_MAJOR_VERSION); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (__Pyx_PrintOne(0, __pyx_t_2) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+  /* "transformer/tagged_cython.pyx":12
+ * print(PY_MAJOR_VERSION)
  * 
  * words = DictionaryLoader(get_dictionary_path()).words             # <<<<<<<<<<<<<<
  * lower_words = set([word.lower() for word in words])
  * 
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_DictionaryLoader); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_DictionaryLoader); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_get_dictionary_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_get_dictionary_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_words); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_words); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_words, __pyx_t_3) < 0) __PYX_ERR(0, 9, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_words, __pyx_t_3) < 0) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "transformer/tagged_cython.pyx":10
+  /* "transformer/tagged_cython.pyx":13
  * 
  * words = DictionaryLoader(get_dictionary_path()).words
  * lower_words = set([word.lower() for word in words])             # <<<<<<<<<<<<<<
  * 
  * cdef text_lower(word):
  */
-  __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 10, __pyx_L1_error)
+  __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_words); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_words); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
     __pyx_t_2 = __pyx_t_1; __Pyx_INCREF(__pyx_t_2); __pyx_t_4 = 0;
     __pyx_t_5 = NULL;
   } else {
-    __pyx_t_4 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
+    __pyx_t_4 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 10, __pyx_L1_error)
+    __pyx_t_5 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 13, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -5601,17 +5473,17 @@ if (!__Pyx_RefNanny) {
       if (likely(PyList_CheckExact(__pyx_t_2))) {
         if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 10, __pyx_L1_error)
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 13, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       } else {
         if (__pyx_t_4 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 10, __pyx_L1_error)
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 13, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       }
@@ -5621,17 +5493,17 @@ if (!__Pyx_RefNanny) {
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 10, __pyx_L1_error)
+          else __PYX_ERR(0, 13, __pyx_L1_error)
         }
         break;
       }
       __Pyx_GOTREF(__pyx_t_1);
     }
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_word, __pyx_t_1) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_word, __pyx_t_1) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_6 = __Pyx_GetModuleGlobalName(__pyx_n_s_word); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 10, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_GetModuleGlobalName(__pyx_n_s_word); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 13, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_lower); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 10, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_lower); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 13, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_6 = NULL;
@@ -5645,103 +5517,115 @@ if (!__Pyx_RefNanny) {
       }
     }
     if (__pyx_t_6) {
-      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     } else {
-      __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
     }
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(__Pyx_ListComp_Append(__pyx_t_3, (PyObject*)__pyx_t_1))) __PYX_ERR(0, 10, __pyx_L1_error)
+    if (unlikely(__Pyx_ListComp_Append(__pyx_t_3, (PyObject*)__pyx_t_1))) __PYX_ERR(0, 13, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PySet_New(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
+  __pyx_t_2 = PySet_New(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_lower_words, __pyx_t_2) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_lower_words, __pyx_t_2) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "transformer/tagged_cython.pyx":119
+  /* "transformer/tagged_cython.pyx":18
+ *     return word.lower()
+ * 
+ * text_lower_ = text_lower             # <<<<<<<<<<<<<<
+ * cdef text_isdigit(word):
+ *     return word.isdigit()
+ */
+  __pyx_t_2 = __Pyx_CFunc_object____object___to_py(__pyx_f_11transformer_13tagged_cython_text_lower); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_text_lower, __pyx_t_2) < 0) __PYX_ERR(0, 18, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+  /* "transformer/tagged_cython.pyx":121
  * 
  * 
  * class TaggedTransformer:             # <<<<<<<<<<<<<<
  *     def __init__(self, template=None):
  *         self.template = template
  */
-  __pyx_t_2 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_TaggedTransformer, __pyx_n_s_TaggedTransformer, (PyObject *) NULL, __pyx_n_s_transformer_tagged_cython, (PyObject *) NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_TaggedTransformer, __pyx_n_s_TaggedTransformer, (PyObject *) NULL, __pyx_n_s_transformer_tagged_cython, (PyObject *) NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "transformer/tagged_cython.pyx":120
+  /* "transformer/tagged_cython.pyx":122
  * 
  * class TaggedTransformer:
  *     def __init__(self, template=None):             # <<<<<<<<<<<<<<
  *         self.template = template
  * 
  */
-  __pyx_t_3 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11transformer_13tagged_cython_17TaggedTransformer_1__init__, 0, __pyx_n_s_TaggedTransformer___init, NULL, __pyx_n_s_transformer_tagged_cython, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 120, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11transformer_13tagged_cython_17TaggedTransformer_1__init__, 0, __pyx_n_s_TaggedTransformer___init, NULL, __pyx_n_s_transformer_tagged_cython, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 122, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_3, __pyx_tuple__13);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_init, __pyx_t_3) < 0) __PYX_ERR(0, 120, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_init, __pyx_t_3) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "transformer/tagged_cython.pyx":123
+  /* "transformer/tagged_cython.pyx":125
  *         self.template = template
  * 
  *     def transform(self, sentences):             # <<<<<<<<<<<<<<
  *         X = [self.sentence2features(s) for s in sentences]
  *         y = [self.sentence2labels(s) for s in sentences]
  */
-  __pyx_t_3 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11transformer_13tagged_cython_17TaggedTransformer_3transform, 0, __pyx_n_s_TaggedTransformer_transform, NULL, __pyx_n_s_transformer_tagged_cython, __pyx_d, ((PyObject *)__pyx_codeobj__15)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 123, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11transformer_13tagged_cython_17TaggedTransformer_3transform, 0, __pyx_n_s_TaggedTransformer_transform, NULL, __pyx_n_s_transformer_tagged_cython, __pyx_d, ((PyObject *)__pyx_codeobj__15)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 125, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_transform, __pyx_t_3) < 0) __PYX_ERR(0, 123, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_transform, __pyx_t_3) < 0) __PYX_ERR(0, 125, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "transformer/tagged_cython.pyx":128
+  /* "transformer/tagged_cython.pyx":130
  *         return X, y
  * 
  *     def sentence2features(self, s):             # <<<<<<<<<<<<<<
  *         cdef list tmp
  *         cdef list output = []
  */
-  __pyx_t_3 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11transformer_13tagged_cython_17TaggedTransformer_5sentence2features, 0, __pyx_n_s_TaggedTransformer_sentence2featu, NULL, __pyx_n_s_transformer_tagged_cython, __pyx_d, ((PyObject *)__pyx_codeobj__17)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11transformer_13tagged_cython_17TaggedTransformer_5sentence2features, 0, __pyx_n_s_TaggedTransformer_sentence2featu, NULL, __pyx_n_s_transformer_tagged_cython, __pyx_d, ((PyObject *)__pyx_codeobj__17)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_sentence2features, __pyx_t_3) < 0) __PYX_ERR(0, 128, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_sentence2features, __pyx_t_3) < 0) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "transformer/tagged_cython.pyx":137
+  /* "transformer/tagged_cython.pyx":139
  *         return output
  * 
  *     def sentence2labels(self, s):             # <<<<<<<<<<<<<<
  *         return [row[-1] for row in s]
  * 
  */
-  __pyx_t_3 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11transformer_13tagged_cython_17TaggedTransformer_7sentence2labels, 0, __pyx_n_s_TaggedTransformer_sentence2label, NULL, __pyx_n_s_transformer_tagged_cython, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11transformer_13tagged_cython_17TaggedTransformer_7sentence2labels, 0, __pyx_n_s_TaggedTransformer_sentence2label, NULL, __pyx_n_s_transformer_tagged_cython, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_sentence2labels, __pyx_t_3) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_sentence2labels, __pyx_t_3) < 0) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "transformer/tagged_cython.pyx":140
+  /* "transformer/tagged_cython.pyx":142
  *         return [row[-1] for row in s]
  * 
  *     def fa2(self):             # <<<<<<<<<<<<<<
- *         return fa()
+ *         return fa3()
  */
-  __pyx_t_3 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11transformer_13tagged_cython_17TaggedTransformer_9fa2, 0, __pyx_n_s_TaggedTransformer_fa2, NULL, __pyx_n_s_transformer_tagged_cython, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 140, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_NewEx(&__pyx_mdef_11transformer_13tagged_cython_17TaggedTransformer_9fa2, 0, __pyx_n_s_TaggedTransformer_fa2, NULL, __pyx_n_s_transformer_tagged_cython, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_fa2, __pyx_t_3) < 0) __PYX_ERR(0, 140, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_fa2, __pyx_t_3) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "transformer/tagged_cython.pyx":119
+  /* "transformer/tagged_cython.pyx":121
  * 
  * 
  * class TaggedTransformer:             # <<<<<<<<<<<<<<
  *     def __init__(self, template=None):
  *         self.template = template
  */
-  __pyx_t_3 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_TaggedTransformer, __pyx_empty_tuple, __pyx_t_2, NULL, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_TaggedTransformer, __pyx_empty_tuple, __pyx_t_2, NULL, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_TaggedTransformer, __pyx_t_3) < 0) __PYX_ERR(0, 119, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_TaggedTransformer, __pyx_t_3) < 0) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
@@ -5757,8 +5641,8 @@ if (!__Pyx_RefNanny) {
 
   /* "vector.to_py":60
  * 
- * @cname("__pyx_convert_vector_to_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___")
- * cdef object __pyx_convert_vector_to_py_std_3a__3a_vector_3c_std_3a__3a_string_3e___(vector[X]& v):             # <<<<<<<<<<<<<<
+ * @cname("__pyx_convert_vector_to_py_std_3a__3a_string")
+ * cdef object __pyx_convert_vector_to_py_std_3a__3a_string(vector[X]& v):             # <<<<<<<<<<<<<<
  *     return [v[i] for i in range(v.size())]
  * 
  */
@@ -7832,37 +7716,6 @@ bad:
 }
 
 /* CIntToPy */
-            static CYTHON_INLINE PyObject* __Pyx_PyInt_From_long(long value) {
-    const long neg_one = (long) -1, const_zero = (long) 0;
-    const int is_unsigned = neg_one > const_zero;
-    if (is_unsigned) {
-        if (sizeof(long) < sizeof(long)) {
-            return PyInt_FromLong((long) value);
-        } else if (sizeof(long) <= sizeof(unsigned long)) {
-            return PyLong_FromUnsignedLong((unsigned long) value);
-#ifdef HAVE_LONG_LONG
-        } else if (sizeof(long) <= sizeof(unsigned PY_LONG_LONG)) {
-            return PyLong_FromUnsignedLongLong((unsigned PY_LONG_LONG) value);
-#endif
-        }
-    } else {
-        if (sizeof(long) <= sizeof(long)) {
-            return PyInt_FromLong((long) value);
-#ifdef HAVE_LONG_LONG
-        } else if (sizeof(long) <= sizeof(PY_LONG_LONG)) {
-            return PyLong_FromLongLong((PY_LONG_LONG) value);
-#endif
-        }
-    }
-    {
-        int one = 1; int little = (int)*(unsigned char *)&one;
-        unsigned char *bytes = (unsigned char *)&value;
-        return _PyLong_FromByteArray(bytes, sizeof(long),
-                                     little, !is_unsigned);
-    }
-}
-
-/* CIntToPy */
             static CYTHON_INLINE PyObject* __Pyx_PyInt_From_int(int value) {
     const int neg_one = (int) -1, const_zero = (int) 0;
     const int is_unsigned = neg_one > const_zero;
@@ -7893,6 +7746,143 @@ bad:
     }
 }
 
+/* Print */
+            #if !CYTHON_COMPILING_IN_PYPY && PY_MAJOR_VERSION < 3
+static PyObject *__Pyx_GetStdout(void) {
+    PyObject *f = PySys_GetObject((char *)"stdout");
+    if (!f) {
+        PyErr_SetString(PyExc_RuntimeError, "lost sys.stdout");
+    }
+    return f;
+}
+static int __Pyx_Print(PyObject* f, PyObject *arg_tuple, int newline) {
+    int i;
+    if (!f) {
+        if (!(f = __Pyx_GetStdout()))
+            return -1;
+    }
+    Py_INCREF(f);
+    for (i=0; i < PyTuple_GET_SIZE(arg_tuple); i++) {
+        PyObject* v;
+        if (PyFile_SoftSpace(f, 1)) {
+            if (PyFile_WriteString(" ", f) < 0)
+                goto error;
+        }
+        v = PyTuple_GET_ITEM(arg_tuple, i);
+        if (PyFile_WriteObject(v, f, Py_PRINT_RAW) < 0)
+            goto error;
+        if (PyString_Check(v)) {
+            char *s = PyString_AsString(v);
+            Py_ssize_t len = PyString_Size(v);
+            if (len > 0) {
+                switch (s[len-1]) {
+                    case ' ': break;
+                    case '\f': case '\r': case '\n': case '\t': case '\v':
+                        PyFile_SoftSpace(f, 0);
+                        break;
+                    default:  break;
+                }
+            }
+        }
+    }
+    if (newline) {
+        if (PyFile_WriteString("\n", f) < 0)
+            goto error;
+        PyFile_SoftSpace(f, 0);
+    }
+    Py_DECREF(f);
+    return 0;
+error:
+    Py_DECREF(f);
+    return -1;
+}
+#else
+static int __Pyx_Print(PyObject* stream, PyObject *arg_tuple, int newline) {
+    PyObject* kwargs = 0;
+    PyObject* result = 0;
+    PyObject* end_string;
+    if (unlikely(!__pyx_print)) {
+        __pyx_print = PyObject_GetAttr(__pyx_b, __pyx_n_s_print);
+        if (!__pyx_print)
+            return -1;
+    }
+    if (stream) {
+        kwargs = PyDict_New();
+        if (unlikely(!kwargs))
+            return -1;
+        if (unlikely(PyDict_SetItem(kwargs, __pyx_n_s_file, stream) < 0))
+            goto bad;
+        if (!newline) {
+            end_string = PyUnicode_FromStringAndSize(" ", 1);
+            if (unlikely(!end_string))
+                goto bad;
+            if (PyDict_SetItem(kwargs, __pyx_n_s_end, end_string) < 0) {
+                Py_DECREF(end_string);
+                goto bad;
+            }
+            Py_DECREF(end_string);
+        }
+    } else if (!newline) {
+        if (unlikely(!__pyx_print_kwargs)) {
+            __pyx_print_kwargs = PyDict_New();
+            if (unlikely(!__pyx_print_kwargs))
+                return -1;
+            end_string = PyUnicode_FromStringAndSize(" ", 1);
+            if (unlikely(!end_string))
+                return -1;
+            if (PyDict_SetItem(__pyx_print_kwargs, __pyx_n_s_end, end_string) < 0) {
+                Py_DECREF(end_string);
+                return -1;
+            }
+            Py_DECREF(end_string);
+        }
+        kwargs = __pyx_print_kwargs;
+    }
+    result = PyObject_Call(__pyx_print, arg_tuple, kwargs);
+    if (unlikely(kwargs) && (kwargs != __pyx_print_kwargs))
+        Py_DECREF(kwargs);
+    if (!result)
+        return -1;
+    Py_DECREF(result);
+    return 0;
+bad:
+    if (kwargs != __pyx_print_kwargs)
+        Py_XDECREF(kwargs);
+    return -1;
+}
+#endif
+
+/* CIntToPy */
+            static CYTHON_INLINE PyObject* __Pyx_PyInt_From_long(long value) {
+    const long neg_one = (long) -1, const_zero = (long) 0;
+    const int is_unsigned = neg_one > const_zero;
+    if (is_unsigned) {
+        if (sizeof(long) < sizeof(long)) {
+            return PyInt_FromLong((long) value);
+        } else if (sizeof(long) <= sizeof(unsigned long)) {
+            return PyLong_FromUnsignedLong((unsigned long) value);
+#ifdef HAVE_LONG_LONG
+        } else if (sizeof(long) <= sizeof(unsigned PY_LONG_LONG)) {
+            return PyLong_FromUnsignedLongLong((unsigned PY_LONG_LONG) value);
+#endif
+        }
+    } else {
+        if (sizeof(long) <= sizeof(long)) {
+            return PyInt_FromLong((long) value);
+#ifdef HAVE_LONG_LONG
+        } else if (sizeof(long) <= sizeof(PY_LONG_LONG)) {
+            return PyLong_FromLongLong((PY_LONG_LONG) value);
+#endif
+        }
+    }
+    {
+        int one = 1; int little = (int)*(unsigned char *)&one;
+        unsigned char *bytes = (unsigned char *)&value;
+        return _PyLong_FromByteArray(bytes, sizeof(long),
+                                     little, !is_unsigned);
+    }
+}
+
 /* CIntFromPyVerify */
             #define __PYX_VERIFY_RETURN_INT(target_type, func_type, func_value)\
     __PYX__VERIFY_RETURN_INT(target_type, func_type, func_value, 0)
@@ -7914,6 +7904,43 @@ bad:
         }\
         return (target_type) value;\
     }
+
+/* PrintOne */
+            #if !CYTHON_COMPILING_IN_PYPY && PY_MAJOR_VERSION < 3
+static int __Pyx_PrintOne(PyObject* f, PyObject *o) {
+    if (!f) {
+        if (!(f = __Pyx_GetStdout()))
+            return -1;
+    }
+    Py_INCREF(f);
+    if (PyFile_SoftSpace(f, 0)) {
+        if (PyFile_WriteString(" ", f) < 0)
+            goto error;
+    }
+    if (PyFile_WriteObject(o, f, Py_PRINT_RAW) < 0)
+        goto error;
+    if (PyFile_WriteString("\n", f) < 0)
+        goto error;
+    Py_DECREF(f);
+    return 0;
+error:
+    Py_DECREF(f);
+    return -1;
+    /* the line below is just to avoid C compiler
+     * warnings about unused functions */
+    return __Pyx_Print(f, NULL, 0);
+}
+#else
+static int __Pyx_PrintOne(PyObject* stream, PyObject *o) {
+    int res;
+    PyObject* arg_tuple = PyTuple_Pack(1, o);
+    if (unlikely(!arg_tuple))
+        return -1;
+    res = __Pyx_Print(stream, arg_tuple, 1);
+    Py_DECREF(arg_tuple);
+    return res;
+}
+#endif
 
 /* CIntFromPy */
             static CYTHON_INLINE int __Pyx_PyInt_As_int(PyObject *x) {
