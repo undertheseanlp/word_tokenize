@@ -3,6 +3,7 @@ from os.path import join, dirname
 from languageflow.transformer.text import Text
 from languageflow.reader.dictionary_loader import DictionaryLoader
 from transformer.path import get_dictionary_path
+from libcpp cimport bool
 
 words = DictionaryLoader(get_dictionary_path()).words
 lower_words = set([word.lower() for word in words])
@@ -51,16 +52,12 @@ def apply_function(name, word):
     return functions[name](word)
 
 
-cdef template2features(sent, int i, str token_syntax, debug=True):
+cdef template2features(list sent, list columns, int size, int i, str token_syntax, int debug=1):
     """
     :type token: object
     """
-    columns = []
-    for j in range(len(sent[0])):
-        columns.append([t[j] for t in sent])
     matched = re.match(
-        "T\[(?P<index1>\-?\d+)(\,(?P<index2>\-?\d+))?\](\[(?P<column>.*)\])?(\.(?P<function>.*))?",
-        token_syntax)
+        "T\[(?P<index1>\-?\d+)(\,(?P<index2>\-?\d+))?\](\[(?P<column>.*)\])?(\.(?P<function>.*))?", token_syntax)
     cdef int index1
     column = matched.group("column")
     column = int(column) if column else 0
@@ -73,12 +70,12 @@ cdef template2features(sent, int i, str token_syntax, debug=True):
     else:
         prefix = ""
     if i + index1 < 0:
-        return ["%sBOS" % prefix]
+        return "%sBOS" % prefix
     if i + index1 >= len(sent):
-        return ["%sEOS" % prefix]
+        return "%sEOS" % prefix
     if index2 is not None:
         if i + index2 >= len(sent):
-            return ["%sEOS" % prefix]
+            return "%sEOS" % prefix
         word = " ".join(columns[column][i + index1: i + index2 + 1])
     else:
         word = sent[i + index1][column]
@@ -86,13 +83,20 @@ cdef template2features(sent, int i, str token_syntax, debug=True):
         result = apply_function(func, word)
     else:
         result = word
-    return ["%s%s" % (prefix, result)]
+    return "%s%s" % (prefix, result)
 
 
-cdef word2features(sent, int i, str* template):
-    features = []
+cdef list word2features(list sent, int i, list template):
+    cdef list features = []
+    cdef int x = 0
+    cdef str output
+    cdef list columns = []
+    for j in range(len(sent[0])):
+        columns.append([t[j] for t in sent])
+    cdef int size = len(sent)
     for token_syntax in template:
-        features.extend(template2features(sent, i, token_syntax))
+        output = template2features(sent, columns, size, i, token_syntax)
+        features.append(output)
     return features
 
 
@@ -106,7 +110,13 @@ class TaggedTransformer:
         return X, y
 
     def sentence2features(self, s):
-        return [word2features(s, i, self.template) for i in range(len(s))]
+        cdef list tmp
+        cdef list output = []
+        cdef int l = len(s)
+        for i in range(l):
+            tmp = word2features(s, i, self.template)
+            output.append(tmp)
+        return output
 
     def sentence2labels(self, s):
         return [row[-1] for row in s]
