@@ -1,21 +1,19 @@
 import re
 from os.path import join, dirname
+
+from cymem.cymem cimport Pool
 from languageflow.reader.dictionary_loader import DictionaryLoader
 from transformer.path import get_dictionary_path
 from libcpp cimport bool
 from libcpp.vector cimport vector
 from libcpp.string cimport string
-from cpython.version cimport PY_MAJOR_VERSION
-
-print(PY_MAJOR_VERSION)
 
 words = DictionaryLoader(get_dictionary_path()).words
 lower_words = set([word.lower() for word in words])
 
-cdef text_lower(word):
+cdef str text_lower(word):
     return word.lower()
 
-text_lower_ = text_lower
 cdef text_isdigit(word):
     return word.isdigit()
 
@@ -50,98 +48,118 @@ cdef str apply_function(name, word):
     }
     return str(functions[name](word))
 
-cdef str template2features(list sent, list columns, int size, int i,
-                           str token_syntax,
-                           int column, int index1,
-                           int index2, bool has_index2,
-                           str func, bool has_func,
-                           int debug=1):
+cdef str template2features(list sent, list columns,
+                        int size, int i,
+                        FeatureTemplate feature,
+                        int debug=1):
     """
     :type token: object
     """
     cdef str prefix
+    cdef str token_syntax = feature.token_syntax.decode("utf-8")
+    cdef str func = feature.func.decode("utf-8")
     if debug:
         prefix = token_syntax + "="
     else:
         prefix = ""
-    if i + index1 < 0:
+    if i + feature.index1 < 0:
         return prefix + "BOS"
-    if i + index1 >= size:
+    if i + feature.index1 >= size:
         return prefix + "EOS"
-    if has_index2:
-        if i + index2 >= size:
+
+    if feature.has_index2:
+        print("match index2")
+        if i + feature.index2 >= size:
             return prefix + "EOS"
-        word = " ".join(columns[column][i + index1: i + index2 + 1])
+        word = " ".join(columns[feature.column][i + feature.index1: i + feature.index2 + 1])
     else:
-        word = sent[i + index1][column]
-    if has_func:
+        word = sent[i + feature.index1][feature.column]
+
+    if feature.has_func:
         result = apply_function(func, word)
     else:
         result = word
     return prefix + result
 
-
-
-cdef list word2features(list sent, int i, list template):
-    cdef list features = []
-    cdef int x = 0
-    cdef str output
+cdef list word2features(list sent, int i,
+                        FeatureTemplate*features,
+                        int n_features):
+    cdef str tmp
+    cdef list output = []
     cdef list columns = []
 
-    cdef int column
-    cdef int index1
-    cdef int index2
-    cdef bool has_index2
-    cdef str token_syntax
-    cdef bool has_func
-    cdef str func
-    cdef str word
-
     for j in range(len(sent[0])):
-        has_index2 = False
-        has_func = False
-        index = 0
-        index2 = 0
         columns.append([t[j] for t in sent])
+
     cdef int size = len(sent)
-    for token_syntax in template:
-        matched = re.match(
-            "T\[(?P<index1>\-?\d+)(\,(?P<index2>\-?\d+))?\](\[(?P<column>.*)\])?(\.(?P<function>.*))?", token_syntax)
-        match_column = matched.group("column")
-        if match_column:
-            column = int(match_column)
-        else:
-            column = 0
-        index1 = int(matched.group("index1"))
-        match_index2 = matched.group("index2")
-        if match_index2:
-            has_index2 = True
-            index2 = int(match_index2)
-        match_func = matched.group("function")
-        if match_func:
-            has_func = True
-            func = match_func
-        output = template2features(sent, columns, size, i,
-                                   token_syntax,
-                                   column, index1,
-                                   index2, has_index2,
-                                   func, has_func)
-        features.append(output)
-    return features
 
-cdef class FeatureTemplate:
-    cdef int column
-    cdef int index1
-    cdef int index2
-    cdef str token_syntax
+    for feature_index in range(n_features):
+        tmp = template2features(sent, columns,
+                                    size, i,
+                                    features[feature_index])
+        output.append(tmp)
+    return output
 
+cdef struct FeatureTemplate:
+    int column
+    int index1
+    int index2
+    string func
+    string token_syntax
+    bool has_column
+    bool has_index2
+    bool has_func
 
 cdef class TaggedTransformer:
-    cdef list features
-    cdef FeatureTemplate* features2
+    cdef Pool mem
+    cdef FeatureTemplate*features
+    cdef int n_features
 
     def __init__(self, features=None):
-        self.features = features
+        cdef:
+            int column = 0
+            int index1 = 0
+            int index2 = 0
+            string func = b''
+            str syntax
+            string token_syntax = b''
+            bool has_column = True
+            bool has_index2 = True
+            bool has_func = True
+        n_features = len(features)
+        self.n_features = n_features
+        self.mem = Pool()
+        self.features = <FeatureTemplate*> self.mem.alloc(n_features, sizeof(FeatureTemplate))
+        for i in range(n_features):
+            syntax = features[i]
+            matched = re.match(
+                "T\[(?P<index1>\-?\d+)(\,(?P<index2>\-?\d+))?\](\[(?P<column>.*)\])?(\.(?P<func>.*))?", syntax)
+            token_syntax = syntax.encode("utf-8")
+            match_column = matched.group("column")
+            match_index1 = matched.group("index1")
+            match_index2 = matched.group("index2")
+            match_func = matched.group("func")
+            if match_column:
+                column = int(match_column)
+            else:
+                has_column = False
+            index1 = int(match_index1)
+            if match_index2:
+                index2 = int(match_index2)
+            else:
+                has_index2 = False
+            if match_func:
+                func = match_func.encode("utf-8")
+            else:
+                has_func = False
+            self.features[i].column = column
+            self.features[i].index1 = index1
+            self.features[i].index2 = index2
+            self.features[i].func = func
+            self.features[i].token_syntax = token_syntax
+            self.features[i].has_column = has_column
+            self.features[i].has_index2 = has_index2
+            self.features[i].has_func = has_func
 
     def transform(self, sentences):
         X = [self.sentence2features(s) for s in sentences]
@@ -153,7 +171,7 @@ cdef class TaggedTransformer:
         cdef list output = []
         cdef int l = len(s)
         for i in range(l):
-            tmp = word2features(s, i, self.features)
+            tmp = word2features(s, i, self.features, self.n_features)
             output.append(tmp)
         return output
 
