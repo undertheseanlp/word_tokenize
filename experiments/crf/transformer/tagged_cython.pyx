@@ -8,34 +8,34 @@ from libcpp.string cimport string
 words = DictionaryLoader(get_dictionary_path()).words
 lower_words = set([word.lower() for word in words])
 
-cdef str text_lower(word):
+cdef str text_lower(str word):
     return word.lower()
 
-cdef text_isdigit(word):
+cdef bool text_isdigit(str word):
     return word.isdigit()
 
-cdef str text_isallcap(word):
+cdef str text_isallcap(str word):
     for letter in word:
         if not letter.istitle():
-            return 'False'
-    return 'True'
+            return False
+    return True
 
-cdef text_istitle(word):
+cdef bool text_istitle(str word):
     if len(word) == 0:
-        return 'False'
+        return False
     try:
         titles = [s[0] for s in word.split(" ")]
         for token in titles:
-            if token[0].istitle() is False:
-                return 'False'
-        return 'True'
+            if not token[0].istitle():
+                return False
+        return True
     except:
-        return 'False'
+        return False
 
-cdef str text_is_in_dict(word):
-    return str(word.lower() in lower_words)
+cdef bool text_is_in_dict(str word):
+    return word.lower() in lower_words
 
-cdef str apply_function(name, word):
+cdef str apply_function(str name, str word):
     functions = {
         "lower": text_lower,
         "istitle": text_istitle,
@@ -45,18 +45,19 @@ cdef str apply_function(name, word):
     }
     return str(functions[name](word))
 
-cdef str template2features(list sent, list columns,
-                        int size, int i,
-                        FeatureTemplate feature,
-                        int debug=1):
+cdef str template2features(list sent,
+                           int size, int i,
+                           FeatureTemplate feature,
+                           int debug=1):
     """
     :type token: object
     """
     cdef str prefix
     cdef str token_syntax = feature.token_syntax.decode("utf-8")
     cdef str func = feature.func.decode("utf-8")
+    cdef int j
     if debug:
-        prefix = token_syntax + "="
+        prefix = token_syntax + '='
     else:
         prefix = ""
     if i + feature.index1 < 0:
@@ -66,7 +67,14 @@ cdef str template2features(list sent, list columns,
     if feature.has_index2:
         if i + feature.index2 >= size:
             return prefix + "EOS"
-        word = " ".join(columns[feature.column][i + feature.index1: i + feature.index2 + 1])
+        word = ""
+        j = feature.index1
+        while j < feature.index2 + 1:
+            if j != feature.index2:
+                word += sent[i + j][feature.column] + " "
+            else:
+                word += sent[i + j][feature.column]
+            j += 1
     else:
         word = sent[i + feature.index1][feature.column]
 
@@ -81,17 +89,10 @@ cdef list word2features(list sent, int i,
                         int n_features):
     cdef str tmp
     cdef list output = []
-    cdef list columns = []
-
-    for j in range(len(sent[0])):
-        columns.append([t[j] for t in sent])
-
     cdef int size = len(sent)
-
     for feature_index in range(n_features):
-        tmp = template2features(sent, columns,
-                                    size, i,
-                                    features[feature_index])
+        tmp = template2features(sent, size, i,
+                                features[feature_index])
         output.append(tmp)
     return output
 
@@ -160,8 +161,14 @@ cdef class TaggedTransformer:
             self.features[i].has_func = has_func
 
     def transform(self, sentences):
-        X = [self.sentence2features(s) for s in sentences]
-        y = [self.sentence2labels(s) for s in sentences]
+        return self._transform(sentences)
+
+    cdef _transform(self, sentences):
+        cdef list X = []
+        cdef list y = []
+        for s in sentences:
+            X.append(self.sentence2features(s))
+            y.append(self.sentence2labels(s))
         return X, y
 
     cdef list sentence2features(self, list s):
