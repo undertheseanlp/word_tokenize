@@ -1,9 +1,12 @@
 import re
+
 from cymem.cymem cimport Pool
 from languageflow.reader.dictionary_loader import DictionaryLoader
 from transformer.path import get_dictionary_path
 from libcpp cimport bool
+from libcpp.vector cimport vector
 from libcpp.string cimport string
+from libc.string cimport *
 
 words = DictionaryLoader(get_dictionary_path()).words
 lower_words = set([word.lower() for word in words])
@@ -14,7 +17,7 @@ cdef str text_lower(str word):
 cdef bool text_isdigit(str word):
     return word.isdigit()
 
-cdef str text_isallcap(str word):
+cdef bool text_isallcap(str word):
     for letter in word:
         if not letter.istitle():
             return False
@@ -96,6 +99,7 @@ cdef list word2features(list sent, int i,
         output.append(tmp)
     return output
 
+
 cdef struct FeatureTemplate:
     int column
     int index1
@@ -105,6 +109,11 @@ cdef struct FeatureTemplate:
     bool has_column
     bool has_index2
     bool has_func
+
+
+cdef class FeatureTemplate3:
+    def __init__(self):
+        pass
 
 cdef class TaggedTransformer:
     cdef Pool mem
@@ -116,9 +125,9 @@ cdef class TaggedTransformer:
             int column = 0
             int index1 = 0
             int index2 = 0
-            string func = b''
+            string func = ''
             str syntax
-            string token_syntax = b''
+            string token_syntax = ''
             bool has_column
             bool has_index2
             bool has_func
@@ -159,6 +168,7 @@ cdef class TaggedTransformer:
             self.features[i].has_column = has_column
             self.features[i].has_index2 = has_index2
             self.features[i].has_func = has_func
+
 
     def transform(self, sentences):
         return self._transform(sentences)
