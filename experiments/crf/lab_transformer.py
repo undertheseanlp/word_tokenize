@@ -14,14 +14,14 @@ def main():
                     "corpus", f)
         train_set += load_dataset(file)
 
-    train_set = train_set[:10000]
+    train_set = train_set[:100]
 
-    # start = time.time()
-    # transformer = tagged.TaggedTransformer(template)
-    # X1, y1 = transformer.transform(train_set)
-    # end = time.time()
-    # py = end - start
-    py = 2.34531
+    start = time.time()
+    transformer = tagged.TaggedTransformer(template)
+    X1, y1 = transformer.transform(train_set)
+    end = time.time()
+    py = end - start
+    # py = 2.34531
 
     start = time.time()
     transformer = tagged_cython.TaggedTransformer(template)
