@@ -44,11 +44,4 @@ $ source activate uts.word_sent
 $ python main.py
 ```
 
-## Related Works
-
-* [Vietnamese Word Segmentation Tools](https://github.com/magizbox/underthesea/wiki/Vietnamese-NLP-Tools#word-segmentation)
-* [Vietnamese Word Segmentation Publications](https://github.com/magizbox/underthesea/wiki/Vietnamese-NLP-Publications#word-segmentation)
-* [Vietnamese Word Segmentation State of The Art](https://github.com/magizbox/underthesea/wiki/Vietnamese-NLP-SOTA#word-segmentation)
-* [Vietnamese Word Segmentation Service](https://github.com/magizbox/underthesea/wiki/Vietnamese-NLP-Services#word-segmentation)
-
-Last update: October 2017
+Last update: May 2018
