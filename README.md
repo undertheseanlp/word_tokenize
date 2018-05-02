@@ -7,9 +7,11 @@ This repository contains experiments in Vietnamese Word Segmentation problems. I
 ## Table of contents
 
 * [Setup environment](#setup-environment)
-* Experiments
+* [Usage](#usage)
   * [Train a new dataset](#train-a-new-dataset)
-  
+  * Usage a pretrained model
+  * Sharing a model
+
 ## Setup Environment
 
 Clone project
@@ -26,7 +28,9 @@ $ conda create -n word_tokenize python=3.5
 $ pip install -r requirements.txt
 ```
 
-## Train a new dataset
+## Usage
+
+### Train a new dataset
 
 ```
 $ cd word_tokenize
