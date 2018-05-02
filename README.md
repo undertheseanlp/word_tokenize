@@ -28,19 +28,19 @@ Unique Words : 20945
 
 ```
 # clone project
-$ git clone git@github.com:magizbox/underthesea.word_sent.git
+$ git clone https://github.com/undertheseanlp/word_tokenize.git
 
 # create environment
-$ cd underthesea.word_sent
-$ conda create -n uts.word_sent python=3.4
+$ cd word_tokenize
+$ conda create -n word_tokenize python=3.5
 $ pip install -r requirements.txt
 ```
 
 **Run Experiments**
 
 ```
-$ cd underthesea.word_sent
-$ source activate uts.word_sent
+$ cd word_tokenize
+$ source activate word_tokenize
 $ python main.py
 ```
 
