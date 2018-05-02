@@ -4,21 +4,29 @@
 
 This repository contains experiments in Vietnamese Word Segmentation problems. It is a part of [underthesea](https://github.com/magizbox/underthesea) project.
 
-## Usage
+## Table of contents
 
-**Setup Environment**
+* [Setup environment](#setup-environment)
+* Experiments
+  * [Train a new dataset](#train-a-new-dataset)
+  
+## Setup Environment
+
+Clone project
 
 ```
-# clone project
 $ git clone https://github.com/undertheseanlp/word_tokenize.git
+```
 
-# create environment
+Create environment using conda
+
+```
 $ cd word_tokenize
 $ conda create -n word_tokenize python=3.5
 $ pip install -r requirements.txt
 ```
 
-**Run Experiments**
+## Train a new dataset
 
 ```
 $ cd word_tokenize
