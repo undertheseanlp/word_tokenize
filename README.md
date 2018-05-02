@@ -9,8 +9,8 @@ This repository contains experiments in Vietnamese Word Segmentation problems. I
 * [Setup environment](#setup-environment)
 * [Usage](#usage)
   * [Train a new dataset](#train-a-new-dataset)
-  * Usage a pretrained model
-  * Sharing a model
+  * [Using a pretrained model](#using-a-pretrained-model)
+  * [Sharing a model](#sharing-a-model)
 
 ## Setup Environment
 
@@ -37,5 +37,13 @@ $ cd word_tokenize
 $ source activate word_tokenize
 $ python main.py
 ```
+
+### Using a pretrained model
+
+To be updated
+
+### Sharing a model
+
+To be updated
 
 Last update: May 2018
