@@ -1,26 +1,8 @@
-# Vietnamese Word Segmentation
+# Vietnamese Word Tokenize
 
 ![](https://img.shields.io/badge/build-passing-brightgreen.svg) ![](https://img.shields.io/badge/F1-94%25-red.svg)
 
 This repository contains experiments in Vietnamese Word Segmentation problems. It is a part of [underthesea](https://github.com/magizbox/underthesea) project.
-
-* [Demo](http://magizbox.com:9386)
-* [Detail Report](https://docs.google.com/spreadsheets/d/1i-3WydtRhs8Qmh_-PHxdftQQPnxZ0q4sHhcx8_euNmc/edit?usp=sharing)
-
-# Corpora Summary
-
-Corpus is in [UniversalDependencies format](https://github.com/UniversalDependencies/UD_Vietnamese).
-
-```
-# Corpus 1
-Documents: 47
-Sentences: 7182
-Words    : 184005
-
-# Corpus 2
-Sentences    : 19692
-Unique Words : 20945
-```
 
 ## Usage
 
