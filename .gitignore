@@ -139,3 +139,6 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 /labs/
+
+tmp/*
+!tmp/.gitkeep
