@@ -1,6 +1,4 @@
-# Vietnamese Word Tokenize
-
-![](https://img.shields.io/badge/build-passing-brightgreen.svg) ![](https://img.shields.io/badge/F1-94%25-red.svg)
+# Vietnamese Word Tokenize ![](https://img.shields.io/badge/F1-94%25-red.svg)
 
 This repository contains experiments in Vietnamese Word Segmentation problems. It is a part of [underthesea](https://github.com/magizbox/underthesea) project.
 
