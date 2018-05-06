@@ -4,21 +4,33 @@ This repository contains experiments in Vietnamese Word Segmentation problems. I
 
 ## Table of contents
 
-* [Setup environment](#setup-environment)
+* [Installation](#installation)
+  * [Requirements](#requirements)
+  * [Download and Setup Environement](#download-and-setup-environment)
 * [Usage](#usage)
-  * [Train a new dataset](#train-a-new-dataset)
   * [Using a pretrained model](#using-a-pretrained-model)
+  * [Train a new dataset](#train-a-new-dataset)
   * [Sharing a model](#sharing-a-model)
+* [Citation](#citation)
 
-## Setup Environment
+## Installation
 
-Clone project
+### Requirements
+
+* `Operating Systems: Linux (Ubuntu, CentOS), Mac`
+* `Python 3.5+`
+* `Anaconda`
+* `languageflow==1.1.7`
+
+### Download and Setup Environment
+
+Clone project using git
 
 ```
 $ git clone https://github.com/undertheseanlp/word_tokenize.git
 ```
 
-Create environment using conda
+Create environment and install requirements
 
 ```
 $ cd word_tokenize
@@ -28,6 +40,10 @@ $ pip install -r requirements.txt
 
 ## Usage
 
+### Using a pretrained model
+
+To be updated
+
 ### Train a new dataset
 
 ```
@@ -35,10 +51,6 @@ $ cd word_tokenize
 $ source activate word_tokenize
 $ python main.py
 ```
-
-### Using a pretrained model
-
-To be updated
 
 ### Sharing a model
 
