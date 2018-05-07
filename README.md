@@ -42,14 +42,22 @@ $ pip install -r requirements.txt
 
 ### Using a pretrained model
 
-To be updated
+```
+python word_tokenize.py -fin tmp/input.txt -fout tmp/output.txt
+python word_tokenize.py -in "Chàng trai 9X Quảng Trị khởi nghiệp từ nấm sò"
+```
 
 ### Train a new dataset
+
+**Prepare a new dataset**
+
+**Train and test**
 
 ```
 $ cd word_tokenize
 $ source activate word_tokenize
-$ python main.py
+$ python train.py \
+    --train data/vlsp2016/corpus/train.txt
 ```
 
 ### Sharing a model

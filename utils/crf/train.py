@@ -5,20 +5,18 @@ from languageflow.model.crf import CRF
 from sklearn.model_selection import train_test_split
 from sklearn_crfsuite import metrics
 
-from load_data import load_dataset
-from transformer.custom_transformer import CustomTransformer
-from feature_template import template
+from .load_data import load_dataset
+from .transformer.custom_transformer import CustomTransformer
+from .feature_template import template
 
 
-if __name__ == '__main__':
+def train(train_file):
+    print(train_file)
     # load data
     train_set = []
-    for f in ["train.txt", "dev.txt"]:
-        file = join(dirname(dirname(dirname(__file__))), "data", "vlsp2016",
-                    "corpus", f)
-        train_set += load_dataset(file)
 
-    # transformer
+    train_set += load_dataset(train_file)
+    print("Load corpus from file", train_file)
     transformer = CustomTransformer(template)
     X, y = transformer.transform(train_set)
 
@@ -39,4 +37,8 @@ if __name__ == '__main__':
     print("Dev score: ", f1_score)
 
     # export
-    joblib.dump(transformer, "model/transformer.bin")
+    # joblib.dump(transformer, "model/transformer.bin")
+
+
+if __name__ == '__main__':
+    train()
