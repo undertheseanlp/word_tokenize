@@ -19,7 +19,7 @@ This repository contains starter code for training and evaluating machine learni
 ### 1.1 Requirements
 
 * `Operating Systems: Linux (Ubuntu, CentOS), Mac`
-* `Python 3.5+`
+* `Python 3.6`
 * `Anaconda`
 * `languageflow==1.1.7`
 
