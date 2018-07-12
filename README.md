@@ -35,7 +35,7 @@ Create environment and install requirements
 
 ```
 $ cd word_tokenize
-$ conda create -n word_tokenize python=3.5
+$ conda create -n word_tokenize python=3.6
 $ pip install -r requirements.txt
 ```
 
