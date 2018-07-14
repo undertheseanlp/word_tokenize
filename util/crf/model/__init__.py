@@ -1,4 +1,4 @@
-from model import model_crf
+from util.crf.model import model_crf
 
 
 def word_tokenize(sentence, format=None):

@@ -3,7 +3,7 @@ import joblib
 import sys
 import pycrfsuite
 
-from model.regex_tokenize import tokenize
+from util.crf.model.regex_tokenize import tokenize
 
 sys.path.insert(0, dirname(__file__))
 transformer = joblib.load(join(dirname(__file__), "transformer.bin"))

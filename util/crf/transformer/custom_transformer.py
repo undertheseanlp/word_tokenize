@@ -21,8 +21,8 @@ class CustomTransformer(TaggedTransformer):
                 features[t2] = "-"
                 features[t3] = "-"
         for i in range(-2, 2):
-            t = "T[{},{}].is_in_dict".format(i, i+1)
-            t2 = "T[{},{}]".format(i, i+1)
+            t = "T[{},{}].is_in_dict".format(i, i + 1)
+            t2 = "T[{},{}]".format(i, i + 1)
             if features[t] == 'True':
                 features[t2] = "-"
         features = self._convert_features_to_list(features)

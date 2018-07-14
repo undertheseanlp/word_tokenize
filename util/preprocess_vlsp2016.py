@@ -59,4 +59,3 @@ if __name__ == '__main__':
         if not args.output:
             parser.error("You must set --output when use option --sample")
     raw_to_corpus(sample=args.sample, output=args.output)
-    print(args.sample + 1)

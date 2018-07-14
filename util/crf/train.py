@@ -8,13 +8,13 @@ from .transformer.custom_transformer import CustomTransformer
 from .feature_template import template
 
 
-def train(train_file):
-    print(train_file)
+def train(train_path, model_path):
+    print(train_path)
     # load data
     train_set = []
 
-    train_set += load_dataset(train_file)
-    print("Load corpus from file", train_file)
+    train_set += load_dataset(train_path)
+    print("Load corpus from file", train_path)
     transformer = CustomTransformer(template)
     X, y = transformer.transform(train_set)
 
@@ -26,7 +26,6 @@ def train(train_file):
         # include transitions that are possible, but not observed
         'feature.possible_transitions': True
     }
-    model_path = join(dirname(__file__), "model", "model.bin")
     X_train, X_dev, y_train, y_dev = train_test_split(X, y, test_size=0.01)
     estimator = CRF(params=crf_params, filename=model_path)
     estimator.fit(X_train, y_train)

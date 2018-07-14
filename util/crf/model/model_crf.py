@@ -2,11 +2,9 @@ from os.path import join, dirname
 import joblib
 import sys
 import pycrfsuite
-
-from model.regex_tokenize import tokenize
+from underthesea.word_tokenize import tokenize, transformer
 
 sys.path.insert(0, dirname(__file__))
-transformer = joblib.load(join(dirname(__file__), "transformer.bin"))
 path = join(dirname(__file__), "model.bin")
 estimator = pycrfsuite.Tagger()
 estimator.open(path)
