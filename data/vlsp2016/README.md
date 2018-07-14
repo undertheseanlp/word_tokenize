@@ -1,4 +1,4 @@
-Corpus from NER Shared Task in VLSP 2016
+# VLSP 2016: NER Shared Task Dataset 
 
 Change Logs:
 
@@ -22,3 +22,7 @@ File train.txt
 File dev.txt
 - Line 20556 : I-NP -> NNP
 - Line 36016 : O -> M
+
+## Relevant Papers
+
+* Nguyen Thi Minh Huyen et al. VLSP 2016 Shared Task: Named Entity Recognition.  

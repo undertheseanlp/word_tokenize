@@ -1,4 +1,4 @@
-# VLSP 2013 POS Tagging Corpus
+# VLSP 2013 POS Tagging Dataset 
 
 Corpus from POS Tagging shared task in VLSP 2013
 

@@ -58,8 +58,9 @@ python word_tokenize.py -in "Chàng trai 9X Quảng Trị khởi nghiệp từ n
 ```
 $ cd word_tokenize
 $ source activate word_tokenize
+$ python util/preprocess_vlsp2016.py
 $ python train.py \
-    --train data/vlsp2016/corpus/train.txt
+    --train tmp/vlsp2016/corpus/train.txt
 ```
 
 ### 2.2 Train a new dataset

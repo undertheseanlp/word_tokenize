@@ -1,6 +1,4 @@
 from os.path import join, dirname
-
-import joblib
 from languageflow.model.crf import CRF
 from sklearn.model_selection import train_test_split
 from sklearn_crfsuite import metrics
