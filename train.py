@@ -1,6 +1,6 @@
 import argparse
 
-from utils.crf.train import train
+from util.crf.train import train
 
 parser = argparse.ArgumentParser("train.py")
 
