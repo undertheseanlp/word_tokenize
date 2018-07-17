@@ -14,7 +14,6 @@ env/
 build/
 develop-eggs/
 dist/
-downloads/
 eggs/
 .eggs/
 lib/
@@ -88,6 +87,7 @@ celerybeat-schedule
 .venv
 venv/
 ENV/
+env/
 
 # Spyder project settings
 .spyderproject
@@ -150,3 +150,9 @@ report/*
 !report/*.bst
 !report/*.sty
 !report/technique_report_final.pdf
+/notebook/
+.ipynb
+.ipynb_checkpoints
+*.pyc
+/sample/
+__pycache__/
