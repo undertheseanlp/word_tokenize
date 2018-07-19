@@ -1,0 +1,67 @@
+1/M ./CH Giới_thiệu/V
+Trong/E phân_tích/V đánh_giá/V tai_biến/N thiên_nhiên/N đòi_hỏi/V phải/V xác_định/V được/R mức_độ/N hoạt_động/V cũng/R như/C dự_báo/V được/R cường_độ/N hoạt_động/V của/E chúng/P trong/E tương_lai/N ./CH
+Tai_biến/N trượt/V lở/V đất/N là/V quá/R tự_nhiên/A trên/E sườn/N mái/N dốc/N dưới/E tác_động/N trực_tiếp/A của/E trọng_lực/N ,/CH quá_trình/N này/P xảy/V ra/V do/E ảnh_hưởng/N của/E rất/R nhiều/A nhân_tố/N tự_nhiên/A (/CH địa_chất/N ,/CH địa_mạo/N ,/CH khí_hậu/N ,/CH lớp/N phủ/V thực_vật/N ,/CH .../CH )/CH và/Cc xã_hội/N (/CH sản_xuất/V nông_nghiệp/N ,/CH xây_dựng/V ,/CH .../CH )/CH ,/CH mỗi/L nhân_tố/N ảnh_hưởng/V đến/E quá_trình/N theo/V cường_độ/N và/Cc tầm/N quan_trọng/A khác/A nhau/N ./CH
+Vì_thế/C ,/CH nghiên_cứu/V trượt/V lở/V phải/V dựa/V trên/E quan_điểm/N địa_lí/N tổng_hợp/V và/Cc GIS/Ny là/V công_cụ/N rất/R hữu_ích/A để/E thực_hiện/V công_việc/N này/P ./CH
+Trong/E khuôn_khổ/N bài/N báo/N ,/CH chúng_tôi/P xin/V nêu/V một_vài/L kết_quả/N nghiên_cứu/V đạt/V được/R nhờ/V sử_dụng/V mô_hình/N phân_tích/V không_gian/N trong/E môi_trường/N GIS/Ny kết_hợp/V với/E đánh_giá/N đa/Z tiêu_chuẩn/N (/CH MCE/Ny )/CH trong/E việc/N nghiên_cứu/V trượt/V lở/V đất/N ở/E tỉnh/N Lào_Cai/Np ./CH
+Về/E khu_vực/N nghiên_cứu/V ,/CH Lào_Cai/Np nằm/V ở/E phía/N bắc/N lãnh_thổ/N Việt_Nam/Np ,/CH cách/V Hà_Nội/Np khoảng/N 300/M km/Nu về/E phía/N tây/N bắc/N ./CH
+Tỉnh/N hiện/N đang/R nằm/V trên/E nền/N địa_chất/N hết_sức/R phức_tạp/A với/E 3/M đới/N cấu_trúc/N địa_chất/N khác/A nhau/N ,/CH địa_hình/N phân/V cắt/V mạnh/A kết_hợp/V với/E lượng/N mưa/N lớn/A ,/CH tập_trung/V đã/R thúc_đẩy/V các/L quá_trình/N tai_biến/V xảy/V ra/V rất/R mạnh_mẽ/A ,/CH gây/V thiệt_hại/V nặng_nề/A về/E kinh_tế/N và/Cc gây/V tâm_lí/N hoang_mang/V cho/E đồng_bào/N dân_tộc_thiểu_số/N ./CH
+Gần/A đây/P nhất/R ,/CH vào/E tháng/N 9/M năm/N 2004/M trên/E địa_bàn/N tỉnh/N đã/R xảy/V ra/V 2/M vụ/N trượt/V lở/V nghiêm_trọng/A làm/V chết/V 26/M người/N ,/CH thiệt_hại/N về/E của/N lên/V tới/T hàng/R chục_tỉ/M đồng/Nu ./CH
+Thiết_nghĩ/V ,/CH với/E vị_trí/N hết_sức/R quan_trọng/A về/E kinh_tế/N -/CH xã_hội/N cũng/R như/C an_ninh/N quốc_phòng/N ,/CH tỉnh/N Lào_Cai/Np rất/R cần/V có/V các/L công_trình/N nghiên_cứu/V cơ_bản/A nhằm/V giảm_thiểu/V thiệt_hại/A do/E tai_biến/N thiên_nhiên/N gây/V ra/V cũng/R như/C trong/E khai_thác/V sử_dụng/V tài_nguyên/N và/Cc bảo_vệ/V môi_trường/N
+2/M ./CH Quan_điểm/N nghiên_cứu/V và/Cc quy_trình/N thực_hiện/V
+Một/M trong/E những/L vấn_đề/N quan_trọng/A của/E việc/N nghiên_cứu/V tai_biến/N trượt/V lở/V là/V xác_định/V được/R tính/N nhạy_cảm/A của/E sườn/N mái/N dốc/A với/E quá_trình/N trượt/V lở/V ./CH
+Tính/N nhạy_cảm/A này/P phụ_thuộc/V vào/E các/L nhân_tố/N ảnh_hưởng/V có/V tác_dụng/N chống/V lại/V thành_phần/N gây/V trượt/V của/E trọng_lực/N ./CH
+Cơ_sở/N của/E việc/N đánh_giá/V mức_độ/N nhạy_cảm/A với/E trượt/V lở/V đất/N chính/T là/V việc/N đánh_giá/V đơn_lẻ/A các/L nhân_tố/N ảnh_hưởng/V rồi/C đến/V đánh_giá/V tổng_hợp/V các/L nhân_tố/N ảnh_hưởng/V tới/E quá_trình/N trượt/V lở/V ./CH
+Mục_đích/N của/E bài/N báo/N này/P nhằm/V làm/V sáng_tỏ/A vai_trò/N của/E GIS/Ny và/Cc MCE/Ny trong/E việc/N xác_định/V những/L vùng/N có/V nguy_cơ/N trượt/V lở/V cao/A ./CH
+Trong/E đó/P các/L nhân_tố/N ảnh_hưởng/V như/C địa_chất/N ,/CH địa_mạo/N ,/CH khí_hậu/N ,/CH lớp/N phủ/V thực_vật/N ,/CH .../CH được/V đánh_giá/V dựa/V trên/E tầm/N quan_trọng/A của/E chúng/P đối_với/E quá_trình/N trượt/V lở/V ./CH
+Để/E đạt/V được/R mục_đích/N nghiên_cứu/V cần/V thực_hiện/V các/L bước/N sau/N :/CH
+a/Ni ./CH Xác_định/V các/L nhân_tố/N ảnh_hưởng/V như/C :/CH độ/N dốc/A ,/CH lượng/N mưa/N ,/CH loại/N đất_đá/N ,/CH mật_độ/N chia_cắt/V (/CH các/L yếu_tố/N dạng/N tuyến/N )/CH và/Cc độ/N che_phủ/V của/E thực_vật/N ./CH
+Đây/P là/V những/L nhân_tố/N hết_sức/R quan_trọng/A trong/E việc/N đánh_giá/V tính/N nhạy/A với/E trượt/V lở/V của/E sườn/N mái/N dốc/A ./CH
+b/Ni ./CH Phân_cấp/V các/L mức_độ/N ảnh_hưởng/V với/E quá_trình/N trượt/V lở/V đối_với/E mỗi/L nhân_tố/N ảnh_hưởng/V ./CH
+Tuỳ/V vào/E mức_độ/N chi_tiết/A của/E tài_liệu/N mà/C ta/P phân/V thành/V nhiều/A cấp/N ảnh_hưởng/N khác/A nhau/N ./CH
+c/Ni ./CH Phân_hạng/V mức_độ/N tác_động/V (/CH tầm/N quan_trọng/A )/CH của/E các/L nhân_tố/N ảnh_hưởng/V tới/E quá_trình/N trượt/V lở/V dựa/V trên/E các/L kiến_thức/N chuyên_gia/N và/Cc sử_dụng/V MCE/Ny để/E định_lượng_hoá/V (/CH xác_định/V trọng_số/N )/CH mức_độ/N ảnh_hưởng/V của/E các/L nhân_tố/N ./CH
+d/Ny ./CH Xây_dựng/V bản_đồ/N nhạy_cảm/A với/E trượt/V lở/V đất/N tỉnh/N Lào_Cai/Np bằng/E cách/N sử_dụng/V công_cụ/N tính_toán/V trong/E môi_trường/N GIS/Ny được/V phân_cấp/V thành/V :/CH “/CH rất/R nhạy_cảm/A ”/CH ,/CH “/CH nhạy_cảm/A ”/CH ,/CH “/CH nhạy_cảm/A trung_bình/A ”/CH ,/CH “/CH kém/A nhạy_cảm/A và/Cc ổn_định/A ”/CH ./CH
+3/M ./CH Kết_quả/N nghiên_cứu/V
+Môi_trường/N GIS/Ny cho_phép/V tính_toán/V ,/CH phân_tích/V và/Cc tổng_hợp/V các/L dữ_liệu/N không_gian/N ./CH
+MCE/Ny ứng_dụng/V việc/N phân_hạng/V (/CH ranking/N )/CH và/Cc gán/V trọng_số/N nhằm/V mục_đích/N đánh_giá/V tổng_hợp/A tính/N nhạy_cảm/A cho/E từng/P đơn_vị/N không_gian/N cụ_thể/A ./CH
+Dựa/V trên/E cơ_sở/N này/P ,/CH mô_hình/N “/CH nhạy_cảm/A ”/CH (/CH asusceptibility_model/X )/CH được/V thiết_lập/V để/E đánh_giá/V cho/E các/L không_gian/N ./CH
+Bản_đồ/N tổng_hợp/V xác_định/V tính/N nhạy_cảm/A với/E tai_biến/N trượt/V lở/V được/V xây_dựng/V trên/E các/L nhân_tố/N sau/N :/CH
+-/CH Loại/N đất_đá/N (/CH Bản_đồ/N thạch_học/N )/CH
+-/CH Mức_độ/N phong_hoá/V của/E đất_đá/N (/CH Bản_đồ/N vỏ/N phong_hoá/V )/CH
+-/CH Mật_độ/N đứt_gãy/V (/CH Bản_đồ/N đứt_gãy/V )/CH
+-/CH Mức_độ/N phân/V cắt/V địa_hình/N (/CH Bản_đồ/N mật_độ/N phân/V cắt/V sâu/A ,/CH Bản_đồ/N mật_độ/N các/L yếu_tố/N dạng/N tuyến/N )/CH
+-/CH Độ/N dốc/A (/CH Bản_đồ/N độ/N dốc/A )/CH
+-/CH Khả_năng/N chứa/V nước_ngầm/N (/CH Bản_đồ/N địa_chất/N thuỷ_văn/N )/CH
+-/CH Lượng/N mưa/N (/CH Bản_đồ/N cường_độ/N mưa/N và/Cc lượng/N mưa/N trung_bình/A năm/N )/CH
+-/CH Mức_độ/N che_phủ/V thực_vật/N (/CH Bản_đồ/N độ/N che_phủ/V thực_vật/N )/CH
+Khi/N các/L tiêu_chuẩn/N trên/N được/V thu/V từ/E dữ_liệu/N gốc/N ,/CH các/L thuộc_tính/N ảnh_hưởng/V đến/E quá_trình/N tai_biến/N cần/V được/V đưa/V về/V dạng/N chỉ_số/N để/E chúng/P có_thể/R so_sánh/V với/E nhau/N ./CH
+Các/L tiêu_chuẩn/N trên/N được/V biểu_diễn/V dưới/E dạng/N các/L bản_đồ/N ./CH
+Trên/E cơ_sở/N các/L thuộc_tính/N của/E mỗi/L tiêu_chuẩn/N ,/CH bằng/E công_cụ/N của/E GIS/Ny ,/CH các/L bản_đồ/N này/P được/V phân_loại/V (/CH classification/N )/CH và/Cc phân_cấp/V (/CH ranking/N )/CH tuỳ/V theo/V mức_độ/N ảnh_hưởng/V của/E mỗi/L nhân_tố/N ./CH
+Trong/E khi/N phân_cấp/V ,/CH phương_pháp/N cho/V điểm/N trong/E MCE/Ny được/V áp_dụng/V ./CH
+Các/L cấp/N của/E một/M bản_đồ/N được/V phân_cấp/V bằng/E số/N từ/E 10/M đến/E 5/M để/E xác_định/V cấp/N định_lượng/N từ/E mức_độ/N tác_động/V “/CH ảnh_hưởng/N rất/R mạnh/A ”/CH đến/E “/CH không/R ảnh_hưởng/V ”/CH được/V thể_hiện/V bằng/E thang/N sau/N :/CH
+Giá_trị/N “/CH -/CH 10/M ”/CH thể_hiện/V :/CH nếu/C có/V bất_kỳ/A một/M vùng/N nào_đó/P được/V xét/V là/C không/R ảnh_hưởng/V thì/C vùng/N này/P không/R được/V đưa/V vào/R phân_cấp/V nhạy_cảm/A với/E trượt/V lở/V (/CH Ví_dụ/C như/C với/E nhân_tố/N lớp/N phủ/V thực_vật/N thì/C các/L diện_tích/N mặt_nước/N không/R được/V đưa/V vào/R tính_toán/V )/CH ./CH
+Sau/N đây/P là/V một/M ví_dụ/C của/E phương_pháp/N này/P đối_với/E “/CH thành_phần/N thạch_học/N ”/CH được/V dựa/V trên/E thành_phần/N cấp/V hạt/N ,/CH mức_độ/N phân/V lớp/N hay/Cc dạng/N khối/N ,/CH mức_độ/N dập/V vỡ/V và/Cc khả_năng/N phong_hoá/V ./CH
+Thông_thường/A ,/CH các/L đá/N có/V sự/N xen_kẽ/V các/L lớp/N đá/N cứng/A với/E đá/N mềm/A (/CH đá_phiến/N sét/N (/CH PZ-PR/Ny )/CH ,/CH phiến/N biotit/X ,/CH sét/N than/N hệ/N tầng/N Ngòi_Chi/Np ,/CH Cam_Đường/Np )/CH ,/CH dẫn/V đến/E hiện_tượng/N xâm_thực/V ,/CH phong_hoá/V chọn_lọc/V ./CH
+Đặc_biệt/A ,/CH đất_đá/N bị/V cà/V nát/V mạnh/A nên/C trong/E vỏ/N phong_hoá/V có/V nhiều/A mảnh/N vỡ/V cả/P trong/E đới/N litoma/X lẫn/C trong/E đới/N saprolit/X ./CH
+Tính/N không/R đồng_nhất/A cao_độ/N này/P của/E lớp/N vỏ/N phong_hoá/V tạo/V điều_kiện/N để/E nước_ngầm/N vận_động/V trên/E mặt/N phân_cách/V giữa/N mảnh/N đá/V với/E đất/N mịn/N ,/CH tạo/V thuận_lợi/N cho/E quá_trình/N trượt/V lở/V đất/N ./CH
+Vì_vậy/C ,/CH trong/E khu_vực/N nghiên_cứu/V các/L đá/N này/P được/V phân_cấp/V cao/A hơn/A so/V với/E các/L trầm_tích/N N/Ny ,/CH Q/Ny và/Cc các/L đá/N xâm_nhập/V có/V thành_phần/N bazơ/N ./CH
+Các/L tiêu_chuẩn/N khác/A cũng/R được/V đánh_giá/V tương_tự/A như/C vậy/P ./CH
+Việc/N cho/V điểm_số/N này/P dựa/V trên/E kinh_nghiệm/N và/Cc kiến_thức/N của/E các/L chuyên_gia/N nên/C không/R tránh/V khỏi/V ý_kiến/N chủ_quan/A ./CH
+Sự/N phân_bố/V không_gian/N của/E nhân_tố/N thành_phần/N vật_chất/N được/V thể_hiện/V ở/E hình/N 2/M ./CH
+Trong/E đó/P :/CH Ttb/Ny là/V tổng/N giá_trị/N của/E các/L nhân_tố/N ảnh_hưởng/V ,/CH Ti/Ny là/V các/L điểm/N đánh_giá/V theo/V nhân_tố/N ảnh_hưởng/V được/V phân_bố/V trên/E các/L bản_đồ/N thành_phần/N ,/CH wi/Ny là/V trọng_số/N của/E các/L bản_đồ/N thành_phần/N ./CH
+Trọng_số/N cho/E mỗi/L nhân_tố/N ảnh_hưởng/V được/V xác_định/V bằng/E sử_dụng/V phép/N so_sánh/V cặp/N trong/E đánh_giá/N đa/Z tiêu_chuẩn/N (/CH MCE/Ny )/CH ./CH
+Các/L bản_đồ/N thành_phần/N được/V đánh_giá/V dựa/V trên/E mức_độ/N quan_trọng/A của/E nó/P đối_với/Cc việc/N hình_thành/V bản_đồ/N tổng_hợp/V ./CH
+Cơ_sở/N của/E việc/N xác_định/V mức_độ/N quan_trọng/A của/E các/L nhân_tố/N dựa/V trên/E mức_độ/N phân/V dị/N ảnh_hưởng/V của/E chúng/P tới/E quá_trình/N ./CH
+Hay/C nói/V cách/N khác/A ,/CH nhân_tố/N nào/P có/V mức_độ/N phân/V dị/N cao/A thì/C được/V coi/V là/C quan_trọng/A hơn/A nhân_tố/N có/V độ/N phân/V dị/N thấp/A ./CH
+Trong/E bài/N báo/N này/P ,/CH nhân_tố/N “/CH độ/N dốc/A ”/CH được/V đánh_giá/V quan_trọng/A hơn/A vì/E nó/P rất/R phân/V dị/N về/E mặt/N không_gian/N còn/R nhân_tố/N “/CH mật_độ/N lineament/N ”/CH thì/C được/V đánh_giá/V là/C kém/A quan_trọng/A hơn/A bởi/E nó/P ít/A phân/V dị/N cho_dù/C giá_trị/N mật_độ/N là/V cao/A ./CH
+Phép/N so_sánh/V cặp/N cho_phép/V so_sánh/V từng/P nhân_tố/N với/E nhau/N ,/CH cuối_cùng/A nhân_tố/N nào/P được/V đánh_giá/V là/C quan_trọng/A nhất/R ,/CH tác_động/V mạnh/A nhất/R tới/E quá_trình/N trượt/V lở/V sẽ/R được/V đánh_giá/V là/C “/CH tuyệt_đối/A quan_trọng/A ”/CH ./CH
+Nhân_tố/N nào/P được/V đánh_giá/V là/C ít/A tác_động/V đến/E quá_trình/N trượt/V lở/V thì/C được/V đánh_giá/V là/C “/CH ít/A quan_trọng/A ”/CH ./CH
+Các/L nhân_tố/N này/P được/V phân_hạng/V và/Cc chuyển/V ra/R dạng/N số/N như/C sau/N nhằm/V thuận_lợi/V cho/E việc/N tính_toán/V ./CH
+So/V với/E các/L kết_quả/N nghiên_cứu/V thực_tế/N ,/CH bản_đồ/N nhạy_cảm/A với/E trượt/V lở/V tỉnh/N Lào_Cai/Np rất/R phù_hợp/V với/E bình_đồ/N địa/N động_lực/N chung/A của/E khu_vực/N ./CH
+Hai/M điểm/N chìa_khoá/N mà/C chúng_tôi/P đã/R tiến_hành/V nghiên_cứu/V thực_địa/N đó/P là/V các/L khối/N trượt/V thuộc/V khu_vực/N cầu/N Mống_Sến/Np và/Cc khối/N trượt/V cạnh/N UBND/Ny xã/N Phìn_Ngan/Np ,/CH huyện/N Bát_Xát/Np nằm/V trong/E khu_vực/N rất/R nhạy_cảm/A trên/E bản_đồ/N kết_quả/N ,/CH các/L khu_vực/N này/P đều/R có/V độ/N dốc/A cao/A và/Cc nằm/V trên/E ranh_giới/N tiếp_xúc/V của/E các/L loại/N đất_đá/N khác/A nhau/N ,/CH đó/P cũng/R là/V những/L tiêu_chí/N mà/C chúng_tôi/P đánh_giá/V quan_trọng/A và/Cc có/V mức_độ/N ảnh_hưởng/V cao/A ./CH
+4/M ./CH Kết_luận/N
+Kết_quả/N thu/V được/R nhờ/V áp_dụng/V GIS/Ny và/Cc MCE/Ny không_chỉ/C thể_hiện/V ở/E những/L bản/N phân_bố/V không_gian/N mà_còn/C ở/E dạng/N các/L bảng/N thuộc_tính/N ./CH
+Phương_pháp/N đánh_giá/V trọng_số/N bằng/E MCE/Ny có_thể/R áp_dụng/V trong/E nhiều/A chuyên_ngành/N của/E khoa_học/N địa_lí/N bằng/E việc/N thay_đổi/V các/L kịch_bản/N cũng/R như/C các/L tiêu_chuẩn/N đánh_giá/V khác/A ./CH
+Dựa/V vào/E GIS/Ny và/Cc MCE/Ny ,/CH kết_quả/N đánh_giá/V mức_độ/N nhạy_cảm/A với/E trượt/V lở/V đất/N khu_vực/N tỉnh/N Lào_Cai/Np được/V thể_hiện/V như/C sau/N :/CH Khu_vực/N có/V quá_trình/N đổ/V lở/V xảy/V ra/V mạnh/A nhất/R thuộc/V dãy/N núi/N Hoàng_Liên_Sơn/Np và/Cc khối/N núi/N Pò_Sen/Np phát_triển/V trên/E đá/N granit/N ./CH
+Khu_vực/N có/V trượt/V lở/V đất/N mạnh/A nhất/A phát_triển/V dọc/A theo/V thung_lũng/N sông_Hồng/Np với/E địa_hình/N gò/N đồi/N phát_triển/V trên/E đá_phiến/N sét/N và/Cc sét/N than/N ./CH
+Quá_trình/N lở/V đất/N phát_triển/V mạnh/A ở/E các/L khu_vực/N tiếp_xúc/V giữa/N đá/N granit/N và/Cc đá_phiến/N ,/CH giữa/N đá_vôi/N và/Cc đá/N sét/N vôi/N ./CH
+

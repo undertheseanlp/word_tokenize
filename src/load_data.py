@@ -1,4 +1,4 @@
-from utils.read_write.readers import iob_reader
+from utils.file_io.readers import iob_reader
 
 
 class DataLoader():
@@ -10,11 +10,11 @@ class DataLoader():
         self.len_fields = 2
         self.sep = '\t'
 
-    def get_tokenizer():
+    def get_tokenizer(self):
         out_data = []
         for file in self.fileids:
             try:
-                data = [sent for sent in iob_reader(self.CORPUS_PATH.format('train'),
+                data = [sent for sent in iob_reader(self.CORPUS_PATH.format(file),
                                                     self.len_fields,
                                                     self.sep)]
                 out_data.append(data)

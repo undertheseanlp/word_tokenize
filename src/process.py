@@ -5,7 +5,7 @@ from utils.feature_engineering.features import is_number, contain_digit, is_punc
 BI_GRAMS = set()
 TRI_GRAMS = set()
 
-DICT_PATH = 'utils/crf_techbk/words.txt'
+DICT_PATH = 'data/vlsp2016/dictionary/words.txt'
 
 with open(DICT_PATH, 'r', encoding='utf-8') as fin:
     for token in fin.read().split('\n'):
@@ -97,8 +97,3 @@ def sent2labels(sent):
 
 def sent2tokens(sent):
     return [token for token, label in sent]
-
-
-if __name__ == '__main__':
-    import json
-    print(json.dumps(word2features(['a', 'b', 'c', 'd', 'e'], 2), indent=4))
