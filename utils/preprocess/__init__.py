@@ -1,0 +1,2 @@
+from utils.preprocess.preprocess_vlsp2013 import Vlsp2013Preprocessor
+from utils.preprocess.preprocess_vlsp2016 import Vlsp2016Preprocessor

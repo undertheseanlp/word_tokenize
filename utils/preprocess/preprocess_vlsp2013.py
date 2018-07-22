@@ -1,6 +1,5 @@
 from os.path import join
 from languageflow.reader.tagged_corpus import TaggedCorpus
-from utils.file_io.concat import concat_text_files
 from utils.helpers import read, flat_list
 import re
 
@@ -38,13 +37,3 @@ class Vlsp2013Preprocessor():
 
     def _process_sentence(self, sent):
         return [self._process_token(token.split('_')) for token in sent.split()]
-
-
-class Vlsp2013Combiner():
-
-    def __init__(self, inputs, output):
-        self.inputs = inputs
-        self.output = output
-
-    def combine(self):
-        concat_text_files(self.inputs, self.output)

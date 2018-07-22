@@ -28,9 +28,8 @@ warnings.filterwarnings('ignore')
 
 class CRFWrapper():
 
-    PATH = 'data/vlsp2016/cleaned/'
-
-    def __init__(self):
+    def __init__(self, path):
+        self.PATH = path  # 'data/vlsp2016/cleaned/'
         self.model = None
 
     def load(self):
@@ -42,12 +41,13 @@ class CRFWrapper():
         self.y_test = load_data(join(self.PATH, 'y_test.pkl'))
 
     def fit(self):
+        print('Start training model')
         self.load()
         self.model = CRF(
             algorithm='lbfgs',
             c1=0.1,
             c2=0.1,
-            max_iterations=2,
+            max_iterations=100,
             all_possible_transitions=True,
         )
         self.model.fit(self.X_train, self.y_train, self.X_dev, self.y_dev)
@@ -62,6 +62,11 @@ class CRFWrapper():
 
     def save(self):
         save_data(self.model, 'model/model.bin')
+
+    def execute(self):
+        self.fit()
+        self.evaluate()
+        self.save()
 
         # def train_full(data=None):
         #     data = data or get_tokenizer()

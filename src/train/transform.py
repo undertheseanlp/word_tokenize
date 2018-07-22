@@ -1,18 +1,17 @@
-from src.process import sent2features, sent2labels, sent2tokens
-from src.load_data import DataLoader
+from src.train.process import sent2features, sent2labels, sent2tokens
+from src.train.load_data import DataLoader
 from utils.helpers import save_data
 from os.path import join
 
 
 class DataTransformer():
 
-    SAVE_PATH = 'data/vlsp2016/cleaned/'
-
-    def __init__(self):
-        pass
+    def __init__(self, corpus_path, save_path):
+        self.SAVE_PATH = save_path  # 'data/vlsp2016/cleaned/'
+        self.CORPUS_PATH = corpus_path
 
     def load(self):
-        train_sents, dev_sents, test_sents = DataLoader().get_tokenizer()
+        train_sents, dev_sents, test_sents = DataLoader(self.CORPUS_PATH).get_tokenizer()
         return (train_sents, dev_sents, test_sents)
 
     def transform(self, data):
