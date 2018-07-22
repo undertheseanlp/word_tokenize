@@ -57,14 +57,13 @@ $ python word_tokenize.py -in "Chàng trai 9X Quảng Trị khởi nghiệp từ
 
 ### 2.2 Train a new dataset
 
-**Prepare a new dataset**
-
 **Train and test**
 
 ```
 $ python util/preprocess_vlsp2016.py
-$ python train.py \
-    --train tmp/vlsp2016/corpus/train.txt
+$ python train.py --mode train \
+    --train tmp/vlsp2016/train.txt \
+    -s tmp/model_20180722/model.bin
 ```
 
 ### 2.2 Train a new dataset
