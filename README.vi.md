@@ -56,7 +56,7 @@ word_tokenize/
 
 **Bước 1**: Chuẩn bị dữ liệu  
 
-Dữ liệu trước xử lí đặt tại thư mục raw gồm các file text: `train.txt`, `dev.txt`, `test.txt`. Quá trình tiền xử lí bao gồm các bước: lấy token tại cột đầu tiên của dữ liệu raw, biến đổi từng token với mỗi token đơn thành `BW`, với những token gồm word và dấu `_` thì word đầu tiên là `BW`, các word sau là `IW`. 
+Dữ liệu trước xử lí đặt tại thư mục raw gồm các file text: `train.txt`, `dev.txt`, `test.txt`. Quá trình tiền xử lí bao gồm các bước: lấy token tại cột đầu tiên của dữ liệu raw, biến đổi từng token với mỗi token đơn thành `B-W`, với những token gồm word và dấu `_` thì word đầu tiên là `B-W`, các word sau là `I-W`. 
 
 Dữ liệu sau khi xử lí sẽ được đưa vào các file tương ứng trong `corpus`.
 
