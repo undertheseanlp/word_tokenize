@@ -1,8 +1,11 @@
-from util.crf.model import model_crf
+from underthesea.word_tokenize import tokenize
+
+from util.crf.word_tokenize import model_crf
 
 
-def word_tokenize(sentence, format=None):
-    output = model_crf.predict(sentence)
+def word_tokenize(sentence, format=None, model=None):
+    tokens = tokenize(sentence).split()
+    output = model_crf.predict(tokens)
     tokens = [token[0] for token in output]
     tags = [token[1] for token in output]
     output = []
@@ -14,3 +17,8 @@ def word_tokenize(sentence, format=None):
     if format == "text":
         output = u" ".join([item.replace(" ", "_") for item in output])
     return output
+
+
+if __name__ == '__main__':
+    output = word_tokenize("Đang họp báo vụ điểm cao bất thường ở Sơn La", format="text")
+    print(output)

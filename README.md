@@ -63,7 +63,7 @@ $ python word_tokenize.py -in "Chàng trai 9X Quảng Trị khởi nghiệp từ
 $ python util/preprocess_vlsp2016.py
 $ python train.py --mode train \
     --train tmp/vlsp2016/train.txt \
-    -s tmp/model_crf/model.bin
+    -s tmp/model.bin
 ```
 
 ### 2.2 Train a new dataset

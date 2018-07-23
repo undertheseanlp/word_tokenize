@@ -19,7 +19,7 @@ def train(train_path, model_path):
     X, y = transformer.transform(train_set)
 
     # train
-    crf_params = {
+    params = {
         'c1': 1.0,  # coefficient for L1 penalty
         'c2': 1e-3,  # coefficient for L2 penalty
         'max_iterations': 1000,  #
@@ -32,7 +32,7 @@ def train(train_path, model_path):
         makedirs(folder)
     except:
         pass
-    estimator = CRF(params=crf_params, filename=model_path)
+    estimator = CRF(params=params, filename=model_path)
     estimator.fit(X_train, y_train)
     y_pred = estimator.predict(X_dev)
     f1_score = metrics.flat_f1_score(y_dev, y_pred, average='weighted')

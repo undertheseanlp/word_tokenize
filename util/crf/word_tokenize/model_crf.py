@@ -1,7 +1,6 @@
 from os.path import join, dirname
 import pycrfsuite
 from underthesea.word_tokenize import tokenize
-
 from util.crf.transformer.custom_transformer import CustomTransformer
 
 path = join(dirname(__file__), "model.bin")
@@ -32,12 +31,7 @@ template = [
 transformer = CustomTransformer(template)
 
 def predict(sentence):
-    sentence = tokenize(sentence).split()
     tokens = [(token, "X") for token in sentence]
     x = transformer.transform([tokens])[0][0]
     tags = estimator.tag(x)
     return list(zip(sentence, tags))
-
-if __name__ == '__main__':
-    y = predict("Tổng thống Nga coi việc Mỹ không kích căn cứ quân sự của Syria là sự gây hấn nhằm vào một quốc gia có chủ quyền")
-    print(y)
