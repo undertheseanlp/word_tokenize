@@ -9,10 +9,14 @@ file_group.add_argument("--fin", help="file input")
 file_group.add_argument("--fout", help="file output")
 
 args = parser.parse_args()
-if not (args.text or args.fin):
-    parser.print_help()
 
-if args.text:
-    text = args.text
-    label = word_tokenize(text)
-    print(label)
+
+if __name__ == '__main__':
+    word_tokenize("Chàng trai 9X Quảng Trị khởi nghiệp từ nấm sò")
+    if not (args.text or args.fin):
+        parser.print_help()
+
+    if args.text:
+        text = args.text
+        label = word_tokenize(text)
+        print(label)

@@ -41,27 +41,29 @@ $ pip install -r requirements.txt
 
 ## 2. Usage
 
-
-### 2.1 Using a pretrained model
-
-```
-python word_tokenize.py -fin tmp/input.txt -fout tmp/output.txt
-python word_tokenize.py -in "Chàng trai 9X Quảng Trị khởi nghiệp từ nấm sò"
-```
-
-### 2.2 Train a new dataset
-
-**Prepare a new dataset**
-
-**Train and test**
+Make sure you are in `word_tokenize` folder and activate `word_tokenize` environment
 
 ```
 $ cd word_tokenize
 $ source activate word_tokenize
+``` 
+
+### 2.1 Using a pretrained model
+
+```
+$ python word_tokenize.py -fin tmp/input.txt -fout tmp/output.txt
+$ python word_tokenize.py -in "Chàng trai 9X Quảng Trị khởi nghiệp từ nấm sò"
+```
+
+### 2.2 Train a new dataset
+
+**Train and test**
+
+```
 $ python util/preprocess_vlsp2016.py
-$ python train.py --mode train-test \
-    --train tmp/vlsp2016/corpus/train.txt \
-    --test tmp/vlsp2016/corpus/test.txt
+$ python train.py --mode train \
+    --train tmp/vlsp2016/train.txt \
+    -s tmp/model_20180722/model.bin
 ```
 
 ### 2.2 Train a new dataset
