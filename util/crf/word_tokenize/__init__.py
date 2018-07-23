@@ -11,7 +11,7 @@ def word_tokenize(sentence, format=None, model=None):
     output = []
     for tag, token in zip(tags, tokens):
         if tag == "I-W":
-            output[-1] = output[-1] + u" " + token
+            output[-1] = output[-1] + " " + token
         else:
             output.append(token)
     if format == "text":

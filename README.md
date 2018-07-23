@@ -51,8 +51,8 @@ $ source activate word_tokenize
 ### 2.1 Using a pretrained model
 
 ```
-$ python word_tokenize.py -fin tmp/input.txt -fout tmp/output.txt
-$ python word_tokenize.py -in "Chàng trai 9X Quảng Trị khởi nghiệp từ nấm sò"
+$ python word_tokenize.py --fin tmp/input.txt --fout tmp/output.txt
+$ python word_tokenize.py --text "Chàng trai 9X Quảng Trị khởi nghiệp từ nấm sò"
 ```
 
 ### 2.2 Train a new dataset
