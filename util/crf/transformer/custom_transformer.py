@@ -13,20 +13,6 @@ class CustomTransformer(TaggedTransformer):
     def _word2features(self, s, i, template):
         features = word2features(s, i, template)
         features = self._convert_features_to_dict(features)
-        for i in range(-2, 3):
-            t = "T[{}].is_in_dict".format(i)
-            t2 = "T[{}]".format(i)
-            t3 = "T[{}].lower".format(i)
-            if features[t] == 'True':
-                features[t2] = "-"
-                features[t3] = "-"
-        for i in range(-2, 2):
-            t = "T[{},{}].is_in_dict".format(i, i + 1)
-            t2 = "T[{},{}]".format(i, i + 1)
-            if features[t] == 'True':
-                features[t2] = "-"
-        features = self._convert_features_to_list(features)
-
         return features
 
     def sentence2features(self, s):
