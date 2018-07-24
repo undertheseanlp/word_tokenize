@@ -150,3 +150,5 @@ report/*
 !report/*.bst
 !report/*.sty
 !report/technique_report_final.pdf
+
+!tmp/input.txt
