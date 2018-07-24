@@ -23,6 +23,8 @@ File dev.txt
 - Line 20556 : I-NP -> NNP
 - Line 36016 : O -> M
 
+Original: http://www.vlsp.org.vn/vlsp2016/eval/ner
+
 ## Relevant Papers
 
 * Nguyen Thi Minh Huyen et al. VLSP 2016 Shared Task: Named Entity Recognition.  
