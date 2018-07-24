@@ -142,6 +142,7 @@ fabric.properties
 
 tmp/*
 !tmp/.gitkeep
+!tmp/input.txt
 
 report/*
 !report/build.sh
@@ -151,4 +152,3 @@ report/*
 !report/*.sty
 !report/technique_report_final.pdf
 
-!tmp/input.txt
