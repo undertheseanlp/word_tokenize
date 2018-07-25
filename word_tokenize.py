@@ -17,9 +17,12 @@ if __name__ == '__main__':
     if not (args.text or args.fin):
         parser.print_help()
 
+    model = None
+    if args.model:
+        model = args.model
     if args.text:
         text = args.text
-        label = word_tokenize(text, format="text")
+        label = word_tokenize(text, format="text", model_path=model)
         print(label)
 
     if args.fin or args.fout:
@@ -34,5 +37,5 @@ if __name__ == '__main__':
         f = open(file_out, "a")
         for text in open(file_in):
             text = text.strip()
-            output = word_tokenize(text, format="text") + "\n"
+            output = word_tokenize(text, format="text", model_path=model) + "\n"
             f.write(output)
