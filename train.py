@@ -14,9 +14,9 @@ parser.add_argument("--cross-validation", type=int, help="cross validation")
 args = parser.parse_args()
 
 if args.mode == "train":
-    if not (args.train and args.s):
+    if not (args.train and args.model):
         parser.error("Mode train requires --train and --model")
     train_path = os.path.abspath(args.train)
-    model_path = os.path.abspath(args.s)
+    model_path = os.path.abspath(args.model)
     train(train_path=train_path, model_path=model_path)
     print("Model is saved in {}".format(model_path))

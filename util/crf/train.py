@@ -10,11 +10,10 @@ from .feature_template import template
 
 
 def train(train_path, model_path):
-    print(train_path)
     train_set = []
 
     train_set += load_dataset(train_path)
-    print("Load corpus from file", train_path)
+    print("Load data from file", train_path)
     transformer = CustomTransformer(template)
     X, y = transformer.transform(train_set)
 
