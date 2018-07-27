@@ -1,5 +1,6 @@
 import argparse
 import os
+from os.path import abspath
 
 from util.crf.word_tokenize import word_tokenize
 
@@ -19,7 +20,7 @@ if __name__ == '__main__':
 
     model = None
     if args.model:
-        model = args.model
+        model = abspath(args.model)
     if args.text:
         text = args.text
         label = word_tokenize(text, format="text", model_path=model)

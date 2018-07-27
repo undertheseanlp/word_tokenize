@@ -5,7 +5,7 @@ from util.crf.word_tokenize.model import CRFModel
 
 def word_tokenize(sentence, format=None, model_path=None):
     tokens = tokenize(sentence).split()
-    model = CRFModel(model_path)
+    model = CRFModel.instance(model_path)
     output = model.predict(tokens)
     tokens = [token[0] for token in output]
     tags = [token[1] for token in output]
