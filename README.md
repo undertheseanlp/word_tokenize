@@ -69,7 +69,7 @@ $ python train.py --mode train \
 
 ```
 $ python word_tokenize.py \
-    --fin tmp/input.txt --fout tmp/outputx.txt \
+    --fin tmp/input.txt --fout tmp/output.txt \
     --model tmp/model.bin
 ```
 
