@@ -8,7 +8,7 @@ This repository contains starter code for training and evaluating machine learni
   * [1.1 Requirements](#11-requirements)
   * [1.2 Download and Setup Environement](#12-download-and-setup-environment)
 * [2. Usage](#2-usage)
-  * [2.1 Using a pretrained model](#21-using-a-pretrained-model)
+  * [2.1 Using a pretrained model](#21-using-a-pre-trained-model)
   * [2.2 Train a new dataset](#22-train-a-new-dataset)
 * [3. References](#3-references)
 
