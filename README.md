@@ -10,7 +10,6 @@ This repository contains starter code for training and evaluating machine learni
 * [2. Usage](#2-usage)
   * [2.1 Using a pretrained model](#21-using-a-pretrained-model)
   * [2.2 Train a new dataset](#22-train-a-new-dataset)
-  * [2.3 Sharing a model](#23-sharing-a-model)
 * [3. References](#3-references)
 
 
@@ -48,10 +47,10 @@ $ cd word_tokenize
 $ source activate word_tokenize
 ``` 
 
-### 2.1 Using a pretrained model
+### 2.1 Using a pre-trained model
 
 ```
-$ python word_tokenize.py --in "Chàng trai 9X Quảng Trị khởi nghiệp từ nấm sò"
+$ python word_tokenize.py --text "Chàng trai 9X Quảng Trị khởi nghiệp từ nấm sò"
 $ python word_tokenize.py --fin tmp/input.txt --fout tmp/output.txt
 ```
 
@@ -63,12 +62,16 @@ $ python word_tokenize.py --fin tmp/input.txt --fout tmp/output.txt
 $ python util/preprocess_vlsp2016.py
 $ python train.py --mode train \
     --train tmp/vlsp2016/train.txt \
-    -s tmp/model.bin
+    --model tmp/model.bin
 ```
 
-### 2.2 Train a new dataset
+**Predict with trained model**
 
-To be updated
+```
+$ python word_tokenize.py \
+    --fin tmp/input.txt --fout tmp/outputx.txt \
+		--model tmp/model.bin
+```
 
 ## 3. References
 

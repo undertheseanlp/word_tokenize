@@ -10,7 +10,7 @@ text_group.add_argument("--text", metavar="TEXT", help="text to predict")
 file_group = parser.add_argument_group("The following arguments are mandatory for file option")
 file_group.add_argument("--fin", help="file input")
 file_group.add_argument("--fout", help="file output")
-parser.add_argument("--model", help="path to saved model")
+parser.add_argument("--model", help="path to load model")
 
 args = parser.parse_args()
 
