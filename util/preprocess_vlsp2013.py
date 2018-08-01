@@ -19,7 +19,7 @@ def preprocess(file):
             if token.startswith("//"):
                 word = "/"
             else:
-                word = token.split("/") [0]
+                word = token.split("/")[0]
             words.append(word)
         for word in words:
             syllabels = word.split("_")
@@ -38,7 +38,7 @@ def raw_to_corpus(sample, output):
         output_folder = join(dirname(dirname(__file__)), "tmp", "vlsp2013")
     try:
         makedirs(output_folder)
-    except:
+    except Exception as e:
         pass
     raw_folders = ["Trainset-POS-full", "Testset-POS"]
     output_names = ["train.txt", "test.txt"]
@@ -50,6 +50,10 @@ def raw_to_corpus(sample, output):
         files = [join(data_folder, raw_folder, file) for file in files]
         for file in files:
             sentences += preprocess(file)
+            if sample != None:
+                if len(sentences) > sample:
+                    sentences = sentences[:sample]
+                    break
         tagged_corpus.sentences = sentences
         output_file = join(output_folder, output_names[i])
         tagged_corpus.save(output_file)

@@ -1,6 +1,6 @@
 import argparse
 import os
-from util.crf.train import train
+from util.crf.train import train, train_test
 
 parser = argparse.ArgumentParser("train.py")
 parser.add_argument("--mode", help="available modes: train, train-test, train-test-split, cross-validation", default="train")
@@ -20,3 +20,10 @@ if args.mode == "train":
     model_path = os.path.abspath(args.model)
     train(train_path=train_path, model_path=model_path)
     print("Model is saved in {}".format(model_path))
+
+if args.mode == "train-test":
+    if not (args.train and args.test):
+        parser.error("Mode train-test requires --train and --test")
+    train_path = os.path.abspath(args.train)
+    test_path = os.path.abspath(args.test)
+    train_test(train_path=train_path, test_path=test_path)
