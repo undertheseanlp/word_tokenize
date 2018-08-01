@@ -71,7 +71,6 @@ chunk containing a single token. Chunks of length greater than or equal to two a
 start with the B tag and end with the E tag.
 • IO: Here, only the I and O labels are used. This therefore cannot distinguish between
 adjacent chunks of the same named entity.
-
 """
 # endOfChunk: checks if a chunk ended between the previous and current word
 # arguments:  previous and current chunk tags, previous and current types
