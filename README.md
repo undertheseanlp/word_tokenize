@@ -60,7 +60,7 @@ $ python word_tokenize.py --fin tmp/input.txt --fout tmp/output.txt
 
 ```
 $ python util/preprocess_vlsp2016.py
-$ python train.py --mode train \
+$ python train.py \
     --train tmp/vlsp2016/train.txt \
     --model tmp/model.bin
 ```

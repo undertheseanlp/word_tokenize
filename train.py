@@ -3,7 +3,8 @@ import os
 from util.crf.train import train, train_test
 
 parser = argparse.ArgumentParser("train.py")
-parser.add_argument("--mode", help="available modes: train, train-test, train-test-split, cross-validation", default="train")
+parser.add_argument("mode", default="train", nargs="?",
+  help="available modes: train, train-test, train-test-split, cross-validation")
 parser.add_argument("--train", help="train folder")
 parser.add_argument("--test", help="test folder")
 parser.add_argument("--train-test-split", type=float,
@@ -13,7 +14,8 @@ parser.add_argument("--cross-validation", type=int, help="cross validation")
 
 args = parser.parse_args()
 
-if args.mode == "train":
+mode = args.mode
+if mode == "train":
     if not (args.train and args.model):
         parser.error("Mode train requires --train and --model")
     train_path = os.path.abspath(args.train)
@@ -21,7 +23,7 @@ if args.mode == "train":
     train(train_path=train_path, model_path=model_path)
     print("Model is saved in {}".format(model_path))
 
-if args.mode == "train-test":
+if mode == "train-test":
     if not (args.train and args.test):
         parser.error("Mode train-test requires --train and --test")
     train_path = os.path.abspath(args.train)
