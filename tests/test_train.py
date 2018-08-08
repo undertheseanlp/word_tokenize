@@ -9,6 +9,7 @@ from util.crf.train import train
 
 TMP_FOLDER = join(dirname(dirname(__file__)), "tmp")
 
+
 class TestTrain(TestCase):
     def test_train(self):
         train_path = join(TMP_FOLDER, "vlsp2016_100", "train.txt")
