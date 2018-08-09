@@ -2,6 +2,7 @@ from os import makedirs
 from os.path import join, dirname
 from languageflow.model.crf import CRF
 
+from util.crf.word_tokenize import CRFModel
 from .load_data import load_dataset
 from .transformer.custom_transformer import CustomTransformer
 from .feature_template import template
@@ -32,4 +33,7 @@ def train(train_path, model_path):
     estimator.fit(X, y)
 
 def train_test(train_path, test_path):
+    model_path = "model.tmp.bin"
+    train(train_path, model_path)
+    estimator = CRFModel.instance(model_path)
     print(0)
