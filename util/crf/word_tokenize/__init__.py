@@ -1,6 +1,6 @@
 from underthesea.word_tokenize import tokenize
 
-from util.crf.word_tokenize.model import CRFModel
+from .model import CRFModel
 
 
 def word_tokenize(sentence, format=None, model_path=None):

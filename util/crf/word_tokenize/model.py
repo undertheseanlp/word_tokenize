@@ -1,7 +1,7 @@
 from os.path import join, dirname
 import pycrfsuite
-from util.crf.transformer.custom_transformer import CustomTransformer
-from util.crf.word_tokenize.features import template
+from ..transformer.custom_transformer import CustomTransformer
+from .features import template
 
 transformer = CustomTransformer(template)
 
@@ -11,7 +11,7 @@ class CRFModel:
 
     def __init__(self, model_path=None):
         if not model_path:
-            model_path = join(dirname(__file__), "model.bin")
+            model_path = join(dirname(__file__), "model.wt.20180818.bin")
         estimator = pycrfsuite.Tagger()
         estimator.open(model_path)
         self.estimator = estimator
