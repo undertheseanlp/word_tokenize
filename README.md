@@ -59,9 +59,9 @@ $ python word_tokenize.py --fin tmp/input.txt --fout tmp/output.txt
 **Train and test**
 
 ```
-$ python util/preprocess_vlsp2016.py
+$ python util/preprocess_vlsp2013.py
 $ python train.py \
-    --train tmp/vlsp2016/train.txt \
+    --train tmp/vlsp2013/train.txt \
     --model tmp/model.bin
 ```
 
