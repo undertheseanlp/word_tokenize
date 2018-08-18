@@ -1,6 +1,6 @@
 from os.path import join, dirname
 import pycrfsuite
-from ..transformer.custom_transformer import CustomTransformer
+from .custom_transformer import CustomTransformer
 from .features import template
 
 transformer = CustomTransformer(template)
