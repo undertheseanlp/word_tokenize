@@ -55,9 +55,9 @@ def template2features(sent, i, token_syntax, debug=True):
     """
     :type token: object
     """
-    columns = []
-    for j in range(len(sent[0])):
-        columns.append([t[j] for t in sent])
+    # columns = []
+    # for j in range(len(sent[0])):
+    #     columns.append([t[j] for t in sent])
     matched = re.match(
         "T\[(?P<index1>\-?\d+)(\,(?P<index2>\-?\d+))?\](\[(?P<column>.*)\])?(\.(?P<function>.*))?",
         token_syntax)
@@ -78,7 +78,8 @@ def template2features(sent, i, token_syntax, debug=True):
     if index2 is not None:
         if i + index2 >= len(sent):
             return ["%sEOS" % prefix]
-        word = " ".join(columns[column][i + index1: i + index2 + 1])
+        tmp = [sent[j][column] for j in range(i + index1, i + index2 + 1)]
+        word = " ".join(tmp)
     else:
         word = sent[i + index1][column]
     if func is not None:
