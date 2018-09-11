@@ -1,7 +1,8 @@
+underthesea==1.1.8
+nltk==3.2.5
+sklearn_crfsuite==0.3.6
+languageflow==1.1.7a3
 joblib==0.11
-languageflow==1.1.8a1
-Cython==0.28.2
-underthesea==1.1.9a1
 six==1.11.0
 python_crfsuite==0.9.6
-scikit-learn==0.19.1
+scikit_learn==0.19.2
