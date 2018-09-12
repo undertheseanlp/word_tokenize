@@ -1,5 +1,5 @@
 # from underthesea.word_tokenize import tokenize
-
+from util.crf.word_tokenize.regex_tokenize import tokenize
 from .model import CRFModel
 
 

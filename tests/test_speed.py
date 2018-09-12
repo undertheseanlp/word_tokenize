@@ -1,5 +1,6 @@
 from languageflow.transformer.tagged import TaggedTransformer
 
+from util.crf.word_tokenize import word_tokenize
 from util.crf.word_tokenize.features import template
 from util.crf.word_tokenize.regex_tokenize import tokenize
 from pyvi import ViTokenizer
@@ -19,10 +20,7 @@ print(end - start)
 
 
 start = time.time()
-tokens = tokenize(text).split()
-tokens = [(token, "X") for token in tokens]
-transformer = TaggedTransformer(template)
-x = transformer.transform([tokens])
+x = word_tokenize(text)
 end = time.time()
 print(end - start)
 

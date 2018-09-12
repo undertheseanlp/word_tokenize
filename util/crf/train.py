@@ -2,10 +2,10 @@ import os
 from os import makedirs
 from os.path import dirname
 from languageflow.model.crf import CRF
+from languageflow.transformer.tagged import TaggedTransformer
 
 from util.crf.conlleval import evaluate
 from util.crf.word_tokenize import CRFModel
-from util.crf.word_tokenize.custom_transformer import CustomTransformer
 from util.crf.word_tokenize.features import template
 from .load_data import load_dataset
 
@@ -15,8 +15,8 @@ def train(train_path, model_path):
 
     train_set += load_dataset(train_path)
     print("Load data from file", train_path)
-    transformer = CustomTransformer(template)
-    X, y = transformer.transform(train_set)
+    transformer = TaggedTransformer(template)
+    X, y = transformer.transform(train_set, contain_labels=True)
 
     # train
     params = {

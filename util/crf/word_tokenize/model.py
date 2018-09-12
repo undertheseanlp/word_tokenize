@@ -10,7 +10,7 @@ class CRFModel:
 
     def __init__(self, model_path=None):
         if not model_path:
-            model_path = join(dirname(__file__), "model.wt.20180818.bin")
+            model_path = join(dirname(__file__), "model_vlsp2013_10000.bin")
         estimator = pycrfsuite.Tagger()
         estimator.open(model_path)
         self.estimator = estimator
@@ -24,6 +24,6 @@ class CRFModel:
 
     def predict(self, sentence, format=None):
         tokens = [(token, "X") for token in sentence]
-        x = transformer.transform([tokens])[0][0]
+        x = transformer.transform([tokens])[0]
         tags = self.estimator.tag(x)
         return list(zip(sentence, tags))
