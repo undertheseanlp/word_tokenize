@@ -1,4 +1,4 @@
-from underthesea.word_tokenize import tokenize
+# from underthesea.word_tokenize import tokenize
 
 from .model import CRFModel
 

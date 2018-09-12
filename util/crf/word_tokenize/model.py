@@ -1,10 +1,9 @@
 from os.path import join, dirname
 import pycrfsuite
-from .custom_transformer import CustomTransformer
+from languageflow.transformer.tagged import TaggedTransformer
 from .features import template
 
-transformer = CustomTransformer(template)
-
+transformer = TaggedTransformer(template)
 
 class CRFModel:
     objects = {}
