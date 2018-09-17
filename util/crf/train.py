@@ -3,11 +3,27 @@ from os import makedirs
 from os.path import dirname
 from languageflow.model.crf import CRF
 from languageflow.transformer.tagged import TaggedTransformer
-
 from util.crf.conlleval import evaluate
 from util.crf.word_tokenize import CRFModel
-from util.crf.word_tokenize.features import template
 from .load_data import load_dataset
+
+template = [
+    "T[-2].lower", "T[-1].lower", "T[0].lower", "T[1].lower", "T[2].lower",
+
+    "T[-1].isdigit", "T[0].isdigit", "T[1].isdigit",
+
+    "T[-1].istitle", "T[0].istitle", "T[1].istitle",
+    "T[0,1].istitle", "T[0,2].istitle",
+
+    "T[-2].is_in_dict", "T[-1].is_in_dict", "T[0].is_in_dict", "T[1].is_in_dict", "T[2].is_in_dict",
+    "T[-2,-1].is_in_dict", "T[-1,0].is_in_dict", "T[0,1].is_in_dict", "T[1,2].is_in_dict",
+    "T[-2,0].is_in_dict", "T[-1,1].is_in_dict", "T[0,2].is_in_dict",
+
+    # word unigram and bigram and trigram
+    "T[-2]", "T[-1]", "T[0]", "T[1]", "T[2]",
+    "T[-2,-1]", "T[-1,0]", "T[0,1]", "T[1,2]",
+    "T[-2,0]", "T[-1,1]", "T[0,2]",
+]
 
 
 def train(train_path, model_path):
@@ -62,6 +78,7 @@ def train_test(train_path, test_path):
 
     class Args(object):
         pass
+
     args = Args()
     args.latex = False
     args.raw = False

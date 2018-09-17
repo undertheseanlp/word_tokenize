@@ -22,6 +22,7 @@ template = [
 
 transformer = TaggedTransformer(template)
 
+
 class CRFModel:
     objects = {}
 
