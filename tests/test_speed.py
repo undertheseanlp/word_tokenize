@@ -1,8 +1,4 @@
-from languageflow.transformer.tagged import TaggedTransformer
-
 from util.crf.word_tokenize import word_tokenize
-from util.crf.word_tokenize.features import template
-from util.crf.word_tokenize.regex_tokenize import tokenize
 from pyvi import ViTokenizer
 
 
@@ -11,14 +7,14 @@ text = "Đầu giờ chiều ngày 7/9, trao đổi với Báo Giao thông, ông
 import time
 
 
-# target: 135 ms
+# target: 0.318 ms (16)
 start = time.time()
 ViTokenizer.tokenize(text)
 end = time.time()
 print(end - start)
 
 
-
+# target: 2.55 s (16)
 start = time.time()
 x = word_tokenize(text)
 end = time.time()
