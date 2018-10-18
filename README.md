@@ -89,7 +89,7 @@ $ python word_tokenize.py \
 
 ## Trích dẫn
 
-Nếu bạn thấy mã nguồn này hữu ích, xin hãy trích dẫn đường dẫn của dự án trong các nghiên cứu của mình 
+Vui lòng trích dẫn thông tin về dự án nếu bạn sử dụng mã nguồn này
 
 ```
 @online{undertheseanlp/word_tokenize,
