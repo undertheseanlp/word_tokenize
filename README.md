@@ -1,7 +1,6 @@
 # Tách từ tiếng Việt
 
-Công cụ tách từ tiếng Việt được phát triển bởi nhóm nghiên cứu xử lý ngôn ngữ tự nhiên tiếng Việt - [underthesea](https://github.com/undertheseanlp). Dự án chứa mã nguồn các thử nghiệm cho việc xử lý dữ liệu, huấn luyện và đánh giá mô hình. Dự án cũng dễ dàng tùy chỉnh mô hình đối với những tập dữ liệu mới.
-
+Dự án nghiên cứu về bài toán *tách từ tiếng Việt*, được phát triển bởi nhóm nghiên cứu xử lý ngôn ngữ tự nhiên tiếng Việt - [underthesea](https://github.com/undertheseanlp). Chứa mã nguồn các thử nghiệm cho việc xử lý dữ liệu, huấn luyện và đánh giá mô hình, cũng như cho phép dễ dàng tùy chỉnh mô hình đối với những tập dữ liệu mới.
 
 **Nhóm tác giả** 
 
@@ -20,7 +19,7 @@ Nếu bạn muốn tham gia vào nhóm phát triển với vai trò là [Develop
 * [Yêu cầu hệ thống](#yêu-cầu-hệ-thống)
 * [Thiết lập môi trường](#thiết-lập-môi-trường)
 * [Hướng dẫn sử dụng](#hướng-dẫn-sử-dụng)
-  * [Sử dụng mô hình đã huấn luyện sẵn](#sử-dụng-mô-hình-đã-huấn-luyện-sẵn)
+  * [Sử dụng mô hình đã huấn luyện](#sử-dụng-mô-hình-đã-huấn-luyện)
   * [Huấn luyện mô hình](#huấn-luyện-mô-hình) 
 * [Trích dẫn](#trích-dẫn)
 * [Bản quyền](#bản-quyền)
@@ -85,13 +84,13 @@ $ python word_tokenize.py \
 
 ## Trích dẫn
 
-Nếu bạn thấy mã nguồn này hữu ích, vui lòng trích dẫn đường dẫn của dự án trong các nghiên cứu của mình 
+Vui lòng trích dẫn thông tin về dự án nếu bạn sử dụng mã nguồn này
 
 ```
 @online{undertheseanlp/word_tokenize,
 author ={Vu Anh, Bui Nhat Anh, Doan Viet Dung},
 year = {2018},
-title ={Xây dựng hệ thống tách từ tiếng Việt của nhóm underthesea},
+title ={Xây dựng hệ thống tách từ tiếng Việt},
 url ={https://github.com/undertheseanlp/word_tokenize}
 }
 ```
