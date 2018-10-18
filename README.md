@@ -2,6 +2,7 @@
 
 Công cụ tách từ tiếng Việt được phát triển bởi nhóm nghiên cứu xử lý ngôn ngữ tự nhiên tiếng Việt - [underthesea](https://github.com/undertheseanlp). Dự án chứa mã nguồn các thử nghiệm cho việc xử lý dữ liệu, huấn luyện và đánh giá mô hình. Dự án cũng dễ dàng tùy chỉnh mô hình đối với những tập dữ liệu mới.
 
+
 **Nhóm tác giả** 
 
 * Vũ Anh ([anhv.ict91@gmail.com](anhv.ict91@gmail.com))
@@ -74,7 +75,7 @@ $ python train.py \
     --model tmp/model.bin
 ```
 
-**Kiểm tra mô hình mới huấn luyện**
+**Kiểm tra mô hình vừa huấn luyện**
 
 ```
 $ python word_tokenize.py \
