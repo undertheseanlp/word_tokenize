@@ -79,7 +79,7 @@ $ python train.py \
     --model tmp/model.bin
 ```
 
-**Kiểm tra mô hình mới huấn luyện**
+**Kiểm tra mô hình vừa huấn luyện**
 
 ```
 $ python word_tokenize.py \
