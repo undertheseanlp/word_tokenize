@@ -1,36 +1,45 @@
-# Vietnamese Word Tokenize ![](https://img.shields.io/badge/F1-94%25-red.svg)
+# Tách từ tiếng Việt
 
-This repository contains starter code for training and evaluating machine learning models in *Vietnamese Word Segmentation* problem. It is a part of [underthesea](https://github.com/magizbox/underthesea) project. The code gives an end-to-end working example for reading datasets, training machine learning models, and evaluating performance of the models. It can easily be extended to train your own custom-defined models.
+Dự án nghiên cứu về bài toán tách từ tiếng Việt, được phát triển bởi nhóm nghiên cứu xử lý ngôn ngữ tự nhiên tiếng Việt - [underthesea](https://github.com/undertheseanlp). Chứa mã nguồn các thử nghiệm cho việc xử lý dữ liệu, huấn luyện và đánh giá mô hình, cũng như cho phép dễ dàng tùy chỉnh mô hình đối với những tập dữ liệu mới.
 
-## Table of contents
+**Nhóm tác giả** 
 
-* [1. Installation](#1-installation)
-  * [1.1 Requirements](#11-requirements)
-  * [1.2 Download and Setup Environement](#12-download-and-setup-environment)
-* [2. Usage](#2-usage)
-  * [2.1 Using a pretrained model](#21-using-a-pre-trained-model)
-  * [2.2 Train a new dataset](#22-train-a-new-dataset)
-* [3. References](#3-references)
+* Vũ Anh ([anhv.ict91@gmail.com](anhv.ict91@gmail.com))
+* Bùi Nhật Anh ([buinhatanh1208@gmail.com](buinhatanh1208@gmail.com))
+* Đoàn Việt Dũng ([doanvietdung273@gmail.com](doanvietdung273@gmail.com))
 
+**Tham gia đóng góp**
 
-## 1. Installation
+Mọi ý kiến đóng góp hoặc yêu cầu trợ giúp xin gửi vào mục [Issues](../../issues) của dự án. Các thảo luận được khuyến khích **sử dụng tiếng Việt** để dễ dàng trong quá trình trao đổi. 
 
-### 1.1 Requirements
+Nếu bạn có kinh nghiệm trong bài toán này, muốn tham gia vào nhóm phát triển với vai trò là [Developer](https://github.com/undertheseanlp/underthesea/wiki/H%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-%C4%91%C3%B3ng-g%C3%B3p#developercontributor), xin hãy đọc kỹ [Hướng dẫn tham gia đóng góp](https://github.com/undertheseanlp/underthesea/wiki/H%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-%C4%91%C3%B3ng-g%C3%B3p#developercontributor).
 
-* `Operating Systems: Linux (Ubuntu, CentOS), Mac`
+## Mục lục
+
+* [Yêu cầu hệ thống](#yêu-cầu-hệ-thống)
+* [Thiết lập môi trường](#thiết-lập-môi-trường)
+* [Hướng dẫn sử dụng](#hướng-dẫn-sử-dụng)
+  * [Sử dụng mô hình đã huấn luyện sẵn](#sử-dụng-mô-hình-đã-huấn-luyện-sẵn)
+  * [Huấn luyện mô hình](#huấn-luyện-mô-hình) 
+* [Trích dẫn](#trích-dẫn)
+* [Bản quyền](#bản-quyền)
+
+## Yêu cầu hệ thống 
+
+* `Hệ điều hành: Linux (Ubuntu, CentOS), Mac`
 * `Python 3.6`
 * `Anaconda`
 * `languageflow==1.1.7`
 
-### 1.2 Download and Setup Environment
+## Thiết lập môi trường
 
-Clone project using git
+Tải project bằng cách sử dụng lệnh `git clone`
 
 ```
-$ git clone https://github.com/undertheseanlp/word_tokenize.git
+$ git clone https://github.com/undertheseanlp/classification.git
 ```
 
-Create environment and install requirements
+Tạo môi trường mới và cài đặt các gói liên quan
 
 ```
 $ cd word_tokenize
@@ -38,25 +47,25 @@ $ conda create -n word_tokenize python=3.6
 $ pip install -r requirements.txt
 ```
 
-## 2. Usage
+## Hướng dẫn sử dụng
 
-Make sure you are in `word_tokenize` folder and activate `word_tokenize` environment
+Trước khi chạy các thử nghiệm, hãy chắc chắn bạn đã activate môi trường `word_tokenize`, mọi câu lệnh đều được chạy trong thư mục gốc của dự án.
 
 ```
 $ cd word_tokenize
 $ source activate word_tokenize
 ``` 
 
-### 2.1 Using a pre-trained model
+### Sử dụng mô hình đã huấn luyện sẵn
 
 ```
 $ python word_tokenize.py --text "Chàng trai 9X Quảng Trị khởi nghiệp từ nấm sò"
 $ python word_tokenize.py --fin tmp/input.txt --fout tmp/output.txt
 ```
 
-### 2.2 Train a new dataset
+### Huấn luyện mô hình
 
-**Train and test**
+**Huấn luyện mô hình mới**
 
 ```
 $ python util/preprocess_vlsp2013.py
@@ -65,7 +74,7 @@ $ python train.py \
     --model tmp/model.bin
 ```
 
-**Predict with trained model**
+**Kiểm tra mô hình mới huấn luyện**
 
 ```
 $ python word_tokenize.py \
@@ -73,8 +82,19 @@ $ python word_tokenize.py \
     --model tmp/model.bin
 ```
 
-## 3. References
+## Trích dẫn
 
-To be updated
+Nếu bạn thấy mã nguồn này hữu ích, xin hãy trích dẫn đường dẫn đến dự án trong các nghiên cứu của mình 
 
-Last update: May 2018
+```
+@online{undertheseanlp/word_tokenize,
+author ={Vu Anh, Bui Nhat Anh, Doan Viet Dung},
+year = {2018},
+title ={Xây dựng hệ thống tách từ tiếng Việt của nhóm underthesea},
+url ={https://github.com/undertheseanlp/word_tokenize}
+}
+```
+
+## Bản quyền
+
+Mã nguồn của dự án được phân phối theo giấy phép [GPL-3.0](LICENSE.txt).
