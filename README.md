@@ -1,7 +1,7 @@
 # Tách từ tiếng Việt
 
 ![](https://img.shields.io/badge/made%20with-%E2%9D%A4-red.svg)
-![](https://img.shields.io/badge/opensource-vietnamese-orange.svg)
+![](https://img.shields.io/badge/opensource-vietnamese-blue.svg)
 ![](https://img.shields.io/badge/build-passing-green.svg)
 
 
