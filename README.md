@@ -1,6 +1,6 @@
 # Tách từ tiếng Việt
 
-Dự án nghiên cứu về bài toán tách từ tiếng Việt, được phát triển bởi nhóm nghiên cứu xử lý ngôn ngữ tự nhiên tiếng Việt - [underthesea](https://github.com/undertheseanlp). Chứa mã nguồn các thử nghiệm cho việc xử lý dữ liệu, huấn luyện và đánh giá mô hình, cũng như cho phép dễ dàng tùy chỉnh mô hình đối với những tập dữ liệu mới.
+Công cụ tách từ tiếng Việt được phát triển bởi nhóm nghiên cứu xử lý ngôn ngữ tự nhiên tiếng Việt - [underthesea](https://github.com/undertheseanlp). Dự án chứa mã nguồn các thử nghiệm cho việc xử lý dữ liệu, huấn luyện và đánh giá mô hình. Dự án cũng dễ dàng tùy chỉnh mô hình đối với những tập dữ liệu mới.
 
 **Nhóm tác giả** 
 
@@ -12,7 +12,7 @@ Dự án nghiên cứu về bài toán tách từ tiếng Việt, được phát
 
 Mọi ý kiến đóng góp hoặc yêu cầu trợ giúp xin gửi vào mục [Issues](../../issues) của dự án. Các thảo luận được khuyến khích **sử dụng tiếng Việt** để dễ dàng trong quá trình trao đổi. 
 
-Nếu bạn có kinh nghiệm trong bài toán này, muốn tham gia vào nhóm phát triển với vai trò là [Developer](https://github.com/undertheseanlp/underthesea/wiki/H%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-%C4%91%C3%B3ng-g%C3%B3p#developercontributor), xin hãy đọc kỹ [Hướng dẫn tham gia đóng góp](https://github.com/undertheseanlp/underthesea/wiki/H%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-%C4%91%C3%B3ng-g%C3%B3p#developercontributor).
+Nếu bạn muốn tham gia vào nhóm phát triển với vai trò là [Developer](https://github.com/undertheseanlp/underthesea/wiki/H%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-%C4%91%C3%B3ng-g%C3%B3p#developercontributor), xin hãy đọc kỹ [Hướng dẫn tham gia đóng góp](https://github.com/undertheseanlp/underthesea/wiki/H%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-%C4%91%C3%B3ng-g%C3%B3p#developercontributor).
 
 ## Mục lục
 
@@ -36,7 +36,7 @@ Nếu bạn có kinh nghiệm trong bài toán này, muốn tham gia vào nhóm 
 Tải project bằng cách sử dụng lệnh `git clone`
 
 ```
-$ git clone https://github.com/undertheseanlp/classification.git
+$ https://github.com/undertheseanlp/word_tokenize
 ```
 
 Tạo môi trường mới và cài đặt các gói liên quan
@@ -84,7 +84,7 @@ $ python word_tokenize.py \
 
 ## Trích dẫn
 
-Nếu bạn thấy mã nguồn này hữu ích, xin hãy trích dẫn đường dẫn của dự án trong các nghiên cứu của mình 
+Nếu bạn thấy mã nguồn này hữu ích, vui lòng trích dẫn đường dẫn của dự án trong các nghiên cứu của mình 
 
 ```
 @online{undertheseanlp/word_tokenize,
