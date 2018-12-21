@@ -1,6 +1,6 @@
 import argparse
 import os
-from util.crf.train import train, train_test
+from util.crf import train, train_test
 
 parser = argparse.ArgumentParser("train.py")
 parser.add_argument("mode", default="train", nargs="?",

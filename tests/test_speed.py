@@ -1,4 +1,4 @@
-from util.crf.word_tokenize import word_tokenize
+from util.crf import word_tokenize
 from pyvi import ViTokenizer
 
 

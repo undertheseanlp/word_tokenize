@@ -3,8 +3,8 @@ from os import makedirs
 from os.path import dirname
 from languageflow.model.crf import CRF
 from languageflow.transformer.tagged import TaggedTransformer
-from util.crf.conlleval import evaluate
-from util.crf.word_tokenize import CRFModel
+from egs.vlsp2013_crf.conlleval import evaluate
+from egs.vlsp2013_crf.word_tokenize import CRFModel
 from .load_data import load_dataset
 
 template = [

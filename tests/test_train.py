@@ -5,7 +5,7 @@
 from os.path import dirname, join
 from unittest import TestCase
 
-from util.crf.train import train
+from egs.vlsp2013_crf.train import train
 
 TMP_FOLDER = join(dirname(dirname(__file__)), "tmp")
 
