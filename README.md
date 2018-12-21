@@ -87,6 +87,10 @@ $ python word_tokenize.py \
     --model tmp/model.bin
 ```
 
+## Kết quả thử nghiệm
+
+TDB
+
 ## Trích dẫn
 
 Vui lòng trích dẫn thông tin về dự án nếu bạn sử dụng mã nguồn này
