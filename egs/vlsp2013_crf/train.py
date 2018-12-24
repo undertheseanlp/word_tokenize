@@ -7,6 +7,15 @@ from egs.vlsp2013_crf.conlleval import evaluate
 from egs.vlsp2013_crf.word_tokenize import CRFModel
 from .load_data import load_dataset
 
+class TaggedCorpusFetcher:
+    @staticmethod
+    def fetch(data_folder, train_file=None, test_file=None, dev_file=None):
+        pass
+
+class TaggedCorpus:
+    def __init__(self, train, dev, test):
+        pass
+
 template = [
     "T[-2].lower", "T[-1].lower", "T[0].lower", "T[1].lower", "T[2].lower",
 
