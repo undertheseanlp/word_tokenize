@@ -3,42 +3,15 @@ from os import makedirs
 from os.path import dirname
 from languageflow.model.crf import CRF
 from languageflow.transformer.tagged import TaggedTransformer
-from egs.vlsp2013_crf.conlleval import evaluate
-from egs.vlsp2013_crf.word_tokenize import CRFModel
-from .load_data import load_dataset
+from crf_sequence_tagger import CRFSequenceTagger
+from data import WordTokenizeCorpusReader
+import pycrfsuite
 
-class TaggedCorpusFetcher:
-    @staticmethod
-    def fetch(data_folder, train_file=None, test_file=None, dev_file=None):
-        pass
-
-class TaggedCorpus:
-    def __init__(self, train, dev, test):
-        pass
-
-template = [
-    "T[-2].lower", "T[-1].lower", "T[0].lower", "T[1].lower", "T[2].lower",
-
-    "T[-1].isdigit", "T[0].isdigit", "T[1].isdigit",
-
-    "T[-1].istitle", "T[0].istitle", "T[1].istitle",
-    "T[0,1].istitle", "T[0,2].istitle",
-
-    "T[-2].is_in_dict", "T[-1].is_in_dict", "T[0].is_in_dict", "T[1].is_in_dict", "T[2].is_in_dict",
-    "T[-2,-1].is_in_dict", "T[-1,0].is_in_dict", "T[0,1].is_in_dict", "T[1,2].is_in_dict",
-    "T[-2,0].is_in_dict", "T[-1,1].is_in_dict", "T[0,2].is_in_dict",
-
-    # word unigram and bigram and trigram
-    "T[-2]", "T[-1]", "T[0]", "T[1]", "T[2]",
-    "T[-2,-1]", "T[-1,0]", "T[0,1]", "T[1,2]",
-    "T[-2,0]", "T[-1,1]", "T[0,2]",
-]
+from trainer import Trainer
 
 
 def train(train_path, model_path):
     train_set = []
-
-    train_set += load_dataset(train_path)
     print("Load data from file", train_path)
     transformer = TaggedTransformer(template)
     X, y = transformer.transform(train_set, contain_labels=True)
@@ -75,7 +48,8 @@ def train_test(train_path, test_path):
     train(train_path, model_path)
     estimator = CRFModel.instance(model_path)
 
-    test = load_dataset(test_path)
+    # test = load_dataset(test_path)
+    test = None
     for sample in test:
         sentence = [token[0] for token in sample]
         y_test = [token[1] for token in sample]
@@ -97,3 +71,27 @@ def train_test(train_path, test_path):
 
     os.remove(model_path)
     os.remove(output_path)
+
+corpus = WordTokenizeCorpusReader.read("data", train_file="train.txt", test_file="test.txt")
+
+features = [
+    "T[-2].lower", "T[-1].lower", "T[0].lower", "T[1].lower", "T[2].lower",
+
+    "T[-1].isdigit", "T[0].isdigit", "T[1].isdigit",
+
+    "T[-1].istitle", "T[0].istitle", "T[1].istitle",
+    "T[0,1].istitle", "T[0,2].istitle",
+
+    "T[-2].is_in_dict", "T[-1].is_in_dict", "T[0].is_in_dict", "T[1].is_in_dict", "T[2].is_in_dict",
+    "T[-2,-1].is_in_dict", "T[-1,0].is_in_dict", "T[0,1].is_in_dict", "T[1,2].is_in_dict",
+    "T[-2,0].is_in_dict", "T[-1,1].is_in_dict", "T[0,2].is_in_dict",
+
+    # word unigram and bigram and trigram
+    "T[-2]", "T[-1]", "T[0]", "T[1]", "T[2]",
+    "T[-2,-1]", "T[-1,0]", "T[0,1]", "T[1,2]",
+    "T[-2,0]", "T[-1,1]", "T[0,2]",
+]
+tagger = CRFSequenceTagger(features)
+trainer = Trainer(tagger, corpus)
+trainer.train(c1=0.1, c2=0.01, feature=None)
+print(0)

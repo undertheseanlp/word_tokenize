@@ -9,7 +9,7 @@ FOLDER = "../../data/vlsp2013"
 folder1 = FOLDER + "/raw/WordSegmentationTask/Trainset/Trainset-Segmentation-1"
 folder2 = FOLDER + "/raw/WordSegmentationTask/Trainset/Trainset-Segmentation-2"
 count = 0
-output_filepath = "tmp/train_dev.txt"
+output_filepath = "tmp/train.txt"
 
 if exists(output_filepath):
     remove(output_filepath)
