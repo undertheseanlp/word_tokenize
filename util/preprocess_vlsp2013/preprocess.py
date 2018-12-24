@@ -3,7 +3,6 @@ from os.path import join, exists
 from os.path import dirname
 
 # Preprocess Train Data
-
 FOLDER = "../../data/vlsp2013"
 
 
@@ -41,11 +40,6 @@ for file in listdir(folder2):
             output.write(line)
             count += 1
 print("Number of sentences in Trainset-Segmentation-2 folder:", count)
-<<<<<<< HEAD
-
-# Train-dev split
-=======
->>>>>>> 6836b95536410c9c8ac353e87d31bfd34d43209f
 
 # Preprocess Test Data
 count = 0
