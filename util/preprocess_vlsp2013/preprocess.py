@@ -3,12 +3,15 @@ from os.path import join, exists
 from os.path import dirname
 
 # Preprocess Train Data
-FOLDER = "/data/projects/undertheseanlp/word_tokenize/data/vlsp2013"
+
+FOLDER = "../../data/vlsp2013"
+
 
 folder1 = FOLDER + "/raw/WordSegmentationTask/Trainset/Trainset-Segmentation-1"
 folder2 = FOLDER + "/raw/WordSegmentationTask/Trainset/Trainset-Segmentation-2"
 count = 0
 output_filepath = "tmp/train_dev.txt"
+
 if exists(output_filepath):
     remove(output_filepath)
 output = open(output_filepath, "a")
@@ -38,8 +41,11 @@ for file in listdir(folder2):
             output.write(line)
             count += 1
 print("Number of sentences in Trainset-Segmentation-2 folder:", count)
+<<<<<<< HEAD
 
 # Train-dev split
+=======
+>>>>>>> 6836b95536410c9c8ac353e87d31bfd34d43209f
 
 # Preprocess Test Data
 count = 0
@@ -55,6 +61,6 @@ for file in listdir(folder):
         count += 1
         content = " ".join(tokens) + "\n"
         output.write(content)
-print(count)
+print("Number of sentences in Testset:", count)
 
 
