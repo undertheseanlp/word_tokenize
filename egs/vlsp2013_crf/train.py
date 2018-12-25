@@ -72,7 +72,7 @@ def train_test(train_path, test_path):
     os.remove(model_path)
     os.remove(output_path)
 
-corpus = WordTokenizeCorpusReader.read("data", train_file="train.txt", test_file="test.txt")
+corpus = WordTokenizeCorpusReader.read("data", train_file="train.txt", test_file="test.txt").downsample(0.1)
 
 features = [
     "T[-2].lower", "T[-1].lower", "T[0].lower", "T[1].lower", "T[2].lower",

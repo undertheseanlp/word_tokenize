@@ -37,3 +37,4 @@ class TaggedCorpus:
         self.train = self.train[:n]
         n = int(len(self.test) * percentage)
         self.test = self.test[:n]
+        return self
