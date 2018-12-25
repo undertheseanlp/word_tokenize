@@ -1,6 +1,10 @@
+import os
+
 import pycrfsuite
 from languageflow.transformer.tagged import TaggedTransformer
 import logging
+
+from conlleval import evaluate_
 
 logger = logging.getLogger(__name__)
 logger.setLevel(10)
@@ -25,7 +29,7 @@ class Trainer:
         params = {
             'c1': 1.0,  # coefficient for L1 penalty
             'c2': 1e-3,  # coefficient for L2 penalty
-            'max_iterations': 1000,  #
+            'max_iterations': 200,  #
             # include transitions that are possible, but not observed
             'feature.possible_transitions': True
         }
@@ -44,9 +48,13 @@ class Trainer:
         y_pred = [tagger.tag(xseq) for x_seq in X_test]
         sentences = [[item[0] for item in sentence] for sentence in self.corpus.test]
         sentences = zip(sentences, y_test, y_pred)
-        output = []
+        texts = []
         for s in sentences:
             tokens, y_true, y_pred = s
-            print(0)
-
+            tokens_ = ["\t".join(item) for item in zip(tokens, y_true, y_pred)]
+            text = "\n".join(tokens_)
+            texts.append(text)
+        text = "\n\n".join(texts)
+        open("tmp/output.txt", "w").write(text)
+        evaluate_("tmp/output.txt")
         logger.info("Finish tagger")

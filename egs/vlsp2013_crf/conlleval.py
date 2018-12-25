@@ -274,6 +274,17 @@ def evaluate(input, args):
     # compute metrics and print
     evaluate_tags(correctChunk, foundGuessed, foundCorrect, correctTags, tokenCounter, latex=args.latex)
 
+def evaluate_(input):
+    class Args(object):
+        pass
+
+    args = Args()
+    args.latex = False
+    args.raw = False
+    args.delimiter = None
+    args.oTag = "O"
+
+    evaluate(open(input), args)
 
 if __name__ == "__main__":
     args = parse_args()
