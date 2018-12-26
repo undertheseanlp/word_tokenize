@@ -29,7 +29,7 @@ class Trainer:
         params = {
             'c1': 1.0,  # coefficient for L1 penalty
             'c2': 1e-3,  # coefficient for L2 penalty
-            'max_iterations': 200,  #
+            'max_iterations': 1000,  #
             # include transitions that are possible, but not observed
             'feature.possible_transitions': True
         }
@@ -45,7 +45,7 @@ class Trainer:
         logger.info("Start tagger")
         tagger = pycrfsuite.Tagger()
         tagger.open(filename)
-        y_pred = [tagger.tag(xseq) for x_seq in X_test]
+        y_pred = [tagger.tag(x_seq) for x_seq in X_test]
         sentences = [[item[0] for item in sentence] for sentence in self.corpus.test]
         sentences = zip(sentences, y_test, y_pred)
         texts = []

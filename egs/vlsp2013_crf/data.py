@@ -20,6 +20,7 @@ class WordTokenizeCorpusReader:
         sentence = []
         for item in s.split():
             tokens = item.split("_")
+            tokens = [token for token in tokens if token]
             for i, token in enumerate(tokens):
                 if i == 0:
                     sentence.append((token, "B-W"))
