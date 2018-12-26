@@ -17,7 +17,7 @@ class Trainer:
         self.tagger = tagger
         self.corpus = corpus
 
-    def train(self, c1, c2, feature):
+    def train(self, params):
         transformer = TaggedTransformer(self.tagger.features)
         logger.info("Start feature extraction")
         X_train, y_train = transformer.transform(self.corpus.train, contain_labels=True)
@@ -26,14 +26,6 @@ class Trainer:
 
         # Train
         logger.info("Start train")
-        params = {
-            'c1': 1.0,  # coefficient for L1 penalty
-            'c2': 1e-3,  # coefficient for L2 penalty
-            'max_iterations': 1000,  #
-            # include transitions that are possible, but not observed
-            'feature.possible_transitions': True,
-            'feature.possible_states': True,
-        }
         trainer = pycrfsuite.Trainer(verbose=True)
         for xseq, yseq in zip(X_train, y_train):
             trainer.append(xseq, yseq)

@@ -89,7 +89,18 @@ $ python word_tokenize.py \
 
 ## Kết quả thử nghiệm
 
-TDB
+<table>
+  <tr>
+    <th>Mô hình</th>
+    <th>F1 (%)</th>
+    <th>Thời gian train</th>
+  </tr>
+  <tr>
+     <td>CRF + full features</td>
+     <td><b>97.86</b></td>
+     <td></td>
+  </tr>
+</table>
 
 ## Trích dẫn
 
