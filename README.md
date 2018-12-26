@@ -97,7 +97,7 @@ $ python word_tokenize.py \
   </tr>
   <tr>
      <td>CRF + full features</td>
-     <td><b>97.86</b></td>
+     <td><b>97.65</b></td>
      <td></td>
   </tr>
 </table>
