@@ -31,7 +31,8 @@ class Trainer:
             'c2': 1e-3,  # coefficient for L2 penalty
             'max_iterations': 1000,  #
             # include transitions that are possible, but not observed
-            'feature.possible_transitions': True
+            'feature.possible_transitions': True,
+            'feature.possible_states': True,
         }
         trainer = pycrfsuite.Trainer(verbose=True)
         for xseq, yseq in zip(X_train, y_train):
