@@ -1,0 +1,1 @@
+corpus = WordTokenizeCorpusReader.read("../data1", train_file="train.txt", test_file="test.txt")

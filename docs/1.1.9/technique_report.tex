@@ -1,0 +1,133 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{acl2017}
+\usepackage{times}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage[utf8]{vietnam}
+
+\aclfinalcopy % Uncomment this line for the final submission
+%\def\eaclpaperid{***} %  Enter the acl Paper ID here
+
+%\setlength\titlebox{5cm}
+% You can expand the titlebox if you need extra space
+% to show all the authors. Please do not make the titlebox
+% smaller than 5cm (the original size); we will check this
+% in the camera-ready version and ask you to change it back.
+
+\newcommand\BibTeX{B{\sc ib}\TeX}
+
+\title{Báo cáo kỹ thuật\\ Xây dựng chương trình tách từ tiếng Việt \\ underthesea v1.1.12}
+
+\include{notation}
+
+\author{
+Vu Anh\\
+underthesea\\
+anhv.ict91@gmail.com
+}
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+In this report, we describe our word segmentation system for Vietnamese, which is integrated in underthesea version 1.1.8.
+Our system is open-source and available at \url{https://github.com/undertheseanlp/word_tokenize}
+
+\end{abstract}
+
+\section{Giới thiệu}
+
+Word Segmentation is an important task in many language. In Vietnamese, it is more difficult because one word can contains two and three syllables.
+
+
+\section{System Description}
+
+\subsection{Conditional Random Fields}
+
+In order to solve word segmentation problem, there are many algorithms such as HMM, SVM, Riple Down Rules. In our experiments, we use condtional random fields, which yields many success for sequence labeling problem.
+
+In this session, we brife describe conditional random fields algorithm.
+
+
+\subsection{Features}
+We propose conditional random fields for this problem.
+
+Our final features
+\begin{center}
+\begin{tabular}{ |c|c| }
+ \hline
+ features & description \\
+ \hline
+ T[-2], T[-1], T[0], T[1], T[2] & unigram  \\
+ T[-2,-1], T[-1,0], T[0,1], T[1,2] & bigram  \\
+ T[-2,0], T[-1,1], T[0,2] & trigram \\
+ T[-1].isdigit, T[0].isdigit, T[1].isdigit & digit
+ \hline
+\end{tabular}
+\end{center}
+
+\section{Evaluation}
+
+\subsection{Data sets}
+
+To be updated
+
+% TODO To be updated
+
+\subsection{Evaluation Measures}
+
+We used Precision, Recall, F1 score as evaluation measures.
+
+$$F_1 = \frac{2*P*R}{P + R}$$
+
+where P (Precision), and R (Recall) are determined as follows:
+
+$$P = \frac{{NE}_{true}}{NE_{sys}}$$
+
+$$R = \frac{{NE}_{true}}{NE_{ref}}$$
+
+where
+
+$NE_{true}$: The number of NEs in gold data
+
+$NE_{sys}$: The number of NEs in recognizing system
+
+$NE_{true}$: The number of NEs which is correctly recognized by the system
+
+\subsection{Results}
+
+% TODO To be updated
+We conduct our experiment in VLSP 2013 dataset, the result show we archive 97.3\%
+
+\begin{center}
+\begin{tabular}{ |c|c| }
+ \hline
+ system & features & result \\
+ \hline
+ s1 & ngram & 96.42\\
+ s2 & s1 + lower & 96.45\\
+ s3 & s2 + isdigit & 96.54\\
+ s4 & s3 + istitle & 96.45 \\
+ s5 & s4 + unigram is in dict & 96.45 \\
+ s6 & s5 + bigram is in dict & 97.34 \\
+ sn & full & 97.31\% \\
+ \hline
+\end{tabular}
+\end{center}
+
+
+\section{Conclusion}
+
+We have introduced our approach and its experimental result in word segmentation for Vietnamese text.
+
+% TODO To be updated
+
+\bibliography{technique_report}
+\bibliographystyle{acl_natbib}
+
+\end{document}
