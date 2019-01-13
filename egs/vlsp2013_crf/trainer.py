@@ -18,7 +18,9 @@ class Trainer:
         self.corpus = corpus
 
     def train(self, params):
-        transformer = TaggedTransformer(self.tagger.features)
+        features = self.tagger.features
+        print(features)
+        transformer = TaggedTransformer(features)
         logger.info("Start feature extraction")
         X_train, y_train = transformer.transform(self.corpus.train, contain_labels=True)
         X_test, y_test = transformer.transform(self.corpus.test, contain_labels=True)

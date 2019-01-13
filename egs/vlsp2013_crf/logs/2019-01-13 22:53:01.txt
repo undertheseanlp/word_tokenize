@@ -1,7 +1,8 @@
 /home/anhv/anaconda3/envs/word_tokenize/bin/python /home/anhv/PycharmProjects/undertheseanlp/word_tokenize/egs/vlsp2013_crf/train.py
-2019-01-13 22:22:18,691 Start feature extraction
-2019-01-13 22:22:44,499 Finish feature extraction
-2019-01-13 22:22:44,499 Start train
+['T[-2].lower', 'T[-1].lower', 'T[0].lower', 'T[1].lower', 'T[2].lower', 'T[-2].istitle', 'T[-1].istitle', 'T[0].istitle', 'T[1].istitle', 'T[2].istitle', 'T[-2,-1].lower', 'T[-1,0].lower', 'T[0,1].lower', 'T[1,2].lower', 'T[-2]', 'T[-1]', 'T[0]', 'T[1]', 'T[2]', 'T[-2,-1]', 'T[-1,0]', 'T[0,1]', 'T[1,2]', 'T[-2,0]', 'T[-1,1]', 'T[0,2]']
+2019-01-13 22:39:58,043 Start feature extraction
+2019-01-13 22:40:23,778 Finish feature extraction
+2019-01-13 22:40:23,778 Start train
 Feature generation
 type: CRF1d
 feature.minfreq: 0.000000
@@ -9,7 +10,7 @@ feature.possible_states: 0
 feature.possible_transitions: 1
 0....1....2....3....4....5....6....7....8....9....10
 Number of features: 5954335
-Seconds required: 11.204
+Seconds required: 11.399
 
 L-BFGS optimization
 c1: 1.000000
@@ -29,7 +30,7 @@ Error norm: 297521.271412
 Active features: 1082746
 Line search trials: 2
 Line search step: 0.000000
-Seconds required for this iteration: 4.846
+Seconds required for this iteration: 4.637
 
 ***** Iteration #2 *****
 Loss: 809222.447139
@@ -38,7 +39,7 @@ Error norm: 173080.527481
 Active features: 1241388
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.719
+Seconds required for this iteration: 1.604
 
 ***** Iteration #3 *****
 Loss: 795922.276000
@@ -47,7 +48,7 @@ Error norm: 150275.618807
 Active features: 1009029
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.717
+Seconds required for this iteration: 1.659
 
 ***** Iteration #4 *****
 Loss: 764927.876574
@@ -56,7 +57,7 @@ Error norm: 124187.791942
 Active features: 900579
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.742
+Seconds required for this iteration: 1.659
 
 ***** Iteration #5 *****
 Loss: 672201.741648
@@ -65,7 +66,7 @@ Error norm: 207674.074703
 Active features: 874790
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.771
+Seconds required for this iteration: 1.660
 
 ***** Iteration #6 *****
 Loss: 637142.986507
@@ -74,7 +75,7 @@ Error norm: 67082.550503
 Active features: 895116
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.792
+Seconds required for this iteration: 1.711
 
 ***** Iteration #7 *****
 Loss: 614960.005819
@@ -83,7 +84,7 @@ Error norm: 220933.907309
 Active features: 899417
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.813
+Seconds required for this iteration: 1.806
 
 ***** Iteration #8 *****
 Loss: 565487.704792
@@ -92,7 +93,7 @@ Error norm: 62483.733362
 Active features: 902198
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.812
+Seconds required for this iteration: 1.751
 
 ***** Iteration #9 *****
 Loss: 512243.388512
@@ -101,7 +102,7 @@ Error norm: 168743.646337
 Active features: 894413
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.773
+Seconds required for this iteration: 1.775
 
 ***** Iteration #10 *****
 Loss: 447994.922735
@@ -110,7 +111,7 @@ Error norm: 56012.338766
 Active features: 888691
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.809
+Seconds required for this iteration: 1.766
 
 ***** Iteration #11 *****
 Loss: 377865.278762
@@ -119,7 +120,7 @@ Error norm: 48553.368404
 Active features: 834474
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.806
+Seconds required for this iteration: 1.720
 
 ***** Iteration #12 *****
 Loss: 334854.134856
@@ -128,7 +129,7 @@ Error norm: 33926.044294
 Active features: 797072
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.844
+Seconds required for this iteration: 1.756
 
 ***** Iteration #13 *****
 Loss: 299825.871455
@@ -137,7 +138,7 @@ Error norm: 13600.089933
 Active features: 764729
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.804
+Seconds required for this iteration: 1.747
 
 ***** Iteration #14 *****
 Loss: 271678.496548
@@ -146,7 +147,7 @@ Error norm: 13439.991228
 Active features: 731132
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.791
+Seconds required for this iteration: 1.737
 
 ***** Iteration #15 *****
 Loss: 268628.244734
@@ -155,7 +156,7 @@ Error norm: 150218.989115
 Active features: 652287
 Line search trials: 2
 Line search step: 0.500000
-Seconds required for this iteration: 3.312
+Seconds required for this iteration: 3.170
 
 ***** Iteration #16 *****
 Loss: 247282.472469
@@ -164,7 +165,7 @@ Error norm: 30305.238264
 Active features: 663559
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.800
+Seconds required for this iteration: 1.706
 
 ***** Iteration #17 *****
 Loss: 238252.323780
@@ -173,7 +174,7 @@ Error norm: 26915.128865
 Active features: 648558
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.786
+Seconds required for this iteration: 1.707
 
 ***** Iteration #18 *****
 Loss: 218725.005038
@@ -182,7 +183,7 @@ Error norm: 17436.889738
 Active features: 613079
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.782
+Seconds required for this iteration: 1.700
 
 ***** Iteration #19 *****
 Loss: 199589.187525
@@ -191,7 +192,7 @@ Error norm: 18601.385887
 Active features: 577845
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.785
+Seconds required for this iteration: 1.718
 
 ***** Iteration #20 *****
 Loss: 184591.436626
@@ -200,7 +201,7 @@ Error norm: 39730.756748
 Active features: 536876
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.785
+Seconds required for this iteration: 1.784
 
 ***** Iteration #21 *****
 Loss: 172615.547942
@@ -209,7 +210,7 @@ Error norm: 3741.726144
 Active features: 507843
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.793
+Seconds required for this iteration: 1.783
 
 ***** Iteration #22 *****
 Loss: 161536.212677
@@ -218,7 +219,7 @@ Error norm: 10443.678215
 Active features: 470655
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.772
+Seconds required for this iteration: 1.759
 
 ***** Iteration #23 *****
 Loss: 149613.109933
@@ -227,7 +228,7 @@ Error norm: 28369.674047
 Active features: 398101
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.774
+Seconds required for this iteration: 1.709
 
 ***** Iteration #24 *****
 Loss: 141220.784735
@@ -236,7 +237,7 @@ Error norm: 17461.979247
 Active features: 366676
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.765
+Seconds required for this iteration: 1.693
 
 ***** Iteration #25 *****
 Loss: 133115.072179
@@ -245,7 +246,7 @@ Error norm: 4896.841759
 Active features: 350080
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.767
+Seconds required for this iteration: 1.695
 
 ***** Iteration #26 *****
 Loss: 123923.772633
@@ -254,7 +255,7 @@ Error norm: 17358.053354
 Active features: 315609
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.705
+Seconds required for this iteration: 1.700
 
 ***** Iteration #27 *****
 Loss: 117110.206523
@@ -263,7 +264,7 @@ Error norm: 3436.215636
 Active features: 295466
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.711
+Seconds required for this iteration: 1.740
 
 ***** Iteration #28 *****
 Loss: 111300.977176
@@ -272,7 +273,7 @@ Error norm: 7884.536385
 Active features: 281914
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.703
+Seconds required for this iteration: 1.726
 
 ***** Iteration #29 *****
 Loss: 106249.418968
@@ -281,7 +282,7 @@ Error norm: 2897.012465
 Active features: 269228
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.739
+Seconds required for this iteration: 1.709
 
 ***** Iteration #30 *****
 Loss: 101930.444442
@@ -290,7 +291,7 @@ Error norm: 7073.887021
 Active features: 240078
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.702
+Seconds required for this iteration: 1.753
 
 ***** Iteration #31 *****
 Loss: 98232.061985
@@ -299,7 +300,7 @@ Error norm: 12428.358452
 Active features: 222288
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.717
+Seconds required for this iteration: 1.764
 
 ***** Iteration #32 *****
 Loss: 95449.647411
@@ -308,7 +309,7 @@ Error norm: 1898.936988
 Active features: 210158
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.724
+Seconds required for this iteration: 1.687
 
 ***** Iteration #33 *****
 Loss: 92729.543659
@@ -317,7 +318,7 @@ Error norm: 3881.859968
 Active features: 197843
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.711
+Seconds required for this iteration: 1.689
 
 ***** Iteration #34 *****
 Loss: 90359.885991
@@ -326,7 +327,7 @@ Error norm: 6731.264833
 Active features: 182860
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.718
+Seconds required for this iteration: 1.717
 
 ***** Iteration #35 *****
 Loss: 88573.621204
@@ -335,7 +336,7 @@ Error norm: 4159.261020
 Active features: 172011
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.700
+Seconds required for this iteration: 1.725
 
 ***** Iteration #36 *****
 Loss: 86847.575908
@@ -344,7 +345,7 @@ Error norm: 3543.545450
 Active features: 162881
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.716
+Seconds required for this iteration: 1.781
 
 ***** Iteration #37 *****
 Loss: 85472.812958
@@ -353,7 +354,7 @@ Error norm: 2379.259790
 Active features: 149056
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.717
+Seconds required for this iteration: 1.769
 
 ***** Iteration #38 *****
 Loss: 84395.526375
@@ -362,7 +363,7 @@ Error norm: 3417.048650
 Active features: 138925
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.709
+Seconds required for this iteration: 1.724
 
 ***** Iteration #39 *****
 Loss: 83585.722996
@@ -371,7 +372,7 @@ Error norm: 4145.341944
 Active features: 133108
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.709
+Seconds required for this iteration: 1.700
 
 ***** Iteration #40 *****
 Loss: 82907.656448
@@ -380,7 +381,7 @@ Error norm: 844.637256
 Active features: 130756
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.706
+Seconds required for this iteration: 1.717
 
 ***** Iteration #41 *****
 Loss: 82268.579828
@@ -389,7 +390,7 @@ Error norm: 2360.918225
 Active features: 126748
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.701
+Seconds required for this iteration: 1.700
 
 ***** Iteration #42 *****
 Loss: 81723.379720
@@ -398,7 +399,7 @@ Error norm: 2653.482835
 Active features: 120920
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.694
+Seconds required for this iteration: 1.757
 
 ***** Iteration #43 *****
 Loss: 81320.074636
@@ -407,7 +408,7 @@ Error norm: 1734.240508
 Active features: 119087
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.701
+Seconds required for this iteration: 1.694
 
 ***** Iteration #44 *****
 Loss: 80815.333312
@@ -416,7 +417,7 @@ Error norm: 1015.064464
 Active features: 112528
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.717
+Seconds required for this iteration: 1.689
 
 ***** Iteration #45 *****
 Loss: 80524.604546
@@ -425,7 +426,7 @@ Error norm: 1089.275481
 Active features: 108001
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.717
+Seconds required for this iteration: 1.701
 
 ***** Iteration #46 *****
 Loss: 80219.688747
@@ -434,7 +435,7 @@ Error norm: 658.525520
 Active features: 104775
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.721
+Seconds required for this iteration: 1.698
 
 ***** Iteration #47 *****
 Loss: 79981.033087
@@ -443,7 +444,7 @@ Error norm: 3473.993407
 Active features: 103218
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.731
+Seconds required for this iteration: 1.689
 
 ***** Iteration #48 *****
 Loss: 79743.878587
@@ -452,7 +453,7 @@ Error norm: 346.194668
 Active features: 102037
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.721
+Seconds required for this iteration: 1.719
 
 ***** Iteration #49 *****
 Loss: 79515.176807
@@ -461,7 +462,7 @@ Error norm: 365.211995
 Active features: 99777
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.714
+Seconds required for this iteration: 1.709
 
 ***** Iteration #50 *****
 Loss: 79463.468790
@@ -470,7 +471,7 @@ Error norm: 3567.529675
 Active features: 98974
 Line search trials: 5
 Line search step: 0.062500
-Seconds required for this iteration: 7.544
+Seconds required for this iteration: 7.688
 
 ***** Iteration #51 *****
 Loss: 79237.827329
@@ -479,7 +480,7 @@ Error norm: 541.821895
 Active features: 94870
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.721
+Seconds required for this iteration: 1.757
 
 ***** Iteration #52 *****
 Loss: 79066.495785
@@ -488,7 +489,7 @@ Error norm: 705.550748
 Active features: 92686
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.716
+Seconds required for this iteration: 1.694
 
 ***** Iteration #53 *****
 Loss: 78900.230897
@@ -497,7 +498,7 @@ Error norm: 2557.553779
 Active features: 89949
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.692
+Seconds required for this iteration: 1.758
 
 ***** Iteration #54 *****
 Loss: 78784.768456
@@ -506,7 +507,7 @@ Error norm: 299.335282
 Active features: 89342
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.697
+Seconds required for this iteration: 1.769
 
 ***** Iteration #55 *****
 Loss: 78646.290605
@@ -515,7 +516,7 @@ Error norm: 787.978725
 Active features: 87220
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.717
+Seconds required for this iteration: 1.797
 
 ***** Iteration #56 *****
 Loss: 78535.998264
@@ -524,7 +525,7 @@ Error norm: 861.193830
 Active features: 86021
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.750
+Seconds required for this iteration: 1.859
 
 ***** Iteration #57 *****
 Loss: 78427.337978
@@ -533,7 +534,7 @@ Error norm: 1239.441379
 Active features: 84746
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.708
+Seconds required for this iteration: 1.798
 
 ***** Iteration #58 *****
 Loss: 78323.821536
@@ -542,7 +543,7 @@ Error norm: 864.260865
 Active features: 83429
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.717
+Seconds required for this iteration: 1.734
 
 ***** Iteration #59 *****
 Loss: 78237.437544
@@ -551,7 +552,7 @@ Error norm: 790.317953
 Active features: 82448
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.735
+Seconds required for this iteration: 1.759
 
 ***** Iteration #60 *****
 Loss: 78159.271209
@@ -560,7 +561,7 @@ Error norm: 731.100337
 Active features: 81588
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.743
+Seconds required for this iteration: 1.767
 
 ***** Iteration #61 *****
 Loss: 78083.308839
@@ -569,7 +570,7 @@ Error norm: 805.705032
 Active features: 80668
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.763
+Seconds required for this iteration: 1.737
 
 ***** Iteration #62 *****
 Loss: 78015.512522
@@ -578,7 +579,7 @@ Error norm: 754.485161
 Active features: 79746
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.727
+Seconds required for this iteration: 1.799
 
 ***** Iteration #63 *****
 Loss: 77959.516452
@@ -587,7 +588,7 @@ Error norm: 849.948114
 Active features: 78970
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.780
+Seconds required for this iteration: 1.709
 
 ***** Iteration #64 *****
 Loss: 77913.383068
@@ -596,7 +597,7 @@ Error norm: 498.752579
 Active features: 78704
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.806
+Seconds required for this iteration: 1.697
 
 ***** Iteration #65 *****
 Loss: 77865.989405
@@ -605,7 +606,7 @@ Error norm: 871.442912
 Active features: 78138
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.821
+Seconds required for this iteration: 1.701
 
 ***** Iteration #66 *****
 Loss: 77824.872195
@@ -614,7 +615,7 @@ Error norm: 467.427111
 Active features: 77600
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.764
+Seconds required for this iteration: 1.685
 
 ***** Iteration #67 *****
 Loss: 77782.628867
@@ -623,7 +624,7 @@ Error norm: 1024.132297
 Active features: 76971
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.944
+Seconds required for this iteration: 1.741
 
 ***** Iteration #68 *****
 Loss: 77746.907834
@@ -632,7 +633,7 @@ Error norm: 437.677452
 Active features: 76604
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 2.013
+Seconds required for this iteration: 1.714
 
 ***** Iteration #69 *****
 Loss: 77709.954093
@@ -641,7 +642,7 @@ Error norm: 949.964963
 Active features: 76028
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.914
+Seconds required for this iteration: 1.726
 
 ***** Iteration #70 *****
 Loss: 77674.759447
@@ -650,7 +651,7 @@ Error norm: 462.054147
 Active features: 75549
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.730
+Seconds required for this iteration: 1.719
 
 ***** Iteration #71 *****
 Loss: 77642.048623
@@ -659,7 +660,7 @@ Error norm: 988.846911
 Active features: 75053
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.766
+Seconds required for this iteration: 1.708
 
 ***** Iteration #72 *****
 Loss: 77614.137156
@@ -668,7 +669,7 @@ Error norm: 332.957640
 Active features: 74772
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.743
+Seconds required for this iteration: 1.709
 
 ***** Iteration #73 *****
 Loss: 77586.206115
@@ -677,7 +678,7 @@ Error norm: 914.335717
 Active features: 74361
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.748
+Seconds required for this iteration: 1.719
 
 ***** Iteration #74 *****
 Loss: 77559.735911
@@ -686,7 +687,7 @@ Error norm: 492.490338
 Active features: 74027
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.849
+Seconds required for this iteration: 1.718
 
 ***** Iteration #75 *****
 Loss: 77534.306079
@@ -695,7 +696,7 @@ Error norm: 833.277367
 Active features: 73677
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.759
+Seconds required for this iteration: 1.741
 
 ***** Iteration #76 *****
 Loss: 77511.229468
@@ -704,7 +705,7 @@ Error norm: 514.864764
 Active features: 73401
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.941
+Seconds required for this iteration: 1.800
 
 ***** Iteration #77 *****
 Loss: 77488.372516
@@ -713,7 +714,7 @@ Error norm: 813.294308
 Active features: 73124
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.770
+Seconds required for this iteration: 1.801
 
 ***** Iteration #78 *****
 Loss: 77468.309980
@@ -722,7 +723,7 @@ Error norm: 658.566635
 Active features: 72845
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.857
+Seconds required for this iteration: 1.716
 
 ***** Iteration #79 *****
 Loss: 77450.028807
@@ -731,7 +732,7 @@ Error norm: 657.933510
 Active features: 72602
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.703
+Seconds required for this iteration: 1.765
 
 ***** Iteration #80 *****
 Loss: 77432.835696
@@ -740,7 +741,7 @@ Error norm: 646.795619
 Active features: 72515
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.766
+Seconds required for this iteration: 1.759
 
 ***** Iteration #81 *****
 Loss: 77414.356738
@@ -749,7 +750,7 @@ Error norm: 590.695705
 Active features: 72212
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.725
+Seconds required for this iteration: 1.727
 
 ***** Iteration #82 *****
 Loss: 77398.611444
@@ -767,7 +768,7 @@ Error norm: 340.050973
 Active features: 71823
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.708
+Seconds required for this iteration: 1.685
 
 ***** Iteration #84 *****
 Loss: 77368.141413
@@ -776,7 +777,7 @@ Error norm: 678.479408
 Active features: 71662
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.725
+Seconds required for this iteration: 1.689
 
 ***** Iteration #85 *****
 Loss: 77353.033120
@@ -785,7 +786,7 @@ Error norm: 433.155284
 Active features: 71500
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.732
+Seconds required for this iteration: 1.680
 
 ***** Iteration #86 *****
 Loss: 77340.646467
@@ -794,7 +795,7 @@ Error norm: 573.712808
 Active features: 71349
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.694
+Seconds required for this iteration: 1.684
 
 ***** Iteration #87 *****
 Loss: 77329.582647
@@ -803,7 +804,7 @@ Error norm: 168.395502
 Active features: 71229
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.699
+Seconds required for this iteration: 1.678
 
 ***** Iteration #88 *****
 Loss: 77319.075314
@@ -812,7 +813,7 @@ Error norm: 451.300409
 Active features: 71055
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.689
+Seconds required for this iteration: 1.678
 
 ***** Iteration #89 *****
 Loss: 77309.025890
@@ -821,7 +822,7 @@ Error norm: 504.637897
 Active features: 70897
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.689
+Seconds required for this iteration: 1.686
 
 ***** Iteration #90 *****
 Loss: 77299.556716
@@ -830,7 +831,7 @@ Error norm: 314.323178
 Active features: 70767
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.705
+Seconds required for this iteration: 1.688
 
 ***** Iteration #91 *****
 Loss: 77290.389151
@@ -839,7 +840,7 @@ Error norm: 289.679948
 Active features: 70593
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.692
+Seconds required for this iteration: 1.688
 
 ***** Iteration #92 *****
 Loss: 77280.852923
@@ -848,7 +849,7 @@ Error norm: 440.669010
 Active features: 70321
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.749
+Seconds required for this iteration: 1.677
 
 ***** Iteration #93 *****
 Loss: 77273.133385
@@ -857,7 +858,7 @@ Error norm: 209.150583
 Active features: 70186
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.724
+Seconds required for this iteration: 1.678
 
 ***** Iteration #94 *****
 Loss: 77265.071635
@@ -866,7 +867,7 @@ Error norm: 260.356983
 Active features: 70071
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.727
+Seconds required for this iteration: 1.683
 
 ***** Iteration #95 *****
 Loss: 77256.085404
@@ -875,7 +876,7 @@ Error norm: 314.136670
 Active features: 69831
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.742
+Seconds required for this iteration: 1.684
 
 ***** Iteration #96 *****
 Loss: 77249.189232
@@ -884,7 +885,7 @@ Error norm: 238.053076
 Active features: 69705
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.708
+Seconds required for this iteration: 1.695
 
 ***** Iteration #97 *****
 Loss: 77240.933322
@@ -893,7 +894,7 @@ Error norm: 395.287616
 Active features: 69485
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.698
+Seconds required for this iteration: 1.752
 
 ***** Iteration #98 *****
 Loss: 77232.729387
@@ -902,7 +903,7 @@ Error norm: 368.838219
 Active features: 69368
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.720
+Seconds required for this iteration: 1.684
 
 ***** Iteration #99 *****
 Loss: 77224.616215
@@ -911,7 +912,7 @@ Error norm: 293.383007
 Active features: 69305
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.696
+Seconds required for this iteration: 1.741
 
 ***** Iteration #100 *****
 Loss: 77216.736119
@@ -920,7 +921,7 @@ Error norm: 372.088292
 Active features: 69223
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.733
+Seconds required for this iteration: 1.693
 
 ***** Iteration #101 *****
 Loss: 77208.567791
@@ -929,7 +930,7 @@ Error norm: 410.928652
 Active features: 69045
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.720
+Seconds required for this iteration: 1.722
 
 ***** Iteration #102 *****
 Loss: 77201.051424
@@ -938,7 +939,7 @@ Error norm: 383.594629
 Active features: 68863
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.731
+Seconds required for this iteration: 1.684
 
 ***** Iteration #103 *****
 Loss: 77193.985027
@@ -947,7 +948,7 @@ Error norm: 452.289192
 Active features: 68645
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.722
+Seconds required for this iteration: 1.684
 
 ***** Iteration #104 *****
 Loss: 77186.840860
@@ -956,7 +957,7 @@ Error norm: 397.875305
 Active features: 68589
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.759
+Seconds required for this iteration: 1.715
 
 ***** Iteration #105 *****
 Loss: 77180.367263
@@ -965,7 +966,7 @@ Error norm: 449.581079
 Active features: 68442
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.722
+Seconds required for this iteration: 1.685
 
 ***** Iteration #106 *****
 Loss: 77173.634768
@@ -974,7 +975,7 @@ Error norm: 432.374458
 Active features: 68385
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.724
+Seconds required for this iteration: 1.706
 
 ***** Iteration #107 *****
 Loss: 77167.010705
@@ -983,7 +984,7 @@ Error norm: 337.755078
 Active features: 68386
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.735
+Seconds required for this iteration: 1.779
 
 ***** Iteration #108 *****
 Loss: 77160.885542
@@ -992,7 +993,7 @@ Error norm: 501.057386
 Active features: 68251
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.783
+Seconds required for this iteration: 1.716
 
 ***** Iteration #109 *****
 Loss: 77154.340039
@@ -1001,7 +1002,7 @@ Error norm: 401.957999
 Active features: 68112
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.715
+Seconds required for this iteration: 1.697
 
 ***** Iteration #110 *****
 Loss: 77148.142699
@@ -1010,7 +1011,7 @@ Error norm: 408.451756
 Active features: 68005
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.709
+Seconds required for this iteration: 1.680
 
 ***** Iteration #111 *****
 Loss: 77141.404205
@@ -1019,7 +1020,7 @@ Error norm: 339.987792
 Active features: 67900
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.726
+Seconds required for this iteration: 1.732
 
 ***** Iteration #112 *****
 Loss: 77135.836532
@@ -1028,7 +1029,7 @@ Error norm: 653.530200
 Active features: 67791
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.715
+Seconds required for this iteration: 1.827
 
 ***** Iteration #113 *****
 Loss: 77130.300352
@@ -1037,7 +1038,7 @@ Error norm: 244.291156
 Active features: 67727
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.695
+Seconds required for this iteration: 1.797
 
 ***** Iteration #114 *****
 Loss: 77126.144453
@@ -1046,7 +1047,7 @@ Error norm: 302.915829
 Active features: 67678
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.715
+Seconds required for this iteration: 1.706
 
 ***** Iteration #115 *****
 Loss: 77120.308948
@@ -1055,7 +1056,7 @@ Error norm: 378.335409
 Active features: 67575
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.708
+Seconds required for this iteration: 1.703
 
 ***** Iteration #116 *****
 Loss: 77116.667328
@@ -1064,7 +1065,7 @@ Error norm: 608.598182
 Active features: 67501
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.684
+Seconds required for this iteration: 1.721
 
 ***** Iteration #117 *****
 Loss: 77111.788600
@@ -1073,7 +1074,7 @@ Error norm: 240.816794
 Active features: 67472
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.686
+Seconds required for this iteration: 1.788
 
 ***** Iteration #118 *****
 Loss: 77109.280252
@@ -1082,7 +1083,7 @@ Error norm: 185.879543
 Active features: 67507
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.678
+Seconds required for this iteration: 1.760
 
 ***** Iteration #119 *****
 Loss: 77105.368724
@@ -1091,7 +1092,7 @@ Error norm: 49.122272
 Active features: 67417
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.737
+Seconds required for this iteration: 1.743
 
 ***** Iteration #120 *****
 Loss: 77102.315463
@@ -1100,7 +1101,7 @@ Error norm: 940.875448
 Active features: 67189
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.721
+Seconds required for this iteration: 1.803
 
 ***** Iteration #121 *****
 Loss: 77096.930796
@@ -1109,7 +1110,7 @@ Error norm: 87.816552
 Active features: 67270
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.687
+Seconds required for this iteration: 1.790
 
 ***** Iteration #122 *****
 Loss: 77093.718009
@@ -1118,7 +1119,7 @@ Error norm: 219.534819
 Active features: 67173
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.685
+Seconds required for this iteration: 1.752
 
 ***** Iteration #123 *****
 Loss: 77090.269725
@@ -1127,7 +1128,7 @@ Error norm: 218.181035
 Active features: 67018
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.677
+Seconds required for this iteration: 1.781
 
 ***** Iteration #124 *****
 Loss: 77086.255055
@@ -1136,7 +1137,7 @@ Error norm: 302.217296
 Active features: 66946
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.679
+Seconds required for this iteration: 1.779
 
 ***** Iteration #125 *****
 Loss: 77082.210974
@@ -1145,7 +1146,7 @@ Error norm: 40.599790
 Active features: 66911
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.681
+Seconds required for this iteration: 1.738
 
 ***** Iteration #126 *****
 Loss: 77078.087977
@@ -1154,7 +1155,7 @@ Error norm: 356.234413
 Active features: 66747
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.744
+Seconds required for this iteration: 1.791
 
 ***** Iteration #127 *****
 Loss: 77074.335012
@@ -1163,7 +1164,7 @@ Error norm: 643.117743
 Active features: 66688
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.732
+Seconds required for this iteration: 1.716
 
 ***** Iteration #128 *****
 Loss: 77070.108486
@@ -1172,7 +1173,7 @@ Error norm: 73.417506
 Active features: 66640
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.744
+Seconds required for this iteration: 1.821
 
 ***** Iteration #129 *****
 Loss: 77066.483993
@@ -1181,7 +1182,7 @@ Error norm: 307.781278
 Active features: 66548
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.735
+Seconds required for this iteration: 1.793
 
 ***** Iteration #130 *****
 Loss: 77062.976230
@@ -1190,7 +1191,7 @@ Error norm: 469.002103
 Active features: 66439
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.719
+Seconds required for this iteration: 1.768
 
 ***** Iteration #131 *****
 Loss: 77059.619717
@@ -1199,7 +1200,7 @@ Error norm: 475.139153
 Active features: 66391
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.748
+Seconds required for this iteration: 1.738
 
 ***** Iteration #132 *****
 Loss: 77055.515230
@@ -1208,7 +1209,7 @@ Error norm: 295.419746
 Active features: 66306
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.762
+Seconds required for this iteration: 1.779
 
 ***** Iteration #133 *****
 Loss: 77052.030966
@@ -1217,7 +1218,7 @@ Error norm: 397.223055
 Active features: 66227
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.790
+Seconds required for this iteration: 1.804
 
 ***** Iteration #134 *****
 Loss: 77048.220667
@@ -1226,7 +1227,7 @@ Error norm: 468.060550
 Active features: 66146
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.764
+Seconds required for this iteration: 1.720
 
 ***** Iteration #135 *****
 Loss: 77045.200144
@@ -1235,7 +1236,7 @@ Error norm: 452.226798
 Active features: 66070
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.722
+Seconds required for this iteration: 1.738
 
 ***** Iteration #136 *****
 Loss: 77040.957041
@@ -1244,7 +1245,7 @@ Error norm: 491.576472
 Active features: 65955
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.771
+Seconds required for this iteration: 1.761
 
 ***** Iteration #137 *****
 Loss: 77037.882471
@@ -1253,7 +1254,7 @@ Error norm: 321.359648
 Active features: 65971
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.811
+Seconds required for this iteration: 1.791
 
 ***** Iteration #138 *****
 Loss: 77034.611492
@@ -1262,7 +1263,7 @@ Error norm: 252.613989
 Active features: 65915
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.793
+Seconds required for this iteration: 1.727
 
 ***** Iteration #139 *****
 Loss: 77031.897003
@@ -1271,7 +1272,7 @@ Error norm: 276.498453
 Active features: 65866
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.696
+Seconds required for this iteration: 1.809
 
 ***** Iteration #140 *****
 Loss: 77028.701567
@@ -1280,7 +1281,7 @@ Error norm: 403.849312
 Active features: 65789
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.714
+Seconds required for this iteration: 1.735
 
 ***** Iteration #141 *****
 Loss: 77026.046190
@@ -1289,7 +1290,7 @@ Error norm: 373.368043
 Active features: 65744
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.709
+Seconds required for this iteration: 1.791
 
 ***** Iteration #142 *****
 Loss: 77023.221626
@@ -1298,7 +1299,7 @@ Error norm: 453.728864
 Active features: 65656
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.785
+Seconds required for this iteration: 1.801
 
 ***** Iteration #143 *****
 Loss: 77020.811848
@@ -1307,7 +1308,7 @@ Error norm: 609.001723
 Active features: 65664
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.760
+Seconds required for this iteration: 1.749
 
 ***** Iteration #144 *****
 Loss: 77017.234397
@@ -1316,7 +1317,7 @@ Error norm: 161.778641
 Active features: 65668
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.699
+Seconds required for this iteration: 1.722
 
 ***** Iteration #145 *****
 Loss: 77015.099900
@@ -1325,7 +1326,7 @@ Error norm: 244.760058
 Active features: 65612
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.694
+Seconds required for this iteration: 1.745
 
 ***** Iteration #146 *****
 Loss: 77012.586914
@@ -1334,7 +1335,7 @@ Error norm: 272.352261
 Active features: 65563
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.675
+Seconds required for this iteration: 1.766
 
 ***** Iteration #147 *****
 Loss: 77010.642990
@@ -1343,7 +1344,7 @@ Error norm: 448.819468
 Active features: 65512
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.676
+Seconds required for this iteration: 1.768
 
 ***** Iteration #148 *****
 Loss: 77008.009045
@@ -1352,7 +1353,7 @@ Error norm: 339.389368
 Active features: 65403
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.717
+Seconds required for this iteration: 1.807
 
 ***** Iteration #149 *****
 Loss: 77005.247578
@@ -1361,7 +1362,7 @@ Error norm: 262.254836
 Active features: 65333
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.721
+Seconds required for this iteration: 1.707
 
 ***** Iteration #150 *****
 Loss: 77003.195031
@@ -1370,7 +1371,7 @@ Error norm: 399.571399
 Active features: 65241
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.794
+Seconds required for this iteration: 1.728
 
 ***** Iteration #151 *****
 Loss: 77001.283309
@@ -1379,7 +1380,7 @@ Error norm: 550.532973
 Active features: 65246
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.852
+Seconds required for this iteration: 1.706
 
 ***** Iteration #152 *****
 Loss: 76999.244936
@@ -1388,7 +1389,7 @@ Error norm: 135.411289
 Active features: 65232
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.714
+Seconds required for this iteration: 1.740
 
 ***** Iteration #153 *****
 Loss: 76997.706464
@@ -1397,7 +1398,7 @@ Error norm: 304.345578
 Active features: 65150
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.723
+Seconds required for this iteration: 1.717
 
 ***** Iteration #154 *****
 Loss: 76995.996895
@@ -1406,7 +1407,7 @@ Error norm: 332.118979
 Active features: 65074
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.712
+Seconds required for this iteration: 1.706
 
 ***** Iteration #155 *****
 Loss: 76994.595803
@@ -1415,7 +1416,7 @@ Error norm: 293.787959
 Active features: 64968
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.745
+Seconds required for this iteration: 1.683
 
 ***** Iteration #156 *****
 Loss: 76992.654005
@@ -1424,7 +1425,7 @@ Error norm: 290.869260
 Active features: 64900
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.747
+Seconds required for this iteration: 1.688
 
 ***** Iteration #157 *****
 Loss: 76991.398423
@@ -1433,7 +1434,7 @@ Error norm: 79.022313
 Active features: 64887
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.734
+Seconds required for this iteration: 1.771
 
 ***** Iteration #158 *****
 Loss: 76989.921170
@@ -1442,7 +1443,7 @@ Error norm: 273.321823
 Active features: 64815
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.692
+Seconds required for this iteration: 1.677
 
 ***** Iteration #159 *****
 Loss: 76988.528961
@@ -1451,7 +1452,7 @@ Error norm: 442.770050
 Active features: 64775
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.692
+Seconds required for this iteration: 1.676
 
 ***** Iteration #160 *****
 Loss: 76986.730297
@@ -1460,7 +1461,7 @@ Error norm: 190.288002
 Active features: 64739
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.691
+Seconds required for this iteration: 1.659
 
 ***** Iteration #161 *****
 Loss: 76985.356715
@@ -1469,7 +1470,7 @@ Error norm: 314.203481
 Active features: 64692
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.697
+Seconds required for this iteration: 1.657
 
 ***** Iteration #162 *****
 Loss: 76983.656151
@@ -1478,7 +1479,7 @@ Error norm: 259.263494
 Active features: 64645
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.693
+Seconds required for this iteration: 1.660
 
 ***** Iteration #163 *****
 Loss: 76982.274655
@@ -1487,7 +1488,7 @@ Error norm: 361.192443
 Active features: 64616
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.687
+Seconds required for this iteration: 1.661
 
 ***** Iteration #164 *****
 Loss: 76980.687794
@@ -1496,7 +1497,7 @@ Error norm: 303.583323
 Active features: 64498
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.689
+Seconds required for this iteration: 1.663
 
 ***** Iteration #165 *****
 Loss: 76979.344671
@@ -1505,7 +1506,7 @@ Error norm: 324.264705
 Active features: 64440
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.687
+Seconds required for this iteration: 1.658
 
 ***** Iteration #166 *****
 Loss: 76977.718832
@@ -1514,7 +1515,7 @@ Error norm: 178.310699
 Active features: 64367
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.688
+Seconds required for this iteration: 1.670
 
 ***** Iteration #167 *****
 Loss: 76976.370566
@@ -1523,7 +1524,7 @@ Error norm: 219.986635
 Active features: 64343
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.693
+Seconds required for this iteration: 1.664
 
 ***** Iteration #168 *****
 Loss: 76974.886231
@@ -1532,7 +1533,7 @@ Error norm: 310.738341
 Active features: 64289
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.754
+Seconds required for this iteration: 1.667
 
 ***** Iteration #169 *****
 Loss: 76973.412410
@@ -1541,7 +1542,7 @@ Error norm: 255.209917
 Active features: 64244
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.691
+Seconds required for this iteration: 1.735
 
 ***** Iteration #170 *****
 Loss: 76972.009230
@@ -1550,7 +1551,7 @@ Error norm: 209.402542
 Active features: 64208
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.691
+Seconds required for this iteration: 1.752
 
 ***** Iteration #171 *****
 Loss: 76970.634848
@@ -1559,7 +1560,7 @@ Error norm: 150.715612
 Active features: 64257
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.714
+Seconds required for this iteration: 1.720
 
 ***** Iteration #172 *****
 Loss: 76969.071249
@@ -1568,7 +1569,7 @@ Error norm: 338.249446
 Active features: 64199
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.720
+Seconds required for this iteration: 1.663
 
 ***** Iteration #173 *****
 Loss: 76967.895177
@@ -1577,7 +1578,7 @@ Error norm: 364.200859
 Active features: 64224
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.716
+Seconds required for this iteration: 1.664
 
 ***** Iteration #174 *****
 Loss: 76966.353354
@@ -1586,7 +1587,7 @@ Error norm: 49.955770
 Active features: 64210
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.736
+Seconds required for this iteration: 1.679
 
 ***** Iteration #175 *****
 Loss: 76965.210907
@@ -1595,7 +1596,7 @@ Error norm: 202.971850
 Active features: 64162
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.739
+Seconds required for this iteration: 1.676
 
 ***** Iteration #176 *****
 Loss: 76964.005189
@@ -1604,7 +1605,7 @@ Error norm: 231.918284
 Active features: 64138
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.692
+Seconds required for this iteration: 1.709
 
 ***** Iteration #177 *****
 Loss: 76962.907348
@@ -1613,7 +1614,7 @@ Error norm: 201.790711
 Active features: 64134
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.707
+Seconds required for this iteration: 1.662
 
 ***** Iteration #178 *****
 Loss: 76962.091225
@@ -1622,7 +1623,7 @@ Error norm: 361.369644
 Active features: 64056
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.692
+Seconds required for this iteration: 1.658
 
 ***** Iteration #179 *****
 Loss: 76960.712401
@@ -1631,7 +1632,7 @@ Error norm: 91.788351
 Active features: 64048
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.741
+Seconds required for this iteration: 1.663
 
 ***** Iteration #180 *****
 Loss: 76959.795491
@@ -1640,7 +1641,7 @@ Error norm: 179.182058
 Active features: 64028
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.753
+Seconds required for this iteration: 1.673
 
 ***** Iteration #181 *****
 Loss: 76958.958192
@@ -1649,7 +1650,7 @@ Error norm: 278.246714
 Active features: 63965
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.776
+Seconds required for this iteration: 1.685
 
 ***** Iteration #182 *****
 Loss: 76958.058758
@@ -1658,7 +1659,7 @@ Error norm: 197.095805
 Active features: 63948
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.715
+Seconds required for this iteration: 1.755
 
 ***** Iteration #183 *****
 Loss: 76957.033602
@@ -1667,7 +1668,7 @@ Error norm: 153.064207
 Active features: 63946
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.710
+Seconds required for this iteration: 1.730
 
 ***** Iteration #184 *****
 Loss: 76956.271316
@@ -1676,7 +1677,7 @@ Error norm: 182.327838
 Active features: 63895
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.721
+Seconds required for this iteration: 1.663
 
 ***** Iteration #185 *****
 Loss: 76955.595569
@@ -1685,7 +1686,7 @@ Error norm: 301.645947
 Active features: 63853
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.717
+Seconds required for this iteration: 1.692
 
 ***** Iteration #186 *****
 Loss: 76954.581029
@@ -1694,7 +1695,7 @@ Error norm: 197.831567
 Active features: 63836
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.745
+Seconds required for this iteration: 1.719
 
 ***** Iteration #187 *****
 Loss: 76953.620515
@@ -1703,7 +1704,7 @@ Error norm: 192.752507
 Active features: 63788
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.727
+Seconds required for this iteration: 1.776
 
 ***** Iteration #188 *****
 Loss: 76952.830242
@@ -1712,7 +1713,7 @@ Error norm: 161.009637
 Active features: 63739
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.746
+Seconds required for this iteration: 1.670
 
 ***** Iteration #189 *****
 Loss: 76952.106129
@@ -1721,7 +1722,7 @@ Error norm: 139.361798
 Active features: 63725
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.731
+Seconds required for this iteration: 1.709
 
 ***** Iteration #190 *****
 Loss: 76951.529460
@@ -1730,7 +1731,7 @@ Error norm: 150.031676
 Active features: 63748
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.741
+Seconds required for this iteration: 1.717
 
 ***** Iteration #191 *****
 Loss: 76950.673988
@@ -1739,7 +1740,7 @@ Error norm: 50.449765
 Active features: 63754
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.787
+Seconds required for this iteration: 1.662
 
 ***** Iteration #192 *****
 Loss: 76949.933558
@@ -1748,7 +1749,7 @@ Error norm: 258.079427
 Active features: 63693
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.750
+Seconds required for this iteration: 1.680
 
 ***** Iteration #193 *****
 Loss: 76949.033443
@@ -1757,7 +1758,7 @@ Error norm: 61.558321
 Active features: 63684
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.850
+Seconds required for this iteration: 1.719
 
 ***** Iteration #194 *****
 Loss: 76948.309084
@@ -1766,7 +1767,7 @@ Error norm: 242.514409
 Active features: 63652
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.720
+Seconds required for this iteration: 1.681
 
 ***** Iteration #195 *****
 Loss: 76947.468501
@@ -1775,7 +1776,7 @@ Error norm: 112.244654
 Active features: 63632
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.751
+Seconds required for this iteration: 1.663
 
 ***** Iteration #196 *****
 Loss: 76946.745414
@@ -1784,7 +1785,7 @@ Error norm: 211.579120
 Active features: 63599
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.737
+Seconds required for this iteration: 1.723
 
 ***** Iteration #197 *****
 Loss: 76945.955371
@@ -1793,7 +1794,7 @@ Error norm: 139.013552
 Active features: 63563
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.750
+Seconds required for this iteration: 1.699
 
 ***** Iteration #198 *****
 Loss: 76945.263902
@@ -1802,7 +1803,7 @@ Error norm: 228.294768
 Active features: 63513
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.730
+Seconds required for this iteration: 1.711
 
 ***** Iteration #199 *****
 Loss: 76944.545323
@@ -1811,7 +1812,7 @@ Error norm: 154.608797
 Active features: 63481
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.897
+Seconds required for this iteration: 1.756
 
 ***** Iteration #200 *****
 Loss: 76943.862610
@@ -1820,7 +1821,7 @@ Error norm: 159.749433
 Active features: 63440
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.783
+Seconds required for this iteration: 1.679
 
 ***** Iteration #201 *****
 Loss: 76943.243772
@@ -1829,7 +1830,7 @@ Error norm: 221.012019
 Active features: 63402
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.738
+Seconds required for this iteration: 1.665
 
 ***** Iteration #202 *****
 Loss: 76942.542745
@@ -1838,7 +1839,7 @@ Error norm: 231.644597
 Active features: 63357
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.746
+Seconds required for this iteration: 1.681
 
 ***** Iteration #203 *****
 Loss: 76941.765435
@@ -1847,7 +1848,7 @@ Error norm: 172.687268
 Active features: 63335
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.762
+Seconds required for this iteration: 1.758
 
 ***** Iteration #204 *****
 Loss: 76941.114570
@@ -1856,7 +1857,7 @@ Error norm: 187.852885
 Active features: 63318
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.724
+Seconds required for this iteration: 1.687
 
 ***** Iteration #205 *****
 Loss: 76940.568159
@@ -1865,7 +1866,7 @@ Error norm: 222.797748
 Active features: 63315
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.778
+Seconds required for this iteration: 1.672
 
 ***** Iteration #206 *****
 Loss: 76939.911916
@@ -1874,7 +1875,7 @@ Error norm: 206.048274
 Active features: 63267
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.858
+Seconds required for this iteration: 1.685
 
 ***** Iteration #207 *****
 Loss: 76939.212025
@@ -1883,7 +1884,7 @@ Error norm: 149.643899
 Active features: 63251
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.773
+Seconds required for this iteration: 1.686
 
 ***** Iteration #208 *****
 Loss: 76938.521525
@@ -1892,7 +1893,7 @@ Error norm: 137.292552
 Active features: 63254
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.840
+Seconds required for this iteration: 1.682
 
 ***** Iteration #209 *****
 Loss: 76938.053727
@@ -1901,7 +1902,7 @@ Error norm: 290.690023
 Active features: 63212
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.740
+Seconds required for this iteration: 1.684
 
 ***** Iteration #210 *****
 Loss: 76937.363230
@@ -1910,7 +1911,7 @@ Error norm: 217.197094
 Active features: 63179
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.761
+Seconds required for this iteration: 1.708
 
 ***** Iteration #211 *****
 Loss: 76936.526310
@@ -1919,7 +1920,7 @@ Error norm: 102.611507
 Active features: 63178
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.750
+Seconds required for this iteration: 1.681
 
 ***** Iteration #212 *****
 Loss: 76935.898594
@@ -1928,7 +1929,7 @@ Error norm: 90.257896
 Active features: 63162
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.740
+Seconds required for this iteration: 1.677
 
 ***** Iteration #213 *****
 Loss: 76935.345166
@@ -1937,7 +1938,7 @@ Error norm: 366.979387
 Active features: 63123
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.747
+Seconds required for this iteration: 1.669
 
 ***** Iteration #214 *****
 Loss: 76934.647097
@@ -1946,7 +1947,7 @@ Error norm: 44.547067
 Active features: 63106
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.734
+Seconds required for this iteration: 1.690
 
 ***** Iteration #215 *****
 Loss: 76934.092873
@@ -1955,7 +1956,7 @@ Error norm: 172.983356
 Active features: 63096
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.690
+Seconds required for this iteration: 1.712
 
 ***** Iteration #216 *****
 Loss: 76933.582367
@@ -1964,7 +1965,7 @@ Error norm: 127.044663
 Active features: 63055
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.707
+Seconds required for this iteration: 1.716
 
 ***** Iteration #217 *****
 Loss: 76933.202446
@@ -1973,7 +1974,7 @@ Error norm: 226.121731
 Active features: 63029
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.709
+Seconds required for this iteration: 1.698
 
 ***** Iteration #218 *****
 Loss: 76932.750476
@@ -1982,7 +1983,7 @@ Error norm: 247.071122
 Active features: 62973
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.708
+Seconds required for this iteration: 1.687
 
 ***** Iteration #219 *****
 Loss: 76932.102689
@@ -1991,7 +1992,7 @@ Error norm: 16.935630
 Active features: 62986
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.753
+Seconds required for this iteration: 1.686
 
 ***** Iteration #220 *****
 Loss: 76931.680865
@@ -2000,7 +2001,7 @@ Error norm: 81.498214
 Active features: 62978
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.755
+Seconds required for this iteration: 1.676
 
 ***** Iteration #221 *****
 Loss: 76931.514326
@@ -2009,7 +2010,7 @@ Error norm: 319.427132
 Active features: 62938
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.731
+Seconds required for this iteration: 1.749
 
 ***** Iteration #222 *****
 Loss: 76930.988722
@@ -2018,7 +2019,7 @@ Error norm: 152.202411
 Active features: 62962
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.705
+Seconds required for this iteration: 1.747
 
 ***** Iteration #223 *****
 Loss: 76930.388072
@@ -2027,7 +2028,7 @@ Error norm: 100.533899
 Active features: 62935
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.706
+Seconds required for this iteration: 1.718
 
 ***** Iteration #224 *****
 Loss: 76930.196829
@@ -2036,7 +2037,7 @@ Error norm: 339.493893
 Active features: 62863
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.699
+Seconds required for this iteration: 1.724
 
 ***** Iteration #225 *****
 Loss: 76929.445970
@@ -2045,7 +2046,7 @@ Error norm: 35.460424
 Active features: 62873
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.741
+Seconds required for this iteration: 1.749
 
 ***** Iteration #226 *****
 Loss: 76929.089468
@@ -2054,7 +2055,7 @@ Error norm: 159.461686
 Active features: 62853
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.721
+Seconds required for this iteration: 1.708
 
 ***** Iteration #227 *****
 Loss: 76928.573201
@@ -2063,7 +2064,7 @@ Error norm: 181.044117
 Active features: 62815
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.693
+Seconds required for this iteration: 1.752
 
 ***** Iteration #228 *****
 Loss: 76928.085591
@@ -2081,7 +2082,7 @@ Error norm: 198.448451
 Active features: 62760
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.690
+Seconds required for this iteration: 1.699
 
 ***** Iteration #230 *****
 Loss: 76927.048621
@@ -2090,7 +2091,7 @@ Error norm: 200.604366
 Active features: 62742
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.691
+Seconds required for this iteration: 1.661
 
 ***** Iteration #231 *****
 Loss: 76926.533114
@@ -2099,7 +2100,7 @@ Error norm: 202.995520
 Active features: 62724
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.691
+Seconds required for this iteration: 1.671
 
 ***** Iteration #232 *****
 Loss: 76926.033476
@@ -2108,7 +2109,7 @@ Error norm: 242.278229
 Active features: 62713
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.690
+Seconds required for this iteration: 1.684
 
 ***** Iteration #233 *****
 Loss: 76925.499558
@@ -2117,7 +2118,7 @@ Error norm: 91.784351
 Active features: 62700
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.688
+Seconds required for this iteration: 1.671
 
 ***** Iteration #234 *****
 Loss: 76925.116886
@@ -2126,7 +2127,7 @@ Error norm: 235.137736
 Active features: 62680
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.710
+Seconds required for this iteration: 1.681
 
 ***** Iteration #235 *****
 Loss: 76924.572062
@@ -2135,7 +2136,7 @@ Error norm: 184.679127
 Active features: 62695
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.735
+Seconds required for this iteration: 1.760
 
 ***** Iteration #236 *****
 Loss: 76924.319576
@@ -2144,7 +2145,7 @@ Error norm: 249.463386
 Active features: 62667
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.735
+Seconds required for this iteration: 1.728
 
 ***** Iteration #237 *****
 Loss: 76923.868419
@@ -2153,7 +2154,7 @@ Error norm: 253.588067
 Active features: 62639
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.706
+Seconds required for this iteration: 1.678
 
 ***** Iteration #238 *****
 Loss: 76923.265746
@@ -2162,7 +2163,7 @@ Error norm: 81.813581
 Active features: 62655
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.739
+Seconds required for this iteration: 1.655
 
 ***** Iteration #239 *****
 Loss: 76922.972141
@@ -2171,7 +2172,7 @@ Error norm: 108.167174
 Active features: 62624
 Line search trials: 2
 Line search step: 0.500000
-Seconds required for this iteration: 3.190
+Seconds required for this iteration: 3.195
 
 ***** Iteration #240 *****
 Loss: 76922.801884
@@ -2180,7 +2181,7 @@ Error norm: 222.262463
 Active features: 62567
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.723
+Seconds required for this iteration: 1.770
 
 ***** Iteration #241 *****
 Loss: 76922.166846
@@ -2189,7 +2190,7 @@ Error norm: 107.073599
 Active features: 62553
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.762
+Seconds required for this iteration: 1.694
 
 ***** Iteration #242 *****
 Loss: 76922.107072
@@ -2198,7 +2199,7 @@ Error norm: 153.949435
 Active features: 62543
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.833
+Seconds required for this iteration: 1.662
 
 ***** Iteration #243 *****
 Loss: 76921.399374
@@ -2207,7 +2208,7 @@ Error norm: 134.867876
 Active features: 62525
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.713
+Seconds required for this iteration: 1.693
 
 ***** Iteration #244 *****
 Loss: 76921.216569
@@ -2216,7 +2217,7 @@ Error norm: 206.515795
 Active features: 62537
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.714
+Seconds required for this iteration: 1.726
 
 ***** Iteration #245 *****
 Loss: 76920.785859
@@ -2225,7 +2226,7 @@ Error norm: 158.092770
 Active features: 62514
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.719
+Seconds required for this iteration: 1.725
 
 ***** Iteration #246 *****
 Loss: 76920.551362
@@ -2234,7 +2235,7 @@ Error norm: 258.548468
 Active features: 62473
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.734
+Seconds required for this iteration: 1.703
 
 ***** Iteration #247 *****
 Loss: 76919.906275
@@ -2243,7 +2244,7 @@ Error norm: 181.102900
 Active features: 62465
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.704
+Seconds required for this iteration: 1.660
 
 ***** Iteration #248 *****
 Loss: 76919.603397
@@ -2252,7 +2253,7 @@ Error norm: 218.032780
 Active features: 62431
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.712
+Seconds required for this iteration: 1.681
 
 ***** Iteration #249 *****
 Loss: 76919.081857
@@ -2261,7 +2262,7 @@ Error norm: 143.257602
 Active features: 62405
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.688
+Seconds required for this iteration: 1.686
 
 ***** Iteration #250 *****
 Loss: 76918.808460
@@ -2270,7 +2271,7 @@ Error norm: 149.876776
 Active features: 62389
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.693
+Seconds required for this iteration: 1.702
 
 ***** Iteration #251 *****
 Loss: 76918.486425
@@ -2279,7 +2280,7 @@ Error norm: 111.955674
 Active features: 62358
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.699
+Seconds required for this iteration: 1.724
 
 ***** Iteration #252 *****
 Loss: 76918.234432
@@ -2288,7 +2289,7 @@ Error norm: 106.571208
 Active features: 62348
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.692
+Seconds required for this iteration: 1.738
 
 ***** Iteration #253 *****
 Loss: 76918.013407
@@ -2306,7 +2307,7 @@ Error norm: 96.162774
 Active features: 62316
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.692
+Seconds required for this iteration: 1.717
 
 ***** Iteration #255 *****
 Loss: 76917.424890
@@ -2315,7 +2316,7 @@ Error norm: 128.044671
 Active features: 62314
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.689
+Seconds required for this iteration: 1.688
 
 ***** Iteration #256 *****
 Loss: 76917.141205
@@ -2324,7 +2325,7 @@ Error norm: 165.009690
 Active features: 62293
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.692
+Seconds required for this iteration: 1.720
 
 ***** Iteration #257 *****
 Loss: 76916.781696
@@ -2333,7 +2334,7 @@ Error norm: 181.859317
 Active features: 62273
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.698
+Seconds required for this iteration: 1.707
 
 ***** Iteration #258 *****
 Loss: 76916.420897
@@ -2342,7 +2343,7 @@ Error norm: 114.474266
 Active features: 62265
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.693
+Seconds required for this iteration: 1.666
 
 ***** Iteration #259 *****
 Loss: 76916.074453
@@ -2351,7 +2352,7 @@ Error norm: 133.302763
 Active features: 62253
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.693
+Seconds required for this iteration: 1.656
 
 ***** Iteration #260 *****
 Loss: 76915.757191
@@ -2360,7 +2361,7 @@ Error norm: 122.425340
 Active features: 62240
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.692
+Seconds required for this iteration: 1.657
 
 ***** Iteration #261 *****
 Loss: 76915.455350
@@ -2369,7 +2370,7 @@ Error norm: 218.727768
 Active features: 62208
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.686
+Seconds required for this iteration: 1.662
 
 ***** Iteration #262 *****
 Loss: 76915.037987
@@ -2378,7 +2379,7 @@ Error norm: 170.933171
 Active features: 62183
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.696
+Seconds required for this iteration: 1.663
 
 ***** Iteration #263 *****
 Loss: 76914.678883
@@ -2387,7 +2388,7 @@ Error norm: 76.808259
 Active features: 62171
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.693
+Seconds required for this iteration: 1.661
 
 ***** Iteration #264 *****
 Loss: 76914.418483
@@ -2396,7 +2397,7 @@ Error norm: 117.139049
 Active features: 62149
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.692
+Seconds required for this iteration: 1.668
 
 ***** Iteration #265 *****
 Loss: 76914.169290
@@ -2405,7 +2406,7 @@ Error norm: 106.649280
 Active features: 62149
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.696
+Seconds required for this iteration: 1.711
 
 ***** Iteration #266 *****
 Loss: 76913.954828
@@ -2414,7 +2415,7 @@ Error norm: 139.825752
 Active features: 62104
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.749
+Seconds required for this iteration: 1.724
 
 ***** Iteration #267 *****
 Loss: 76913.565822
@@ -2423,7 +2424,7 @@ Error norm: 140.345929
 Active features: 62078
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.692
+Seconds required for this iteration: 1.715
 
 ***** Iteration #268 *****
 Loss: 76913.242290
@@ -2432,7 +2433,7 @@ Error norm: 113.280066
 Active features: 62083
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.704
+Seconds required for this iteration: 1.777
 
 ***** Iteration #269 *****
 Loss: 76912.940775
@@ -2441,7 +2442,7 @@ Error norm: 137.868695
 Active features: 62095
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.726
+Seconds required for this iteration: 1.730
 
 ***** Iteration #270 *****
 Loss: 76912.714090
@@ -2450,7 +2451,7 @@ Error norm: 203.213583
 Active features: 62067
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.742
+Seconds required for this iteration: 1.706
 
 ***** Iteration #271 *****
 Loss: 76912.370563
@@ -2459,7 +2460,7 @@ Error norm: 148.751112
 Active features: 62023
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.763
+Seconds required for this iteration: 1.747
 
 ***** Iteration #272 *****
 Loss: 76911.999011
@@ -2468,7 +2469,7 @@ Error norm: 132.026831
 Active features: 62034
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.742
+Seconds required for this iteration: 1.690
 
 ***** Iteration #273 *****
 Loss: 76911.689527
@@ -2477,7 +2478,7 @@ Error norm: 92.760029
 Active features: 62023
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.754
+Seconds required for this iteration: 1.700
 
 ***** Iteration #274 *****
 Loss: 76911.432382
@@ -2486,7 +2487,7 @@ Error norm: 185.377074
 Active features: 62016
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.765
+Seconds required for this iteration: 1.710
 
 ***** Iteration #275 *****
 Loss: 76911.243216
@@ -2495,7 +2496,7 @@ Error norm: 189.494310
 Active features: 61973
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.838
+Seconds required for this iteration: 1.737
 
 ***** Iteration #276 *****
 Loss: 76910.794837
@@ -2504,7 +2505,7 @@ Error norm: 135.536018
 Active features: 61966
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.746
+Seconds required for this iteration: 1.699
 
 ***** Iteration #277 *****
 Loss: 76910.451462
@@ -2513,7 +2514,7 @@ Error norm: 117.520532
 Active features: 61951
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.899
+Seconds required for this iteration: 1.741
 
 ***** Iteration #278 *****
 Loss: 76910.143409
@@ -2522,7 +2523,7 @@ Error norm: 101.524179
 Active features: 61946
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.828
+Seconds required for this iteration: 1.700
 
 ***** Iteration #279 *****
 Loss: 76909.949000
@@ -2531,7 +2532,7 @@ Error norm: 127.513107
 Active features: 61926
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.839
+Seconds required for this iteration: 1.708
 
 ***** Iteration #280 *****
 Loss: 76909.708320
@@ -2540,7 +2541,7 @@ Error norm: 103.536604
 Active features: 61900
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.832
+Seconds required for this iteration: 1.683
 
 ***** Iteration #281 *****
 Loss: 76909.389227
@@ -2549,7 +2550,7 @@ Error norm: 83.063618
 Active features: 61900
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.779
+Seconds required for this iteration: 1.708
 
 ***** Iteration #282 *****
 Loss: 76909.235723
@@ -2558,7 +2559,7 @@ Error norm: 114.366950
 Active features: 61868
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.739
+Seconds required for this iteration: 1.702
 
 ***** Iteration #283 *****
 Loss: 76909.002592
@@ -2567,7 +2568,7 @@ Error norm: 121.703381
 Active features: 61860
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.810
+Seconds required for this iteration: 1.709
 
 ***** Iteration #284 *****
 Loss: 76908.840160
@@ -2576,7 +2577,7 @@ Error norm: 111.894458
 Active features: 61847
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.726
+Seconds required for this iteration: 1.674
 
 ***** Iteration #285 *****
 Loss: 76908.619890
@@ -2585,7 +2586,7 @@ Error norm: 155.035116
 Active features: 61821
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.751
+Seconds required for this iteration: 1.704
 
 ***** Iteration #286 *****
 Loss: 76908.322576
@@ -2594,7 +2595,7 @@ Error norm: 86.553353
 Active features: 61801
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.736
+Seconds required for this iteration: 1.688
 
 ***** Iteration #287 *****
 Loss: 76908.157041
@@ -2603,7 +2604,7 @@ Error norm: 104.656670
 Active features: 61788
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.768
+Seconds required for this iteration: 1.701
 
 ***** Iteration #288 *****
 Loss: 76907.915132
@@ -2612,7 +2613,7 @@ Error norm: 94.898346
 Active features: 61784
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.914
+Seconds required for this iteration: 1.680
 
 ***** Iteration #289 *****
 Loss: 76907.768225
@@ -2621,7 +2622,7 @@ Error norm: 156.969220
 Active features: 61803
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.782
+Seconds required for this iteration: 1.658
 
 ***** Iteration #290 *****
 Loss: 76907.574469
@@ -2630,7 +2631,7 @@ Error norm: 103.070370
 Active features: 61784
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.852
+Seconds required for this iteration: 1.743
 
 ***** Iteration #291 *****
 Loss: 76907.346200
@@ -2639,7 +2640,7 @@ Error norm: 129.831666
 Active features: 61763
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.742
+Seconds required for this iteration: 1.745
 
 ***** Iteration #292 *****
 Loss: 76907.153336
@@ -2648,7 +2649,7 @@ Error norm: 131.182865
 Active features: 61750
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.725
+Seconds required for this iteration: 1.733
 
 ***** Iteration #293 *****
 Loss: 76906.907867
@@ -2657,7 +2658,7 @@ Error norm: 142.226249
 Active features: 61727
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.741
+Seconds required for this iteration: 1.667
 
 ***** Iteration #294 *****
 Loss: 76906.699848
@@ -2666,7 +2667,7 @@ Error norm: 124.393152
 Active features: 61702
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.716
+Seconds required for this iteration: 1.658
 
 ***** Iteration #295 *****
 Loss: 76906.459175
@@ -2675,7 +2676,7 @@ Error norm: 137.928361
 Active features: 61696
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.714
+Seconds required for this iteration: 1.689
 
 ***** Iteration #296 *****
 Loss: 76906.260435
@@ -2684,7 +2685,7 @@ Error norm: 132.363437
 Active features: 61676
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.729
+Seconds required for this iteration: 1.736
 
 ***** Iteration #297 *****
 Loss: 76906.049622
@@ -2693,7 +2694,7 @@ Error norm: 130.527297
 Active features: 61670
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.768
+Seconds required for this iteration: 1.693
 
 ***** Iteration #298 *****
 Loss: 76905.840591
@@ -2702,7 +2703,7 @@ Error norm: 145.180025
 Active features: 61668
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.731
+Seconds required for this iteration: 1.688
 
 ***** Iteration #299 *****
 Loss: 76905.654610
@@ -2711,7 +2712,7 @@ Error norm: 141.797489
 Active features: 61659
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.774
+Seconds required for this iteration: 1.676
 
 ***** Iteration #300 *****
 Loss: 76905.424476
@@ -2720,7 +2721,7 @@ Error norm: 136.257413
 Active features: 61664
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.709
+Seconds required for this iteration: 1.686
 
 ***** Iteration #301 *****
 Loss: 76905.186135
@@ -2729,7 +2730,7 @@ Error norm: 112.589525
 Active features: 61632
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.689
+Seconds required for this iteration: 1.716
 
 ***** Iteration #302 *****
 Loss: 76904.970652
@@ -2738,7 +2739,7 @@ Error norm: 95.294172
 Active features: 61625
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.755
+Seconds required for this iteration: 1.706
 
 ***** Iteration #303 *****
 Loss: 76904.918859
@@ -2747,7 +2748,7 @@ Error norm: 120.023314
 Active features: 61622
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.882
+Seconds required for this iteration: 1.678
 
 ***** Iteration #304 *****
 Loss: 76904.697312
@@ -2756,7 +2757,7 @@ Error norm: 83.352294
 Active features: 61631
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.808
+Seconds required for this iteration: 1.750
 
 ***** Iteration #305 *****
 Loss: 76904.682655
@@ -2765,7 +2766,7 @@ Error norm: 79.015205
 Active features: 61612
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.734
+Seconds required for this iteration: 1.685
 
 ***** Iteration #306 *****
 Loss: 76904.493282
@@ -2774,7 +2775,7 @@ Error norm: 94.709531
 Active features: 61601
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.683
+Seconds required for this iteration: 1.672
 
 ***** Iteration #307 *****
 Loss: 76904.392332
@@ -2783,7 +2784,7 @@ Error norm: 37.112437
 Active features: 61586
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.699
+Seconds required for this iteration: 1.709
 
 ***** Iteration #308 *****
 Loss: 76904.310165
@@ -2792,7 +2793,7 @@ Error norm: 81.874325
 Active features: 61607
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.687
+Seconds required for this iteration: 1.709
 
 ***** Iteration #309 *****
 Loss: 76904.304894
@@ -2801,7 +2802,7 @@ Error norm: 89.681445
 Active features: 61577
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.696
+Seconds required for this iteration: 1.710
 
 ***** Iteration #310 *****
 Loss: 76904.025363
@@ -2810,7 +2811,7 @@ Error norm: 104.640704
 Active features: 61579
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.684
+Seconds required for this iteration: 1.680
 
 ***** Iteration #311 *****
 Loss: 76903.908266
@@ -2819,7 +2820,7 @@ Error norm: 39.130661
 Active features: 61576
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.664
+Seconds required for this iteration: 1.659
 
 ***** Iteration #312 *****
 Loss: 76903.807825
@@ -2828,7 +2829,7 @@ Error norm: 96.266751
 Active features: 61586
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.656
+Seconds required for this iteration: 1.699
 
 ***** Iteration #313 *****
 Loss: 76903.642810
@@ -2837,7 +2838,7 @@ Error norm: 128.363193
 Active features: 61573
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.656
+Seconds required for this iteration: 1.710
 
 ***** Iteration #314 *****
 Loss: 76903.540346
@@ -2846,7 +2847,7 @@ Error norm: 135.906309
 Active features: 61554
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.662
+Seconds required for this iteration: 1.723
 
 ***** Iteration #315 *****
 Loss: 76903.300321
@@ -2855,7 +2856,7 @@ Error norm: 142.405599
 Active features: 61550
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.658
+Seconds required for this iteration: 1.717
 
 ***** Iteration #316 *****
 Loss: 76903.122272
@@ -2864,7 +2865,7 @@ Error norm: 58.068908
 Active features: 61564
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.681
+Seconds required for this iteration: 1.695
 
 ***** Iteration #317 *****
 Loss: 76903.017141
@@ -2873,7 +2874,7 @@ Error norm: 182.315275
 Active features: 61537
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.679
+Seconds required for this iteration: 1.732
 
 ***** Iteration #318 *****
 Loss: 76902.830505
@@ -2882,7 +2883,7 @@ Error norm: 101.659347
 Active features: 61521
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.684
+Seconds required for this iteration: 1.727
 
 ***** Iteration #319 *****
 Loss: 76902.644288
@@ -2891,7 +2892,7 @@ Error norm: 155.432809
 Active features: 61492
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.668
+Seconds required for this iteration: 1.664
 
 ***** Iteration #320 *****
 Loss: 76902.408745
@@ -2900,7 +2901,7 @@ Error norm: 109.869913
 Active features: 61489
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.682
+Seconds required for this iteration: 1.657
 
 ***** Iteration #321 *****
 Loss: 76902.316041
@@ -2909,7 +2910,7 @@ Error norm: 135.121878
 Active features: 61470
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.664
+Seconds required for this iteration: 1.659
 
 ***** Iteration #322 *****
 Loss: 76902.136126
@@ -2918,7 +2919,7 @@ Error norm: 149.220258
 Active features: 61455
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.677
+Seconds required for this iteration: 1.667
 
 ***** Iteration #323 *****
 Loss: 76901.937467
@@ -2927,7 +2928,7 @@ Error norm: 110.970754
 Active features: 61437
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.700
+Seconds required for this iteration: 1.731
 
 ***** Iteration #324 *****
 Loss: 76901.802391
@@ -2936,7 +2937,7 @@ Error norm: 129.736586
 Active features: 61431
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.657
+Seconds required for this iteration: 1.663
 
 ***** Iteration #325 *****
 Loss: 76901.636060
@@ -2945,7 +2946,7 @@ Error norm: 94.143904
 Active features: 61425
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.671
+Seconds required for this iteration: 1.697
 
 ***** Iteration #326 *****
 Loss: 76901.517797
@@ -2954,7 +2955,7 @@ Error norm: 123.800331
 Active features: 61414
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.655
+Seconds required for this iteration: 1.719
 
 ***** Iteration #327 *****
 Loss: 76901.351634
@@ -2963,7 +2964,7 @@ Error norm: 86.241107
 Active features: 61415
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.656
+Seconds required for this iteration: 1.704
 
 ***** Iteration #328 *****
 Loss: 76901.244612
@@ -2972,7 +2973,7 @@ Error norm: 12.269714
 Active features: 61428
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.658
+Seconds required for this iteration: 1.722
 
 ***** Iteration #329 *****
 Loss: 76901.150778
@@ -2981,7 +2982,7 @@ Error norm: 94.714928
 Active features: 61405
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.690
+Seconds required for this iteration: 1.713
 
 ***** Iteration #330 *****
 Loss: 76901.038008
@@ -2990,7 +2991,7 @@ Error norm: 86.479553
 Active features: 61412
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.694
+Seconds required for this iteration: 1.666
 
 ***** Iteration #331 *****
 Loss: 76900.940432
@@ -2999,7 +3000,7 @@ Error norm: 66.498766
 Active features: 61397
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.697
+Seconds required for this iteration: 1.690
 
 ***** Iteration #332 *****
 Loss: 76900.801917
@@ -3008,7 +3009,7 @@ Error norm: 150.316130
 Active features: 61372
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.675
+Seconds required for this iteration: 1.734
 
 ***** Iteration #333 *****
 Loss: 76900.658619
@@ -3017,7 +3018,7 @@ Error norm: 32.430856
 Active features: 61371
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.677
+Seconds required for this iteration: 1.710
 
 ***** Iteration #334 *****
 Loss: 76900.600969
@@ -3026,7 +3027,7 @@ Error norm: 162.748303
 Active features: 61356
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.698
+Seconds required for this iteration: 1.712
 
 ***** Iteration #335 *****
 Loss: 76900.414006
@@ -3035,7 +3036,7 @@ Error norm: 50.199348
 Active features: 61365
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.715
+Seconds required for this iteration: 1.721
 
 ***** Iteration #336 *****
 Loss: 76900.353072
@@ -3044,7 +3045,7 @@ Error norm: 118.675460
 Active features: 61365
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.693
+Seconds required for this iteration: 1.735
 
 ***** Iteration #337 *****
 Loss: 76900.207605
@@ -3053,7 +3054,7 @@ Error norm: 82.521647
 Active features: 61351
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.717
+Seconds required for this iteration: 1.728
 
 ***** Iteration #338 *****
 Loss: 76900.077694
@@ -3062,7 +3063,7 @@ Error norm: 83.703465
 Active features: 61354
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.695
+Seconds required for this iteration: 1.665
 
 ***** Iteration #339 *****
 Loss: 76899.944380
@@ -3071,7 +3072,7 @@ Error norm: 88.743525
 Active features: 61347
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.672
+Seconds required for this iteration: 1.721
 
 ***** Iteration #340 *****
 Loss: 76899.897208
@@ -3080,7 +3081,7 @@ Error norm: 127.604117
 Active features: 61339
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.698
+Seconds required for this iteration: 1.695
 
 ***** Iteration #341 *****
 Loss: 76899.749619
@@ -3089,7 +3090,7 @@ Error norm: 122.355806
 Active features: 61325
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.701
+Seconds required for this iteration: 1.734
 
 ***** Iteration #342 *****
 Loss: 76899.567845
@@ -3098,7 +3099,7 @@ Error norm: 53.533461
 Active features: 61333
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.680
+Seconds required for this iteration: 1.704
 
 ***** Iteration #343 *****
 Loss: 76899.492943
@@ -3107,7 +3108,7 @@ Error norm: 92.237541
 Active features: 61326
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.708
+Seconds required for this iteration: 1.729
 
 ***** Iteration #344 *****
 Loss: 76899.402847
@@ -3116,7 +3117,7 @@ Error norm: 118.961885
 Active features: 61321
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.690
+Seconds required for this iteration: 1.656
 
 ***** Iteration #345 *****
 Loss: 76899.266541
@@ -3125,7 +3126,7 @@ Error norm: 110.289628
 Active features: 61302
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.713
+Seconds required for this iteration: 1.659
 
 ***** Iteration #346 *****
 Loss: 76899.138843
@@ -3134,7 +3135,7 @@ Error norm: 117.190109
 Active features: 61306
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.769
+Seconds required for this iteration: 1.658
 
 ***** Iteration #347 *****
 Loss: 76899.036237
@@ -3143,7 +3144,7 @@ Error norm: 109.730755
 Active features: 61290
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.752
+Seconds required for this iteration: 1.675
 
 ***** Iteration #348 *****
 Loss: 76898.883110
@@ -3152,7 +3153,7 @@ Error norm: 106.630918
 Active features: 61280
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.728
+Seconds required for this iteration: 1.688
 
 ***** Iteration #349 *****
 Loss: 76898.814270
@@ -3161,7 +3162,7 @@ Error norm: 136.841851
 Active features: 61273
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.756
+Seconds required for this iteration: 1.719
 
 ***** Iteration #350 *****
 Loss: 76898.640157
@@ -3170,7 +3171,7 @@ Error norm: 82.017046
 Active features: 61269
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.705
+Seconds required for this iteration: 1.698
 
 ***** Iteration #351 *****
 Loss: 76898.602822
@@ -3179,7 +3180,7 @@ Error norm: 132.917661
 Active features: 61249
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.725
+Seconds required for this iteration: 1.665
 
 ***** Iteration #352 *****
 Loss: 76898.433368
@@ -3188,7 +3189,7 @@ Error norm: 61.215270
 Active features: 61247
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.838
+Seconds required for this iteration: 1.696
 
 ***** Iteration #353 *****
 Loss: 76898.353744
@@ -3197,7 +3198,7 @@ Error norm: 121.637210
 Active features: 61242
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.709
+Seconds required for this iteration: 1.683
 
 ***** Iteration #354 *****
 Loss: 76898.293122
@@ -3206,7 +3207,7 @@ Error norm: 76.590367
 Active features: 61223
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.731
+Seconds required for this iteration: 1.713
 
 ***** Iteration #355 *****
 Loss: 76898.199471
@@ -3215,7 +3216,7 @@ Error norm: 99.334900
 Active features: 61206
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.733
+Seconds required for this iteration: 1.740
 
 ***** Iteration #356 *****
 Loss: 76898.105034
@@ -3224,7 +3225,7 @@ Error norm: 89.340269
 Active features: 61198
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.734
+Seconds required for this iteration: 1.705
 
 ***** Iteration #357 *****
 Loss: 76897.973245
@@ -3233,7 +3234,7 @@ Error norm: 79.262145
 Active features: 61195
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.699
+Seconds required for this iteration: 1.693
 
 ***** Iteration #358 *****
 Loss: 76897.895579
@@ -3242,7 +3243,7 @@ Error norm: 103.373931
 Active features: 61169
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.708
+Seconds required for this iteration: 1.782
 
 ***** Iteration #359 *****
 Loss: 76897.807016
@@ -3251,7 +3252,7 @@ Error norm: 65.798582
 Active features: 61159
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.719
+Seconds required for this iteration: 1.702
 
 ***** Iteration #360 *****
 Loss: 76897.732132
@@ -3260,7 +3261,7 @@ Error norm: 88.225126
 Active features: 61144
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.708
+Seconds required for this iteration: 1.703
 
 ***** Iteration #361 *****
 Loss: 76897.666442
@@ -3269,7 +3270,7 @@ Error norm: 101.581017
 Active features: 61130
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.687
+Seconds required for this iteration: 1.720
 
 ***** Iteration #362 *****
 Loss: 76897.575651
@@ -3278,7 +3279,7 @@ Error norm: 107.726247
 Active features: 61125
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.697
+Seconds required for this iteration: 1.726
 
 ***** Iteration #363 *****
 Loss: 76897.505983
@@ -3287,7 +3288,7 @@ Error norm: 124.436601
 Active features: 61106
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.707
+Seconds required for this iteration: 1.740
 
 ***** Iteration #364 *****
 Loss: 76897.404875
@@ -3296,7 +3297,7 @@ Error norm: 112.914201
 Active features: 61103
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.699
+Seconds required for this iteration: 1.684
 
 ***** Iteration #365 *****
 Loss: 76897.303813
@@ -3305,7 +3306,7 @@ Error norm: 75.639683
 Active features: 61073
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.705
+Seconds required for this iteration: 1.743
 
 ***** Iteration #366 *****
 Loss: 76897.239897
@@ -3314,7 +3315,7 @@ Error norm: 97.333351
 Active features: 61075
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.719
+Seconds required for this iteration: 1.690
 
 ***** Iteration #367 *****
 Loss: 76897.149140
@@ -3323,7 +3324,7 @@ Error norm: 84.037548
 Active features: 61048
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.776
+Seconds required for this iteration: 1.676
 
 ***** Iteration #368 *****
 Loss: 76897.101176
@@ -3332,7 +3333,7 @@ Error norm: 136.722171
 Active features: 61033
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.752
+Seconds required for this iteration: 1.670
 
 ***** Iteration #369 *****
 Loss: 76896.984698
@@ -3341,7 +3342,7 @@ Error norm: 104.716969
 Active features: 61033
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.758
+Seconds required for this iteration: 1.669
 
 ***** Iteration #370 *****
 Loss: 76896.917428
@@ -3350,7 +3351,7 @@ Error norm: 148.195134
 Active features: 61029
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.715
+Seconds required for this iteration: 1.662
 
 ***** Iteration #371 *****
 Loss: 76896.774519
@@ -3359,7 +3360,7 @@ Error norm: 88.431840
 Active features: 61033
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.771
+Seconds required for this iteration: 1.659
 
 ***** Iteration #372 *****
 Loss: 76896.743611
@@ -3368,7 +3369,7 @@ Error norm: 141.065008
 Active features: 61033
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.727
+Seconds required for this iteration: 1.678
 
 ***** Iteration #373 *****
 Loss: 76896.567276
@@ -3377,7 +3378,7 @@ Error norm: 47.152558
 Active features: 61039
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.725
+Seconds required for this iteration: 1.681
 
 ***** Iteration #374 *****
 Loss: 76896.508008
@@ -3386,7 +3387,7 @@ Error norm: 106.305657
 Active features: 61057
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.787
+Seconds required for this iteration: 1.664
 
 ***** Iteration #375 *****
 Loss: 76896.402519
@@ -3395,7 +3396,7 @@ Error norm: 106.184168
 Active features: 61079
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.765
+Seconds required for this iteration: 1.665
 
 ***** Iteration #376 *****
 Loss: 76896.376638
@@ -3404,7 +3405,7 @@ Error norm: 86.055161
 Active features: 61072
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.809
+Seconds required for this iteration: 1.720
 
 ***** Iteration #377 *****
 Loss: 76896.226712
@@ -3413,7 +3414,7 @@ Error norm: 107.691438
 Active features: 61069
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.759
+Seconds required for this iteration: 1.693
 
 ***** Iteration #378 *****
 Loss: 76896.130773
@@ -3422,7 +3423,7 @@ Error norm: 86.369172
 Active features: 61055
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.775
+Seconds required for this iteration: 1.691
 
 ***** Iteration #379 *****
 Loss: 76896.069195
@@ -3431,7 +3432,7 @@ Error norm: 114.674124
 Active features: 61036
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.748
+Seconds required for this iteration: 1.693
 
 ***** Iteration #380 *****
 Loss: 76895.953909
@@ -3440,7 +3441,7 @@ Error norm: 93.259184
 Active features: 61030
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.689
+Seconds required for this iteration: 1.684
 
 ***** Iteration #381 *****
 Loss: 76895.859903
@@ -3449,7 +3450,7 @@ Error norm: 87.195601
 Active features: 61010
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.735
+Seconds required for this iteration: 1.693
 
 ***** Iteration #382 *****
 Loss: 76895.771618
@@ -3458,7 +3459,7 @@ Error norm: 95.666386
 Active features: 60996
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.732
+Seconds required for this iteration: 1.678
 
 ***** Iteration #383 *****
 Loss: 76895.656321
@@ -3467,7 +3468,7 @@ Error norm: 75.038939
 Active features: 60970
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.682
+Seconds required for this iteration: 1.688
 
 ***** Iteration #384 *****
 Loss: 76895.573286
@@ -3476,7 +3477,7 @@ Error norm: 35.397462
 Active features: 60965
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.729
+Seconds required for this iteration: 1.687
 
 ***** Iteration #385 *****
 Loss: 76895.516007
@@ -3485,7 +3486,7 @@ Error norm: 90.560347
 Active features: 60965
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.719
+Seconds required for this iteration: 1.684
 
 ***** Iteration #386 *****
 Loss: 76895.443630
@@ -3494,7 +3495,7 @@ Error norm: 83.507855
 Active features: 60929
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.716
+Seconds required for this iteration: 1.696
 
 ***** Iteration #387 *****
 Loss: 76895.370828
@@ -3503,7 +3504,7 @@ Error norm: 113.900132
 Active features: 60907
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.852
+Seconds required for this iteration: 1.708
 
 ***** Iteration #388 *****
 Loss: 76895.246018
@@ -3512,7 +3513,7 @@ Error norm: 82.173938
 Active features: 60899
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.763
+Seconds required for this iteration: 1.690
 
 ***** Iteration #389 *****
 Loss: 76895.147934
@@ -3521,7 +3522,7 @@ Error norm: 83.186163
 Active features: 60896
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.867
+Seconds required for this iteration: 1.726
 
 ***** Iteration #390 *****
 Loss: 76895.091587
@@ -3530,7 +3531,7 @@ Error norm: 118.105385
 Active features: 60894
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.870
+Seconds required for this iteration: 1.699
 
 ***** Iteration #391 *****
 Loss: 76894.959597
@@ -3539,7 +3540,7 @@ Error norm: 84.290960
 Active features: 60889
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.763
+Seconds required for this iteration: 1.717
 
 ***** Iteration #392 *****
 Loss: 76894.865398
@@ -3548,7 +3549,7 @@ Error norm: 106.503479
 Active features: 60904
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.919
+Seconds required for this iteration: 1.707
 
 ***** Iteration #393 *****
 Loss: 76894.788816
@@ -3557,7 +3558,7 @@ Error norm: 92.665083
 Active features: 60896
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.792
+Seconds required for this iteration: 1.730
 
 ***** Iteration #394 *****
 Loss: 76894.705533
@@ -3566,7 +3567,7 @@ Error norm: 119.841992
 Active features: 60890
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.736
+Seconds required for this iteration: 1.694
 
 ***** Iteration #395 *****
 Loss: 76894.578625
@@ -3575,7 +3576,7 @@ Error norm: 76.325174
 Active features: 60880
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.753
+Seconds required for this iteration: 1.737
 
 ***** Iteration #396 *****
 Loss: 76894.516361
@@ -3584,7 +3585,7 @@ Error norm: 87.943897
 Active features: 60891
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.816
+Seconds required for this iteration: 1.723
 
 ***** Iteration #397 *****
 Loss: 76894.455744
@@ -3593,7 +3594,7 @@ Error norm: 69.748287
 Active features: 60880
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.758
+Seconds required for this iteration: 1.699
 
 ***** Iteration #398 *****
 Loss: 76894.375947
@@ -3602,7 +3603,7 @@ Error norm: 57.813698
 Active features: 60885
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.717
+Seconds required for this iteration: 1.686
 
 ***** Iteration #399 *****
 Loss: 76894.325517
@@ -3611,7 +3612,7 @@ Error norm: 61.258278
 Active features: 60861
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.736
+Seconds required for this iteration: 1.702
 
 ***** Iteration #400 *****
 Loss: 76894.269546
@@ -3620,7 +3621,7 @@ Error norm: 79.656209
 Active features: 60875
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.760
+Seconds required for this iteration: 1.706
 
 ***** Iteration #401 *****
 Loss: 76894.220321
@@ -3629,11 +3630,13 @@ Error norm: 72.563941
 Active features: 60865
 Line search trials: 1
 Line search step: 1.000000
-Seconds required for this iteration: 1.742
+Seconds required for this iteration: 1.761
 
 L-BFGS terminated with the stopping criteria
-Total seconds required for training: 707.608
+Total seconds required for training: 697.997
 
+2019-01-13 22:53:00,245 Finish train
+2019-01-13 22:53:00,246 Start tagger
 Storing the model
 Number of active features: 60865 (5954335)
 Number of active attributes: 40897 (5695847)
@@ -3642,13 +3645,11 @@ Writing labels
 Writing attributes
 Writing feature references for transitions
 Writing feature references for attributes
-Seconds required: 0.041
+Seconds required: 0.040
 
-2019-01-13 22:35:30,724 Finish train
-2019-01-13 22:35:30,724 Start tagger
-2019-01-13 22:35:31,800 Finish tagger
 processed 96457 tokens with 66243 phrases; found: 67390 phrases; correct: 64168.
      ALL: precision:  95.22%; recall:  96.87%; FB1:  96.04%; accuracy: 97.86%
        W: precision:  95.22%; recall:  96.87%; FB1:  96.04%; 64168/67390/66243
+2019-01-13 22:53:01,345 Finish tagger
 
 Process finished with exit code 0

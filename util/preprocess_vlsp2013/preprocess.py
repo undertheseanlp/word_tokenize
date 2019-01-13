@@ -17,7 +17,7 @@ output = open(output_filepath, "a")
 
 for file in listdir(folder1):
     lines = open(join(folder1, file)).readlines()
-    lines = lines[3:-3]
+    # lines = lines[3:-3]
     for line in lines:
         tags = ["<Date>", "</Date>", "<pTitle>", "</pTitle>", "<pHead>", "</pHead>", "<pBody>", "</pBody>", "<pAuthor>", "</pAuthor>",
                 "<pInterTitle>", "</pInterTitle>", "<pAnswer>", "</pAnswer>", "<pQuestion>", "</pQuestion>", "<pSuperTitle>",
