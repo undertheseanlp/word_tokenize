@@ -47,9 +47,11 @@ Hệ thống tách từ trong underthesea được chia làm hai bước. Bướ
 
 \subsection{Thuật toán Conditional Random Fields}
 
-In order to solve word segmentation problem, there are many algorithms such as HMM, SVM, Riple Down Rules. In our experiments, we use condtional random fields, which yields many success for sequence labeling problem.
+Thuật toán Conditional Random Fields (CRFs) ~\cite{Lafferty:2001:CRF:645530.655813} được sử dụng đã tính toán xác suất của chuỗi đầu ra cho bởi chuỗi đầu vào. Xác suất của chuỗi trạng thái $S = <s_1, s_2,..., s_T>$ cho bởi quan sát $O = <o_1, o_2, ..., o_T>$ được tính bởi công thức:
 
-In this session, we brife describe conditional random fields algorithm.
+$$P(s|o) = \frac{1}{Z_o} exp( \sum_{t=1}^{T} \sum_{k} \lambda_k x f_k (s_{t-1},s_t,o,t) )$$
+
+trong đó, $f_k (s_{t-1},s_t,o,t)$ làm một hàm đặc trưng ứng với trọng số $\lambda_k$, được học thông qua quá trình huấn luyện.
 
 \subsection{Features}
 We propose conditional random fields for this problem.
