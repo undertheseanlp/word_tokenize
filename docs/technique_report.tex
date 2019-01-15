@@ -9,6 +9,8 @@
 \usepackage{booktabs}
 \usepackage{amsmath}
 \usepackage[utf8]{vietnam}
+\usepackage{titlesec}
+
 
 \aclfinalcopy % Uncomment this line for the final submission
 
@@ -23,10 +25,27 @@ anhv.ict91@gmail.com
 }
 \date{}
 
+% margins for abstract
+\renewenvironment{abstract}%
+		 {\centerline{\large\bf Tóm tắt}%
+		  \begin{list}{}%
+		     {\setlength{\rightmargin}{0.6cm}%
+		      \setlength{\leftmargin}{0.6cm}}%
+		   \item[]\ignorespaces}%
+		 {\unskip\end{list}}
+
+
+
+
 \begin{document}
+
+
+
 \maketitle
 \begin{abstract}
+
 Trong báo cáo này, chúng tôi mô tả chương trình tách từ tiếng Việt, được tích hợp trong phiên bản underthesea phiên bản 1.1.12.
+Các công trình nghiên cứu trước đã rất thành công trong bài toán tách từ, chúng tôi muốn nghiên cứu lại sự hiệu quả của phương pháp Conditional Random Fields trong bài toán này. Sau đó xây dựng hệ thống tách từ hoàn chỉnh.
 Mã nguồn của chương trình được open source tại \href{https://github.com/undertheseanlp/word_tokenize}{github}.
 
 \end{abstract}
@@ -56,9 +75,9 @@ $$P(s|o) = \frac{1}{Z_o} exp( \sum_{t=1}^{T} \sum_{k} \lambda_k x f_k (s_{t-1},s
 trong đó, $f_k (s_{t-1},s_t,o,t)$ làm một hàm đặc trưng ứng với trọng số $\lambda_k$, được học thông qua quá trình huấn luyện.
 
 \subsection{Features}
-We propose conditional random fields for this problem.
 
-Our final features
+Các đặc trưng được đề xuất
+
 \begin{center}
 \begin{tabular}{ |c|c| }
  \hline
@@ -74,23 +93,24 @@ Our final features
 
 \section{Thực nghiệm}
 
-\subsection{Data sets}
+\subsection{Dữ liệu}
 
-Dữ liệu huấn luyện gồm 75 nghìn câu được lấy từ dữ liệu huấn luyện của bài toán tách từ trong VLSP 2013. Dữ liệu kiểm thử gồm 2120 câu lấy từ bộ dữ liệu gán nhãn từ loại trong VLSP 2013.
+Để so sánh độ chính xác của chương trình. Chúng tôi sử dụng sử dụng bộ dữ liệu đã được sử dụng trong \citet{DBLP:conf/lrec/NguyenNVDJ18} và \citet{7800279}. Dữ liệu huấn luyện gồm 75 nghìn câu được lấy từ dữ liệu huấn luyện của bài toán tách từ trong VLSP 2013. Dữ liệu kiểm thử gồm 2120 câu lấy từ bộ dữ liệu gán nhãn từ loại trong VLSP 2013.
 
-\subsection{Evaluation Measures}
+\subsection{Chỉ số đánh giá}
 
-We used Precision, Recall, F1 score as evaluation measures.
+Chúng tôi sử dụng precision, recall và f1 làm các chỉ số đánh giá.
+
 
 $$F_1 = \frac{2*P*R}{P + R}$$
 
-where P (Precision), and R (Recall) are determined as follows:
+trong đó P (Precision), và R (Recall) được định nghĩa như sau:
 
 $$P = \frac{{NE}_{true}}{NE_{sys}}$$
 
 $$R = \frac{{NE}_{true}}{NE_{ref}}$$
 
-where
+với
 
 $NE_{true}$: The number of NEs in gold data
 
