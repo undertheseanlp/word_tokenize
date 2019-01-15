@@ -14,10 +14,10 @@ features = [
     "T[-2].lower", "T[-1].lower", "T[0].lower", "T[1].lower", "T[2].lower",
     "T[-2,-1].lower", "T[-1,0].lower", "T[0,1].lower", "T[1,2].lower",
 
-    "T[-1].isdigit", "T[0].isdigit", "T[1].isdigit",
-
-    "T[-2].istitle", "T[-1].istitle", "T[0].istitle", "T[1].istitle", "T[2].istitle",
-    "T[0,1].istitle", "T[0,2].istitle",
+    # "T[-1].isdigit", "T[0].isdigit", "T[1].isdigit",
+    #
+    # "T[-2].istitle", "T[-1].istitle", "T[0].istitle", "T[1].istitle", "T[2].istitle",
+    # "T[0,1].istitle", "T[0,2].istitle",
 
     # "T[-2].is_in_dict", "T[-1].is_in_dict", "T[0].is_in_dict", "T[1].is_in_dict", "T[2].is_in_dict",
     # "T[-2,-1].is_in_dict", "T[-1,0].is_in_dict", "T[0,1].is_in_dict", "T[1,2].is_in_dict",
@@ -32,6 +32,6 @@ params = {
     'max_iterations': 1000,  #
     # include transitions that are possible, but not observed
     'feature.possible_transitions': True,
-    # 'feature.possible_states': True,
+    'feature.possible_states': True,
 }
 trainer.train(params)
