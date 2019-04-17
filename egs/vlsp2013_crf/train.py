@@ -3,7 +3,7 @@ from data import WordTokenizeCorpusReader
 
 from trainer import Trainer
 
-corpus = WordTokenizeCorpusReader.read("data1", train_file="train.txt", test_file="test.txt")
+corpus = WordTokenizeCorpusReader.read("data", train_file="train.txt", test_file="test.txt")
 
 features = [
     # word unigram and bigram and trigram
