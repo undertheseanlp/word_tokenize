@@ -1,9 +1,10 @@
 from crf_sequence_tagger import CRFSequenceTagger
-from data import WordTokenizeCorpusReader
+from data import WordTokenizeCorpusReader, DataReader
 
 from trainer import Trainer
 
-corpus = WordTokenizeCorpusReader.read("data", train_file="train.txt", test_file="test.txt")
+corpus = DataReader.load_tagged_corpus("/home/anhv/.languageflow/datasets/VLSP2013-WTK/",
+                                       train_file="train.txt", test_file="test.txt")
 
 features = [
     # word unigram and bigram and trigram
@@ -14,14 +15,14 @@ features = [
     "T[-2].lower", "T[-1].lower", "T[0].lower", "T[1].lower", "T[2].lower",
     "T[-2,-1].lower", "T[-1,0].lower", "T[0,1].lower", "T[1,2].lower",
 
-    # "T[-1].isdigit", "T[0].isdigit", "T[1].isdigit",
-    #
-    # "T[-2].istitle", "T[-1].istitle", "T[0].istitle", "T[1].istitle", "T[2].istitle",
-    # "T[0,1].istitle", "T[0,2].istitle",
+    "T[-1].isdigit", "T[0].isdigit", "T[1].isdigit",
 
-    # "T[-2].is_in_dict", "T[-1].is_in_dict", "T[0].is_in_dict", "T[1].is_in_dict", "T[2].is_in_dict",
-    # "T[-2,-1].is_in_dict", "T[-1,0].is_in_dict", "T[0,1].is_in_dict", "T[1,2].is_in_dict",
-    # "T[-2,0].is_in_dict", "T[-1,1].is_in_dict", "T[0,2].is_in_dict",
+    "T[-2].istitle", "T[-1].istitle", "T[0].istitle", "T[1].istitle", "T[2].istitle",
+    "T[0,1].istitle", "T[0,2].istitle",
+
+    "T[-2].is_in_dict", "T[-1].is_in_dict", "T[0].is_in_dict", "T[1].is_in_dict", "T[2].is_in_dict",
+    "T[-2,-1].is_in_dict", "T[-1,0].is_in_dict", "T[0,1].is_in_dict", "T[1,2].is_in_dict",
+    "T[-2,0].is_in_dict", "T[-1,1].is_in_dict", "T[0,2].is_in_dict",
 ]
 tagger = CRFSequenceTagger(features)
 trainer = Trainer(tagger, corpus)
