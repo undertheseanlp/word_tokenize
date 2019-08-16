@@ -29,25 +29,28 @@ class TaggedTransformer:
                 debug = True
                 index1, index2, column, func, token_syntax = template
                 cached_index1 = index1 + i
-                cached_index2 = index2 + i if index2 else None
+                cached_index2 = index2 + i if index2 is not None else None
                 cached_key = cached_index1, cached_index2, column, func
+                if debug:
+                    prefix = "%s=" % token_syntax
+                else:
+                    prefix = ""
                 if cached_key in cached:
                     result = cached[cached_key]
                 else:
-                    if debug:
-                        prefix = "%s=" % token_syntax
-                    else:
-                        prefix = ""
                     if i + index1 < 0:
+                        cached[cached_key] = "BOS"
                         result = "%sBOS" % prefix
                         tmp.append(result)
                         continue
                     if i + index1 >= len(s):
+                        cached[cached_key] = "EOS"
                         result = "%sEOS" % prefix
                         tmp.append(result)
                         continue
                     if index2 is not None:
                         if i + index2 >= len(s):
+                            cached[cached_key] = "EOS"
                             result = "%sEOS" % prefix
                             tmp.append(result)
                             continue

@@ -12,9 +12,7 @@ corpus = DataReader.load_tagged_corpus("/home/anhv/.languageflow/datasets/VLSP20
 
 print(time.time() - start)
 
-
-
-sentences = corpus.train
+sentences = corpus.train[:10000]
 
 features = [
     "T[-2]", "T[-1]", "T[0]", "T[1]", "T[2]",
@@ -43,3 +41,5 @@ start = time.time()
 transformer_2 = tagged.TaggedTransformer(features)
 vectors2 = transformer_2.transform(sentences, contain_labels=True)
 print(time.time() - start)
+
+print(vectors == vectors2)
