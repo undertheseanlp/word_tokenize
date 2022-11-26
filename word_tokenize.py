@@ -2,7 +2,7 @@ import argparse
 import os
 from os.path import abspath
 
-from util.crf import word_tokenize
+from egs.vlsp2013_crf.word_tokenize import word_tokenize
 
 parser = argparse.ArgumentParser("word_tokenize.py")
 text_group = parser.add_argument_group("The following arguments are mandatory for text option")
