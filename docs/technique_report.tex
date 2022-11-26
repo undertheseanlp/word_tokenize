@@ -11,12 +11,13 @@
 \usepackage[utf8]{vietnam}
 \usepackage{titlesec}
 
+\newcommand\version{1.1.12}
 
 \aclfinalcopy % Uncomment this line for the final submission
 
 %\setlength\titlebox{5cm}
 
-\title{Báo cáo kỹ thuật\\ Xây dựng hệ thống tách từ tiếng Việt \\ underthesea v1.1.12}
+\title{Báo cáo kỹ thuật\\ Xây dựng hệ thống tách từ tiếng Việt \\ underthesea v\version}
 
 \author{
 Vu Anh\\
@@ -44,7 +45,7 @@ anhv.ict91@gmail.com
 \maketitle
 \begin{abstract}
 
-Trong báo cáo này, chúng tôi mô tả chương trình tách từ tiếng Việt, được tích hợp trong phiên bản underthesea phiên bản 1.1.12.
+Trong báo cáo này, chúng tôi mô tả chương trình tách từ tiếng Việt, được tích hợp trong phiên bản underthesea phiên bản \version.
 Các công trình nghiên cứu trước đã rất thành công trong bài toán tách từ, chúng tôi muốn nghiên cứu lại sự hiệu quả của phương pháp Conditional Random Fields trong bài toán này. Sau đó xây dựng hệ thống tách từ hoàn chỉnh.
 Mã nguồn của chương trình được open source tại \href{https://github.com/undertheseanlp/word_tokenize}{github}.
 
@@ -68,9 +69,9 @@ Hệ thống tách từ trong underthesea được chia làm hai bước. Bướ
 
 \subsection{Thuật toán Conditional Random Fields}
 
-Thuật toán Conditional Random Fields (CRFs) ~\cite{Lafferty:2001:CRF:645530.655813} được sử dụng đã tính toán xác suất của chuỗi đầu ra cho bởi chuỗi đầu vào. Xác suất của chuỗi trạng thái $S = <s_1, s_2,..., s_T>$ cho bởi quan sát $O = <o_1, o_2, ..., o_T>$ được tính bởi công thức:
+Thuật toán Conditional Random Fields (CRFs) ~\cite{Lafferty:2001:CRF:645530.655813} được sử dụng đã tính toán xác suất của chuỗi đầu ra cho bởi chuỗi đầu vào. Xác suất của chuỗi trạng thái $S = \langle s_1, s_2,..., s_T \rangle$ cho bởi quan sát $O = \langle o_1, o_2, ..., o_T \rangle$ được tính bởi công thức:
 
-$$P(s|o) = \frac{1}{Z_o} exp( \sum_{t=1}^{T} \sum_{k} \lambda_k x f_k (s_{t-1},s_t,o,t) )$$
+$$P(S|O) = \frac{1}{Z_o} \exp( \sum_{t=1}^{T} \sum_{k} \lambda_k x f_k (s_{t-1},s_t,o,t) )$$
 
 trong đó, $f_k (s_{t-1},s_t,o,t)$ làm một hàm đặc trưng ứng với trọng số $\lambda_k$, được học thông qua quá trình huấn luyện.
 
@@ -86,7 +87,7 @@ Các đặc trưng được đề xuất
  T[-2], T[-1], T[0], T[1], T[2] & unigram  \\
  T[-2,-1], T[-1,0], T[0,1], T[1,2] & bigram  \\
  T[-2,0], T[-1,1], T[0,2] & trigram \\
- T[-1].isdigit, T[0].isdigit, T[1].isdigit & digit
+ T[-1].isdigit, T[0].isdigit, T[1].isdigit & digit \\
  \hline
 \end{tabular}
 \end{center}
@@ -95,50 +96,51 @@ Các đặc trưng được đề xuất
 
 \subsection{Dữ liệu}
 
-Để so sánh độ chính xác của chương trình. Chúng tôi sử dụng sử dụng bộ dữ liệu đã được sử dụng trong \citet{DBLP:conf/lrec/NguyenNVDJ18} và \citet{7800279}. Dữ liệu huấn luyện gồm 75 nghìn câu được lấy từ dữ liệu huấn luyện của bài toán tách từ trong VLSP 2013. Dữ liệu kiểm thử gồm 2120 câu lấy từ bộ dữ liệu gán nhãn từ loại trong VLSP 2013.
+Để so sánh độ chính xác của chương trình. Chúng tôi sử dụng bộ dữ liệu đã được sử dụng trong \citet{DBLP:conf/lrec/NguyenNVDJ18} và \citet{7800279}. Dữ liệu huấn luyện gồm 75 nghìn câu được lấy từ dữ liệu huấn luyện của bài toán tách từ trong VLSP 2013. Dữ liệu kiểm thử gồm 2120 câu lấy từ bộ dữ liệu gán nhãn từ loại trong VLSP 2013.
 
 \subsection{Chỉ số đánh giá}
 
 Chúng tôi sử dụng precision, recall và f1 làm các chỉ số đánh giá.
 
 
-$$F_1 = \frac{2*P*R}{P + R}$$
+$$F_1 = \frac{2PR}{P + R}$$
 
-trong đó P (Precision), và R (Recall) được định nghĩa như sau:
+trong đó $P$ (Precision), và $R$ (Recall) được định nghĩa như sau:
 
-$$P = \frac{{NE}_{true}}{NE_{sys}}$$
+$$P = \frac{\mathit{NE}_{\mathrm{true}}}{\mathit{NE}_{\mathrm{sys}}}$$
 
-$$R = \frac{{NE}_{true}}{NE_{ref}}$$
+$$R = \frac{\mathit{NE}_{\mathrm{true}}}{\mathit{NE}_{\mathrm{ref}}}$$
 
 với
 
-$NE_{true}$: The number of NEs in gold data
+$\mathit{NE}_{\mathrm{true}}$: The number of NEs in gold data
 
-$NE_{sys}$: The number of NEs in recognizing system
+$\mathit{NE}_{\mathrm{sys}}$: The number of NEs in recognizing system
 
-$NE_{true}$: The number of NEs which is correctly recognized by the system
+$\mathit{NE}_{\mathrm{ref}}$: The number of NEs which is correctly recognized by the system
 
 \subsection{Kết quả}
 
-We conduct our experiment in VLSP 2013 dataset, the result show we archive 97.3\%
+We conduct our experiment on VLSP 2013 dataset, the result show we achieve 97.3\%
+\newline
 
-\begin{tabular}{ |l|l| }
+\begin{tabular}{ |l|l|l| }
  \hline
  system & features & result \\
  \hline
- s1 & ngram & 96.42\\
- s2 & s1 + lower & 96.45\\
- s3 & s2 + isdigit & 96.54\\
- s4 & s3 + istitle & 96.45 \\
- s5 & s4 + unigram is in dict & 96.45 \\
- s6 & s5 + bigram is in dict & 97.34 \\
+ s1 & ngram & 96.42\% \\
+ s2 & s1 + lower & 96.45\% \\
+ s3 & s2 + isdigit & 96.54\% \\
+ s4 & s3 + istitle & 96.45\% \\
+ s5 & s4 + unigram is in dict & 96.45\% \\
+ s6 & s5 + bigram is in dict & 97.34\% \\
  sn & full & 97.31\% \\
  \hline
 \end{tabular}
 
 \section{Kết luận}
 
-Trong báo cáo này, chúng tôi đã mô tả hệ thống tách từ được tích hợp trong underthesea phiên bản 1.1.12.
+Trong báo cáo này, chúng tôi đã mô tả hệ thống tách từ được tích hợp trong underthesea phiên bản \version.
 
 \bibliography{technique_report}
 \bibliographystyle{acl_natbib}
